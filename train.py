@@ -122,7 +122,7 @@ def train(encoder_decoder: EncoderDecoder,
         writer.add_text('cancel', output_string, global_step=global_step)
         '''
 
-        print('accuracy %.5f%' % (100.0 * correct_predictions / batch_size))
+        print('accuracy %.5f' % (100.0 * correct_predictions / batch_size))
         print('val loss: %.5f, val BLEU score: %.5f' % (val_loss, val_bleu_score), flush=True)
         torch.save(encoder_decoder, "%s%s_%i.pt" % (model_path, model_name, epoch))
 
