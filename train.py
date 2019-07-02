@@ -36,6 +36,7 @@ def train(encoder_decoder: EncoderDecoder,
         print('epoch %i' % epoch, flush=True)
 
         correct_predictions = 0.0
+        all_predictions = 0.0
         for batch_idx, (input_idxs, target_idxs, input_tokens, target_tokens) in enumerate(tqdm(train_data_loader)):
             # input_idxs and target_idxs have dim (batch_size x max_len)
             # they are NOT sorted by length
@@ -73,6 +74,8 @@ def train(encoder_decoder: EncoderDecoder,
 
                 if y_i == tgt_i:
                     correct_predictions += 1.0
+
+                all_predictions += 1.0
 
             batch_bleu_score = corpus_bleu(batch_targets, batch_outputs, smoothing_function=SmoothingFunction().method1)
 
@@ -122,7 +125,7 @@ def train(encoder_decoder: EncoderDecoder,
         writer.add_text('cancel', output_string, global_step=global_step)
         '''
 
-        print('accuracy %.5f' % (100.0 * (correct_predictions / batch_size)))
+        print('accuracy %.5f' % (100.0 * (correct_predictions / all_predictions)))
         print('val loss: %.5f, val BLEU score: %.5f' % (val_loss, val_bleu_score), flush=True)
         torch.save(encoder_decoder, "%s%s_%i.pt" % (model_path, model_name, epoch))
 
