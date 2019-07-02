@@ -8,7 +8,7 @@ from torch import optim
 from torch.autograd import Variable
 from torch.utils.data import DataLoader
 
-from mjcdataset import SequencePairDataset
+from ltldataset import SequencePairDataset
 from model.encoder_decoder import EncoderDecoder
 from evaluate import evaluate
 from utils import to_np, trim_seqs
@@ -122,14 +122,17 @@ def train(encoder_decoder: EncoderDecoder,
         writer.add_text('cancel', output_string, global_step=global_step)
         '''
 
-        print('accuracy %.5f' % (100.0 * correct_predictions / batch_size))
+        print('accuracy %.5f' % (100.0 * (correct_predictions / batch_size)))
         print('val loss: %.5f, val BLEU score: %.5f' % (val_loss, val_bleu_score), flush=True)
         torch.save(encoder_decoder, "%s%s_%i.pt" % (model_path, model_name, epoch))
+
+        #print('Now testing the model...')
+
 
         print('-' * 100, flush=True)
 
 
-def main(model_name, use_cuda, batch_size, teacher_forcing_schedule, keep_prob, val_size, lr, decoder_type, vocab_limit, hidden_size, embedding_size, max_length, seed=42):
+def main(model_name, use_cuda, batch_size, teacher_forcing_schedule, keep_prob, val_size, lr, decoder_type, vocab_limit, hidden_size, embedding_size, max_length, test_split, test_only, seed=42):
 
     model_path = './model/' + model_name + '/'
 
@@ -251,6 +254,15 @@ if __name__ == '__main__':
     parser.add_argument('--max_length', type=int, default=200,
                         help='Sequences will be padded or truncated to this size.')
 
+    parser.add_argument('--test_split', type=float, default=0.2,
+                        help='Percentage of data that will be reserved for '
+                             'testing the model after training.')
+
+    parser.add_argument('--test_only', action='store_true',
+                        help='flag indicating to skip training and only test '
+                             'the model')
+
+
     args = parser.parse_args()
 
     writer = SummaryWriter('./logs/%s_%s' % (args.model_name, str(int(time.time()))))
@@ -259,5 +271,5 @@ if __name__ == '__main__':
     else:
         schedule = np.ones(args.epochs) * args.teacher_forcing_fraction
 
-    main(args.model_name, args.use_cuda, args.batch_size, schedule, args.keep_prob, args.val_size, args.lr, args.decoder_type, args.vocab_limit, args.hidden_size, args.embedding_size, args.max_length)
+    main(args.model_name, args.use_cuda, args.batch_size, schedule, args.keep_prob, args.val_size, args.lr, args.decoder_type, args.vocab_limit, args.hidden_size, args.embedding_size, args.max_length, args.test_split, args.test_only)
     # main(str(int(time.time())), args.use_cuda, args.batch_size, schedule, args.keep_prob, args.val_size, args.lr, args.decoder_type, args.vocab_limit, args.hidden_size, args.embedding_size, args.max_length)

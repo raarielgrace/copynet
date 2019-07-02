@@ -1,4 +1,5 @@
 import os
+import sys
 import random
 from torch.utils.data import Dataset
 from utils import tokens_to_seq, contains_digit
@@ -34,7 +35,8 @@ class Language(object):
 
 class SequencePairDataset(Dataset):
     def __init__(self,
-                 data_path='./data/copynet_data_v2.txt',
+                 src_data_path='./data/hard_pc_src_syn2.txt',
+                 tgt_data_path='./data/hard_pc_tar_syn2.txt',
                  maxlen=200,
                  lang=None,
                  vocab_limit=None,
@@ -44,7 +46,8 @@ class SequencePairDataset(Dataset):
                  use_cuda=False,
                  use_extended_vocab=True):
 
-        self.data_path = data_path
+        self.src_data_path = src_data_path
+        self.tgt_data_path = tgt_data_path
         self.maxlen = maxlen
         self.use_cuda = use_cuda
         self.parser = None
@@ -53,17 +56,22 @@ class SequencePairDataset(Dataset):
         self.is_val = is_val
         self.use_extended_vocab = use_extended_vocab
 
-        with open(self.data_path, "r") as f:
-            lines = f.readlines()
+        with open(self.src_data_path, "r") as sf:
+            src_lines = sf.readlines()
 
-        #random.shuffle(lines)
+        with open(self.tgt_data_path, "r") as tf:
+            tgt_lines = tf.readlines()
 
-        self.data = [] # Will hold all data from a single file
+        if not len(src_lines) == len(tgt_lines):
+            sys.exit("ERROR: Data files have inconsistent lengths. Make sure your labels are aligned correctly.")
 
-        for line in lines:
-            inputs, outputs, _ = line.split('\t')
-            inputsL = inputs.split(',')
-            outputsL = outputs.split(',')
+        self.data = [] # Will hold all data
+
+        for i in range(len(src_lines)):
+            inputs = src_lines[i]
+            outputs = tgt_lines[i]
+            inputsL = inputs.split(' ')
+            outputsL = outputs.split(' ')
             self.data.append([inputsL, outputsL])
 
         if lang is None:
