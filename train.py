@@ -8,7 +8,7 @@ from torch import optim
 from torch.autograd import Variable
 from torch.utils.data import DataLoader
 
-from ltldataset import SequencePairDataset
+from mjcdataset import SequencePairDataset
 from model.encoder_decoder import EncoderDecoder
 from evaluate import evaluate
 from utils import to_np, trim_seqs
@@ -17,6 +17,7 @@ from tensorboardX import SummaryWriter
 from tqdm import tqdm
 from nltk.translate.bleu_score import corpus_bleu, SmoothingFunction
 
+torch.backends.cudnn.enabled = False
 
 def train(encoder_decoder: EncoderDecoder,
           train_data_loader: DataLoader,

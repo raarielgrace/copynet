@@ -60,6 +60,7 @@ class SequencePairDataset(Dataset):
         self.val_size = val_size
         self.seed = seed
         self.is_val = is_val
+        self.is_test = is_test
         self.use_extended_vocab = use_extended_vocab
 
         self.data = [] # Will hold all data from a single file
