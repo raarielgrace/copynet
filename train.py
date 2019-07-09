@@ -8,7 +8,7 @@ from torch import optim
 from torch.autograd import Variable
 from torch.utils.data import DataLoader
 
-from mjcdataset import SequencePairDataset
+from ltldataset import SequencePairDataset
 from model.encoder_decoder import EncoderDecoder
 from evaluate import evaluate
 from utils import to_np, trim_seqs
@@ -204,7 +204,7 @@ def main(model_name, use_cuda, batch_size, teacher_forcing_schedule, keep_prob, 
                                           val_size=val_size,
                                           use_extended_vocab=(encoder_decoder.decoder_type=='copy'))
 
-        test_dataset = SequencePairDataset(lang=encoder_decoder.lang,
+        test_dataset = SequencePairDataset(lang=train_dataset.lang,
                                             use_cuda=use_cuda,
                                             is_val=False,
                                             is_test=True,

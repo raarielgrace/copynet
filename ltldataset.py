@@ -34,8 +34,10 @@ class Language(object):
 
 
 class SequencePairDataset(Dataset):
-    src_data_path='./data/hard_pc_src_syn2.txt'
-    tgt_data_path='./data/hard_pc_tar_syn2.txt'
+    #src_data_path='./data/hard_pc_src_syn2.txt'
+    #tgt_data_path='./data/hard_pc_tar_syn2.txt'
+    src_data_path='./data/north_src.txt'
+    tgt_data_path='./data/north_tar.txt'
 
     with open(src_data_path, "r") as sf:
         src_lines = sf.readlines()
