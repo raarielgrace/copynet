@@ -34,38 +34,53 @@ class Language(object):
 
 
 class SequencePairDataset(Dataset):
+    src_data_path='./data/hard_pc_src_syn2.txt'
+    tgt_data_path='./data/hard_pc_tar_syn2.txt'
+
+    with open(src_data_path, "r") as sf:
+        src_lines = sf.readlines()
+
+    with open(tgt_data_path, "r") as tf:
+        tgt_lines = tf.readlines()
+
+    if not len(src_lines) == len(tgt_lines):
+        sys.exit("ERROR: Data files have inconsistent lengths. Make sure your labels are aligned correctly.")
+
+    # Split our source and target files with a 20:80 split
+    split_idx = len(src_lines) // 5
+    test_src = src_lines[:split_idx]
+    train_src = src_lines[split_idx:]
+    test_tgt = tgt_lines[:split_idx]
+    train_tgt = tgt_lines[split_idx:]
+
     def __init__(self,
-                 src_data_path='./data/hard_pc_src_syn2.txt',
-                 tgt_data_path='./data/hard_pc_tar_syn2.txt',
                  maxlen=200,
                  lang=None,
                  vocab_limit=None,
                  val_size=0.1,
                  seed=42,
                  is_val=False,
+                 is_test=False,
                  use_cuda=False,
                  use_extended_vocab=True):
 
-        self.src_data_path = src_data_path
-        self.tgt_data_path = tgt_data_path
         self.maxlen = maxlen
         self.use_cuda = use_cuda
         self.parser = None
         self.val_size = val_size
         self.seed = seed
         self.is_val = is_val
+        self.is_test = is_test
         self.use_extended_vocab = use_extended_vocab
 
-        with open(self.src_data_path, "r") as sf:
-            src_lines = sf.readlines()
-
-        with open(self.tgt_data_path, "r") as tf:
-            tgt_lines = tf.readlines()
-
-        if not len(src_lines) == len(tgt_lines):
-            sys.exit("ERROR: Data files have inconsistent lengths. Make sure your labels are aligned correctly.")
-
         self.data = [] # Will hold all data
+
+        if self.is_test:
+            src_lines = SequencePairDataset.test_src
+            tgt_lines = SequencePairDataset.test_tgt
+        else:
+            src_lines = SequencePairDataset.train_src
+            tgt_lines = SequencePairDataset.train_tgt
 
         for i in range(len(src_lines)):
             inputs = src_lines[i]

@@ -125,17 +125,55 @@ def train(encoder_decoder: EncoderDecoder,
         writer.add_text('cancel', output_string, global_step=global_step)
         '''
 
-        print('accuracy %.5f' % (100.0 * (correct_predictions / all_predictions)))
+        print('training accuracy %.5f' % (100.0 * (correct_predictions / all_predictions)))
         print('val loss: %.5f, val BLEU score: %.5f' % (val_loss, val_bleu_score), flush=True)
         torch.save(encoder_decoder, "%s%s_%i.pt" % (model_path, model_name, epoch))
 
-        #print('Now testing the model...')
-
-
         print('-' * 100, flush=True)
 
+    return encoder_decoder
 
-def main(model_name, use_cuda, batch_size, teacher_forcing_schedule, keep_prob, val_size, lr, decoder_type, vocab_limit, hidden_size, embedding_size, max_length, test_split, test_only, seed=42):
+def test(encoder_decoder: EncoderDecoder, test_data_loader: DataLoader, max_length):
+
+    correct_predictions = 0.0
+    all_predictions = 0.0
+    for batch_idx, (input_idxs, target_idxs, input_tokens, target_tokens) in enumerate(tqdm(test_data_loader)):
+        # input_idxs and target_idxs have dim (batch_size x max_len)
+        # they are NOT sorted by length
+
+        lengths = (input_idxs != 0).long().sum(dim=1)
+        sorted_lengths, order = torch.sort(lengths, descending=True)
+
+        input_variable = Variable(input_idxs[order, :][:, :max(lengths)])
+        target_variable = Variable(target_idxs[order, :])
+
+        output_log_probs, output_seqs = encoder_decoder(input_variable,
+                                                        list(sorted_lengths),
+                                                        targets=target_variable)
+
+        batch_size = input_variable.shape[0]
+
+        output_sentences = output_seqs.squeeze(2)
+
+        flattened_outputs = output_log_probs.view(batch_size * max_length, -1)
+
+        batch_outputs = trim_seqs(output_seqs)
+
+        batch_targets = [[list(seq[seq > 0])] for seq in list(to_np(target_variable))]
+
+        for i in range(len(batch_outputs)):
+            y_i = batch_outputs[i]
+            tgt_i = batch_targets[i][0]
+
+            if y_i == tgt_i:
+                correct_predictions += 1.0
+
+            all_predictions += 1.0
+
+    print('TESTING ACCURACY %.5f' % (100.0 * (correct_predictions / all_predictions)))
+
+
+def main(model_name, use_cuda, batch_size, teacher_forcing_schedule, keep_prob, val_size, lr, decoder_type, vocab_limit, hidden_size, embedding_size, max_length, seed=42):
 
     model_path = './model/' + model_name + '/'
 
@@ -150,26 +188,36 @@ def main(model_name, use_cuda, batch_size, teacher_forcing_schedule, keep_prob, 
         print("loading encoder and decoder from model_path", flush=True)
         encoder_decoder = torch.load(model_path + model_name + '.pt')
 
-        print("creating training and validation datasets with saved languages", flush=True)
+        print("creating training, validation, and testing datasets with saved languages", flush=True)
         train_dataset = SequencePairDataset(lang=encoder_decoder.lang,
                                             use_cuda=use_cuda,
                                             is_val=False,
+                                            is_test=False,
                                             val_size=val_size,
                                             use_extended_vocab=(encoder_decoder.decoder_type=='copy'))
 
         val_dataset = SequencePairDataset(lang=encoder_decoder.lang,
                                           use_cuda=use_cuda,
                                           is_val=True,
+                                          is_test=False,
                                           val_size=val_size,
                                           use_extended_vocab=(encoder_decoder.decoder_type=='copy'))
+
+        test_dataset = SequencePairDataset(lang=encoder_decoder.lang,
+                                            use_cuda=use_cuda,
+                                            is_val=False,
+                                            is_test=True,
+                                            val_size=val_size,
+                                            use_extended_vocab=(encoder_decoder.decoder_type=='copy'))
 
     else:
         os.mkdir(model_path)
 
-        print("creating training and validation datasets", flush=True)
+        print("creating training, validation, and testing datasets", flush=True)
         train_dataset = SequencePairDataset(vocab_limit=vocab_limit,
                                             use_cuda=use_cuda,
                                             is_val=False,
+                                            is_test=False,
                                             val_size=val_size,
                                             seed=seed,
                                             use_extended_vocab=(decoder_type=='copy'))
@@ -177,9 +225,18 @@ def main(model_name, use_cuda, batch_size, teacher_forcing_schedule, keep_prob, 
         val_dataset = SequencePairDataset(lang=train_dataset.lang,
                                           use_cuda=use_cuda,
                                           is_val=True,
+                                          is_test=False,
                                           val_size=val_size,
                                           seed=seed,
                                           use_extended_vocab=(decoder_type=='copy'))
+
+        test_dataset = SequencePairDataset(vocab_limit=vocab_limit,
+                                            use_cuda=use_cuda,
+                                            is_val=False,
+                                            is_test=True,
+                                            val_size=val_size,
+                                            seed=seed,
+                                            use_extended_vocab=(decoder_type=='copy'))
 
         print("creating encoder-decoder model", flush=True)
         encoder_decoder = EncoderDecoder(train_dataset.lang,
@@ -197,8 +254,9 @@ def main(model_name, use_cuda, batch_size, teacher_forcing_schedule, keep_prob, 
 
     train_data_loader = DataLoader(train_dataset, batch_size=batch_size, shuffle=True)
     val_data_loader = DataLoader(val_dataset, batch_size=batch_size)
+    test_data_loader = DataLoader(test_dataset, batch_size=batch_size)
 
-    train(encoder_decoder,
+    trained_model = train(encoder_decoder,
           train_data_loader,
           model_name,
           val_data_loader,
@@ -206,6 +264,8 @@ def main(model_name, use_cuda, batch_size, teacher_forcing_schedule, keep_prob, 
           teacher_forcing_schedule,
           lr,
           encoder_decoder.decoder.max_length)
+
+    test(trained_model, test_data_loader, encoder_decoder.decoder.max_length)
 
 
 if __name__ == '__main__':
@@ -257,15 +317,6 @@ if __name__ == '__main__':
     parser.add_argument('--max_length', type=int, default=200,
                         help='Sequences will be padded or truncated to this size.')
 
-    parser.add_argument('--test_split', type=float, default=0.2,
-                        help='Percentage of data that will be reserved for '
-                             'testing the model after training.')
-
-    parser.add_argument('--test_only', action='store_true',
-                        help='flag indicating to skip training and only test '
-                             'the model')
-
-
     args = parser.parse_args()
 
     writer = SummaryWriter('./logs/%s_%s' % (args.model_name, str(int(time.time()))))
@@ -274,5 +325,5 @@ if __name__ == '__main__':
     else:
         schedule = np.ones(args.epochs) * args.teacher_forcing_fraction
 
-    main(args.model_name, args.use_cuda, args.batch_size, schedule, args.keep_prob, args.val_size, args.lr, args.decoder_type, args.vocab_limit, args.hidden_size, args.embedding_size, args.max_length, args.test_split, args.test_only)
+    main(args.model_name, args.use_cuda, args.batch_size, schedule, args.keep_prob, args.val_size, args.lr, args.decoder_type, args.vocab_limit, args.hidden_size, args.embedding_size, args.max_length)
     # main(str(int(time.time())), args.use_cuda, args.batch_size, schedule, args.keep_prob, args.val_size, args.lr, args.decoder_type, args.vocab_limit, args.hidden_size, args.embedding_size, args.max_length)

@@ -33,18 +33,27 @@ class Language(object):
 
 
 class SequencePairDataset(Dataset):
+    data_path='./data/copynet_data_v2.txt'
+
+    with open(data_path, "r") as f:
+        lines = f.readlines()
+
+    # Split our data files with a 20:80 split
+    split_idx = len(lines) // 5
+    test_src = lines[:split_idx]
+    train_src = lines[split_idx:]
+
     def __init__(self,
-                 data_path='./data/copynet_data_v2.txt',
                  maxlen=200,
                  lang=None,
                  vocab_limit=None,
                  val_size=0.1,
                  seed=42,
                  is_val=False,
+                 is_test=False,
                  use_cuda=False,
                  use_extended_vocab=True):
 
-        self.data_path = data_path
         self.maxlen = maxlen
         self.use_cuda = use_cuda
         self.parser = None
@@ -53,12 +62,12 @@ class SequencePairDataset(Dataset):
         self.is_val = is_val
         self.use_extended_vocab = use_extended_vocab
 
-        with open(self.data_path, "r") as f:
-            lines = f.readlines()
-
-        #random.shuffle(lines)
-
         self.data = [] # Will hold all data from a single file
+
+        if self.is_test:
+            lines = SequencePairDataset.test_src
+        else:
+            lines = SequencePairDataset.train_src
 
         for line in lines:
             inputs, outputs, _ = line.split('\t')
