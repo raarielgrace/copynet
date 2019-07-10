@@ -176,7 +176,7 @@ def test(encoder_decoder: EncoderDecoder, test_data_loader: DataLoader, max_leng
     print('TESTING ACCURACY %.5f' % (100.0 * (correct_predictions / all_predictions)))
 
 
-def main(model_name, use_cuda, batch_size, teacher_forcing_schedule, keep_prob, val_size, lr, decoder_type, vocab_limit, hidden_size, embedding_size, max_length, seed=42):
+def main(model_name, use_cuda, batch_size, teacher_forcing_schedule, keep_prob, val_size, lr, decoder_type, vocab_limit, hidden_size, embedding_size, max_length, test_data_substitute, seed=42):
 
     model_path = './model/' + model_name + '/'
 
@@ -211,7 +211,8 @@ def main(model_name, use_cuda, batch_size, teacher_forcing_schedule, keep_prob, 
                                             is_val=False,
                                             is_test=True,
                                             val_size=val_size,
-                                            use_extended_vocab=(encoder_decoder.decoder_type=='copy'))
+                                            use_extended_vocab=(encoder_decoder.decoder_type=='copy'),
+                                            data_substitute=test_data_substitute)
 
     else:
         os.mkdir(model_path)
@@ -323,6 +324,9 @@ if __name__ == '__main__':
     parser.add_argument('--save_lang', action='store_true',
                         help='Flag to save the training vocabulary to a pkl file.')
 
+    parser.add_argument('--test_data_substitute', type=str, default=None
+                        help='The data to use instead of the training data. Should be of the form /data/[name]_src/tar.txt')
+
     args = parser.parse_args()
 
     writer = SummaryWriter('./logs/%s_%s' % (args.model_name, str(int(time.time()))))
@@ -331,5 +335,5 @@ if __name__ == '__main__':
     else:
         schedule = np.ones(args.epochs) * args.teacher_forcing_fraction
 
-    main(args.model_name, args.use_cuda, args.batch_size, schedule, args.keep_prob, args.val_size, args.lr, args.decoder_type, args.vocab_limit, args.hidden_size, args.embedding_size, args.max_length, args.save_lang)
+    main(args.model_name, args.use_cuda, args.batch_size, schedule, args.keep_prob, args.val_size, args.lr, args.decoder_type, args.vocab_limit, args.hidden_size, args.embedding_size, args.max_length, args.save_lang, args.test_data_substitute)
     # main(str(int(time.time())), args.use_cuda, args.batch_size, schedule, args.keep_prob, args.val_size, args.lr, args.decoder_type, args.vocab_limit, args.hidden_size, args.embedding_size, args.max_length)

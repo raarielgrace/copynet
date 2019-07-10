@@ -64,7 +64,8 @@ class SequencePairDataset(Dataset):
                  is_val=False,
                  is_test=False,
                  use_cuda=False,
-                 use_extended_vocab=True):
+                 use_extended_vocab=True
+                 data_substitute=None):
 
         self.maxlen = maxlen
         self.use_cuda = use_cuda
@@ -75,14 +76,24 @@ class SequencePairDataset(Dataset):
         self.is_test = is_test
         self.use_extended_vocab = use_extended_vocab
 
-        self.data = [] # Will hold all data
+        if not data_substitute == None:
+            with open('./data/' + data_substitute + 'src.txt', "r") as sf:
+                src_lines = sf.readlines()
 
-        if self.is_test:
-            src_lines = SequencePairDataset.test_src
-            tgt_lines = SequencePairDataset.test_tgt
+            with open('./data/' + data_substitute + 'tar.txt', "r") as tf:
+                tgt_lines = tf.readlines()
+
+            if not len(src_lines) == len(tgt_lines):
+                sys.exit("ERROR: Data files have inconsistent lengths. Make sure your labels are aligned correctly.")
         else:
-            src_lines = SequencePairDataset.train_src
-            tgt_lines = SequencePairDataset.train_tgt
+            if self.is_test:
+                src_lines = SequencePairDataset.test_src
+                tgt_lines = SequencePairDataset.test_tgt
+            else:
+                src_lines = SequencePairDataset.train_src
+                tgt_lines = SequencePairDataset.train_tgt
+
+        self.data = [] # Will hold all data
 
         for i in range(len(src_lines)):
             inputs = src_lines[i]
