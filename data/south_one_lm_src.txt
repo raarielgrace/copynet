@@ -9,7 +9,7 @@ go to The Ivy Room
 go to Blue Room
 go to Campus Market
 go to P-131317
-go to Reclining Figure No. 2 — Bridge Prop
+go to Reclining Figure No. 2 â€” Bridge Prop
 go to Slavery Memorial
 go to Casey Shearer Memorial
 go to War Memorial
@@ -104,7 +104,7 @@ go to the The Ivy Room
 go to the Blue Room
 go to the Campus Market
 go to the P-131317
-go to the Reclining Figure No. 2 — Bridge Prop
+go to the Reclining Figure No. 2 â€” Bridge Prop
 go to the Slavery Memorial
 go to the Casey Shearer Memorial
 go to the War Memorial
@@ -199,7 +199,7 @@ go to the The Ivy Room .
 go to the Blue Room .
 go to the Campus Market .
 go to the P-131317 .
-go to the Reclining Figure No. 2 — Bridge Prop .
+go to the Reclining Figure No. 2 â€” Bridge Prop .
 go to the Slavery Memorial .
 go to the Casey Shearer Memorial .
 go to the War Memorial .
@@ -294,7 +294,7 @@ move to the The Ivy Room .
 move to the Blue Room .
 move to the Campus Market .
 move to the P-131317 .
-move to the Reclining Figure No. 2 — Bridge Prop .
+move to the Reclining Figure No. 2 â€” Bridge Prop .
 move to the Slavery Memorial .
 move to the Casey Shearer Memorial .
 move to the War Memorial .
@@ -389,7 +389,7 @@ go to the The Ivy Room .
 go to the Blue Room .
 go to the Campus Market .
 go to the P-131317 .
-go to the Reclining Figure No. 2 — Bridge Prop .
+go to the Reclining Figure No. 2 â€” Bridge Prop .
 go to the Slavery Memorial .
 go to the Casey Shearer Memorial .
 go to the War Memorial .
@@ -484,7 +484,7 @@ navigate to the The Ivy Room .
 navigate to the Blue Room .
 navigate to the Campus Market .
 navigate to the P-131317 .
-navigate to the Reclining Figure No. 2 — Bridge Prop .
+navigate to the Reclining Figure No. 2 â€” Bridge Prop .
 navigate to the Slavery Memorial .
 navigate to the Casey Shearer Memorial .
 navigate to the War Memorial .
@@ -579,7 +579,7 @@ navigate to the The Ivy Room .
 navigate to the Blue Room .
 navigate to the Campus Market .
 navigate to the P-131317 .
-navigate to the Reclining Figure No. 2 — Bridge Prop .
+navigate to the Reclining Figure No. 2 â€” Bridge Prop .
 navigate to the Slavery Memorial .
 navigate to the Casey Shearer Memorial .
 navigate to the War Memorial .
@@ -674,7 +674,7 @@ go to The Ivy Room
 go to Blue Room
 go to Campus Market
 go to P-131317
-go to Reclining Figure No. 2 — Bridge Prop
+go to Reclining Figure No. 2 â€” Bridge Prop
 go to Slavery Memorial
 go to Casey Shearer Memorial
 go to War Memorial
@@ -769,7 +769,7 @@ go to the The Ivy Room .
 go to the Blue Room .
 go to the Campus Market .
 go to the P-131317 .
-go to the Reclining Figure No. 2 — Bridge Prop .
+go to the Reclining Figure No. 2 â€” Bridge Prop .
 go to the Slavery Memorial .
 go to the Casey Shearer Memorial .
 go to the War Memorial .
@@ -864,7 +864,7 @@ go to anywhere on the The Ivy Room .
 go to anywhere on the Blue Room .
 go to anywhere on the Campus Market .
 go to anywhere on the P-131317 .
-go to anywhere on the Reclining Figure No. 2 — Bridge Prop .
+go to anywhere on the Reclining Figure No. 2 â€” Bridge Prop .
 go to anywhere on the Slavery Memorial .
 go to anywhere on the Casey Shearer Memorial .
 go to anywhere on the War Memorial .
@@ -959,7 +959,7 @@ navigate to the The Ivy Room .
 navigate to the Blue Room .
 navigate to the Campus Market .
 navigate to the P-131317 .
-navigate to the Reclining Figure No. 2 — Bridge Prop .
+navigate to the Reclining Figure No. 2 â€” Bridge Prop .
 navigate to the Slavery Memorial .
 navigate to the Casey Shearer Memorial .
 navigate to the War Memorial .
@@ -1054,7 +1054,7 @@ go to the The Ivy Room .
 go to the Blue Room .
 go to the Campus Market .
 go to the P-131317 .
-go to the Reclining Figure No. 2 — Bridge Prop .
+go to the Reclining Figure No. 2 â€” Bridge Prop .
 go to the Slavery Memorial .
 go to the Casey Shearer Memorial .
 go to the War Memorial .
@@ -1149,7 +1149,7 @@ head to the The Ivy Room .
 head to the Blue Room .
 head to the Campus Market .
 head to the P-131317 .
-head to the Reclining Figure No. 2 — Bridge Prop .
+head to the Reclining Figure No. 2 â€” Bridge Prop .
 head to the Slavery Memorial .
 head to the Casey Shearer Memorial .
 head to the War Memorial .
@@ -1244,7 +1244,7 @@ go to the The Ivy Room
 go to the Blue Room
 go to the Campus Market
 go to the P-131317
-go to the Reclining Figure No. 2 — Bridge Prop
+go to the Reclining Figure No. 2 â€” Bridge Prop
 go to the Slavery Memorial
 go to the Casey Shearer Memorial
 go to the War Memorial
@@ -1339,7 +1339,7 @@ navigate to the The Ivy Room .
 navigate to the Blue Room .
 navigate to the Campus Market .
 navigate to the P-131317 .
-navigate to the Reclining Figure No. 2 — Bridge Prop .
+navigate to the Reclining Figure No. 2 â€” Bridge Prop .
 navigate to the Slavery Memorial .
 navigate to the Casey Shearer Memorial .
 navigate to the War Memorial .
@@ -1434,7 +1434,7 @@ go to the The Ivy Room .
 go to the Blue Room .
 go to the Campus Market .
 go to the P-131317 .
-go to the Reclining Figure No. 2 — Bridge Prop .
+go to the Reclining Figure No. 2 â€” Bridge Prop .
 go to the Slavery Memorial .
 go to the Casey Shearer Memorial .
 go to the War Memorial .
@@ -1529,7 +1529,7 @@ go to the The Ivy Room .
 go to the Blue Room .
 go to the Campus Market .
 go to the P-131317 .
-go to the Reclining Figure No. 2 — Bridge Prop .
+go to the Reclining Figure No. 2 â€” Bridge Prop .
 go to the Slavery Memorial .
 go to the Casey Shearer Memorial .
 go to the War Memorial .
@@ -1624,7 +1624,7 @@ navigate directly to the The Ivy Room .
 navigate directly to the Blue Room .
 navigate directly to the Campus Market .
 navigate directly to the P-131317 .
-navigate directly to the Reclining Figure No. 2 — Bridge Prop .
+navigate directly to the Reclining Figure No. 2 â€” Bridge Prop .
 navigate directly to the Slavery Memorial .
 navigate directly to the Casey Shearer Memorial .
 navigate directly to the War Memorial .
@@ -1719,7 +1719,7 @@ go to the The Ivy Room .
 go to the Blue Room .
 go to the Campus Market .
 go to the P-131317 .
-go to the Reclining Figure No. 2 — Bridge Prop .
+go to the Reclining Figure No. 2 â€” Bridge Prop .
 go to the Slavery Memorial .
 go to the Casey Shearer Memorial .
 go to the War Memorial .
@@ -1814,7 +1814,7 @@ go to the The Ivy Room
 go to the Blue Room
 go to the Campus Market
 go to the P-131317
-go to the Reclining Figure No. 2 — Bridge Prop
+go to the Reclining Figure No. 2 â€” Bridge Prop
 go to the Slavery Memorial
 go to the Casey Shearer Memorial
 go to the War Memorial
@@ -1909,7 +1909,7 @@ go to the The Ivy Room .
 go to the Blue Room .
 go to the Campus Market .
 go to the P-131317 .
-go to the Reclining Figure No. 2 — Bridge Prop .
+go to the Reclining Figure No. 2 â€” Bridge Prop .
 go to the Slavery Memorial .
 go to the Casey Shearer Memorial .
 go to the War Memorial .
@@ -2004,7 +2004,7 @@ go to the The Ivy Room
 go to the Blue Room
 go to the Campus Market
 go to the P-131317
-go to the Reclining Figure No. 2 — Bridge Prop
+go to the Reclining Figure No. 2 â€” Bridge Prop
 go to the Slavery Memorial
 go to the Casey Shearer Memorial
 go to the War Memorial
@@ -2099,7 +2099,7 @@ go to the The Ivy Room .
 go to the Blue Room .
 go to the Campus Market .
 go to the P-131317 .
-go to the Reclining Figure No. 2 — Bridge Prop .
+go to the Reclining Figure No. 2 â€” Bridge Prop .
 go to the Slavery Memorial .
 go to the Casey Shearer Memorial .
 go to the War Memorial .
@@ -2194,7 +2194,7 @@ go to the The Ivy Room
 go to the Blue Room
 go to the Campus Market
 go to the P-131317
-go to the Reclining Figure No. 2 — Bridge Prop
+go to the Reclining Figure No. 2 â€” Bridge Prop
 go to the Slavery Memorial
 go to the Casey Shearer Memorial
 go to the War Memorial
@@ -2289,7 +2289,7 @@ go to the The Ivy Room .
 go to the Blue Room .
 go to the Campus Market .
 go to the P-131317 .
-go to the Reclining Figure No. 2 — Bridge Prop .
+go to the Reclining Figure No. 2 â€” Bridge Prop .
 go to the Slavery Memorial .
 go to the Casey Shearer Memorial .
 go to the War Memorial .
@@ -2384,7 +2384,7 @@ move to the The Ivy Room .
 move to the Blue Room .
 move to the Campus Market .
 move to the P-131317 .
-move to the Reclining Figure No. 2 — Bridge Prop .
+move to the Reclining Figure No. 2 â€” Bridge Prop .
 move to the Slavery Memorial .
 move to the Casey Shearer Memorial .
 move to the War Memorial .
@@ -2479,7 +2479,7 @@ go to the The Ivy Room
 go to the Blue Room
 go to the Campus Market
 go to the P-131317
-go to the Reclining Figure No. 2 — Bridge Prop
+go to the Reclining Figure No. 2 â€” Bridge Prop
 go to the Slavery Memorial
 go to the Casey Shearer Memorial
 go to the War Memorial
@@ -2574,7 +2574,7 @@ navigate to the The Ivy Room .
 navigate to the Blue Room .
 navigate to the Campus Market .
 navigate to the P-131317 .
-navigate to the Reclining Figure No. 2 — Bridge Prop .
+navigate to the Reclining Figure No. 2 â€” Bridge Prop .
 navigate to the Slavery Memorial .
 navigate to the Casey Shearer Memorial .
 navigate to the War Memorial .
@@ -2669,7 +2669,7 @@ go to the The Ivy Room
 go to the Blue Room
 go to the Campus Market
 go to the P-131317
-go to the Reclining Figure No. 2 — Bridge Prop
+go to the Reclining Figure No. 2 â€” Bridge Prop
 go to the Slavery Memorial
 go to the Casey Shearer Memorial
 go to the War Memorial
@@ -2764,7 +2764,7 @@ go to the The Ivy Room .
 go to the Blue Room .
 go to the Campus Market .
 go to the P-131317 .
-go to the Reclining Figure No. 2 — Bridge Prop .
+go to the Reclining Figure No. 2 â€” Bridge Prop .
 go to the Slavery Memorial .
 go to the Casey Shearer Memorial .
 go to the War Memorial .
@@ -2859,7 +2859,7 @@ go to 1 st_floor after The Ivy Room
 go to 1 st_floor after Blue Room
 go to 1 st_floor after Campus Market
 go to 1 st_floor after P-131317
-go to 1 st_floor after Reclining Figure No. 2 — Bridge Prop
+go to 1 st_floor after Reclining Figure No. 2 â€” Bridge Prop
 go to 1 st_floor after Slavery Memorial
 go to 1 st_floor after Casey Shearer Memorial
 go to 1 st_floor after War Memorial
@@ -2954,7 +2954,7 @@ travel to The Ivy Room .
 travel to Blue Room .
 travel to Campus Market .
 travel to P-131317 .
-travel to Reclining Figure No. 2 — Bridge Prop .
+travel to Reclining Figure No. 2 â€” Bridge Prop .
 travel to Slavery Memorial .
 travel to Casey Shearer Memorial .
 travel to War Memorial .
@@ -3049,7 +3049,7 @@ go to The Ivy Room .
 go to Blue Room .
 go to Campus Market .
 go to P-131317 .
-go to Reclining Figure No. 2 — Bridge Prop .
+go to Reclining Figure No. 2 â€” Bridge Prop .
 go to Slavery Memorial .
 go to Casey Shearer Memorial .
 go to War Memorial .
@@ -3144,7 +3144,7 @@ navigate directly to The Ivy Room .
 navigate directly to Blue Room .
 navigate directly to Campus Market .
 navigate directly to P-131317 .
-navigate directly to Reclining Figure No. 2 — Bridge Prop .
+navigate directly to Reclining Figure No. 2 â€” Bridge Prop .
 navigate directly to Slavery Memorial .
 navigate directly to Casey Shearer Memorial .
 navigate directly to War Memorial .
@@ -3239,7 +3239,7 @@ go to the The Ivy Room
 go to the Blue Room
 go to the Campus Market
 go to the P-131317
-go to the Reclining Figure No. 2 — Bridge Prop
+go to the Reclining Figure No. 2 â€” Bridge Prop
 go to the Slavery Memorial
 go to the Casey Shearer Memorial
 go to the War Memorial
@@ -3334,7 +3334,7 @@ go to The Ivy Room .
 go to Blue Room .
 go to Campus Market .
 go to P-131317 .
-go to Reclining Figure No. 2 — Bridge Prop .
+go to Reclining Figure No. 2 â€” Bridge Prop .
 go to Slavery Memorial .
 go to Casey Shearer Memorial .
 go to War Memorial .
@@ -3429,7 +3429,7 @@ go to The Ivy Room
 go to Blue Room
 go to Campus Market
 go to P-131317
-go to Reclining Figure No. 2 — Bridge Prop
+go to Reclining Figure No. 2 â€” Bridge Prop
 go to Slavery Memorial
 go to Casey Shearer Memorial
 go to War Memorial
@@ -3524,7 +3524,7 @@ go to The Ivy Room .
 go to Blue Room .
 go to Campus Market .
 go to P-131317 .
-go to Reclining Figure No. 2 — Bridge Prop .
+go to Reclining Figure No. 2 â€” Bridge Prop .
 go to Slavery Memorial .
 go to Casey Shearer Memorial .
 go to War Memorial .
@@ -3619,7 +3619,7 @@ navigate to The Ivy Room .
 navigate to Blue Room .
 navigate to Campus Market .
 navigate to P-131317 .
-navigate to Reclining Figure No. 2 — Bridge Prop .
+navigate to Reclining Figure No. 2 â€” Bridge Prop .
 navigate to Slavery Memorial .
 navigate to Casey Shearer Memorial .
 navigate to War Memorial .
@@ -3714,7 +3714,7 @@ navigate to The Ivy Room .
 navigate to Blue Room .
 navigate to Campus Market .
 navigate to P-131317 .
-navigate to Reclining Figure No. 2 — Bridge Prop .
+navigate to Reclining Figure No. 2 â€” Bridge Prop .
 navigate to Slavery Memorial .
 navigate to Casey Shearer Memorial .
 navigate to War Memorial .
@@ -3809,7 +3809,7 @@ go to The Ivy Room .
 go to Blue Room .
 go to Campus Market .
 go to P-131317 .
-go to Reclining Figure No. 2 — Bridge Prop .
+go to Reclining Figure No. 2 â€” Bridge Prop .
 go to Slavery Memorial .
 go to Casey Shearer Memorial .
 go to War Memorial .
@@ -3904,7 +3904,7 @@ go to The Ivy Room .
 go to Blue Room .
 go to Campus Market .
 go to P-131317 .
-go to Reclining Figure No. 2 — Bridge Prop .
+go to Reclining Figure No. 2 â€” Bridge Prop .
 go to Slavery Memorial .
 go to Casey Shearer Memorial .
 go to War Memorial .
@@ -3999,7 +3999,7 @@ go to The Ivy Room .
 go to Blue Room .
 go to Campus Market .
 go to P-131317 .
-go to Reclining Figure No. 2 — Bridge Prop .
+go to Reclining Figure No. 2 â€” Bridge Prop .
 go to Slavery Memorial .
 go to Casey Shearer Memorial .
 go to War Memorial .
@@ -4094,7 +4094,7 @@ go to The Ivy Room
 go to Blue Room
 go to Campus Market
 go to P-131317
-go to Reclining Figure No. 2 — Bridge Prop
+go to Reclining Figure No. 2 â€” Bridge Prop
 go to Slavery Memorial
 go to Casey Shearer Memorial
 go to War Memorial
@@ -4189,7 +4189,7 @@ go to The Ivy Room .
 go to Blue Room .
 go to Campus Market .
 go to P-131317 .
-go to Reclining Figure No. 2 — Bridge Prop .
+go to Reclining Figure No. 2 â€” Bridge Prop .
 go to Slavery Memorial .
 go to Casey Shearer Memorial .
 go to War Memorial .
@@ -4284,7 +4284,7 @@ move to The Ivy Room .
 move to Blue Room .
 move to Campus Market .
 move to P-131317 .
-move to Reclining Figure No. 2 — Bridge Prop .
+move to Reclining Figure No. 2 â€” Bridge Prop .
 move to Slavery Memorial .
 move to Casey Shearer Memorial .
 move to War Memorial .
@@ -4379,7 +4379,7 @@ go to The Ivy Room .
 go to Blue Room .
 go to Campus Market .
 go to P-131317 .
-go to Reclining Figure No. 2 — Bridge Prop .
+go to Reclining Figure No. 2 â€” Bridge Prop .
 go to Slavery Memorial .
 go to Casey Shearer Memorial .
 go to War Memorial .
@@ -4474,7 +4474,7 @@ go to The Ivy Room
 go to Blue Room
 go to Campus Market
 go to P-131317
-go to Reclining Figure No. 2 — Bridge Prop
+go to Reclining Figure No. 2 â€” Bridge Prop
 go to Slavery Memorial
 go to Casey Shearer Memorial
 go to War Memorial
@@ -4569,7 +4569,7 @@ go to The Ivy Room
 go to Blue Room
 go to Campus Market
 go to P-131317
-go to Reclining Figure No. 2 — Bridge Prop
+go to Reclining Figure No. 2 â€” Bridge Prop
 go to Slavery Memorial
 go to Casey Shearer Memorial
 go to War Memorial
@@ -4664,7 +4664,7 @@ go directly to The Ivy Room .
 go directly to Blue Room .
 go directly to Campus Market .
 go directly to P-131317 .
-go directly to Reclining Figure No. 2 — Bridge Prop .
+go directly to Reclining Figure No. 2 â€” Bridge Prop .
 go directly to Slavery Memorial .
 go directly to Casey Shearer Memorial .
 go directly to War Memorial .
@@ -4759,7 +4759,7 @@ go to The Ivy Room .
 go to Blue Room .
 go to Campus Market .
 go to P-131317 .
-go to Reclining Figure No. 2 — Bridge Prop .
+go to Reclining Figure No. 2 â€” Bridge Prop .
 go to Slavery Memorial .
 go to Casey Shearer Memorial .
 go to War Memorial .
@@ -4854,7 +4854,7 @@ go to The Ivy Room
 go to Blue Room
 go to Campus Market
 go to P-131317
-go to Reclining Figure No. 2 — Bridge Prop
+go to Reclining Figure No. 2 â€” Bridge Prop
 go to Slavery Memorial
 go to Casey Shearer Memorial
 go to War Memorial
@@ -4949,7 +4949,7 @@ go to The Ivy Room .
 go to Blue Room .
 go to Campus Market .
 go to P-131317 .
-go to Reclining Figure No. 2 — Bridge Prop .
+go to Reclining Figure No. 2 â€” Bridge Prop .
 go to Slavery Memorial .
 go to Casey Shearer Memorial .
 go to War Memorial .
@@ -5044,7 +5044,7 @@ navigate to The Ivy Room .
 navigate to Blue Room .
 navigate to Campus Market .
 navigate to P-131317 .
-navigate to Reclining Figure No. 2 — Bridge Prop .
+navigate to Reclining Figure No. 2 â€” Bridge Prop .
 navigate to Slavery Memorial .
 navigate to Casey Shearer Memorial .
 navigate to War Memorial .
@@ -5139,7 +5139,7 @@ go to The Ivy Room .
 go to Blue Room .
 go to Campus Market .
 go to P-131317 .
-go to Reclining Figure No. 2 — Bridge Prop .
+go to Reclining Figure No. 2 â€” Bridge Prop .
 go to Slavery Memorial .
 go to Casey Shearer Memorial .
 go to War Memorial .
@@ -5234,7 +5234,7 @@ navigate to The Ivy Room .
 navigate to Blue Room .
 navigate to Campus Market .
 navigate to P-131317 .
-navigate to Reclining Figure No. 2 — Bridge Prop .
+navigate to Reclining Figure No. 2 â€” Bridge Prop .
 navigate to Slavery Memorial .
 navigate to Casey Shearer Memorial .
 navigate to War Memorial .
@@ -5329,7 +5329,7 @@ navigate to The Ivy Room .
 navigate to Blue Room .
 navigate to Campus Market .
 navigate to P-131317 .
-navigate to Reclining Figure No. 2 — Bridge Prop .
+navigate to Reclining Figure No. 2 â€” Bridge Prop .
 navigate to Slavery Memorial .
 navigate to Casey Shearer Memorial .
 navigate to War Memorial .
@@ -5424,7 +5424,7 @@ go to The Ivy Room
 go to Blue Room
 go to Campus Market
 go to P-131317
-go to Reclining Figure No. 2 — Bridge Prop
+go to Reclining Figure No. 2 â€” Bridge Prop
 go to Slavery Memorial
 go to Casey Shearer Memorial
 go to War Memorial
@@ -5519,7 +5519,7 @@ travel to The Ivy Room .
 travel to Blue Room .
 travel to Campus Market .
 travel to P-131317 .
-travel to Reclining Figure No. 2 — Bridge Prop .
+travel to Reclining Figure No. 2 â€” Bridge Prop .
 travel to Slavery Memorial .
 travel to Casey Shearer Memorial .
 travel to War Memorial .
@@ -5614,7 +5614,7 @@ go to The Ivy Room .
 go to Blue Room .
 go to Campus Market .
 go to P-131317 .
-go to Reclining Figure No. 2 — Bridge Prop .
+go to Reclining Figure No. 2 â€” Bridge Prop .
 go to Slavery Memorial .
 go to Casey Shearer Memorial .
 go to War Memorial .
@@ -5709,7 +5709,7 @@ go to The Ivy Room
 go to Blue Room
 go to Campus Market
 go to P-131317
-go to Reclining Figure No. 2 — Bridge Prop
+go to Reclining Figure No. 2 â€” Bridge Prop
 go to Slavery Memorial
 go to Casey Shearer Memorial
 go to War Memorial
@@ -5804,7 +5804,7 @@ move through landark 1 to The Ivy Room .
 move through landark 1 to Blue Room .
 move through landark 1 to Campus Market .
 move through landark 1 to P-131317 .
-move through landark 1 to Reclining Figure No. 2 — Bridge Prop .
+move through landark 1 to Reclining Figure No. 2 â€” Bridge Prop .
 move through landark 1 to Slavery Memorial .
 move through landark 1 to Casey Shearer Memorial .
 move through landark 1 to War Memorial .
@@ -5899,7 +5899,7 @@ go to The Ivy Room without changing_floors
 go to Blue Room without changing_floors
 go to Campus Market without changing_floors
 go to P-131317 without changing_floors
-go to Reclining Figure No. 2 — Bridge Prop without changing_floors
+go to Reclining Figure No. 2 â€” Bridge Prop without changing_floors
 go to Slavery Memorial without changing_floors
 go to Casey Shearer Memorial without changing_floors
 go to War Memorial without changing_floors
@@ -5994,7 +5994,7 @@ head to The Ivy Room without changing_floors .
 head to Blue Room without changing_floors .
 head to Campus Market without changing_floors .
 head to P-131317 without changing_floors .
-head to Reclining Figure No. 2 — Bridge Prop without changing_floors .
+head to Reclining Figure No. 2 â€” Bridge Prop without changing_floors .
 head to Slavery Memorial without changing_floors .
 head to Casey Shearer Memorial without changing_floors .
 head to War Memorial without changing_floors .
@@ -6089,7 +6089,7 @@ go to The Ivy Room .
 go to Blue Room .
 go to Campus Market .
 go to P-131317 .
-go to Reclining Figure No. 2 — Bridge Prop .
+go to Reclining Figure No. 2 â€” Bridge Prop .
 go to Slavery Memorial .
 go to Casey Shearer Memorial .
 go to War Memorial .
@@ -6184,7 +6184,7 @@ go to The Ivy Room without changing_floors .
 go to Blue Room without changing_floors .
 go to Campus Market without changing_floors .
 go to P-131317 without changing_floors .
-go to Reclining Figure No. 2 — Bridge Prop without changing_floors .
+go to Reclining Figure No. 2 â€” Bridge Prop without changing_floors .
 go to Slavery Memorial without changing_floors .
 go to Casey Shearer Memorial without changing_floors .
 go to War Memorial without changing_floors .
@@ -6279,7 +6279,7 @@ go to The Ivy Room while avoiding going through any other objects
 go to Blue Room while avoiding going through any other objects
 go to Campus Market while avoiding going through any other objects
 go to P-131317 while avoiding going through any other objects
-go to Reclining Figure No. 2 — Bridge Prop while avoiding going through any other objects
+go to Reclining Figure No. 2 â€” Bridge Prop while avoiding going through any other objects
 go to Slavery Memorial while avoiding going through any other objects
 go to Casey Shearer Memorial while avoiding going through any other objects
 go to War Memorial while avoiding going through any other objects
@@ -6374,7 +6374,7 @@ go directly to the The Ivy Room without changing_floors .
 go directly to the Blue Room without changing_floors .
 go directly to the Campus Market without changing_floors .
 go directly to the P-131317 without changing_floors .
-go directly to the Reclining Figure No. 2 — Bridge Prop without changing_floors .
+go directly to the Reclining Figure No. 2 â€” Bridge Prop without changing_floors .
 go directly to the Slavery Memorial without changing_floors .
 go directly to the Casey Shearer Memorial without changing_floors .
 go directly to the War Memorial without changing_floors .
@@ -6469,7 +6469,7 @@ proceed to the The Ivy Room without going to any other_floors .
 proceed to the Blue Room without going to any other_floors .
 proceed to the Campus Market without going to any other_floors .
 proceed to the P-131317 without going to any other_floors .
-proceed to the Reclining Figure No. 2 — Bridge Prop without going to any other_floors .
+proceed to the Reclining Figure No. 2 â€” Bridge Prop without going to any other_floors .
 proceed to the Slavery Memorial without going to any other_floors .
 proceed to the Casey Shearer Memorial without going to any other_floors .
 proceed to the War Memorial without going to any other_floors .
@@ -6564,7 +6564,7 @@ go to the The Ivy Room without going to another_floor .
 go to the Blue Room without going to another_floor .
 go to the Campus Market without going to another_floor .
 go to the P-131317 without going to another_floor .
-go to the Reclining Figure No. 2 — Bridge Prop without going to another_floor .
+go to the Reclining Figure No. 2 â€” Bridge Prop without going to another_floor .
 go to the Slavery Memorial without going to another_floor .
 go to the Casey Shearer Memorial without going to another_floor .
 go to the War Memorial without going to another_floor .
@@ -6659,7 +6659,7 @@ move to the The Ivy Room without changing_floors .
 move to the Blue Room without changing_floors .
 move to the Campus Market without changing_floors .
 move to the P-131317 without changing_floors .
-move to the Reclining Figure No. 2 — Bridge Prop without changing_floors .
+move to the Reclining Figure No. 2 â€” Bridge Prop without changing_floors .
 move to the Slavery Memorial without changing_floors .
 move to the Casey Shearer Memorial without changing_floors .
 move to the War Memorial without changing_floors .
@@ -6754,7 +6754,7 @@ go to the The Ivy Room .
 go to the Blue Room .
 go to the Campus Market .
 go to the P-131317 .
-go to the Reclining Figure No. 2 — Bridge Prop .
+go to the Reclining Figure No. 2 â€” Bridge Prop .
 go to the Slavery Memorial .
 go to the Casey Shearer Memorial .
 go to the War Memorial .
@@ -6849,7 +6849,7 @@ go to the The Ivy Room .
 go to the Blue Room .
 go to the Campus Market .
 go to the P-131317 .
-go to the Reclining Figure No. 2 — Bridge Prop .
+go to the Reclining Figure No. 2 â€” Bridge Prop .
 go to the Slavery Memorial .
 go to the Casey Shearer Memorial .
 go to the War Memorial .
@@ -6944,7 +6944,7 @@ head to the The Ivy Room .
 head to the Blue Room .
 head to the Campus Market .
 head to the P-131317 .
-head to the Reclining Figure No. 2 — Bridge Prop .
+head to the Reclining Figure No. 2 â€” Bridge Prop .
 head to the Slavery Memorial .
 head to the Casey Shearer Memorial .
 head to the War Memorial .
@@ -7039,7 +7039,7 @@ navigate to the The Ivy Room .
 navigate to the Blue Room .
 navigate to the Campus Market .
 navigate to the P-131317 .
-navigate to the Reclining Figure No. 2 — Bridge Prop .
+navigate to the Reclining Figure No. 2 â€” Bridge Prop .
 navigate to the Slavery Memorial .
 navigate to the Casey Shearer Memorial .
 navigate to the War Memorial .
@@ -7134,7 +7134,7 @@ move to the The Ivy Room .
 move to the Blue Room .
 move to the Campus Market .
 move to the P-131317 .
-move to the Reclining Figure No. 2 — Bridge Prop .
+move to the Reclining Figure No. 2 â€” Bridge Prop .
 move to the Slavery Memorial .
 move to the Casey Shearer Memorial .
 move to the War Memorial .
@@ -7229,7 +7229,7 @@ navigate to the The Ivy Room .
 navigate to the Blue Room .
 navigate to the Campus Market .
 navigate to the P-131317 .
-navigate to the Reclining Figure No. 2 — Bridge Prop .
+navigate to the Reclining Figure No. 2 â€” Bridge Prop .
 navigate to the Slavery Memorial .
 navigate to the Casey Shearer Memorial .
 navigate to the War Memorial .
@@ -7324,7 +7324,7 @@ navigate to the The Ivy Room .
 navigate to the Blue Room .
 navigate to the Campus Market .
 navigate to the P-131317 .
-navigate to the Reclining Figure No. 2 — Bridge Prop .
+navigate to the Reclining Figure No. 2 â€” Bridge Prop .
 navigate to the Slavery Memorial .
 navigate to the Casey Shearer Memorial .
 navigate to the War Memorial .
@@ -7419,7 +7419,7 @@ go to the The Ivy Room .
 go to the Blue Room .
 go to the Campus Market .
 go to the P-131317 .
-go to the Reclining Figure No. 2 — Bridge Prop .
+go to the Reclining Figure No. 2 â€” Bridge Prop .
 go to the Slavery Memorial .
 go to the Casey Shearer Memorial .
 go to the War Memorial .
@@ -7514,7 +7514,7 @@ move to the The Ivy Room .
 move to the Blue Room .
 move to the Campus Market .
 move to the P-131317 .
-move to the Reclining Figure No. 2 — Bridge Prop .
+move to the Reclining Figure No. 2 â€” Bridge Prop .
 move to the Slavery Memorial .
 move to the Casey Shearer Memorial .
 move to the War Memorial .
@@ -7609,7 +7609,7 @@ navigate to the The Ivy Room .
 navigate to the Blue Room .
 navigate to the Campus Market .
 navigate to the P-131317 .
-navigate to the Reclining Figure No. 2 — Bridge Prop .
+navigate to the Reclining Figure No. 2 â€” Bridge Prop .
 navigate to the Slavery Memorial .
 navigate to the Casey Shearer Memorial .
 navigate to the War Memorial .
@@ -7704,7 +7704,7 @@ proceed to the The Ivy Room .
 proceed to the Blue Room .
 proceed to the Campus Market .
 proceed to the P-131317 .
-proceed to the Reclining Figure No. 2 — Bridge Prop .
+proceed to the Reclining Figure No. 2 â€” Bridge Prop .
 proceed to the Slavery Memorial .
 proceed to the Casey Shearer Memorial .
 proceed to the War Memorial .
@@ -7799,7 +7799,7 @@ go to the The Ivy Room .
 go to the Blue Room .
 go to the Campus Market .
 go to the P-131317 .
-go to the Reclining Figure No. 2 — Bridge Prop .
+go to the Reclining Figure No. 2 â€” Bridge Prop .
 go to the Slavery Memorial .
 go to the Casey Shearer Memorial .
 go to the War Memorial .
@@ -7894,7 +7894,7 @@ go to the The Ivy Room
 go to the Blue Room
 go to the Campus Market
 go to the P-131317
-go to the Reclining Figure No. 2 — Bridge Prop
+go to the Reclining Figure No. 2 â€” Bridge Prop
 go to the Slavery Memorial
 go to the Casey Shearer Memorial
 go to the War Memorial
@@ -7989,7 +7989,7 @@ go to the The Ivy Room .
 go to the Blue Room .
 go to the Campus Market .
 go to the P-131317 .
-go to the Reclining Figure No. 2 — Bridge Prop .
+go to the Reclining Figure No. 2 â€” Bridge Prop .
 go to the Slavery Memorial .
 go to the Casey Shearer Memorial .
 go to the War Memorial .
@@ -8084,7 +8084,7 @@ navigate to the The Ivy Room .
 navigate to the Blue Room .
 navigate to the Campus Market .
 navigate to the P-131317 .
-navigate to the Reclining Figure No. 2 — Bridge Prop .
+navigate to the Reclining Figure No. 2 â€” Bridge Prop .
 navigate to the Slavery Memorial .
 navigate to the Casey Shearer Memorial .
 navigate to the War Memorial .
@@ -8179,7 +8179,7 @@ go to the The Ivy Room .
 go to the Blue Room .
 go to the Campus Market .
 go to the P-131317 .
-go to the Reclining Figure No. 2 — Bridge Prop .
+go to the Reclining Figure No. 2 â€” Bridge Prop .
 go to the Slavery Memorial .
 go to the Casey Shearer Memorial .
 go to the War Memorial .
@@ -8274,197 +8274,7 @@ go to the The Ivy Room .
 go to the Blue Room .
 go to the Campus Market .
 go to the P-131317 .
-go to the Reclining Figure No. 2 — Bridge Prop .
-go to the Slavery Memorial .
-go to the Casey Shearer Memorial .
-go to the War Memorial .
-go to the Untitled (Lamp/Bear) .
-go to the Marcus Aurelius .
-go to the Brown Bear .
-go to the Idee di pietra .
-go to the Phi Kappa Psi Fraternity .
-go to the Alpha Chi Omega Sorority .
-go to the Brown Bear .
-go to the Brown University Sciences Library .
-go to the Rockefeller Library .
-go to the College Green .
-go to the Watson Center for Information Technology .
-go to the Salomon Center for Teaching .
-go to the University Hall .
-go to the John Carter Brown Library .
-go to the Faunce House .
-go to the Slater Hall .
-go to the Manning .
-go to the Hope College .
-go to the Marston Hall .
-go to the Sayles Hall .
-go to the Friedman Hall .
-go to the Rhode Island Hall .
-go to the Lyman Hall .
-go to the John Hay Library .
-go to the BERT .
-go to the J.W. Wilson .
-go to the Maxcy Hall .
-go to the Littlefield Hall .
-go to the Hegeman .
-go to the Gardner House .
-go to the Caswell Hall .
-go to the Lincoln Field Building .
-go to the Brown Center for Students of Color .
-go to the Walter Hall .
-go to the Barus Building .
-go to the Minden Hall .
-go to the Wayland .
-go to the Arnold Laboratory .
-go to the Kassar House .
-go to the GeoChem and Macmillian Hall .
-go to the Mencoff Hall .
-go to the Sharpe Refectory .
-go to the Sears .
-go to the Metcalf Research Building .
-go to the Prince Engineering Lab .
-go to the Urban Environmental Lab .
-go to the Robinson Hall .
-go to the Lippit House .
-go to the Prospect House .
-go to the The Center for the Study of Slavery and Justice (CSSJ) .
-go to the List Art Building .
-go to the Maddock Alumni .
-go to the 86 Waterman .
-go to the 67 George .
-go to the Norwood House .
-go to the Shirley Miller House .
-go to the Saint Stephens Church .
-go to the Swearer Center for Public Service .
-go to the Horace Mann House .
-go to the Wilbour Hall .
-go to the Carrie Tower .
-go to the Citizen's Bank .
-go to the Lot 76 .
-go to the Finlandia .
-go to the Hughes Court .
-go to the William Goddard Memorial Gate .
-go to the Class of 1872 Gate .
-go to the Van Wickle Gates .
-go to the John Nicholas Brown Gate .
-go to the Robinson Gate .
-go to the Class of 1887 Gate .
-go to the Medical Research Lab .
-go to the Soldiers Memorial Gate .
-go to the Morgan Witter Rogers Gate .
-go to the Wriston Quad .
-go to the Maxcy Green .
-go to the Lot 18 .
-go to the Lot 17 .
-go to the Simmons Quadrangle .
-go to the Quite Green .
-go to the John Hay Library
-go to the Haffenreffer Museum of Anthropology
-go to the Van Wickle Gates
-go to the Starbucks
-go to the Circle Dance Sculpture
-go to the Department of Cognitive, Linguistic, and Psychological Sciences
-go to the Brown University
-go to the The Ivy Room
-go to the Blue Room
-go to the Campus Market
-go to the P-131317
-go to the Reclining Figure No. 2 — Bridge Prop
-go to the Slavery Memorial
-go to the Casey Shearer Memorial
-go to the War Memorial
-go to the Untitled (Lamp/Bear)
-go to the Marcus Aurelius
-go to the Brown Bear
-go to the Idee di pietra
-go to the Phi Kappa Psi Fraternity
-go to the Alpha Chi Omega Sorority
-go to the Brown Bear
-go to the Brown University Sciences Library
-go to the Rockefeller Library
-go to the College Green
-go to the Watson Center for Information Technology
-go to the Salomon Center for Teaching
-go to the University Hall
-go to the John Carter Brown Library
-go to the Faunce House
-go to the Slater Hall
-go to the Manning
-go to the Hope College
-go to the Marston Hall
-go to the Sayles Hall
-go to the Friedman Hall
-go to the Rhode Island Hall
-go to the Lyman Hall
-go to the John Hay Library
-go to the BERT
-go to the J.W. Wilson
-go to the Maxcy Hall
-go to the Littlefield Hall
-go to the Hegeman
-go to the Gardner House
-go to the Caswell Hall
-go to the Lincoln Field Building
-go to the Brown Center for Students of Color
-go to the Walter Hall
-go to the Barus Building
-go to the Minden Hall
-go to the Wayland
-go to the Arnold Laboratory
-go to the Kassar House
-go to the GeoChem and Macmillian Hall
-go to the Mencoff Hall
-go to the Sharpe Refectory
-go to the Sears
-go to the Metcalf Research Building
-go to the Prince Engineering Lab
-go to the Urban Environmental Lab
-go to the Robinson Hall
-go to the Lippit House
-go to the Prospect House
-go to the The Center for the Study of Slavery and Justice (CSSJ)
-go to the List Art Building
-go to the Maddock Alumni
-go to the 86 Waterman
-go to the 67 George
-go to the Norwood House
-go to the Shirley Miller House
-go to the Saint Stephens Church
-go to the Swearer Center for Public Service
-go to the Horace Mann House
-go to the Wilbour Hall
-go to the Carrie Tower
-go to the Citizen's Bank
-go to the Lot 76
-go to the Finlandia
-go to the Hughes Court
-go to the William Goddard Memorial Gate
-go to the Class of 1872 Gate
-go to the Van Wickle Gates
-go to the John Nicholas Brown Gate
-go to the Robinson Gate
-go to the Class of 1887 Gate
-go to the Medical Research Lab
-go to the Soldiers Memorial Gate
-go to the Morgan Witter Rogers Gate
-go to the Wriston Quad
-go to the Maxcy Green
-go to the Lot 18
-go to the Lot 17
-go to the Simmons Quadrangle
-go to the Quite Green
-go to the John Hay Library .
-go to the Haffenreffer Museum of Anthropology .
-go to the Van Wickle Gates .
-go to the Starbucks .
-go to the Circle Dance Sculpture .
-go to the Department of Cognitive, Linguistic, and Psychological Sciences .
-go to the Brown University .
-go to the The Ivy Room .
-go to the Blue Room .
-go to the Campus Market .
-go to the P-131317 .
-go to the Reclining Figure No. 2 — Bridge Prop .
+go to the Reclining Figure No. 2 â€” Bridge Prop .
 go to the Slavery Memorial .
 go to the Casey Shearer Memorial .
 go to the War Memorial .
@@ -8559,7 +8369,7 @@ go to the The Ivy Room
 go to the Blue Room
 go to the Campus Market
 go to the P-131317
-go to the Reclining Figure No. 2 — Bridge Prop
+go to the Reclining Figure No. 2 â€” Bridge Prop
 go to the Slavery Memorial
 go to the Casey Shearer Memorial
 go to the War Memorial
@@ -8654,7 +8464,197 @@ go to the The Ivy Room .
 go to the Blue Room .
 go to the Campus Market .
 go to the P-131317 .
-go to the Reclining Figure No. 2 — Bridge Prop .
+go to the Reclining Figure No. 2 â€” Bridge Prop .
+go to the Slavery Memorial .
+go to the Casey Shearer Memorial .
+go to the War Memorial .
+go to the Untitled (Lamp/Bear) .
+go to the Marcus Aurelius .
+go to the Brown Bear .
+go to the Idee di pietra .
+go to the Phi Kappa Psi Fraternity .
+go to the Alpha Chi Omega Sorority .
+go to the Brown Bear .
+go to the Brown University Sciences Library .
+go to the Rockefeller Library .
+go to the College Green .
+go to the Watson Center for Information Technology .
+go to the Salomon Center for Teaching .
+go to the University Hall .
+go to the John Carter Brown Library .
+go to the Faunce House .
+go to the Slater Hall .
+go to the Manning .
+go to the Hope College .
+go to the Marston Hall .
+go to the Sayles Hall .
+go to the Friedman Hall .
+go to the Rhode Island Hall .
+go to the Lyman Hall .
+go to the John Hay Library .
+go to the BERT .
+go to the J.W. Wilson .
+go to the Maxcy Hall .
+go to the Littlefield Hall .
+go to the Hegeman .
+go to the Gardner House .
+go to the Caswell Hall .
+go to the Lincoln Field Building .
+go to the Brown Center for Students of Color .
+go to the Walter Hall .
+go to the Barus Building .
+go to the Minden Hall .
+go to the Wayland .
+go to the Arnold Laboratory .
+go to the Kassar House .
+go to the GeoChem and Macmillian Hall .
+go to the Mencoff Hall .
+go to the Sharpe Refectory .
+go to the Sears .
+go to the Metcalf Research Building .
+go to the Prince Engineering Lab .
+go to the Urban Environmental Lab .
+go to the Robinson Hall .
+go to the Lippit House .
+go to the Prospect House .
+go to the The Center for the Study of Slavery and Justice (CSSJ) .
+go to the List Art Building .
+go to the Maddock Alumni .
+go to the 86 Waterman .
+go to the 67 George .
+go to the Norwood House .
+go to the Shirley Miller House .
+go to the Saint Stephens Church .
+go to the Swearer Center for Public Service .
+go to the Horace Mann House .
+go to the Wilbour Hall .
+go to the Carrie Tower .
+go to the Citizen's Bank .
+go to the Lot 76 .
+go to the Finlandia .
+go to the Hughes Court .
+go to the William Goddard Memorial Gate .
+go to the Class of 1872 Gate .
+go to the Van Wickle Gates .
+go to the John Nicholas Brown Gate .
+go to the Robinson Gate .
+go to the Class of 1887 Gate .
+go to the Medical Research Lab .
+go to the Soldiers Memorial Gate .
+go to the Morgan Witter Rogers Gate .
+go to the Wriston Quad .
+go to the Maxcy Green .
+go to the Lot 18 .
+go to the Lot 17 .
+go to the Simmons Quadrangle .
+go to the Quite Green .
+go to the John Hay Library
+go to the Haffenreffer Museum of Anthropology
+go to the Van Wickle Gates
+go to the Starbucks
+go to the Circle Dance Sculpture
+go to the Department of Cognitive, Linguistic, and Psychological Sciences
+go to the Brown University
+go to the The Ivy Room
+go to the Blue Room
+go to the Campus Market
+go to the P-131317
+go to the Reclining Figure No. 2 â€” Bridge Prop
+go to the Slavery Memorial
+go to the Casey Shearer Memorial
+go to the War Memorial
+go to the Untitled (Lamp/Bear)
+go to the Marcus Aurelius
+go to the Brown Bear
+go to the Idee di pietra
+go to the Phi Kappa Psi Fraternity
+go to the Alpha Chi Omega Sorority
+go to the Brown Bear
+go to the Brown University Sciences Library
+go to the Rockefeller Library
+go to the College Green
+go to the Watson Center for Information Technology
+go to the Salomon Center for Teaching
+go to the University Hall
+go to the John Carter Brown Library
+go to the Faunce House
+go to the Slater Hall
+go to the Manning
+go to the Hope College
+go to the Marston Hall
+go to the Sayles Hall
+go to the Friedman Hall
+go to the Rhode Island Hall
+go to the Lyman Hall
+go to the John Hay Library
+go to the BERT
+go to the J.W. Wilson
+go to the Maxcy Hall
+go to the Littlefield Hall
+go to the Hegeman
+go to the Gardner House
+go to the Caswell Hall
+go to the Lincoln Field Building
+go to the Brown Center for Students of Color
+go to the Walter Hall
+go to the Barus Building
+go to the Minden Hall
+go to the Wayland
+go to the Arnold Laboratory
+go to the Kassar House
+go to the GeoChem and Macmillian Hall
+go to the Mencoff Hall
+go to the Sharpe Refectory
+go to the Sears
+go to the Metcalf Research Building
+go to the Prince Engineering Lab
+go to the Urban Environmental Lab
+go to the Robinson Hall
+go to the Lippit House
+go to the Prospect House
+go to the The Center for the Study of Slavery and Justice (CSSJ)
+go to the List Art Building
+go to the Maddock Alumni
+go to the 86 Waterman
+go to the 67 George
+go to the Norwood House
+go to the Shirley Miller House
+go to the Saint Stephens Church
+go to the Swearer Center for Public Service
+go to the Horace Mann House
+go to the Wilbour Hall
+go to the Carrie Tower
+go to the Citizen's Bank
+go to the Lot 76
+go to the Finlandia
+go to the Hughes Court
+go to the William Goddard Memorial Gate
+go to the Class of 1872 Gate
+go to the Van Wickle Gates
+go to the John Nicholas Brown Gate
+go to the Robinson Gate
+go to the Class of 1887 Gate
+go to the Medical Research Lab
+go to the Soldiers Memorial Gate
+go to the Morgan Witter Rogers Gate
+go to the Wriston Quad
+go to the Maxcy Green
+go to the Lot 18
+go to the Lot 17
+go to the Simmons Quadrangle
+go to the Quite Green
+go to the John Hay Library .
+go to the Haffenreffer Museum of Anthropology .
+go to the Van Wickle Gates .
+go to the Starbucks .
+go to the Circle Dance Sculpture .
+go to the Department of Cognitive, Linguistic, and Psychological Sciences .
+go to the Brown University .
+go to the The Ivy Room .
+go to the Blue Room .
+go to the Campus Market .
+go to the P-131317 .
+go to the Reclining Figure No. 2 â€” Bridge Prop .
 go to the Slavery Memorial .
 go to the Casey Shearer Memorial .
 go to the War Memorial .
@@ -8749,7 +8749,7 @@ go to the The Ivy Room .
 go to the Blue Room .
 go to the Campus Market .
 go to the P-131317 .
-go to the Reclining Figure No. 2 — Bridge Prop .
+go to the Reclining Figure No. 2 â€” Bridge Prop .
 go to the Slavery Memorial .
 go to the Casey Shearer Memorial .
 go to the War Memorial .
@@ -8844,7 +8844,7 @@ move to the The Ivy Room .
 move to the Blue Room .
 move to the Campus Market .
 move to the P-131317 .
-move to the Reclining Figure No. 2 — Bridge Prop .
+move to the Reclining Figure No. 2 â€” Bridge Prop .
 move to the Slavery Memorial .
 move to the Casey Shearer Memorial .
 move to the War Memorial .
@@ -8939,7 +8939,7 @@ go to the The Ivy Room .
 go to the Blue Room .
 go to the Campus Market .
 go to the P-131317 .
-go to the Reclining Figure No. 2 — Bridge Prop .
+go to the Reclining Figure No. 2 â€” Bridge Prop .
 go to the Slavery Memorial .
 go to the Casey Shearer Memorial .
 go to the War Memorial .
@@ -9034,7 +9034,7 @@ navigate to the The Ivy Room .
 navigate to the Blue Room .
 navigate to the Campus Market .
 navigate to the P-131317 .
-navigate to the Reclining Figure No. 2 — Bridge Prop .
+navigate to the Reclining Figure No. 2 â€” Bridge Prop .
 navigate to the Slavery Memorial .
 navigate to the Casey Shearer Memorial .
 navigate to the War Memorial .
@@ -9129,7 +9129,7 @@ go to the The Ivy Room .
 go to the Blue Room .
 go to the Campus Market .
 go to the P-131317 .
-go to the Reclining Figure No. 2 — Bridge Prop .
+go to the Reclining Figure No. 2 â€” Bridge Prop .
 go to the Slavery Memorial .
 go to the Casey Shearer Memorial .
 go to the War Memorial .
@@ -9224,7 +9224,7 @@ navigate to the The Ivy Room .
 navigate to the Blue Room .
 navigate to the Campus Market .
 navigate to the P-131317 .
-navigate to the Reclining Figure No. 2 — Bridge Prop .
+navigate to the Reclining Figure No. 2 â€” Bridge Prop .
 navigate to the Slavery Memorial .
 navigate to the Casey Shearer Memorial .
 navigate to the War Memorial .
@@ -9319,7 +9319,7 @@ robot , go to the The Ivy Room .
 robot , go to the Blue Room .
 robot , go to the Campus Market .
 robot , go to the P-131317 .
-robot , go to the Reclining Figure No. 2 — Bridge Prop .
+robot , go to the Reclining Figure No. 2 â€” Bridge Prop .
 robot , go to the Slavery Memorial .
 robot , go to the Casey Shearer Memorial .
 robot , go to the War Memorial .
@@ -9414,7 +9414,7 @@ avoid the The Ivy Room
 avoid the Blue Room
 avoid the Campus Market
 avoid the P-131317
-avoid the Reclining Figure No. 2 — Bridge Prop
+avoid the Reclining Figure No. 2 â€” Bridge Prop
 avoid the Slavery Memorial
 avoid the Casey Shearer Memorial
 avoid the War Memorial
@@ -9509,7 +9509,7 @@ always pass The Ivy Room to get to level 1 .
 always pass Blue Room to get to level 1 .
 always pass Campus Market to get to level 1 .
 always pass P-131317 to get to level 1 .
-always pass Reclining Figure No. 2 — Bridge Prop to get to level 1 .
+always pass Reclining Figure No. 2 â€” Bridge Prop to get to level 1 .
 always pass Slavery Memorial to get to level 1 .
 always pass Casey Shearer Memorial to get to level 1 .
 always pass War Memorial to get to level 1 .
