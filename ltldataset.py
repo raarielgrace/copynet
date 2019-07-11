@@ -36,8 +36,8 @@ class Language(object):
 class SequencePairDataset(Dataset):
     #src_data_path='./data/hard_pc_src_syn2.txt'
     #tgt_data_path='./data/hard_pc_tar_syn2.txt'
-    src_data_path='./data/north_one_lm_src.txt'
-    tgt_data_path='./data/north_one_lm_tar.txt'
+    src_data_path='./data/south_one_lm_src.txt'
+    tgt_data_path='./data/south_one_lm_tar.txt'
 
     with open(src_data_path, "r") as sf:
         src_lines = sf.readlines()
@@ -64,7 +64,7 @@ class SequencePairDataset(Dataset):
                  is_val=False,
                  is_test=False,
                  use_cuda=False,
-                 use_extended_vocab=True
+                 use_extended_vocab=True,
                  data_substitute=None):
 
         self.maxlen = maxlen
@@ -77,10 +77,10 @@ class SequencePairDataset(Dataset):
         self.use_extended_vocab = use_extended_vocab
 
         if not data_substitute == None:
-            with open('./data/' + data_substitute + 'src.txt', "r") as sf:
+            with open('./data/' + data_substitute + '_src.txt', "r") as sf:
                 src_lines = sf.readlines()
 
-            with open('./data/' + data_substitute + 'tar.txt', "r") as tf:
+            with open('./data/' + data_substitute + '_tar.txt', "r") as tf:
                 tgt_lines = tf.readlines()
 
             if not len(src_lines) == len(tgt_lines):
@@ -98,8 +98,8 @@ class SequencePairDataset(Dataset):
         for i in range(len(src_lines)):
             inputs = src_lines[i]
             outputs = tgt_lines[i]
-            inputsL = inputs.split(' ')
-            outputsL = outputs.split(' ')
+            inputsL = inputs.replace('\n', '').split(' ')
+            outputsL = outputs.replace('\n', '').split(' ')
             self.data.append([inputsL, outputsL])
 
         if lang is None:
@@ -124,9 +124,6 @@ class SequencePairDataset(Dataset):
 
         input_token_list = (['<SOS>'] + data_pair[0] + ['<EOS>'])[:self.maxlen]
         output_token_list = (['<SOS>'] + data_pair[1] + ['<EOS>'])[:self.maxlen]
-        #print(input_token_list)
-        #print(output_token_list)
-
         input_seq = tokens_to_seq(input_token_list, self.lang.tok_to_idx, self.maxlen, self.use_extended_vocab)
         output_seq = tokens_to_seq(output_token_list, self.lang.tok_to_idx, self.maxlen, self.use_extended_vocab, input_tokens=input_token_list)
 

@@ -47,7 +47,7 @@ def to_one_hot(y, n_dims=None):
     return Variable(y_one_hot) if isinstance(y, Variable) else y_one_hot
 
 
-def tokens_to_seq(tokens, tok_to_idx, max_length, use_extended_vocab, input_tokens=None, ):
+def tokens_to_seq(tokens, tok_to_idx, max_length, use_extended_vocab, input_tokens=None):
     seq = torch.zeros(max_length).long()
     tok_to_idx_extension = dict()
 
@@ -63,7 +63,6 @@ def tokens_to_seq(tokens, tok_to_idx, max_length, use_extended_vocab, input_toke
             # find the position of the first occurance of the token in the input sequence
             # the token index in the output sequence is size of the vocab plus the position in the input sequence.
             # If the token cannot be found in the input sequence use the unknown token.
-
             tok_to_idx_extension[token] = tok_to_idx_extension.get(token,
                                  next((pos + len(tok_to_idx)
                                        for pos, input_token in enumerate(input_tokens)

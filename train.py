@@ -104,10 +104,10 @@ def train(encoder_decoder: EncoderDecoder,
 
             global_step += 1
 
-        val_loss, val_bleu_score = evaluate(encoder_decoder, val_data_loader)
+        #val_loss, val_bleu_score = evaluate(encoder_decoder, val_data_loader)
 
-        writer.add_scalar('val_loss', val_loss, global_step=global_step)
-        writer.add_scalar('val_bleu_score', val_bleu_score, global_step=global_step)
+        #writer.add_scalar('val_loss', val_loss, global_step=global_step)
+        #writer.add_scalar('val_bleu_score', val_bleu_score, global_step=global_step)
 
         encoder_embeddings = encoder_decoder.encoder.embedding.weight.data
         encoder_vocab = encoder_decoder.lang.tok_to_idx.keys()
@@ -128,7 +128,7 @@ def train(encoder_decoder: EncoderDecoder,
         '''
 
         print('training accuracy %.5f' % (100.0 * (correct_predictions / all_predictions)))
-        print('val loss: %.5f, val BLEU score: %.5f' % (val_loss, val_bleu_score), flush=True)
+        #print('val loss: %.5f, val BLEU score: %.5f' % (val_loss, val_bleu_score), flush=True)
         torch.save(encoder_decoder, "%s%s_%i.pt" % (model_path, model_name, epoch))
         trained_model = encoder_decoder
 
@@ -170,13 +170,17 @@ def test(encoder_decoder: EncoderDecoder, test_data_loader: DataLoader, max_leng
 
             if y_i == tgt_i:
                 correct_predictions += 1.0
+            #else:
+                #print("INCORRECT SEQUENCE: {} ".format([encoder_decoder.lang.idx_to_tok[n] if n in encoder_decoder.lang.idx_to_tok else n for n in y_i]))
+                #print("CORRECT SEQUENCE: {}".format([encoder_decoder.lang.idx_to_tok[n] if n in encoder_decoder.lang.idx_to_tok else n for n in tgt_i]))
+                #print("---------------------------------------------------------------------------------------")
 
             all_predictions += 1.0
 
     print('TESTING ACCURACY %.5f' % (100.0 * (correct_predictions / all_predictions)))
 
 
-def main(model_name, use_cuda, batch_size, teacher_forcing_schedule, keep_prob, val_size, lr, decoder_type, vocab_limit, hidden_size, embedding_size, max_length, test_data_substitute, seed=42):
+def main(model_name, use_cuda, batch_size, teacher_forcing_schedule, keep_prob, val_size, lr, decoder_type, vocab_limit, hidden_size, embedding_size, max_length, save_lang, test_data_substitute, seed=42):
 
     model_path = './model/' + model_name + '/'
 
@@ -324,7 +328,7 @@ if __name__ == '__main__':
     parser.add_argument('--save_lang', action='store_true',
                         help='Flag to save the training vocabulary to a pkl file.')
 
-    parser.add_argument('--test_data_substitute', type=str, default=None
+    parser.add_argument('--test_data_substitute', type=str, default=None,
                         help='The data to use instead of the training data. Should be of the form /data/[name]_src/tar.txt')
 
     args = parser.parse_args()
