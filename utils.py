@@ -3,12 +3,21 @@ import torch
 from torch.autograd import Variable
 from abc import ABC
 from torch import nn
+import bcolz
+import pickle
 
 
 class DecoderBase(ABC, nn.Module):
     def forward(self, encoder_outputs, inputs, final_encoder_hidden, targets=None, teacher_forcing=1.0):
         raise NotImplementedError
 
+def get_glove():
+    vectors = bcolz.open('data/glove.6B.50.dat')[:]
+    words = pickle.load(open('data/glove.6B.50_words.pkl', 'rb'))
+    word2idx = pickle.load(open('data/glove.6B.50_idx.pkl', 'rb'))
+
+    glove = {w: vectors[word2idx[w]] for w in words}
+    return glove
 
 def to_np(x):
     return x.data.cpu().numpy()

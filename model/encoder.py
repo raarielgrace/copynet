@@ -1,16 +1,28 @@
 import torch
 from torch import nn
 from torch.autograd import Variable
+import numpy as np
 
 
 class EncoderRNN(nn.Module):
-    def __init__(self, input_size, hidden_size, embedding_size):
+    def __init__(self, input_size, hidden_size, embedding_size, init_weight_dict=None, vocab_to_idx=None):
         super(EncoderRNN, self).__init__()
         self.hidden_size = hidden_size
         self.embedding_size = embedding_size
 
         self.embedding = nn.Embedding(input_size, self.embedding_size)
-        self.embedding.weight.data.normal_(0, 1 / self.embedding_size**0.5)
+
+        if not init_weight_dict == None:
+            weights_matrix = np.zeros((input_size, embedding_size))
+            for word in vocab_to_idx.keys():
+                try:
+                    weights_matrix[vocab_to_idx[word]] = init_weight_dict[word]
+                except KeyError:
+                    weights_matrix[vocab_to_idx[word]] = np.random.normal(scale=0.6, size=(embedding_size, ))
+            self.embedding.load_state_dict({'weight': torch.from_numpy(weights_matrix)})
+        else:
+            self.embedding.weight.data.normal_(0, 1 / self.embedding_size**0.5)
+        
         self.gru = nn.GRU(embedding_size, hidden_size, bidirectional=True, batch_first=True)
 
     def forward(self, iput, hidden, lengths):

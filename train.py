@@ -11,7 +11,7 @@ from torch.utils.data import DataLoader
 from ltldataset import SequencePairDataset
 from model.encoder_decoder import EncoderDecoder
 from evaluate import evaluate
-from utils import to_np, trim_seqs
+from utils import to_np, trim_seqs, get_glove
 
 from tensorboardX import SummaryWriter
 from tqdm import tqdm
@@ -190,6 +190,7 @@ def main(model_name, use_cuda, batch_size, teacher_forcing_schedule, keep_prob, 
     print("teacher_forcing_schedule=", teacher_forcing_schedule, flush=True)
     print("keep_prob=%f, val_size=%f, lr=%f, decoder_type=%s, vocab_limit=%i, hidden_size=%i, embedding_size=%i, max_length=%i, seed=%i" % (keep_prob, val_size, lr, decoder_type, vocab_limit, hidden_size, embedding_size, max_length, seed), flush=True)
 
+    glove = get_glove()
     if os.path.isdir(model_path):
 
         print("loading encoder and decoder from model_path", flush=True)
@@ -249,9 +250,10 @@ def main(model_name, use_cuda, batch_size, teacher_forcing_schedule, keep_prob, 
         print("creating encoder-decoder model", flush=True)
         encoder_decoder = EncoderDecoder(train_dataset.lang,
                                          max_length,
-                                         embedding_size,
                                          hidden_size,
-                                         decoder_type)
+                                         embedding_size,
+                                         decoder_type,
+                                         glove)
 
         torch.save(encoder_decoder, model_path + '/%s.pt' % model_name)
 

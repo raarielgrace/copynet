@@ -8,14 +8,20 @@ from torch.autograd import Variable
 
 
 class EncoderDecoder(nn.Module):
-    def __init__(self, lang, max_length, hidden_size, embedding_size, decoder_type):
+    def __init__(self, lang, max_length, hidden_size, embedding_size, decoder_type, init_weight_dict=None):
         super(EncoderDecoder, self).__init__()
 
         self.lang = lang
-
-        self.encoder = EncoderRNN(len(self.lang.tok_to_idx),
-                                  hidden_size,
-                                  embedding_size)
+        if not init_weight_dict == None:
+            self.encoder = EncoderRNN(len(self.lang.tok_to_idx),
+                                      hidden_size,
+                                      embedding_size,
+                                      init_weight_dict,
+                                      self.lang.tok_to_idx)
+        else:
+            self.encoder = EncoderRNN(len(self.lang.tok_to_idx),
+                                      hidden_size,
+                                      embedding_size)
         self.decoder_type = decoder_type
         decoder_hidden_size = 2 * self.encoder.hidden_size
         if self.decoder_type == 'attn':
