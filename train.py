@@ -5,10 +5,12 @@ import numpy as np
 
 import torch
 from torch import optim
-from torch.autograd import Variable
+#from torch.autograd import Variable
 from torch.utils.data import DataLoader
+from torch import nn
 
 from ltldataset import SequencePairDataset
+#from mjcdataset import SequencePairDataset
 from model.encoder_decoder import EncoderDecoder
 from evaluate import evaluate
 from utils import to_np, trim_seqs, get_glove
@@ -17,7 +19,7 @@ from tensorboardX import SummaryWriter
 from tqdm import tqdm
 from nltk.translate.bleu_score import corpus_bleu, SmoothingFunction
 
-torch.backends.cudnn.enabled = False
+#torch.backends.cudnn.enabled = False
 
 def train(encoder_decoder: EncoderDecoder,
           train_data_loader: DataLoader,
@@ -26,7 +28,8 @@ def train(encoder_decoder: EncoderDecoder,
           keep_prob,
           teacher_forcing_schedule,
           lr,
-          max_length):
+          max_length,
+          device):
 
     global_step = 0
     loss_function = torch.nn.NLLLoss(ignore_index=0)
@@ -46,8 +49,10 @@ def train(encoder_decoder: EncoderDecoder,
             lengths = (input_idxs != 0).long().sum(dim=1)
             sorted_lengths, order = torch.sort(lengths, descending=True)
 
-            input_variable = Variable(input_idxs[order, :][:, :max(lengths)])
-            target_variable = Variable(target_idxs[order, :])
+            input_variable = input_idxs[order, :][:, :max(lengths)]
+            input_variable = input_variable.to(device)
+            target_variable = target_idxs[order, :]
+            target_variable = target_variable.to(device)
 
             optimizer.zero_grad()
             output_log_probs, output_seqs = encoder_decoder(input_variable,
@@ -136,7 +141,7 @@ def train(encoder_decoder: EncoderDecoder,
 
     return trained_model
 
-def test(encoder_decoder: EncoderDecoder, test_data_loader: DataLoader, max_length):
+def test(encoder_decoder: EncoderDecoder, test_data_loader: DataLoader, max_length, device):
 
     correct_predictions = 0.0
     all_predictions = 0.0
@@ -147,8 +152,10 @@ def test(encoder_decoder: EncoderDecoder, test_data_loader: DataLoader, max_leng
         lengths = (input_idxs != 0).long().sum(dim=1)
         sorted_lengths, order = torch.sort(lengths, descending=True)
 
-        input_variable = Variable(input_idxs[order, :][:, :max(lengths)])
-        target_variable = Variable(target_idxs[order, :])
+        input_variable = input_idxs[order, :][:, :max(lengths)]
+        input_variable = input_variable.to(device)
+        target_variable = target_idxs[order, :]
+        target_variable = target_variable.to(device)
 
         output_log_probs, output_seqs = encoder_decoder(input_variable,
                                                         list(sorted_lengths),
@@ -253,16 +260,20 @@ def main(model_name, use_cuda, batch_size, teacher_forcing_schedule, keep_prob, 
                                          hidden_size,
                                          embedding_size,
                                          decoder_type,
-                                         glove)
+                                         glove,
+                                         device)
 
         torch.save(encoder_decoder, model_path + '/%s.pt' % model_name)
 
-    if use_cuda:
-        encoder_decoder = encoder_decoder.cuda()
-    else:
-        encoder_decoder = encoder_decoder.cpu()
+    # CHANGE 2
+    # #########################
+    # if use_cuda and torch.cuda.device_count() > 1:
+    #     print("Using ", torch.cuda.device_count(), " GPUs.")
+    #     encoder_decoder = nn.DataParallel(encoder_decoder)
+    encoder_decoder = encoder_decoder.to(device)
+    #########################
 
-    train_data_loader = DataLoader(train_dataset, batch_size=batch_size, shuffle=True)
+    train_data_loader = DataLoader(train_dataset, batch_size=batch_size, shuffle=True, num_workers=12)
     val_data_loader = DataLoader(val_dataset, batch_size=batch_size)
     test_data_loader = DataLoader(test_dataset, batch_size=batch_size)
 
@@ -273,9 +284,10 @@ def main(model_name, use_cuda, batch_size, teacher_forcing_schedule, keep_prob, 
           keep_prob,
           teacher_forcing_schedule,
           lr,
-          encoder_decoder.decoder.max_length)
+          encoder_decoder.decoder.max_length,
+          device)
 
-    test(trained_model, test_data_loader, encoder_decoder.decoder.max_length)
+    test(trained_model, test_data_loader, encoder_decoder.decoder.max_length, device)
 
 
 if __name__ == '__main__':
@@ -341,5 +353,13 @@ if __name__ == '__main__':
     else:
         schedule = np.ones(args.epochs) * args.teacher_forcing_fraction
 
-    main(args.model_name, args.use_cuda, args.batch_size, schedule, args.keep_prob, args.val_size, args.lr, args.decoder_type, args.vocab_limit, args.hidden_size, args.embedding_size, args.max_length, args.save_lang, args.test_data_substitute)
-    # main(str(int(time.time())), args.use_cuda, args.batch_size, schedule, args.keep_prob, args.val_size, args.lr, args.decoder_type, args.vocab_limit, args.hidden_size, args.embedding_size, args.max_length)
+    # CHANGE 1
+    #########################
+    device = None
+    if args.use_cuda and torch.cuda.is_available():
+        device = torch.device('cuda')
+    else:
+        device = torch.device('cpu')
+    print("device is: ", device)
+
+    main(args.model_name, args.use_cuda, args.batch_size, schedule, args.keep_prob, args.val_size, args.lr, args.decoder_type, args.vocab_limit, args.hidden_size, args.embedding_size, args.max_length, args.save_lang, args.test_data_substitute, device)

@@ -52,6 +52,7 @@ class SequencePairDataset(Dataset):
                  is_val=False,
                  is_test=False,
                  use_cuda=False,
+                 save_lang=False,
                  use_extended_vocab=True):
 
         self.maxlen = maxlen
@@ -103,9 +104,5 @@ class SequencePairDataset(Dataset):
 
         input_seq = tokens_to_seq(input_token_list, self.lang.tok_to_idx, self.maxlen, self.use_extended_vocab)
         output_seq = tokens_to_seq(output_token_list, self.lang.tok_to_idx, self.maxlen, self.use_extended_vocab, input_tokens=input_token_list)
-
-        if self.use_cuda:
-            input_seq = input_seq.cuda()
-            output_seq = output_seq.cuda()
 
         return input_seq, output_seq, ' '.join(input_token_list), ' '.join(output_token_list)

@@ -7,38 +7,33 @@ from utils import DecoderBase
 
 
 class AttentionDecoder(DecoderBase):
-    def __init__(self, hidden_size, embedding_size, lang: Language, max_length):
+    def __init__(self, hidden_size, embedding_size, lang: Language, max_length, device):
         super(AttentionDecoder, self).__init__()
+        self.device = device
         self.hidden_size = hidden_size
         self.embedding_size = embedding_size
         self.lang = lang
         self.max_length = max_length
 
-        self.embedding = nn.Embedding(len(lang.tok_to_idx), self.embedding_size, padding_idx=0)
+        self.embedding = nn.Embedding(len(lang.tok_to_idx), self.embedding_size, padding_idx=0).to(self.device)
         self.embedding.weight.data.normal_(0, 1 / self.embedding_size**0.5)
         self.embedding.weight.data[0, :] = 0.0
 
-        self.attn_W = nn.Linear(self.hidden_size, self.hidden_size)
-        self.gru = nn.GRU(self.hidden_size + self.embedding_size, self.hidden_size, batch_first=True)
-        self.out = nn.Linear(self.hidden_size, len(lang.tok_to_idx))
+        self.attn_W = nn.Linear(self.hidden_size, self.hidden_size).to(self.device)
+        self.gru = nn.GRU(self.hidden_size + self.embedding_size, self.hidden_size, batch_first=True).to(self.device)
+        self.out = nn.Linear(self.hidden_size, len(lang.tok_to_idx)).to(self.device)
 
     def forward(self, encoder_outputs, inputs, final_encoder_hidden, targets=None, keep_prob=1.0, teacher_forcing=0.0):
         batch_size = encoder_outputs.data.shape[0]
 
-        hidden = Variable(torch.zeros(1, batch_size, self.hidden_size))  # overwrite the encoder hidden state with zeros
-        if next(self.parameters()).is_cuda:
-            hidden = hidden.cuda()
-        else:
-            hidden = hidden
+        hidden = Variable(torch.zeros(1, batch_size, self.hidden_size)).to(self.device)  # overwrite the encoder hidden state with zeros
 
         # every decoder output seq starts with <SOS>
-        sos_output = Variable(torch.zeros((batch_size, self.embedding.num_embeddings)))
+        sos_output = torch.zeros((batch_size, self.embedding.num_embeddings))
         sos_output[:, 1] = 1.0  # index 1 is the <SOS> token, one-hot encoding
-        sos_idx = Variable(torch.ones((batch_size, 1)).long())
-
-        if next(self.parameters()).is_cuda:
-            sos_output = sos_output.cuda()
-            sos_idx = sos_idx.cuda()
+        sampled_idx = torch.ones((batch_size, 1)).long()
+        sos_output = sos_output.to(self.device)
+        sampled_idx = sampled_idx.to(self.device)
 
         decoder_outputs = [sos_output]
         sampled_idxs = [sos_idx]
@@ -47,15 +42,14 @@ class AttentionDecoder(DecoderBase):
 
         dropout_mask = torch.rand(batch_size, 1, self.hidden_size + self.embedding.embedding_dim)
         dropout_mask = dropout_mask <= keep_prob
-        dropout_mask = Variable(dropout_mask).float() / keep_prob
+        dropout_mask = dropout_mask.float() / keep_prob
 
         for step_idx in range(1, self.max_length):
 
             if targets is not None and teacher_forcing > 0.0:
                 # replace some inputs with the targets (i.e. teacher forcing)
-                teacher_forcing_mask = Variable((torch.rand((batch_size, 1)) <= teacher_forcing), requires_grad=False)
-                if next(self.parameters()).is_cuda:
-                    teacher_forcing_mask = teacher_forcing_mask.cuda()
+                teacher_forcing_mask = (torch.rand((batch_size, 1)) < teacher_forcing)
+                teacher_forcing_mask = teacher_forcing_mask.to(self.device)
                 iput = iput.masked_scatter(teacher_forcing_mask, targets[:, step_idx-1:step_idx])
 
             output, hidden = self.step(iput, hidden, encoder_outputs, dropout_mask=dropout_mask)
@@ -89,8 +83,7 @@ class AttentionDecoder(DecoderBase):
 
         rnn_input = torch.cat((context, embedded), dim=2)
         if dropout_mask is not None:
-            if next(self.parameters()).is_cuda:
-                dropout_mask = dropout_mask.cuda()
+            dropout_mask = dropout_mask.to(self.device)
             rnn_input *= dropout_mask
 
         output, hidden = self.gru(rnn_input, prev_hidden)
@@ -101,8 +94,5 @@ class AttentionDecoder(DecoderBase):
         return output, hidden
 
     def init_hidden(self, batch_size):
-        result = Variable(torch.zeros(1, batch_size, self.hidden_size))
-        if next(self.parameters()).is_cuda:
-            return result.cuda()
-        else:
-            return result
+        result = torch.zeros(1, batch_size, self.hidden_size).to(self.device)
+        return result

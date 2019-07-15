@@ -1,44 +1,40 @@
 import torch
 from torch import nn
-from torch.autograd import Variable
+#from torch.autograd import Variable
 import torch.nn.functional as F
 from dataset import Language
 from utils import to_one_hot, DecoderBase
 
 
 class CopyNetDecoder(DecoderBase):
-    def __init__(self, hidden_size, embedding_size, lang: Language, max_length):
+    def __init__(self, hidden_size, embedding_size, lang: Language, max_length, device):
         super(CopyNetDecoder, self).__init__()
+        self.device = device
         self.hidden_size = hidden_size
         self.embedding_size = embedding_size
         self.lang = lang
         self.max_length = max_length
-        self.embedding = nn.Embedding(len(self.lang.tok_to_idx), self.embedding_size, padding_idx=0)
+        self.embedding = nn.Embedding(len(self.lang.tok_to_idx), self.embedding_size, padding_idx=0).to(self.device)
         self.embedding.weight.data.normal_(0, 1 / self.embedding_size**0.5)
         self.embedding.weight.data[0, :] = 0.0
 
-        self.attn_W = nn.Linear(self.hidden_size, self.hidden_size)
-        self.copy_W = nn.Linear(self.hidden_size, self.hidden_size)
+        self.attn_W = nn.Linear(self.hidden_size, self.hidden_size).to(self.device)
+        self.copy_W = nn.Linear(self.hidden_size, self.hidden_size).to(self.device)
 
-        self.gru = nn.GRU(2 * self.hidden_size + self.embedding.embedding_dim, self.hidden_size, batch_first=True)  # input = (context + selective read size + embedding)
-        self.out = nn.Linear(self.hidden_size, len(self.lang.tok_to_idx))
+        self.gru = nn.GRU(2 * self.hidden_size + self.embedding.embedding_dim, self.hidden_size, batch_first=True).to(self.device)  # input = (context + selective read size + embedding)
+        self.out = nn.Linear(self.hidden_size, len(self.lang.tok_to_idx)).to(self.device)
 
     def forward(self, encoder_outputs, inputs, final_encoder_hidden, targets=None, keep_prob=1.0, teacher_forcing=0.0):
         batch_size = encoder_outputs.data.shape[0]
         seq_length = encoder_outputs.data.shape[1]
 
-        hidden = Variable(torch.zeros(1, batch_size, self.hidden_size))
-        if next(self.parameters()).is_cuda:
-            hidden = hidden.cuda()
-        else:
-            hidden = hidden
+        hidden = torch.zeros(1, batch_size, self.hidden_size).to(self.device)
 
         # every decoder output seq starts with <SOS>
-        sos_output = Variable(torch.zeros((batch_size, self.embedding.num_embeddings + seq_length)))
-        sampled_idx = Variable(torch.ones((batch_size, 1)).long())
-        if next(self.parameters()).is_cuda:
-            sos_output = sos_output.cuda()
-            sampled_idx = sampled_idx.cuda()
+        sos_output = torch.zeros((batch_size, self.embedding.num_embeddings + seq_length))
+        sampled_idx = torch.ones((batch_size, 1)).long()
+        sos_output = sos_output.to(self.device)
+        sampled_idx = sampled_idx.to(self.device)
 
         sos_output[:, 1] = 1.0  # index 1 is the <SOS> token, one-hot encoding
 
@@ -46,23 +42,21 @@ class CopyNetDecoder(DecoderBase):
         sampled_idxs = [sampled_idx]
 
         if keep_prob < 1.0:
-            dropout_mask = (Variable(torch.rand(batch_size, 1, 2 * self.hidden_size + self.embedding.embedding_dim)) < keep_prob).float() / keep_prob
+            dropout_mask = (torch.rand(batch_size, 1, 2 * self.hidden_size + self.embedding.embedding_dim) < keep_prob).float() / keep_prob
         else:
             dropout_mask = None
 
-        selective_read = Variable(torch.zeros(batch_size, 1, self.hidden_size))
+        selective_read = torch.zeros(batch_size, 1, self.hidden_size)
         one_hot_input_seq = to_one_hot(inputs, len(self.lang.tok_to_idx) + seq_length)
-        if next(self.parameters()).is_cuda:
-            selective_read = selective_read.cuda()
-            one_hot_input_seq = one_hot_input_seq.cuda()
+        selective_read = selective_read.to(self.device)
+        one_hot_input_seq = one_hot_input_seq.to(self.device)
 
         for step_idx in range(1, self.max_length):
 
             if targets is not None and teacher_forcing > 0.0 and step_idx < targets.shape[1]:
                 # replace some inputs with the targets (i.e. teacher forcing)
-                teacher_forcing_mask = Variable((torch.rand((batch_size, 1)) < teacher_forcing), requires_grad=False)
-                if next(self.parameters()).is_cuda:
-                    teacher_forcing_mask = teacher_forcing_mask.cuda()
+                teacher_forcing_mask = (torch.rand((batch_size, 1)) < teacher_forcing)
+                teacher_forcing_mask = teacher_forcing_mask.to(self.device)
                 sampled_idx = sampled_idx.masked_scatter(teacher_forcing_mask, targets[:, step_idx-1:step_idx])
 
             sampled_idx, output, hidden, selective_read = self.step(sampled_idx, hidden, encoder_outputs, selective_read, one_hot_input_seq, dropout_mask=dropout_mask)
@@ -95,8 +89,7 @@ class CopyNetDecoder(DecoderBase):
 
         rnn_input = torch.cat((context, prev_selective_read, embedded), dim=2)
         if dropout_mask is not None:
-            if next(self.parameters()).is_cuda:
-                dropout_mask = dropout_mask.cuda()
+            dropout_mask = dropout_mask.to(self.device)
             rnn_input *= dropout_mask
 
         self.gru.flatten_parameters()
@@ -119,9 +112,8 @@ class CopyNetDecoder(DecoderBase):
         probs = F.softmax(combined_scores, dim=1)
         gen_probs = probs[:, :vocab_size]
 
-        gen_padding = Variable(torch.zeros(batch_size, seq_length))
-        if next(self.parameters()).is_cuda:
-            gen_padding = gen_padding.cuda()
+        gen_padding = torch.zeros(batch_size, seq_length)
+        gen_padding = gen_padding.to(self.device)
         gen_probs = torch.cat((gen_probs, gen_padding), dim=1)  # [b, vocab_size + seq_length]
 
         copy_probs = probs[:, vocab_size:]

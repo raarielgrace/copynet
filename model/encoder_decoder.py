@@ -1,39 +1,46 @@
+import argparse
 from torch import nn
 from .attention_decoder import AttentionDecoder
 from .copynet_decoder import CopyNetDecoder
 from utils import seq_to_string, tokens_to_seq
 from spacy.lang.en import English
 from .encoder import EncoderRNN
-from torch.autograd import Variable
+#from torch.autograd import Variable
 
 
 class EncoderDecoder(nn.Module):
-    def __init__(self, lang, max_length, hidden_size, embedding_size, decoder_type, init_weight_dict=None):
+    def __init__(self, lang, max_length, hidden_size, embedding_size, decoder_type, init_weight_dict=None, device):
         super(EncoderDecoder, self).__init__()
 
+        self.device = device
         self.lang = lang
         if not init_weight_dict == None:
             self.encoder = EncoderRNN(len(self.lang.tok_to_idx),
                                       hidden_size,
                                       embedding_size,
                                       init_weight_dict,
-                                      self.lang.tok_to_idx)
+                                      self.lang.tok_to_idx,
+                                      self.device).to(self.device)
         else:
             self.encoder = EncoderRNN(len(self.lang.tok_to_idx),
                                       hidden_size,
-                                      embedding_size)
+                                      embedding_size,
+                                      init_weight_dict=None,
+                                      self.device).to(self.device)
         self.decoder_type = decoder_type
         decoder_hidden_size = 2 * self.encoder.hidden_size
         if self.decoder_type == 'attn':
             self.decoder = AttentionDecoder(decoder_hidden_size,
                                             embedding_size,
                                             lang,
-                                            max_length)
+                                            max_length,
+                                            self.device).to(self.device)
         elif self.decoder_type == 'copy':
             self.decoder = CopyNetDecoder(decoder_hidden_size,
                                           embedding_size,
                                           lang,
-                                          max_length)
+                                          max_length,
+                                          self.device).to(self.device)
         else:
             raise ValueError("decoder_type must be 'attn' or 'copy'")
 
@@ -61,10 +68,9 @@ class EncoderDecoder(nn.Module):
         input_tokens = self.parser_(' '.join(input_string.split()))
         input_tokens = ['<SOS>'] + [token.orth_.lower() for token in input_tokens] + ['<EOS>']
         input_seq = tokens_to_seq(input_tokens, tok_to_idx, len(input_tokens), use_extended_vocab)
-        input_variable = Variable(input_seq).view(1, -1)
+        input_variable = input_seq.view(1, -1)
 
-        if next(self.parameters()).is_cuda:
-            input_variable = input_variable.cuda()
+        input_variable = input_variable.to(self.device)
 
         outputs, idxs = self.forward(input_variable, [len(input_seq)])
         idxs = idxs.data.view(-1)
