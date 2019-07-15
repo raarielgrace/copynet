@@ -9,7 +9,7 @@ from .encoder import EncoderRNN
 
 
 class EncoderDecoder(nn.Module):
-    def __init__(self, lang, max_length, hidden_size, embedding_size, decoder_type, init_weight_dict=None, device):
+    def __init__(self, lang, max_length, hidden_size, embedding_size, decoder_type, device, init_weight_dict=None):
         super(EncoderDecoder, self).__init__()
 
         self.device = device
@@ -18,14 +18,13 @@ class EncoderDecoder(nn.Module):
             self.encoder = EncoderRNN(len(self.lang.tok_to_idx),
                                       hidden_size,
                                       embedding_size,
+                                      self.device,
                                       init_weight_dict,
-                                      self.lang.tok_to_idx,
-                                      self.device).to(self.device)
+                                      self.lang.tok_to_idx).to(self.device)
         else:
             self.encoder = EncoderRNN(len(self.lang.tok_to_idx),
                                       hidden_size,
                                       embedding_size,
-                                      init_weight_dict=None,
                                       self.device).to(self.device)
         self.decoder_type = decoder_type
         decoder_hidden_size = 2 * self.encoder.hidden_size

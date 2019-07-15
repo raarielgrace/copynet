@@ -187,7 +187,7 @@ def test(encoder_decoder: EncoderDecoder, test_data_loader: DataLoader, max_leng
     print('TESTING ACCURACY %.5f' % (100.0 * (correct_predictions / all_predictions)))
 
 
-def main(model_name, use_cuda, batch_size, teacher_forcing_schedule, keep_prob, val_size, lr, decoder_type, vocab_limit, hidden_size, embedding_size, max_length, save_lang, test_data_substitute, seed=42):
+def main(model_name, use_cuda, batch_size, teacher_forcing_schedule, keep_prob, val_size, lr, decoder_type, vocab_limit, hidden_size, embedding_size, max_length, save_lang, test_data_substitute,device, seed=42):
 
     model_path = './model/' + model_name + '/'
 
@@ -260,8 +260,8 @@ def main(model_name, use_cuda, batch_size, teacher_forcing_schedule, keep_prob, 
                                          hidden_size,
                                          embedding_size,
                                          decoder_type,
-                                         glove,
-                                         device)
+                                         device,
+                                         glove)
 
         torch.save(encoder_decoder, model_path + '/%s.pt' % model_name)
 
