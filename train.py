@@ -37,7 +37,7 @@ def train(encoder_decoder: EncoderDecoder,
 
     global_step = 0
     loss_function = torch.nn.NLLLoss(ignore_index=0)
-    optimizer = optim.Adam(encoder_decoder.parameters(), lr=lr)
+    optimizer = optim.Adam(encoder_decoder.parameters(), lr=1e-4, weight_decay=1e-5)
     model_path = './model/' + model_name + '/'
     #f = open("losses.txt", "w")
     trained_model = encoder_decoder
@@ -333,7 +333,7 @@ def main(model_name, use_cuda, batch_size, teacher_forcing_schedule, keep_prob, 
           device,
           test_data_loader)
 
-    print('TESTING ACCURACY %.5f' % test(trained_model, test_data_loader, encoder_decoder.decoder.max_length, device)[0])
+    print('TESTING ACCURACY %.5f' % test(trained_model, test_data_loader, encoder_decoder.decoder.max_length, device))
 
 
 if __name__ == '__main__':
