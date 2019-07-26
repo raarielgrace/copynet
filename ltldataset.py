@@ -2,7 +2,7 @@ import os
 import sys
 import random
 from torch.utils.data import Dataset
-from utils import tokens_to_seq, contains_digit
+from utils import tokens_to_seq, contains_digit, shuffle_correlated_lists
 from operator import itemgetter
 
 
@@ -36,8 +36,8 @@ class Language(object):
 class SequencePairDataset(Dataset):
     #src_data_path='./data/hard_pc_src_syn2.txt'
     #tgt_data_path='./data/hard_pc_tar_syn2.txt'
-    src_data_path='./data/south_one_lm_src.txt'
-    tgt_data_path='./data/south_one_lm_tar.txt'
+    src_data_path='./data/twophrase_south_src.txt'
+    tgt_data_path='./data/twophrase_south_tar.txt'
 
     with open(src_data_path, "r") as sf:
         src_lines = sf.readlines()
@@ -47,6 +47,8 @@ class SequencePairDataset(Dataset):
 
     if not len(src_lines) == len(tgt_lines):
         sys.exit("ERROR: Data files have inconsistent lengths. Make sure your labels are aligned correctly.")
+
+    shuffle_correlated_lists(src_lines, tgt_lines)
 
     # Split our source and target files with a 20:80 split
     split_idx = len(src_lines) // 5
@@ -86,7 +88,7 @@ class SequencePairDataset(Dataset):
             if not len(src_lines) == len(tgt_lines):
                 sys.exit("ERROR: Data files have inconsistent lengths. Make sure your labels are aligned correctly.")
         else:
-            if self.is_test:
+            if self.is_val or self.is_test:
                 src_lines = SequencePairDataset.test_src
                 tgt_lines = SequencePairDataset.test_tgt
             else:

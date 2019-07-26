@@ -2,6 +2,8 @@ import argparse
 import os
 import time
 import numpy as np
+import re
+import matplotlib.pyplot as plt
 
 import torch
 from torch import optim
@@ -20,6 +22,7 @@ from tqdm import tqdm
 from nltk.translate.bleu_score import corpus_bleu, SmoothingFunction
 
 #torch.backends.cudnn.enabled = False
+#torch.set_printoptions(profile="full")
 
 def train(encoder_decoder: EncoderDecoder,
           train_data_loader: DataLoader,
@@ -29,19 +32,26 @@ def train(encoder_decoder: EncoderDecoder,
           teacher_forcing_schedule,
           lr,
           max_length,
-          device):
+          device,
+          test_data_loader: DataLoader):
 
     global_step = 0
     loss_function = torch.nn.NLLLoss(ignore_index=0)
     optimizer = optim.Adam(encoder_decoder.parameters(), lr=lr)
     model_path = './model/' + model_name + '/'
-
-    trained_model = None
+    #f = open("losses.txt", "w")
+    trained_model = encoder_decoder
+    epochs = []
+    train_accus = []
+    val_accus = []
+    test_accus = []
+    test_struct_accus = []
     for epoch, teacher_forcing in enumerate(teacher_forcing_schedule):
         print('epoch %i' % epoch, flush=True)
-
+        #f.write('epoch {}\n'.format(epoch))
         correct_predictions = 0.0
         all_predictions = 0.0
+        epochs.append(epoch)
         for batch_idx, (input_idxs, target_idxs, input_tokens, target_tokens) in enumerate(tqdm(train_data_loader)):
             # input_idxs and target_idxs have dim (batch_size x max_len)
             # they are NOT sorted by length
@@ -68,34 +78,39 @@ def train(encoder_decoder: EncoderDecoder,
             flattened_outputs = output_log_probs.view(batch_size * max_length, -1)
 
             batch_loss = loss_function(flattened_outputs, target_variable.contiguous().view(-1))
-            batch_loss.backward()
-            optimizer.step()
-
+            #f.write('{}\n'.format(batch_loss))
             batch_outputs = trim_seqs(output_seqs)
 
+            batch_inputs = [[list(seq[seq > 0])] for seq in list(to_np(input_variable))]
             batch_targets = [[list(seq[seq > 0])] for seq in list(to_np(target_variable))]
 
+            wrong_landmarks = 0.0
             for i in range(len(batch_outputs)):
                 y_i = batch_outputs[i]
                 tgt_i = batch_targets[i][0]
 
                 if y_i == tgt_i:
                     correct_predictions += 1.0
+                #else:
+                #    src_i = batch_inputs[i][0]
+                #    src_token_list = input_tokens[i].split()
+                #    tar_token_list = target_tokens[i].split()
+                #    src_unk_to_tok = {src_i[j]:src_token_list[j] for j in range(len(src_i)) if not src_i[j] in encoder_decoder.lang.idx_to_tok}
+                #    tar_unk_to_tok = {tgt_i[j]:tar_token_list[j] for j in range(len(tgt_i)) if not tgt_i[j] in encoder_decoder.lang.idx_to_tok}
+                #    correct_seq = [encoder_decoder.lang.idx_to_tok[n] if n in encoder_decoder.lang.idx_to_tok else tar_unk_to_tok[n] for n in tgt_i]
+                #    incorrect_seq = [encoder_decoder.lang.idx_to_tok[n] if n in encoder_decoder.lang.idx_to_tok else src_unk_to_tok[n] for n in y_i]
+                #    if not correct_seq == incorrect_seq:
+                #        wrong_landmarks += 1.0
 
                 all_predictions += 1.0
+            
+            #wrong_percent = wrong_landmarks / len(batch_outputs)
+            #batch_loss = batch_loss + wrong_percent
+
+            batch_loss.backward()
+            optimizer.step()
 
             batch_bleu_score = corpus_bleu(batch_targets, batch_outputs, smoothing_function=SmoothingFunction().method1)
-
-            '''
-            if global_step < 10 or (global_step % 10 == 0 and global_step < 100) or (global_step % 100 == 0 and epoch < 2):
-                input_string = "Amy, Please schedule a meeting with Marcos on Tuesday April 3rd. Adam Kleczewski"
-                output_string = encoder_decoder.get_response(input_string)
-                writer.add_text('schedule', output_string, global_step=global_step)
-
-                input_string = "Amy, Please cancel this meeting. Adam Kleczewski"
-                output_string = encoder_decoder.get_response(input_string)
-                writer.add_text('cancel', output_string, global_step=global_step)
-            '''
 
             if global_step % 100 == 0:
 
@@ -122,40 +137,54 @@ def train(encoder_decoder: EncoderDecoder,
         decoder_vocab = encoder_decoder.lang.tok_to_idx.keys()
         writer.add_embedding(decoder_embeddings, metadata=decoder_vocab, global_step=0, tag='decoder_embeddings')
 
-        '''
-        input_string = "Amy, Please schedule a meeting with Marcos on Tuesday April 3rd. Adam Kleczewski"
-        output_string = encoder_decoder.get_response(input_string)
-        writer.add_text('schedule', output_string, global_step=global_step)
-
-        input_string = "Amy, Please cancel this meeting. Adam Kleczewski"
-        output_string = encoder_decoder.get_response(input_string)
-        writer.add_text('cancel', output_string, global_step=global_step)
-        '''
-
+        train_acc = 100.0 * (correct_predictions / all_predictions)
         print('training accuracy %.5f' % (100.0 * (correct_predictions / all_predictions)))
+        train_accus.append(train_acc)
         #print('val loss: %.5f, val BLEU score: %.5f' % (val_loss, val_bleu_score), flush=True)
+
+        val_acc, _ = test(encoder_decoder, val_data_loader, max_length, device)
+        print('validation accuracy {}'.format(val_acc))
+        val_accus.append(val_acc)
+
+        test_acc, test_struct_acc = test(encoder_decoder, test_data_loader, max_length, device)
+        print('test accuracy {}'.format(test_acc))
+        test_accus.append(test_acc)
+        test_struct_accus.append(test_struct_acc)
+
         torch.save(encoder_decoder, "%s%s_%i.pt" % (model_path, model_name, epoch))
         trained_model = encoder_decoder
 
         print('-' * 100, flush=True)
-
+    
+    #f.close()
+    plt.plot(epochs, train_accus, marker='o', label='Training')
+    plt.plot(epochs, val_accus, marker='^', label='Validation')
+    plt.plot(epochs, test_accus, marker='>', label='Testing')
+    plt.plot(epochs, test_struct_accus, marker='<', label='Test LTL Only')
+    plt.legend()
+    plt.xlabel('Epochs')
+    plt.ylabel('Accuracy')
+    plt.savefig('plot.png')
     return trained_model
 
 def test(encoder_decoder: EncoderDecoder, test_data_loader: DataLoader, max_length, device):
 
     correct_predictions = 0.0
+    struct_correct_only = 0.0
     all_predictions = 0.0
+    #f = open("issues.txt", "w")
     for batch_idx, (input_idxs, target_idxs, input_tokens, target_tokens) in enumerate(tqdm(test_data_loader)):
         # input_idxs and target_idxs have dim (batch_size x max_len)
         # they are NOT sorted by length
-
         lengths = (input_idxs != 0).long().sum(dim=1)
         sorted_lengths, order = torch.sort(lengths, descending=True)
 
         input_variable = input_idxs[order, :][:, :max(lengths)]
         input_variable = input_variable.to(device)
+        input_tokens = [input_tokens[o] for o in order]
         target_variable = target_idxs[order, :]
         target_variable = target_variable.to(device)
+        target_tokens = [target_tokens[o] for o in order]
 
         output_log_probs, output_seqs = encoder_decoder(input_variable,
                                                         list(sorted_lengths),
@@ -169,22 +198,40 @@ def test(encoder_decoder: EncoderDecoder, test_data_loader: DataLoader, max_leng
 
         batch_outputs = trim_seqs(output_seqs)
 
-        batch_targets = [[list(seq[seq > 0])] for seq in list(to_np(target_variable))]
+        batch_inputs = [[list(seq[seq > 0])] for seq in list(to_np(input_variable))]
 
+        batch_targets = [[list(seq[seq > 0])] for seq in list(to_np(target_variable))]
+        
         for i in range(len(batch_outputs)):
             y_i = batch_outputs[i]
             tgt_i = batch_targets[i][0]
 
             if y_i == tgt_i:
                 correct_predictions += 1.0
-            #else:
-                #print("INCORRECT SEQUENCE: {} ".format([encoder_decoder.lang.idx_to_tok[n] if n in encoder_decoder.lang.idx_to_tok else n for n in y_i]))
-                #print("CORRECT SEQUENCE: {}".format([encoder_decoder.lang.idx_to_tok[n] if n in encoder_decoder.lang.idx_to_tok else n for n in tgt_i]))
-                #print("---------------------------------------------------------------------------------------")
+            else:
+                src_i = batch_inputs[i][0]
+                src_token_list = input_tokens[i].split()
+                tar_token_list = target_tokens[i].split()
+                src_unk_to_tok = {src_i[j]:src_token_list[j] for j in range(len(src_i)) if not src_i[j] in encoder_decoder.lang.idx_to_tok}
+                tar_unk_to_tok = {tgt_i[j]:tar_token_list[j] for j in range(len(tgt_i)) if not tgt_i[j] in encoder_decoder.lang.idx_to_tok}
+                correct_seq = [encoder_decoder.lang.idx_to_tok[n] if n in encoder_decoder.lang.idx_to_tok else tar_unk_to_tok[n] for n in tgt_i]
+                incorrect_seq = [encoder_decoder.lang.idx_to_tok[n] if n in encoder_decoder.lang.idx_to_tok else src_unk_to_tok[n] for n in y_i]
+                c_minus_ldmks = re.sub('lm(.+?)lm', '',  ' '.join(correct_seq))
+                i_minus_ldmks = re.sub('lm(.+?)lm', '',  ' '.join(incorrect_seq))
+                
+                if c_minus_ldmks == i_minus_ldmks:
+                    struct_correct_only += 1.0
+
+                #c_result = re.findall('lm(.+?)lm', ' '.join(correct_seq))
+                #i_result = re.findall('lm(.+?)lm', ' '.join(incorrect_seq))
+                #f.write("CORRECT PLACES: {}\n".format(c_result))
+                #f.write("INCORRECT PLACES: {}\n".format(i_result))
+                #f.write("-----------------------------------------------------------------------------------------------\n")
+
 
             all_predictions += 1.0
-
-    print('TESTING ACCURACY %.5f' % (100.0 * (correct_predictions / all_predictions)))
+    #f.close()
+    return (100.0 * (correct_predictions / all_predictions), 100.0 * ((correct_predictions + struct_correct_only) / all_predictions))
 
 
 def main(model_name, use_cuda, batch_size, teacher_forcing_schedule, keep_prob, val_size, lr, decoder_type, vocab_limit, hidden_size, embedding_size, max_length, save_lang, test_data_substitute,device, seed=42):
@@ -285,9 +332,10 @@ def main(model_name, use_cuda, batch_size, teacher_forcing_schedule, keep_prob, 
           teacher_forcing_schedule,
           lr,
           encoder_decoder.decoder.max_length,
-          device)
+          device,
+          test_data_loader)
 
-    test(trained_model, test_data_loader, encoder_decoder.decoder.max_length, device)
+    print('TESTING ACCURACY %.5f' % test(trained_model, test_data_loader, encoder_decoder.decoder.max_length, device)[0])
 
 
 if __name__ == '__main__':

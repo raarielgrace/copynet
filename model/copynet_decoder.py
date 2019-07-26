@@ -25,6 +25,10 @@ class CopyNetDecoder(DecoderBase):
         self.out = nn.Linear(self.hidden_size, len(self.lang.tok_to_idx)).to(self.device)
 
     def forward(self, encoder_outputs, inputs, final_encoder_hidden, targets=None, keep_prob=1.0, teacher_forcing=0.0):
+        #print("ATTN_W: {}".format(self.attn_W.weight))
+        #print("COPY_W: {}".format(self.copy_W.weight))
+        #print("OUT: {}".format(self.out.weight))
+        #print("GRU: {}".format(self.gru))
         batch_size = encoder_outputs.data.shape[0]
         seq_length = encoder_outputs.data.shape[1]
 

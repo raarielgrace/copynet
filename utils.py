@@ -5,6 +5,7 @@ from abc import ABC
 from torch import nn
 import bcolz
 import pickle
+import random
 
 
 class DecoderBase(ABC, nn.Module):
@@ -18,6 +19,24 @@ def get_glove():
 
     glove = {w: vectors[word2idx[w]] for w in words}
     return glove
+
+def shuffle_correlated_lists(l1, l2):
+    #Lists must have the same length, as the entries correspond
+    if not len(l1) == len(l2):
+        print("ERROR: Lists of unequal length! Returning without shuffling.")
+        return (l1, l2)
+
+    idxes = list(range(len(l1)))
+    random.shuffle(idxes)
+
+    new_l1 = []
+    new_l2 = []
+    for idx in idxes:
+        new_l1.append(l1[idx])
+        new_l2.append(l2[idx])
+
+    return (new_l1, new_l2)
+
 
 def to_np(x):
     return x.data.cpu().numpy()
