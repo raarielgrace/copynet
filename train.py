@@ -103,7 +103,7 @@ def train(encoder_decoder: EncoderDecoder,
                 #        wrong_landmarks += 1.0
 
                 all_predictions += 1.0
-            
+
             #wrong_percent = wrong_landmarks / len(batch_outputs)
             #batch_loss = batch_loss + wrong_percent
 
@@ -142,25 +142,25 @@ def train(encoder_decoder: EncoderDecoder,
         train_accus.append(train_acc)
         #print('val loss: %.5f, val BLEU score: %.5f' % (val_loss, val_bleu_score), flush=True)
 
-        val_acc, _ = test(encoder_decoder, val_data_loader, max_length, device)
+        val_acc = test(encoder_decoder, val_data_loader, max_length, device)
         print('validation accuracy {}'.format(val_acc))
         val_accus.append(val_acc)
 
-        test_acc, test_struct_acc = test(encoder_decoder, test_data_loader, max_length, device)
+        test_acc = test(encoder_decoder, test_data_loader, max_length, device)
         print('test accuracy {}'.format(test_acc))
         test_accus.append(test_acc)
-        test_struct_accus.append(test_struct_acc)
+        #test_struct_accus.append(test_struct_acc)
 
         torch.save(encoder_decoder, "%s%s_%i.pt" % (model_path, model_name, epoch))
         trained_model = encoder_decoder
 
         print('-' * 100, flush=True)
-    
+
     #f.close()
     plt.plot(epochs, train_accus, marker='o', label='Training')
     plt.plot(epochs, val_accus, marker='^', label='Validation')
     plt.plot(epochs, test_accus, marker='>', label='Testing')
-    plt.plot(epochs, test_struct_accus, marker='<', label='Test LTL Only')
+    #plt.plot(epochs, test_struct_accus, marker='<', label='Test LTL Only')
     plt.legend()
     plt.xlabel('Epochs')
     plt.ylabel('Accuracy')
@@ -168,7 +168,7 @@ def train(encoder_decoder: EncoderDecoder,
     return trained_model
 
 def test(encoder_decoder: EncoderDecoder, test_data_loader: DataLoader, max_length, device):
-
+    
     correct_predictions = 0.0
     struct_correct_only = 0.0
     all_predictions = 0.0
@@ -201,7 +201,7 @@ def test(encoder_decoder: EncoderDecoder, test_data_loader: DataLoader, max_leng
         batch_inputs = [[list(seq[seq > 0])] for seq in list(to_np(input_variable))]
 
         batch_targets = [[list(seq[seq > 0])] for seq in list(to_np(target_variable))]
-        
+
         for i in range(len(batch_outputs)):
             y_i = batch_outputs[i]
             tgt_i = batch_targets[i][0]
@@ -218,12 +218,10 @@ def test(encoder_decoder: EncoderDecoder, test_data_loader: DataLoader, max_leng
                 incorrect_seq = [encoder_decoder.lang.idx_to_tok[n] if n in encoder_decoder.lang.idx_to_tok else src_unk_to_tok[n] for n in y_i]
                 c_minus_ldmks = re.sub('lm(.+?)lm', '',  ' '.join(correct_seq))
                 i_minus_ldmks = re.sub('lm(.+?)lm', '',  ' '.join(incorrect_seq))
-                
-                if c_minus_ldmks == i_minus_ldmks:
-                    struct_correct_only += 1.0
 
-                #c_result = re.findall('lm(.+?)lm', ' '.join(correct_seq))
-                #i_result = re.findall('lm(.+?)lm', ' '.join(incorrect_seq))
+                #if c_minus_ldmks == i_minus_ldmks:
+                    #struct_correct_only += 1.0
+
                 #f.write("CORRECT PLACES: {}\n".format(c_result))
                 #f.write("INCORRECT PLACES: {}\n".format(i_result))
                 #f.write("-----------------------------------------------------------------------------------------------\n")
@@ -231,7 +229,7 @@ def test(encoder_decoder: EncoderDecoder, test_data_loader: DataLoader, max_leng
 
             all_predictions += 1.0
     #f.close()
-    return (100.0 * (correct_predictions / all_predictions), 100.0 * ((correct_predictions + struct_correct_only) / all_predictions))
+    return 100.0 * (correct_predictions / all_predictions)
 
 
 def main(model_name, use_cuda, batch_size, teacher_forcing_schedule, keep_prob, val_size, lr, decoder_type, vocab_limit, hidden_size, embedding_size, max_length, save_lang, test_data_substitute,device, seed=42):
