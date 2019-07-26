@@ -4,6 +4,7 @@ import time
 import numpy as np
 import re
 import matplotlib.pyplot as plt
+import datetime
 
 import torch
 from torch import optim
@@ -12,6 +13,7 @@ from torch.utils.data import DataLoader
 from torch import nn
 
 from ltldataset import SequencePairDataset
+from kfoldltldataset import OneFoldSequencePairDataset, generateKFoldDatasets
 #from mjcdataset import SequencePairDataset
 from model.encoder_decoder import EncoderDecoder
 from evaluate import evaluate
@@ -37,21 +39,21 @@ def train(encoder_decoder: EncoderDecoder,
 
     global_step = 0
     loss_function = torch.nn.NLLLoss(ignore_index=0)
-    optimizer = optim.Adam(encoder_decoder.parameters(), lr=1e-4, weight_decay=1e-5)
+    optimizer = optim.Adam(encoder_decoder.parameters(), lr=lr)
     model_path = './model/' + model_name + '/'
     #f = open("losses.txt", "w")
     trained_model = encoder_decoder
-    epochs = []
-    train_accus = []
-    val_accus = []
-    test_accus = []
-    test_struct_accus = []
+    #epochs = []
+    #train_accus = []
+    #val_accus = []
+    #test_accus = []
+    #test_struct_accus = []
     for epoch, teacher_forcing in enumerate(teacher_forcing_schedule):
         print('epoch %i' % epoch, flush=True)
         #f.write('epoch {}\n'.format(epoch))
         correct_predictions = 0.0
         all_predictions = 0.0
-        epochs.append(epoch)
+        #epochs.append(epoch)
         for batch_idx, (input_idxs, target_idxs, input_tokens, target_tokens) in enumerate(tqdm(train_data_loader)):
             # input_idxs and target_idxs have dim (batch_size x max_len)
             # they are NOT sorted by length
@@ -84,7 +86,7 @@ def train(encoder_decoder: EncoderDecoder,
             batch_inputs = [[list(seq[seq > 0])] for seq in list(to_np(input_variable))]
             batch_targets = [[list(seq[seq > 0])] for seq in list(to_np(target_variable))]
 
-            wrong_landmarks = 0.0
+            #wrong_landmarks = 0.0
             for i in range(len(batch_outputs)):
                 y_i = batch_outputs[i]
                 tgt_i = batch_targets[i][0]
@@ -137,11 +139,12 @@ def train(encoder_decoder: EncoderDecoder,
         decoder_vocab = encoder_decoder.lang.tok_to_idx.keys()
         writer.add_embedding(decoder_embeddings, metadata=decoder_vocab, global_step=0, tag='decoder_embeddings')
 
-        train_acc = 100.0 * (correct_predictions / all_predictions)
+        #train_acc = 100.0 * (correct_predictions / all_predictions)
         print('training accuracy %.5f' % (100.0 * (correct_predictions / all_predictions)))
-        train_accus.append(train_acc)
+        #train_accus.append(train_acc)
         #print('val loss: %.5f, val BLEU score: %.5f' % (val_loss, val_bleu_score), flush=True)
 
+        '''
         val_acc = test(encoder_decoder, val_data_loader, max_length, device)
         print('validation accuracy {}'.format(val_acc))
         val_accus.append(val_acc)
@@ -150,29 +153,32 @@ def train(encoder_decoder: EncoderDecoder,
         print('test accuracy {}'.format(test_acc))
         test_accus.append(test_acc)
         #test_struct_accus.append(test_struct_acc)
-
+        '''
         torch.save(encoder_decoder, "%s%s_%i.pt" % (model_path, model_name, epoch))
         trained_model = encoder_decoder
 
         print('-' * 100, flush=True)
 
+    torch.save(encoder_decoder, "%s%s_final.pt" % (model_path, model_name))
+
     #f.close()
-    plt.plot(epochs, train_accus, marker='o', label='Training')
-    plt.plot(epochs, val_accus, marker='^', label='Validation')
-    plt.plot(epochs, test_accus, marker='>', label='Testing')
+    #plt.plot(epochs, train_accus, marker='o', label='Training')
+    #plt.plot(epochs, val_accus, marker='^', label='Validation')
+    #plt.plot(epochs, test_accus, marker='>', label='Testing')
     #plt.plot(epochs, test_struct_accus, marker='<', label='Test LTL Only')
-    plt.legend()
-    plt.xlabel('Epochs')
-    plt.ylabel('Accuracy')
-    plt.savefig('plot.png')
+    #plt.legend()
+    #plt.xlabel('Epochs')
+    #plt.ylabel('Accuracy')
+    #plt.savefig('plot.png')
     return trained_model
 
-def test(encoder_decoder: EncoderDecoder, test_data_loader: DataLoader, max_length, device):
-    
+def test(encoder_decoder: EncoderDecoder, test_data_loader: DataLoader, model_name, max_length, device):
+
     correct_predictions = 0.0
     struct_correct_only = 0.0
     all_predictions = 0.0
-    #f = open("issues.txt", "w")
+    currentDT = datetime.datetime.now()
+    f = open("/logs/log_" + model_name + currentDT.strftime("%Y%m%d%H%M%S") + ".txt", "w")
     for batch_idx, (input_idxs, target_idxs, input_tokens, target_tokens) in enumerate(tqdm(test_data_loader)):
         # input_idxs and target_idxs have dim (batch_size x max_len)
         # they are NOT sorted by length
@@ -216,25 +222,25 @@ def test(encoder_decoder: EncoderDecoder, test_data_loader: DataLoader, max_leng
                 tar_unk_to_tok = {tgt_i[j]:tar_token_list[j] for j in range(len(tgt_i)) if not tgt_i[j] in encoder_decoder.lang.idx_to_tok}
                 correct_seq = [encoder_decoder.lang.idx_to_tok[n] if n in encoder_decoder.lang.idx_to_tok else tar_unk_to_tok[n] for n in tgt_i]
                 incorrect_seq = [encoder_decoder.lang.idx_to_tok[n] if n in encoder_decoder.lang.idx_to_tok else src_unk_to_tok[n] for n in y_i]
-                c_minus_ldmks = re.sub('lm(.+?)lm', '',  ' '.join(correct_seq))
-                i_minus_ldmks = re.sub('lm(.+?)lm', '',  ' '.join(incorrect_seq))
+                #c_minus_ldmks = re.sub('lm(.+?)lm', '',  ' '.join(correct_seq))
+                #i_minus_ldmks = re.sub('lm(.+?)lm', '',  ' '.join(incorrect_seq))
 
                 #if c_minus_ldmks == i_minus_ldmks:
                     #struct_correct_only += 1.0
 
-                #f.write("CORRECT PLACES: {}\n".format(c_result))
-                #f.write("INCORRECT PLACES: {}\n".format(i_result))
-                #f.write("-----------------------------------------------------------------------------------------------\n")
+                input_seq = [encoder_decoder.lang.idx_to_tok[n] if n in encoder_decoder.lang.idx_to_tok else src_unk_to_tok[n] for n in src_i]
+                f.write("INPUT PHRASE:      {}\n".format(' '.join(input_seq)))
+                f.write("CORRECT LABEL:     {}\n".format(' '.join(correct_seq)))
+                f.write("PREDICTED LABEL:   {}\n".format(' '.join(incorrect_seq)))
+                f.write("\n\n")
 
 
             all_predictions += 1.0
-    #f.close()
+    f.close()
     return 100.0 * (correct_predictions / all_predictions)
 
 
 def main(model_name, use_cuda, batch_size, teacher_forcing_schedule, keep_prob, val_size, lr, decoder_type, vocab_limit, hidden_size, embedding_size, max_length, save_lang, test_data_substitute,device, seed=42):
-
-    model_path = './model/' + model_name + '/'
 
     # TODO: Change logging to reflect loaded parameters
 
@@ -243,6 +249,7 @@ def main(model_name, use_cuda, batch_size, teacher_forcing_schedule, keep_prob, 
     print("keep_prob=%f, val_size=%f, lr=%f, decoder_type=%s, vocab_limit=%i, hidden_size=%i, embedding_size=%i, max_length=%i, seed=%i" % (keep_prob, val_size, lr, decoder_type, vocab_limit, hidden_size, embedding_size, max_length, seed), flush=True)
 
     glove = get_glove()
+    '''
     if os.path.isdir(model_path):
 
         print("loading encoder and decoder from model_path", flush=True)
@@ -309,31 +316,73 @@ def main(model_name, use_cuda, batch_size, teacher_forcing_schedule, keep_prob, 
                                          glove)
 
         torch.save(encoder_decoder, model_path + '/%s.pt' % model_name)
+    ''' # Will put this aside for now, adding k-fold things
 
-    # CHANGE 2
-    # #########################
-    # if use_cuda and torch.cuda.device_count() > 1:
-    #     print("Using ", torch.cuda.device_count(), " GPUs.")
-    #     encoder_decoder = nn.DataParallel(encoder_decoder)
-    encoder_decoder = encoder_decoder.to(device)
-    #########################
+    # Use one dataset for the whole thing
+    test_dataset = SequencePairDataset(lang=train_dataset.lang,
+                                        use_cuda=use_cuda,
+                                        is_val=False,
+                                        is_test=True,
+                                        val_size=val_size,
+                                        use_extended_vocab=(encoder_decoder.decoder_type=='copy'),
+                                        data_substitute=test_data_substitute)
 
-    train_data_loader = DataLoader(train_dataset, batch_size=batch_size, shuffle=True, num_workers=12)
-    val_data_loader = DataLoader(val_dataset, batch_size=batch_size)
-    test_data_loader = DataLoader(test_dataset, batch_size=batch_size)
+    print("creating training, and validation datasets", flush=True)
+    all_datasets = generateKFoldDatasets(vocab_limit=vocab_limit, use_extended_vocab=(decoder_type=='copy'))
+    all_accuracies = []
 
-    trained_model = train(encoder_decoder,
-          train_data_loader,
-          model_name,
-          val_data_loader,
-          keep_prob,
-          teacher_forcing_schedule,
-          lr,
-          encoder_decoder.decoder.max_length,
-          device,
-          test_data_loader)
+    for k in range(len(all_datasets)):
+        train_dataset = all_datasets[k][0]
+        val_dataset = all_datasets[k][1]
 
-    print('TESTING ACCURACY %.5f' % test(trained_model, test_data_loader, encoder_decoder.decoder.max_length, device))
+        print("creating {}th encoder-decoder model".format(k), flush=True)
+        encoder_decoder = EncoderDecoder(train_dataset.lang,
+                                         max_length,
+                                         hidden_size,
+                                         embedding_size,
+                                         decoder_type,
+                                         device,
+                                         glove)
+
+        # CHANGE 2
+        # #########################
+        # if use_cuda and torch.cuda.device_count() > 1:
+        #     print("Using ", torch.cuda.device_count(), " GPUs.")
+        #     encoder_decoder = nn.DataParallel(encoder_decoder)
+        encoder_decoder = encoder_decoder.to(device)
+        #########################
+
+        train_data_loader = DataLoader(train_dataset, batch_size=batch_size, shuffle=True, num_workers=12)
+        val_data_loader = DataLoader(val_dataset, batch_size=batch_size)
+        test_data_loader = DataLoader(test_dataset, batch_size=batch_size)
+
+        train(encoder_decoder,
+              train_data_loader,
+              model_name + str(k),
+              val_data_loader,
+              keep_prob,
+              teacher_forcing_schedule,
+              lr,
+              encoder_decoder.decoder.max_length,
+              device,
+              test_data_loader)
+
+        model_path = './model/' + model_name + str(k) + '/'
+
+        trained_model = torch.load(model_path + model_name + '{}_final.pt'.format(k)) # Reload model just in case
+        accuracy = test(trained_model, test_data_loader, encoder_decoder.decoder.max_length, device)
+        all_accuracies.append(accuracy)
+
+    currentDT = datetime.datetime.now()
+    acc_f = open("/results/results_" + model_name + currentDT.strftime("%Y%m%d%H%M%S") + ".txt", "w")
+    acc_f.write("ACCURACIES:\n")
+    for acc in all_accuracies:
+        acc_f.write("{}\n".format(acc))
+
+    mean = sum(all_accuracies) / len(all_accuracies)
+    std_dev = math.sqrt(sum([math.pow(x - mean, 2) for x in all_accuracies]) / len(all_accuracies))
+    acc_f.write("\nMean: {}\nStandard Deviation: {}\n".format(mean, std_dev))
+    acc_f.close()
 
 
 if __name__ == '__main__':

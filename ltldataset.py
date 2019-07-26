@@ -61,19 +61,13 @@ class SequencePairDataset(Dataset):
                  maxlen=200,
                  lang=None,
                  vocab_limit=None,
-                 val_size=0.1,
-                 seed=42,
                  is_val=False,
                  is_test=False,
-                 use_cuda=False,
                  use_extended_vocab=True,
                  data_substitute=None):
 
         self.maxlen = maxlen
-        self.use_cuda = use_cuda
         self.parser = None
-        self.val_size = val_size
-        self.seed = seed
         self.is_val = is_val
         self.is_test = is_test
         self.use_extended_vocab = use_extended_vocab

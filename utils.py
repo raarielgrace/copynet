@@ -37,6 +37,15 @@ def shuffle_correlated_lists(l1, l2):
 
     return (new_l1, new_l2)
 
+# Source: https://stackoverflow.com/questions/2130016/splitting-a-list-into-n-parts-of-approximately-equal-length
+def chunks(l, n):
+    """ Yield n successive chunks from l.
+    """
+    newn = int(len(l) / n)
+    for i in xrange(0, n-1):
+        yield l[i*newn:i*newn+newn]
+    yield l[n*newn-newn:]
+
 
 def to_np(x):
     return x.data.cpu().numpy()
