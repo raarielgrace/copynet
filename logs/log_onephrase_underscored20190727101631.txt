@@ -1,0 +1,10 @@
+INPUT PHRASE:      <SOS> go to the Center_for_the_Study_of_Slavery_and_Justice_(CSSJ) <EOS>
+CORRECT LABEL:     <SOS> F ( lm( The_Center_for_the_Study_of_Slavery_and_Justice_(CSSJ) )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( The_Ivy_Room )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to the Center_for_the_Study_of_Slavery_and_Justice_(CSSJ) <EOS>
+CORRECT LABEL:     <SOS> F ( lm( The_Center_for_the_Study_of_Slavery_and_Justice_(CSSJ) )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( The_Ivy_Room )lm ) <EOS>
+
+

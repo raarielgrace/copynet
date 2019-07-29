@@ -1,0 +1,3025 @@
+INPUT PHRASE:      <SOS> go to Soldiers Memorial Gate avoiding the Brown Center for Students of Color . then go to the Brown Center for Students of Color or stay on Soldiers Memorial Gate . <EOS>
+CORRECT LABEL:     <SOS> ~ ( lm( Brown Center for Students of Color )lm ) U ( lm( Soldiers Memorial Gate )lm ) <EOS>
+PREDICTED LABEL:   <SOS> ~ ( lm( Brown Center for Students of Color )lm & F ( lm( Soldiers Memorial Gate )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to or through the Swearer Center for Public Service always avoid going to the Swearer Center for Public Service through the Caswell Hall <EOS>
+CORRECT LABEL:     <SOS> ~ ( lm( Caswell Hall )lm ) U ( lm( Swearer Center for Public Service )lm ) <EOS>
+PREDICTED LABEL:   <SOS> ~ ( lm( Caswell Hall )lm & F ( lm( Swearer Center for Public Service )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> stay away from the Morgan Witter Rogers Gate and go to The Center for the Study of Slavery and Justice CSSJ . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( The Center for the Study of Slavery and Justice CSSJ )lm ) & ~ ( lm( Morgan Witter Rogers Gate )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( The Center for the Study of Slavery lm( Justice CSSJ )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to the Hope College , then head to the The Center for the Study of Slavery and Justice CSSJ . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Hope College )lm & F ( lm( The Center for the Study of Slavery and Justice CSSJ )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Hope College )lm & F ( lm( The Center for the Study of Slavery and Justice CSSJ )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go through the Brown Bear to the The Center for the Study of Slavery and Justice CSSJ . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Brown Bear )lm & F ( lm( The Center for the Study of Slavery and Justice CSSJ )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Brown Bear )lm & F ( lm( The Center for the Study of Slavery and Justice CSSJ )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to the Haffenreffer Museum of Anthropology , then go to the Watson Center for Information Technology . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Haffenreffer Museum of Anthropology )lm & F ( lm( Watson Center for Information Technology )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Haffenreffer Museum of Anthropology )lm & F ( lm( Watson Center for Technology )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> proceed to the Swearer Center for Public Service but do n't leave the Medical Research Lab . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Swearer Center for Public Service )lm ) & G ( lm( Medical Research Lab )lm ) <EOS>
+PREDICTED LABEL:   <SOS> ~ ( lm( Swearer Center for Public )lm ) & ~ ( lm( Medical Research Lab )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> always avoid Van Wickle Gates and navigate to the Reclining Figure No. 2 — Bridge Prop . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Reclining Figure No. 2 — Bridge Prop )lm ) & ~ ( lm( Van Wickle Gates )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Reclining Figure No. 2 — Bridge )lm ) & ~ ( lm( Van Wickle Gates )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to Quiet Green and then go to the Reclining Figure No. 2 — Bridge Prop . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Quiet Green )lm & F ( lm( Reclining Figure No. 2 — Bridge Prop )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Quiet Green )lm & F ( lm( Reclining Figure No. 2 — Bridge )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> avoid the The Ivy Room and the Brown Bear and go to The Ivy Room . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( The Ivy Room )lm ) & G ( second_floor ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( The Ivy Room )lm ) & ~ ( lm( The Room )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> navigate to the Haffenreffer Museum of Anthropology before going to the Class of 1872 Gate . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Haffenreffer Museum of Anthropology )lm & F ( lm( Class of 1872 Gate )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Haffenreffer of of Anthropology )lm & F ( lm( Class of 1872 Gate )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to the The Ivy Room always avoiding the Brown Center for Students of Color . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( The Ivy Room )lm ) & ~ ( lm( Brown Center for Students of Color )lm ) <EOS>
+PREDICTED LABEL:   <SOS> ~ ( lm( The Ivy Room )lm ) & ~ ( lm( Brown Center for Students of Color )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to the Wilbour Hall before you go to the Brown University Sciences Library . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Wilbour Hall )lm & F ( lm( Brown University Sciences Library )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> ~ ( lm( Wilbour Hall )lm & F ( lm( Brown University Sciences Library )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to The Ivy Room but do not first pass through Casey Shearer Memorial . <EOS>
+CORRECT LABEL:     <SOS> ~ ( lm( Casey Shearer Memorial )lm ) U ( lm( The Ivy Room )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Casey Shearer Memorial )lm & F ( lm( The Ivy Room )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> visit the Swearer Center for Public Service and then proceed to the Gardner House . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Swearer Center for Public Service )lm & F ( lm( Gardner House )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Swearer Center for Public Service )lm & F ( lm( Gardner House )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to the Alpha Chi Omega Sorority then go Morgan Witter Rogers Gate . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Alpha Chi Omega Sorority )lm & F ( lm( Morgan Witter Rogers Gate )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Alpha Chi Omega Sorority )lm & F ( lm( Morgan Witter Rogers Gate )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> stay on the List Art Building while going to the The Ivy Room . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( The Ivy Room )lm ) & G ( lm( List Art Building )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( The Ivy Room )lm ) & ( lm( lm( Art Building )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to Sayles Hall , before going to William Goddard Memorial Gate . <EOS>
+CORRECT LABEL:     <SOS> ~ ( lm( William Goddard Memorial Gate )lm ) U ( lm( Sayles Hall )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( William Goddard Memorial Gate )lm & F ( lm( Sayles Memorial )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to the Brown Center for Students of Color through the Maxcy Green <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Maxcy Green )lm & F ( lm( Brown Center for Students of Color )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Maxcy Green )lm & F ( lm( Brown Center for Students of Color )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> move to the Soldiers Memorial Gate but go through Brown University first . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Brown University )lm & F ( lm( Soldiers Memorial Gate )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Brown University )lm & F ( lm( Soldiers Memorial )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to the John Hay Library before going to Circle Dance Sculpture . <EOS>
+CORRECT LABEL:     <SOS> ~ ( lm( Circle Dance Sculpture )lm ) U ( lm( John Hay Library )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( John Hay Library )lm & F ( lm( John Dance Sculpture )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> navigate through P-131317 to the Reclining Figure No. 2 — Bridge Prop . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( P-131317 )lm & F ( lm( Reclining Figure No. 2 — Bridge Prop )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( P-131317 )lm & F ( lm( Reclining Figure No. 2 — Bridge )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> move to the Class of 1887 Gate then continue to the Hegeman . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Class of 1887 Gate )lm & F ( lm( Hegeman )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Class of 1887 Gate )lm F F ( lm( Hegeman )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> always pass through the Lot 17 to get to Idee di pietra . <EOS>
+CORRECT LABEL:     <SOS> ~ ( lm( Idee di pietra )lm ) U ( first_floor ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Lot 17 )lm & F ( lm( Idee di pietra )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> stay on the Horace Mann House and move to 67 George . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( 67 George )lm ) & G ( lm( Horace Mann House )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( 67 George )lm ) & ( lm( lm( Horace Mann House )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to Soldiers Memorial Gate first , without passing through the Manning <EOS>
+CORRECT LABEL:     <SOS> ~ ( lm( Manning )lm ) U ( lm( Soldiers Memorial Gate )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Soldiers Memorial Gate )lm & F ( lm( Manning )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> navigate to the Circle Dance Sculpture while avoiding the Wriston Quad . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Circle Dance Sculpture )lm ) & ~ ( lm( Wriston Quad )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Circle Dance Sculpture )lm ) & ( lm( Wriston Quad )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to Van Wickle Gates passing through the Rhode Island Hall . <EOS>
+CORRECT LABEL:     <SOS> ~ ( lm( Van Wickle Gates )lm ) U ( first_floor ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Rhode Island Gates )lm & F ( lm( Rhode Wickle Gates )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to Manning while avoiding the first and The Ivy Room . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Manning )lm ) & G ( second_floor ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Manning )lm ) & ~ ( lm( Ivy )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> avoid the Sharpe Refectory until you reach Brown University Sciences Library . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Brown University Sciences Library )lm ) & ~ ( lm( Sharpe Refectory )lm ) <EOS>
+PREDICTED LABEL:   <SOS> ~ ( lm( Sharpe Refectory )lm ) U ( lm( Brown University Sciences Library )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to the Prospect House without going to the University Hall . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Prospect House )lm ) & ~ ( lm( University Hall )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Prospect House )lm ) & ( lm( Prospect Hall )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> always avoid College Green and navigate to the Untitled Lamp/Bear . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Untitled Lamp/Bear )lm ) & ~ ( lm( College Green )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Untitled Lamp/Bear )lm ) & ( lm( lm( College Green )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> always go from the Sharpe Refectory to the Campus Market . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Sharpe Refectory )lm & F ( lm( Campus Market )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Campus Market )lm & F ( lm( Campus Refectory )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to the List Art Building before going to Brown Bear <EOS>
+CORRECT LABEL:     <SOS> F ( lm( List Art Building )lm & F ( lm( Brown Bear )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Brown Bear )lm & F ( lm( List Bear )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to Alpha Chi Omega Sorority via the Faunce House . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Faunce House )lm & F ( lm( Alpha Chi Omega Sorority )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Faunce House )lm & F ( lm( Faunce House )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> navigate to Quiet Green through the GeoChem and Macmillian Hall . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( GeoChem and Macmillian Hall )lm & F ( lm( Quiet Green )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( GeoChem and Macmillian Hall )lm & F ( lm( GeoChem Green )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go through the Hegeman then to the Shirley Miller House . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Hegeman )lm & F ( lm( Shirley Miller House )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Hegeman )lm & F ( lm( Shirley Miller House )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> head to Wriston Quad after going to the Lyman Hall . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Lyman Hall )lm & F ( lm( Wriston Quad )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Wriston Hall )lm & F ( lm( Lyman Hall )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to the Robinson Gate then go to Circle Dance Sculpture <EOS>
+CORRECT LABEL:     <SOS> F ( second_floor ) & ~ ( blue_room ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Robinson Gate )lm & F ( lm( Circle Dance Sculpture )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> avoid the Metcalf Research Building and go to Prospect House . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Prospect House )lm ) & ~ ( lm( Metcalf Research Building )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Prospect House )lm ) & ~ ( lm( Metcalf Research )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> move to the Barus Building without entering the 67 George . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Barus Building )lm ) & ~ ( lm( 67 George )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Barus Building )lm ) & ( ( lm( George )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go through the Phi Kappa Psi Fraternity to Starbucks . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Phi Kappa Psi Fraternity )lm & F ( lm( Starbucks )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Phi Kappa Psi )lm & F ( lm( Starbucks )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to the Hegeman through the Class of 1872 Gate <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Class of 1872 Gate )lm & F ( lm( Hegeman )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Class of 1872 Gate )lm F F ( lm( Hegeman )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> navigate to the Finlandia always avoiding the Blue Room . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Finlandia )lm ) & ~ ( lm( Blue Room )lm ) <EOS>
+PREDICTED LABEL:   <SOS> ~ ( lm( Finlandia )lm ) & ~ ( lm( Blue Room )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to the Starbucks while staying on the BERT . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Starbucks )lm ) & G ( lm( BERT )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Starbucks )lm ) & ( lm( lm( BERT )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to War Memorial through the Phi Kappa Psi Fraternity <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Phi Kappa Psi Fraternity )lm & F ( lm( War Memorial )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Phi Kappa Psi Fraternity )lm & F ( lm( War Memorial )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go from the John Nicholas Brown Gate to Lot 17 <EOS>
+CORRECT LABEL:     <SOS> F ( lm( John Nicholas Brown Gate )lm & F ( lm( Lot 17 )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( John Nicholas Brown Gate )lm & F ( lm( Lot )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> navigate to Brown Bear through the Wilbour Hall . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Wilbour Hall )lm & F ( lm( Brown Bear )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Wilbour Hall )lm & F ( lm( Brown Bear )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to Barus Building only through the Faunce House <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Barus Building )lm ) & G ( lm( Faunce House )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Barus Building )lm & F ( lm( Faunce House )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to the P-131317 through Rockefeller Library . <EOS>
+CORRECT LABEL:     <SOS> ~ ( lm( P-131317 )lm ) U ( lm( Rockefeller Library )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Rockefeller Library )lm & F ( lm( P-131317 )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to 1 Arnold Laboratory after Sayles Hall <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Sayles Hall )lm & F ( first_floor ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Sayles Hall )lm & F ( lm( Sayles Hall )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to Marston Hall through the Finlandia <EOS>
+CORRECT LABEL:     <SOS> ~ ( lm( Marston Hall )lm ) U ( lm( Finlandia )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Finlandia )lm & F ( lm( Finlandia Hall )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go through Hegeman to Finlandia . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Hegeman )lm & F ( lm( Finlandia )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Hegeman )lm & F ( lm( Finlandia )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> move toward the Robinson Hall . <EOS>
+CORRECT LABEL:     <SOS> F ( second_floor ) & ~ ( blue_room ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Robinson Hall )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to the Citizen's Bank while avoiding the Finlandia and if you have reached the Citizen's Bank then you can go to the Finlandia . <EOS>
+CORRECT LABEL:     <SOS> ~ ( lm( Finlandia )lm ) U ( lm( Citizen's Bank )lm ) <EOS>
+PREDICTED LABEL:   <SOS> ~ ( lm( Finlandia )lm ) U ( lm( Finlandia )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> move to the The Center for the Study of Slavery and Justice CSSJ but go through Marcus Aurelius first . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Marcus Aurelius )lm & F ( lm( The Center for the Study of Slavery and Justice CSSJ )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Marcus Aurelius )lm & F ( lm( The Center for the Study of Slavery and Justice CSSJ )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to the The Center for the Study of Slavery and Justice CSSJ and then head to Carrie Tower . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( The Center for the Study of Slavery and Justice CSSJ )lm & F ( lm( Carrie Tower )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( The Center for the Study of Slavery and Justice for )lm & F ( lm( Carrie Tower )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to or through the Slavery Memorial always avoid going through the Reclining Figure No. 2 — Bridge Prop <EOS>
+CORRECT LABEL:     <SOS> ~ ( lm( Reclining Figure No. 2 — Bridge Prop )lm ) U ( lm( Slavery Memorial )lm ) <EOS>
+PREDICTED LABEL:   <SOS> ~ ( lm( Reclining Figure No. 2 — Bridge )lm ) ) ~ ( lm( Memorial )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> proceed to the Haffenreffer Museum of Anthropology but do n't leave the Lincoln Field Building . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Haffenreffer Museum of Anthropology )lm ) & G ( lm( Lincoln Field Building )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Haffenreffer Museum of Anthropology )lm ) & ~ ( lm( Lincoln Field Building )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> avoid the Swearer Center for Public Service until you navigate to the Faunce House . <EOS>
+CORRECT LABEL:     <SOS> ~ ( lm( Swearer Center for Public Service )lm ) U ( lm( Faunce House )lm ) <EOS>
+PREDICTED LABEL:   <SOS> ~ ( lm( Swearer Center for Public )lm ) & ~ ( lm( Faunce )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to the Citizen's Bank after going to the Watson Center for Information Technology . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Watson Center for Information Technology )lm & F ( lm( Citizen's Bank )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Citizen's Bank )lm & F ( lm( Watson Center for Technology )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> remain on the Wilbour Hall and go directly to the Morgan Witter Rogers Gate . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Morgan Witter Rogers Gate )lm ) & G ( lm( Wilbour Hall )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Morgan Witter Rogers Gate )lm ) & ~ ( lm( Wilbour Hall )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to the Barus Building but do not enter the Circle Dance Sculpture first . <EOS>
+CORRECT LABEL:     <SOS> ~ ( lm( Circle Dance Sculpture )lm ) U ( lm( Barus Building )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Barus )lm )lm & F ( lm( Barus Building )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> avoid the List Art Building before you navigate to the Van Wickle Gates . <EOS>
+CORRECT LABEL:     <SOS> ~ ( lm( List Art Building )lm ) U ( lm( Van Wickle Gates )lm ) <EOS>
+PREDICTED LABEL:   <SOS> ~ ( lm( List Art )lm ) & ~ ( lm( Van Wickle )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to the John Carter Brown Library only through the Class of 1887 Gate <EOS>
+CORRECT LABEL:     <SOS> F ( lm( John Carter Brown Library )lm ) & G ( lm( Class of 1887 Gate )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( John Carter Brown Library )lm & F ( lm( Class of 1887 Gate )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to the Watson Center for Information Technology by first visiting Campus Market . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Campus Market )lm & F ( lm( Watson Center for Information Technology )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Campus Market )lm & F ( lm( Watson Center for Information Technology )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to the Brown Center for Students of Color via the Maxcy Green . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Maxcy Green )lm & F ( lm( Brown Center for Students of Color )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Maxcy Green )lm & F ( lm( Brown Center for Students of Color )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> start on the List Art Building , go directly to the Kassar House . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( List Art Building )lm & F ( lm( Kassar House )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( List Art )lm ) & ~ ( lm( Kassar House )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to University Hall but do not enter the War Memorial first . <EOS>
+CORRECT LABEL:     <SOS> ~ ( lm( War Memorial )lm ) U ( lm( University Hall )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( University Hall )lm ) & ~ ( lm( War Memorial )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to the Blue Room but do not go to War Memorial . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Blue Room )lm ) & ~ ( lm( War Memorial )lm ) <EOS>
+PREDICTED LABEL:   <SOS> ~ ( lm( Blue )lm )lm ) & ~ ( lm( Room )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> avoid Class of 1872 Gate until going to John Carter Brown Library . <EOS>
+CORRECT LABEL:     <SOS> ~ ( lm( Class of 1872 Gate )lm ) U ( lm( John Carter Brown Library )lm ) <EOS>
+PREDICTED LABEL:   <SOS> ~ ( lm( Class of 1872 Gate )lm ) U ( lm( John Carter Brown )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> start on the Urban Environmental Lab and move directly to War Memorial . <EOS>
+CORRECT LABEL:     <SOS> ~ ( lm( War Memorial )lm ) U ( lm( Urban Environmental Lab )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Urban Memorial )lm & F ( lm( Urban Environmental Lab )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to List Art Building while staying on the Wriston Quad . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( List Art Building )lm ) & G ( lm( Wriston Quad )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( List Art Building )lm ) & ( lm( lm( Wriston Quad )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to the Sharpe Refectory and then to the Arnold Laboratory . <EOS>
+CORRECT LABEL:     <SOS> ~ ( lm( Arnold Laboratory )lm ) U ( lm( Sharpe Refectory )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Sharpe Refectory )lm & F ( lm( Arnold Laboratory )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> always avoid Metcalf Research Building and navigate to the Wilbour Hall . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Wilbour Hall )lm ) & ~ ( lm( Metcalf Research Building )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Wilbour Hall )lm ) & ~ ( lm( Metcalf Research )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to Morgan Witter Rogers Gate always avoiding the Robinson Hall . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Morgan Witter Rogers Gate )lm ) & ~ ( lm( Robinson Hall )lm ) <EOS>
+PREDICTED LABEL:   <SOS> ~ ( lm( Morgan Witter Rogers Gate )lm ) & ~ ( lm( Robinson Hall )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to Maxcy Hall first , without passing through the College Green <EOS>
+CORRECT LABEL:     <SOS> ~ ( lm( College Green )lm ) U ( lm( Maxcy Hall )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Maxcy Green )lm & F ( lm( Maxcy Green )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> avoid the Idee di pietra on your way to Quiet Green . <EOS>
+CORRECT LABEL:     <SOS> ~ ( lm( Idee di pietra )lm ) U ( lm( Quiet Green )lm ) <EOS>
+PREDICTED LABEL:   <SOS> ~ ( lm( Idee di )lm ) & ~ ( lm( Quiet )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to the Prospect House while staying on the Citizen's Bank . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Prospect House )lm ) & G ( lm( Citizen's Bank )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Prospect House )lm ) & ( ( lm( Citizen's Bank )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to Rockefeller Library before going in the GeoChem and Macmillian Hall <EOS>
+CORRECT LABEL:     <SOS> ~ ( lm( GeoChem and Macmillian Hall )lm ) U ( lm( Rockefeller Library )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Rockefeller Library )lm & F ( lm( GeoChem and Macmillian Hall )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> stay on the University Hall while going to the Sears . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Sears )lm ) & G ( lm( University Hall )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Sears )lm ) & ~ ( lm( University Hall )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to the Wayland while always avoiding the Caswell Hall . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Wayland )lm ) & ~ ( lm( Caswell Hall )lm ) <EOS>
+PREDICTED LABEL:   <SOS> ~ ( lm( Wayland )lm ) & ~ ( lm( Caswell Hall )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to Medical Research Lab , before going to Finlandia . <EOS>
+CORRECT LABEL:     <SOS> ~ ( lm( Finlandia )lm ) U ( lm( Medical Research Lab )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Finlandia )lm & F ( lm( Finlandia )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> visit Wriston Quad but do n't leave the Robinson Hall . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Wriston Quad )lm ) & G ( lm( Robinson Hall )lm ) <EOS>
+PREDICTED LABEL:   <SOS> ~ ( lm( Wriston Quad )lm ) & ~ ( lm( Robinson Hall )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to Campus Market by first visiting the War Memorial . <EOS>
+CORRECT LABEL:     <SOS> ~ ( lm( Campus Market )lm ) U ( lm( War Memorial )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Campus Market )lm & F ( lm( War Memorial )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to the Shirley Miller House via Rhode Island Hall . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Rhode Island Hall )lm & F ( lm( Shirley Miller House )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Rhode Island Hall )lm & F ( lm( Shirley Miller House )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> navigate to the University Hall avoiding GeoChem and Macmillian Hall . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( University Hall )lm ) & ~ ( lm( GeoChem and Macmillian Hall )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( University Hall )lm ) & ~ ( lm( GeoChem and Hall )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to the John Nicholas Brown Gate while avoiding Robinson Gate <EOS>
+CORRECT LABEL:     <SOS> F ( lm( John Nicholas Brown Gate )lm ) & ~ ( lm( Robinson Gate )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( John Nicholas Brown Gate )lm ) & ~ ( lm( Gate )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to the Lincoln Field Building or the Hegeman only . <EOS>
+CORRECT LABEL:     <SOS> ~ ( lm( Hegeman )lm ) U ( lm( Lincoln Field Building )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Lincoln Field )lm ) & ~ ( lm( Hegeman )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to the Van Wickle Gates only through the Robinson Hall <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Van Wickle Gates )lm ) & G ( lm( Robinson Hall )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Van Wickle Gates )lm ) F ( lm( Robinson Hall )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to the Norwood House through the Urban Environmental Lab . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Urban Environmental Lab )lm & F ( lm( Norwood House )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Urban Environmental Lab )lm & F ( lm( Norwood House )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to Kassar House before going in the Lot 76 . <EOS>
+CORRECT LABEL:     <SOS> ~ ( lm( Lot 76 )lm ) U ( lm( Kassar House )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Lot 76 )lm & F ( lm( Kassar House )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> avoid the 67 George and go to the BERT . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( BERT )lm ) & ~ ( lm( 67 George )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( BERT )lm ) & ( lm( lm( 67 George )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to Sayles Hall then go to Sayles Hall . <EOS>
+CORRECT LABEL:     <SOS> ~ ( lm( Sayles Hall )lm ) U ( first_floor ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Sayles Hall )lm & F ( lm( Sayles Hall )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to the College Green through the John Hay Library <EOS>
+CORRECT LABEL:     <SOS> F ( lm( John Hay Library )lm & F ( lm( College Green )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( John Hay Library )lm & F ( lm( College Green )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to the Wriston Quad from the Van Wickle Gates <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Wriston Quad )lm ) & G ( lm( Van Wickle Gates )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Wriston Quad )lm & F ( lm( Wriston Quad )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to Department of Cognitive, Linguistic, and Psychological Sciences . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Department of Cognitive, Linguistic, and Psychological Sciences )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Department of Cognitive, Linguistic, and Psychological Sciences )lm & F ( lm( lm( ) ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> avoid the Marcus Aurelius and go to the Finlandia . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Finlandia )lm ) & ~ ( lm( Marcus Aurelius )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Finlandia )lm ) & ~ ( lm( Marcus )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to the Lot 76 via the Caswell Hall . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Caswell Hall )lm & F ( lm( Lot 76 )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Caswell Hall )lm & F ( lm( Lot Hall )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> avoid Blue Room and go to the Untitled Lamp/Bear . <EOS>
+CORRECT LABEL:     <SOS> F ( third_floor ) & ~ ( lm( Blue Room )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Untitled Lamp/Bear )lm ) & ~ ( lm( Blue Room )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> get to Slavery Memorial , while avoiding Wilbour Hall <EOS>
+CORRECT LABEL:     <SOS> ~ ( lm( Wilbour Hall )lm ) U ( lm( Slavery Memorial )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Slavery Memorial )lm ) & ~ ( lm( Wilbour Hall )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to Lincoln Field Building through The Ivy Room <EOS>
+CORRECT LABEL:     <SOS> F ( lm( The Ivy Room )lm & F ( lm( Lincoln Field Building )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( The Ivy Room )lm & F ( lm( Field Field Building )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to Marston Hall through the Sharpe Refectory . <EOS>
+CORRECT LABEL:     <SOS> ~ ( lm( Marston Hall )lm ) U ( lm( Sharpe Refectory )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Marston Hall )lm & F ( lm( Sharpe Refectory )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to List Art Building while avoiding Lippit House <EOS>
+CORRECT LABEL:     <SOS> F ( lm( List Art Building )lm ) & ~ ( lm( Lippit House )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( List Art Building )lm ) & ( lm( lm( Lippit House )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go through the Manning to Lyman Hall . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Manning )lm & F ( lm( Lyman Hall )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Manning Hall )lm & F ( lm( Lyman Hall )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to Finlandia through the Blue Room . <EOS>
+CORRECT LABEL:     <SOS> ~ ( lm( Finlandia )lm ) U ( lm( Blue Room )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Finlandia )lm & F ( lm( Blue Room )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> head to the Maddock Alumni  . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Maddock Alumni  )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Maddock Alumni  )lm ) F ( lm( Maddock Alumni  )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> move toward the John Hay Library . <EOS>
+CORRECT LABEL:     <SOS> F ( second_floor ) & ~ ( blue_room ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( John Hay Library )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to Metcalf Research Building . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Metcalf Research Building )lm ) & G ( second_floor ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Metcalf Research Building )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to the Robinson Hall . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Robinson Hall )lm ) & ~ ( blue_room ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Robinson Hall )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to Gardner House , avoid the The Center for the Study of Slavery and Justice CSSJ until you have been to the Gardner House <EOS>
+CORRECT LABEL:     <SOS> ~ ( lm( The Center for the Study of Slavery and Justice CSSJ )lm ) U ( lm( Gardner House )lm ) <EOS>
+PREDICTED LABEL:   <SOS> ~ ( lm( Justice CSSJ )lm & F ( lm( Gardner Center for ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to or through the Morgan Witter Rogers Gate . always avoid going to the Morgan Witter Rogers Gate through John Carter Brown Library <EOS>
+CORRECT LABEL:     <SOS> ~ ( lm( John Carter Brown Library )lm ) U ( lm( Morgan Witter Rogers Gate )lm ) <EOS>
+PREDICTED LABEL:   <SOS> ~ ( lm( John Carter Brown Library )lm & F ( lm( Morgan Witter Rogers Gate )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> navigate to the Slavery Memorial always avoiding the The Center for the Study of Slavery and Justice CSSJ . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Slavery Memorial )lm ) & ~ ( lm( The Center for the Study of Slavery and Justice CSSJ )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Slavery Memorial )lm ) & ~ ( lm( The Center for ) Study of <EOS>
+
+
+INPUT PHRASE:      <SOS> go to or through the Untitled Lamp/Bear always avoid going to the Untitled Lamp/Bear through the Maxcy Green <EOS>
+CORRECT LABEL:     <SOS> ~ ( lm( Maxcy Green )lm ) U ( lm( Untitled Lamp/Bear )lm ) <EOS>
+PREDICTED LABEL:   <SOS> ~ ( lm( Maxcy Green )lm & U ( lm( Untitled Lamp/Bear )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to the War Memorial but do not enter the Salomon Center for Teaching first . <EOS>
+CORRECT LABEL:     <SOS> ~ ( lm( Salomon Center for Teaching )lm ) U ( lm( War Memorial )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( War Memorial )lm ) & ~ ( lm( War Memorial )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> first navigate to the Maxcy Green , then make your way to the Minden Hall . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Maxcy Green )lm & F ( lm( Minden Hall )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Maxcy Green )lm & F ( lm( Minden Hall )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go through the Untitled Lamp/Bear , then make your way to Salomon Center for Teaching . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Untitled Lamp/Bear )lm & F ( lm( Salomon Center for Teaching )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> ~ ( lm( Untitled Lamp/Bear )lm & F ( lm( Salomon Center for Teaching )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to Department of Cognitive, Linguistic, and Psychological Sciences and avoid the Sayles Hall . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Department of Cognitive, Linguistic, and Psychological Sciences )lm ) & ~ ( lm( Sayles Hall )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Department of Cognitive, Linguistic, and Psychological Sciences )lm & & ( lm( lm( Sayles Hall )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> avoid the Class of 1887 Gate until going to the Brown University Sciences Library . <EOS>
+CORRECT LABEL:     <SOS> ~ ( lm( Class of 1887 Gate )lm ) U ( lm( Brown University Sciences Library )lm ) <EOS>
+PREDICTED LABEL:   <SOS> ~ ( lm( Class of 1887 Gate )lm ) U ( lm( Brown University Sciences )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to the Maxcy Green without ever leaving the Swearer Center for Public Service . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Maxcy Green )lm ) & G ( lm( Swearer Center for Public Service )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Maxcy Green )lm ) & ~ ( lm( Swearer Center for Public )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> always avoid going to Hughes Court through the Department of Cognitive, Linguistic, and Psychological Sciences <EOS>
+CORRECT LABEL:     <SOS> ~ ( lm( Department of Cognitive, Linguistic, and Psychological Sciences )lm ) U ( lm( Hughes Court )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Department of Cognitive, Linguistic, and Psychological Sciences )lm & ~ ( lm( Hughes Court )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go through the Class of 1872 Gate before navigating to Soldiers Memorial Gate . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Class of 1872 Gate )lm & F ( lm( Soldiers Memorial Gate )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Class of Gate )lm & F ( lm( Soldiers Memorial Gate )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> move to Norwood House from the Department of Cognitive, Linguistic, and Psychological Sciences . <EOS>
+CORRECT LABEL:     <SOS> ~ ( lm( Norwood House )lm ) U ( lm( Department of Cognitive, Linguistic, and Psychological Sciences )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Norwood House )lm & F ( lm( Department of Cognitive, Linguistic, and Psychological Sciences )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to the Haffenreffer Museum of Anthropology and then to the Faunce House . <EOS>
+CORRECT LABEL:     <SOS> ~ ( lm( Faunce House )lm ) U ( lm( Haffenreffer Museum of Anthropology )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Haffenreffer Museum of Anthropology )lm & F ( lm( Faunce House )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to Robinson Hall whilst avoiding the Watson Center for Information Technology . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Robinson Hall )lm ) & ~ ( lm( Watson Center for Information Technology )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Robinson Hall )lm ) & ~ ( lm( Watson Center for Technology )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to the Hegeman without going to the Haffenreffer Museum of Anthropology . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Hegeman )lm ) & ~ ( lm( Haffenreffer Museum of Anthropology )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Hegeman )lm & F ( lm( Haffenreffer Museum of Anthropology )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> while avoiding the John Carter Brown Library , navigate to 67 George . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( 67 George )lm ) & ~ ( lm( John Carter Brown Library )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( 67 George )lm ) & ( lm( lm( John Carter Library )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> always go to Wayland before navigating to the John Nicholas Brown Gate . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Wayland )lm & F ( lm( John Nicholas Brown Gate )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Wayland )lm & F ( lm( John Nicholas Brown Gate )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> stay on the Morgan Witter Rogers Gate and go to Robinson Gate . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Robinson Gate )lm ) & G ( lm( Morgan Witter Rogers Gate )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Robinson )lm ) & & ( lm( Morgan Witter Rogers Rogers )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to the Medical Research Lab through the Swearer Center for Public Service <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Swearer Center for Public Service )lm & F ( lm( Medical Research Lab )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Swearer Center for Public )lm & F ( lm( Medical Research Lab )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> stay on the Class of 1872 Gate to get to Lippit House . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Lippit House )lm ) & G ( lm( Class of 1872 Gate )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Lippit House )lm ) & ~ ( lm( Class of 1872 Gate )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to College Green , but do not go to Rockefeller Library . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( College Green )lm ) & ~ ( lm( Rockefeller Library )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( College Green )lm & F ( lm( College Library )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to the Haffenreffer Museum of Anthropology then the Littlefield Hall . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Haffenreffer Museum of Anthropology )lm & F ( lm( Littlefield Hall )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Haffenreffer Museum of )lm & F ( lm( Littlefield Hall )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> got to Shirley Miller House through the Phi Kappa Psi Fraternity . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Shirley Miller House )lm ) & G ( second_floor ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Phi Miller House )lm & F ( lm( Shirley Miller House )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> always avoid going to William Goddard Memorial Gate through the Slater Hall <EOS>
+CORRECT LABEL:     <SOS> ~ ( lm( Slater Hall )lm ) U ( lm( William Goddard Memorial Gate )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Slater Hall )lm ) U ( lm( lm( Goddard Memorial Gate )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to the Metcalf Research Building through the Phi Kappa Psi Fraternity <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Phi Kappa Psi Fraternity )lm & F ( lm( Metcalf Research Building )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Phi Kappa Psi Fraternity )lm & F ( lm( Metcalf Research Building )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go from the The Ivy Room to Class of 1887 Gate . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( The Ivy Room )lm & F ( lm( Class of 1887 Gate )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( The Ivy )lm & & ( ( Class of 1887 Gate )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> stay on the Wilbour Hall and go to the Caswell Hall . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Caswell Hall )lm ) & G ( lm( Wilbour Hall )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Caswell Hall )lm ) & ~ ( lm( Wilbour Hall )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to John Nicholas Brown Gate and avoid the Blue Room . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( John Nicholas Brown Gate )lm ) & ~ ( lm( Blue Room )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( John Nicholas Brown Gate )lm ) & ( lm( lm( Blue Room )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go through John Hay Library to the Brown University Sciences Library . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( John Hay Library )lm & F ( lm( Brown University Sciences Library )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( John Hay Library )lm & F ( lm( Brown University Library )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go through the Maxcy Hall before navigating to Idee di pietra . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Maxcy Hall )lm & F ( lm( Idee di pietra )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Maxcy Hall )lm & F ( lm( Idee di pietra )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to the Rhode Island Hall then go John Hay Library . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Rhode Island Hall )lm & F ( lm( John Hay Library )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Rhode Island )lm ) & ( ( John Hay Library )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go up to the Walter Hall without going to Robinson Hall . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Walter Hall )lm ) & ~ ( lm( Robinson Hall )lm ) <EOS>
+PREDICTED LABEL:   <SOS> ~ ( lm( Walter Hall )lm ) & ~ ( lm( Hall Hall )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to Circle Dance Sculpture then go to Robinson Hall . <EOS>
+CORRECT LABEL:     <SOS> F ( yellow_room ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Circle Dance )lm & F ( lm( Robinson Hall )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> move to the Rockefeller Library without leaving the Lot 76 . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Rockefeller Library )lm ) & G ( lm( Lot 76 )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Rockefeller Library )lm ) & ~ ( lm( Lot 76 )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> avoid the Van Wickle Gates until you reach Gardner House . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Gardner House )lm ) & ~ ( lm( Van Wickle Gates )lm ) <EOS>
+PREDICTED LABEL:   <SOS> ~ ( lm( Van Wickle Gates )lm ) U ( lm( Gardner House )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to the Lyman Hall or the Caswell Hall only . <EOS>
+CORRECT LABEL:     <SOS> ~ ( lm( Caswell Hall )lm ) U ( lm( Lyman Hall )lm ) <EOS>
+PREDICTED LABEL:   <SOS> ~ ( lm( Lyman Hall )lm ) & ~ ( lm( Hall )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> do not go to Lot 17 until going to Littlefield Hall <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Littlefield Hall )lm ) & ~ ( lm( Lot 17 )lm ) <EOS>
+PREDICTED LABEL:   <SOS> ~ ( lm( Littlefield Hall )lm ) U ( lm( Littlefield Hall )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to Finlandia by first visiting the Lippit House . <EOS>
+CORRECT LABEL:     <SOS> ~ ( lm( Finlandia )lm ) U ( lm( Lippit House )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Finlandia )lm & F ( lm( Lippit House )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to the Robinson Gate always avoiding the Wayland . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Robinson Gate )lm ) & ~ ( lm( Wayland )lm ) <EOS>
+PREDICTED LABEL:   <SOS> ~ ( lm( Robinson Gate )lm ) & ~ ( lm( Wayland )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> navigate to the Faunce House through the Citizen's Bank . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Citizen's Bank )lm & F ( lm( Faunce House )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Citizen's Bank )lm & F ( lm( Faunce House )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> avoid Maxcy Hall while going to the Gardner House . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Gardner House )lm ) & ~ ( lm( Maxcy Hall )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Gardner House )lm ) U ~ ( lm( Maxcy Hall )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> always pass Maxcy Green to get to level 1 . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Maxcy Green )lm & F ( first_floor ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Maxcy Green )lm & F ( lm( ) ) ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to Carrie Tower without going to Quiet Green <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Carrie Tower )lm ) & ~ ( lm( Quiet Green )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Carrie Tower )lm ) F ( lm( lm( Green )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> move to the Swearer Center for Public Service . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Swearer Center for Public Service )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Swearer Center for Public )lm ) & ~ ( lm( Swearer Center for Public )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to Circle Dance Sculpture through Shirley Miller House <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Shirley Miller House )lm & F ( lm( Circle Dance Sculpture )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Shirley Miller House )lm & F ( lm( Shirley Dance Sculpture )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to Rockefeller Library via the Lyman Hall . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Lyman Hall )lm & F ( lm( Rockefeller Library )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Lyman Hall )lm & F ( lm( Lyman Library )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> avoid the Campus Market until passing 67 George . <EOS>
+CORRECT LABEL:     <SOS> ~ ( lm( Campus Market )lm ) U ( lm( 67 George )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Campus Market )lm ) U ( lm( 67 George )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to anywhere on the College Green . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( College Green )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( College )lm ) & ~ ( lm( College Green )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to the Lot 17 through Finlandia . <EOS>
+CORRECT LABEL:     <SOS> ~ ( lm( Lot 17 )lm ) U ( lm( Finlandia )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Finlandia )lm & F ( lm( Finlandia )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to Starbucks and avoid 2nd and Finlandia <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Starbucks )lm ) & G ( first_floor ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Starbucks )lm ) & ( lm( lm( Finlandia )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go directly to Gardner House . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Gardner House )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Gardner House )lm & F ( lm( Gardner )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to the Gardner House . <EOS>
+CORRECT LABEL:     <SOS> ~ ( red_room ) U ( lm( Gardner House )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Gardner House )lm ) F ( lm( Gardner House )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> travel to College Green . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( College Green )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( College Green )lm & F ( lm( ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to the GeoChem and Macmillian Hall avoiding the The Center for the Study of Slavery and Justice CSSJ . if you get to GeoChem and Macmillian Hall you can then proceed to the The Center for the Study of Slavery and Justice CSSJ <EOS>
+CORRECT LABEL:     <SOS> ~ ( lm( The Center for the Study of Slavery and Justice CSSJ )lm ) U ( lm( GeoChem and Macmillian Hall )lm ) <EOS>
+PREDICTED LABEL:   <SOS> ~ ( lm( The Center for the Study of Slavery and Justice CSSJ )lm ) of ( lm( GeoChem and CSSJ Hall )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to the 86 Waterman  without going through the Hegeman . if you reached the 86 Waterman  then you can go to the Hegeman , or be done . <EOS>
+CORRECT LABEL:     <SOS> ~ ( lm( Hegeman )lm ) U ( lm( 86 Waterman  )lm ) <EOS>
+PREDICTED LABEL:   <SOS> ~ ( lm( Hegeman )lm ) & ( lm( 86 Waterman  )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to the List Art Building avoiding the Gardner House . go through the List Art Building to get to the Gardner House . <EOS>
+CORRECT LABEL:     <SOS> ~ ( lm( Gardner House )lm ) U ( lm( List Art Building )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( List Art Building )lm & F ( lm( Gardner House )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> always avoid the Saint Stephens Church , go to the Reclining Figure No. 2 — Bridge Prop . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Reclining Figure No. 2 — Bridge Prop )lm ) & ~ ( lm( Saint Stephens Church )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Reclining Figure No. 2 — Bridge )lm ) & ~ ( lm( Saint Stephens Church )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> avoid The Center for the Study of Slavery and Justice CSSJ until navigating to Idee di pietra . <EOS>
+CORRECT LABEL:     <SOS> ~ ( lm( The Center for the Study of Slavery and Justice CSSJ )lm ) U ( lm( Idee di pietra )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Justice CSSJ )lm ) U ( lm( Idee Center for the ) <EOS>
+
+
+INPUT PHRASE:      <SOS> move to Department of Cognitive, Linguistic, and Psychological Sciences without leaving the Salomon Center for Teaching . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Department of Cognitive, Linguistic, and Psychological Sciences )lm ) & G ( lm( Salomon Center for Teaching )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Department of Cognitive, Linguistic, and Psychological Sciences )lm ) & ~ ( lm( Salomon Center for Teaching )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> avoid Marcus Aurelius until going to the Department of Cognitive, Linguistic, and Psychological Sciences . <EOS>
+CORRECT LABEL:     <SOS> ~ ( lm( Marcus Aurelius )lm ) U ( lm( Department of Cognitive, Linguistic, and Psychological Sciences )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Marcus Aurelius )lm ) U ( lm( Department of Cognitive, Linguistic, and Psychological Sciences )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to the William Goddard Memorial Gate before going to John Carter Brown Library . <EOS>
+CORRECT LABEL:     <SOS> ~ ( lm( John Carter Brown Library )lm ) U ( lm( William Goddard Memorial Gate )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( John Carter Brown Gate )lm & F ( lm( John Goddard Memorial Gate )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to the Wilbour Hall , then go to the Van Wickle Gates . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Wilbour Hall )lm & F ( lm( Van Wickle Gates )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Wilbour Hall )lm & F ( lm( Van Wickle Gates )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> proceed to the Arnold Laboratory but do n't leave the John Hay Library . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Arnold Laboratory )lm ) & G ( lm( John Hay Library )lm ) <EOS>
+PREDICTED LABEL:   <SOS> ~ ( lm( Arnold Laboratory )lm ) & ~ ( lm( John Hay Library )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to the Robinson Hall but do not enter the Caswell Hall first . <EOS>
+CORRECT LABEL:     <SOS> ~ ( lm( Caswell Hall )lm ) U ( lm( Robinson Hall )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Robinson Hall )lm ) & ( lm( lm( Hall )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to Swearer Center for Public Service before going to Brown Bear . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Swearer Center for Public Service )lm & F ( lm( Brown Bear )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Swearer Center for Public )lm & & ( ( lm( Brown Bear )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go from Walter Hall to Department of Cognitive, Linguistic, and Psychological Sciences . <EOS>
+CORRECT LABEL:     <SOS> ~ ( lm( Department of Cognitive, Linguistic, and Psychological Sciences )lm ) U ( lm( Walter Hall )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Walter Hall )lm Linguistic, & F ( lm( Department of Cognitive, Linguistic, and Psychological Sciences )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to John Nicholas Brown Gate first , without passing through the Starbucks <EOS>
+CORRECT LABEL:     <SOS> ~ ( lm( Starbucks )lm ) U ( lm( John Nicholas Brown Gate )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( John Nicholas Brown Gate & F ( lm( John Starbucks )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> avoid Phi Kappa Psi Fraternity until navigating to the Rhode Island Hall . <EOS>
+CORRECT LABEL:     <SOS> ~ ( lm( Phi Kappa Psi Fraternity )lm ) U ( lm( Rhode Island Hall )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Phi Kappa Psi Fraternity )lm ) U ( lm( Rhode Island Hall )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to Class of 1872 Gate before going in the Brown Bear . <EOS>
+CORRECT LABEL:     <SOS> ~ ( lm( Brown Bear )lm ) U ( lm( Class of 1872 Gate )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Class of 1872 Gate )lm & F ( lm( Brown Bear )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to Circle Dance Sculpture , then up to Quiet Green . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Circle Dance Sculpture )lm & F ( lm( Quiet Green )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Circle Dance Sculpture )lm F F ( lm( Quiet Green )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to the Metcalf Research Building before going to Barus Building . <EOS>
+CORRECT LABEL:     <SOS> ~ ( lm( Barus Building )lm ) U ( lm( Metcalf Research Building )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Metcalf Building )lm & F ( lm( Barus Building )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to the Alpha Chi Omega Sorority through the Brown University . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Brown University )lm & F ( lm( Alpha Chi Omega Sorority )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Brown University )lm & F ( lm( Alpha Chi Omega Sorority )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> avoid the Sharpe Refectory until going through John Nicholas Brown Gate . <EOS>
+CORRECT LABEL:     <SOS> ~ ( lm( Sharpe Refectory )lm ) U ( lm( John Nicholas Brown Gate )lm ) <EOS>
+PREDICTED LABEL:   <SOS> ~ ( lm( John Nicholas Brown )lm ) U ~ ( lm( Refectory )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> avoid Class of 1872 Gate and go to the Robinson Gate . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Robinson Gate )lm ) & ~ ( lm( Class of 1872 Gate )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Robinson )lm ) & & ~ ( lm( Class of 1872 )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to the Gardner House and then to the Rockefeller Library . <EOS>
+CORRECT LABEL:     <SOS> ~ ( lm( Rockefeller Library )lm ) U ( lm( Gardner House )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Gardner House )lm & F ( lm( Rockefeller Library )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> avoid the first and Littlefield Hall and go to Carrie Tower . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Carrie Tower )lm ) & G ( second_floor ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Carrie Tower )lm ) & ~ ( lm( ) <EOS>
+
+
+INPUT PHRASE:      <SOS> stay on the Metcalf Research Building and go to Prospect House . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Prospect House )lm ) & G ( lm( Metcalf Research Building )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Prospect House )lm ) & ~ ( lm( Metcalf Research Building )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to Van Wickle Gates . then go directly to Slater Hall <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Van Wickle Gates )lm & F ( lm( Slater Hall )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Van Wickle Gates )lm & F ( lm( Slater Hall )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to the Carrie Tower before you go to Sayles Hall . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Carrie Tower )lm & F ( lm( Sayles Hall )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Carrie Tower )lm & F ( lm( Sayles Hall )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to 67 George while avoiding the first and Friedman Hall . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( 67 George )lm ) & G ( second_floor ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( 67 George )lm ) F ( lm( lm( Friedman )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to the College Green by touching the Walter Hall . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Walter Hall )lm & F ( lm( College Green )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( College Green )lm & F ( lm( Walter Hall )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> move to Horace Mann House without leaving the Sayles Hall . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Horace Mann House )lm ) & G ( lm( Sayles Hall )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Horace Mann House )lm ) & ~ ( lm( Sayles Hall )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to The Ivy Room through the Casey Shearer Memorial . <EOS>
+CORRECT LABEL:     <SOS> ~ ( lm( The Ivy Room )lm ) U ( lm( Casey Shearer Memorial )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Casey Ivy Room )lm & F ( lm( Casey Shearer Memorial )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> avoid the Lot 17 while going to the Mencoff Hall . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Mencoff Hall )lm ) & ~ ( lm( Lot 17 )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Mencoff Hall )lm ) & ~ ( lm( Lot )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to 1 Medical Research Lab after Van Wickle Gates <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Van Wickle Gates )lm & F ( first_floor ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Van Wickle Gates )lm & F ( lm( ) Research Lab )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> avoid Finlandia and go to the Van Wickle Gates . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Van Wickle Gates )lm ) & ~ ( lm( Finlandia )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Van Wickle Gates )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to Brown University and proceed to Norwood House . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Brown University )lm & F ( lm( Norwood House )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Brown University )lm & F ( lm( Norwood House )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> always avoid Untitled Lamp/Bear while going to 67 George . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( 67 George )lm ) & ~ ( lm( Untitled Lamp/Bear )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( 67 George )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go through the The Ivy Room to Citizen's Bank . <EOS>
+CORRECT LABEL:     <SOS> ~ ( lm( Citizen's Bank )lm ) U ( lm( The Ivy Room )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( The Ivy )lm & F ( lm( Citizen's Bank )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to Citizen's Bank but remain on the P-131317 . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Citizen's Bank )lm ) & G ( lm( P-131317 )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Citizen's Bank )lm ) & ~ ( lm( P-131317 )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to Brown University then Class of 1887 Gate . <EOS>
+CORRECT LABEL:     <SOS> ~ ( lm( Class of 1887 Gate )lm ) U ( lm( Brown University )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Brown University )lm & F ( lm( Class of 1887 Gate )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go through Class of 1872 Gate to Lippit House . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Class of 1872 Gate )lm & F ( lm( Lippit House )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Class of 1872 )lm & F ( lm( Lippit House )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to Soldiers Memorial Gate through the Lippit House . <EOS>
+CORRECT LABEL:     <SOS> ~ ( lm( Soldiers Memorial Gate )lm ) U ( lm( Lippit House )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Lippit House )lm & F ( lm( Lippit Memorial )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to Medical Research Lab via the Starbucks . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Starbucks )lm & F ( lm( Medical Research Lab )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Starbucks )lm & F ( lm( Starbucks )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to Untitled Lamp/Bear , but never through it <EOS>
+CORRECT LABEL:     <SOS> ~ ( lm( Untitled Lamp/Bear )lm ) U ( first_floor ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Untitled Lamp/Bear )lm ) U ( lm( ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to War Memorial through the Rockefeller Library . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Rockefeller Library )lm & F ( lm( War Memorial )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Rockefeller Library )lm & F ( lm( Rockefeller Memorial )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> move toward the Class of 1872 Gate . <EOS>
+CORRECT LABEL:     <SOS> F ( second_floor ) & ~ ( blue_room ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Class of 1872 )lm ) & ~ ( lm( Class of 1872 Gate )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go from Sears to 86 Waterman  . <EOS>
+CORRECT LABEL:     <SOS> ~ ( lm( 86 Waterman  )lm ) U ( lm( Sears )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Sears )lm ) & ~ ( lm( 86 Waterman  )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to Sears through the Robinson Hall <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Robinson Hall )lm & F ( lm( Sears )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Robinson Hall )lm & F ( lm( Sears )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> travel to Lincoln Field Building . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Lincoln Field Building )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Lincoln Field Building )lm ) F ( lm( ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go directly to Kassar House <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Kassar House )lm ) & G ( first_floor ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Kassar House )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to the Marcus Aurelius <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Marcus Aurelius )lm ) & G ( first_floor ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Marcus Aurelius )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> avoid the Quiet Green <EOS>
+CORRECT LABEL:     <SOS> F ( second_floor ) & ~ ( lm( Quiet Green )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Quiet )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> avoid the The Center for the Study of Slavery and Justice CSSJ and the Casey Shearer Memorial and go to The Center for the Study of Slavery and Justice CSSJ . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( The Center for the Study of Slavery and Justice CSSJ )lm ) & G ( second_floor ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( The Center for the Study of Slavery lm( Justice CSSJ )lm ) & ~ ( Justice CSSJ )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> first go to the The Center for the Study of Slavery and Justice CSSJ and then go to Maxcy Green . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( The Center for the Study of Slavery and Justice CSSJ )lm & F ( lm( Maxcy Green )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( The Center for the Study of Slavery and Justice for )lm Study Slavery and Justice CSSJ )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> avoid the The Center for the Study of Slavery and Justice CSSJ until you go to the Wriston Quad . <EOS>
+CORRECT LABEL:     <SOS> ~ ( lm( The Center for the Study of Slavery and Justice CSSJ )lm ) U ( lm( Wriston Quad )lm ) <EOS>
+PREDICTED LABEL:   <SOS> ~ ( lm( Justice CSSJ )lm ) U ( lm( The Center for the Study of Slavery and Quad )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to Sharpe Refectory by first visiting the The Center for the Study of Slavery and Justice CSSJ . <EOS>
+CORRECT LABEL:     <SOS> ~ ( lm( Sharpe Refectory )lm ) U ( lm( The Center for the Study of Slavery and Justice CSSJ )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( The Center for the Study of ( The Center for the Study of Slavery and Justice CSSJ )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> avoid the Reclining Figure No. 2 — Bridge Prop and go to Brown Center for Students of Color <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Brown Center for Students of Color )lm ) & ~ ( lm( Reclining Figure No. 2 — Bridge Prop )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Brown Center for Students of Color )lm ) & ~ ( lm( Reclining Figure No. 2 — Bridge )lm )lm <EOS>
+
+
+INPUT PHRASE:      <SOS> navigate to the Lot 17 but do not pass through the Prince Engineering Lab . <EOS>
+CORRECT LABEL:     <SOS> ~ ( lm( Prince Engineering Lab )lm ) U ( lm( Lot 17 )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Prince Engineering Lab )lm & F ( lm( Lot Engineering Lab )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to Quiet Green before going in the Department of Cognitive, Linguistic, and Psychological Sciences <EOS>
+CORRECT LABEL:     <SOS> ~ ( lm( Department of Cognitive, Linguistic, and Psychological Sciences )lm ) U ( lm( Quiet Green )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Department of Cognitive, Linguistic, and Psychological Sciences ( F F ( lm( Green )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to the Watson Center for Information Technology while always avoiding the Kassar House . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Watson Center for Information Technology )lm ) & ~ ( lm( Kassar House )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Watson Center for Information )lm ) & ~ ( lm( Kassar House )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> navigate to the Alpha Chi Omega Sorority while avoiding the Medical Research Lab . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Alpha Chi Omega Sorority )lm ) & ~ ( lm( Medical Research Lab )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Alpha Chi Omega Sorority )lm ) & ( lm( Medical Research Lab )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to the Brown Center for Students of Color while avoiding the Sayles Hall <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Brown Center for Students of Color )lm ) & ~ ( lm( Sayles Hall )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Brown Center for Students of Color )lm ) & ( lm( lm( Sayles Hall )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to Saint Stephens Church then go to the Brown University Sciences Library . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Saint Stephens Church )lm & F ( lm( Brown University Sciences Library )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Saint Stephens Church )lm & F ( lm( Brown University Sciences Library )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to the Van Wickle Gates while always avoiding the John Carter Brown Library <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Van Wickle Gates )lm ) & ~ ( lm( John Carter Brown Library )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Van Wickle Gates )lm ) & ~ ( lm( John Carter Brown )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to the GeoChem and Macmillian Hall and then go to Brown Bear . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( GeoChem and Macmillian Hall )lm & F ( lm( Brown Bear )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( GeoChem Macmillian Macmillian )lm & F ( lm( GeoChem Bear )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to the Maxcy Green always avoiding the John Carter Brown Library . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Maxcy Green )lm ) & ~ ( lm( John Carter Brown Library )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Maxcy Green )lm ) & ~ ( lm( John Carter Library )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> navigate to the Barus Building staying on the Haffenreffer Museum of Anthropology . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Barus Building )lm ) & G ( lm( Haffenreffer Museum of Anthropology )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Barus Building )lm ) & ~ ( lm( Haffenreffer Museum of Anthropology )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to Hope College after navigating to the John Nicholas Brown Gate . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( John Nicholas Brown Gate )lm & F ( lm( Hope College )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Hope College )lm & F ( lm( John Nicholas Brown Gate )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to Littlefield Hall through the Watson Center for Information Technology . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Watson Center for Information Technology )lm & F ( lm( Littlefield Hall )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Watson Center for Information )lm & F ( lm( Watson Center for Information Technology )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to Slater Hall by going through Watson Center for Information Technology <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Watson Center for Information Technology )lm & F ( lm( Slater Hall )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Watson Center for Information )lm & F ( lm( Slater Hall )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go through the Wayland before going to the Lincoln Field Building . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Wayland )lm & F ( lm( Lincoln Field Building )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Wayland )lm & F ( lm( Wayland )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> stay on the Casey Shearer Memorial and go to Rockefeller Library . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Rockefeller Library )lm ) & G ( lm( Casey Shearer Memorial )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Rockefeller Library )lm ) & ~ ( lm( Casey Shearer Memorial )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to Arnold Laboratory first , without passing through the Walter Hall <EOS>
+CORRECT LABEL:     <SOS> ~ ( lm( Walter Hall )lm ) U ( lm( Arnold Laboratory )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Arnold Laboratory )lm & F ( lm( Walter Hall )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to Rhode Island Hall before navigating to the College Green . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Rhode Island Hall )lm & F ( lm( College Green )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Rhode Island Hall )lm & F ( lm( College Green )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to the Casey Shearer Memorial through the Horace Mann House . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Horace Mann House )lm & F ( lm( Casey Shearer Memorial )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Horace Mann House )lm & F ( lm( Horace Shearer Memorial )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> pass through Untitled Lamp/Bear on your way to the Lot 18 . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Untitled Lamp/Bear )lm & F ( lm( Lot 18 )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Untitled Lamp/Bear )lm & F ( lm( Lot 18 )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> avoid Idee di pietra while going to the Lot 18 . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Lot 18 )lm ) & ~ ( lm( Idee di pietra )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Lot 18 )lm ) & ~ ( lm( Idee di )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go through the Robinson Hall to John Nicholas Brown Gate . <EOS>
+CORRECT LABEL:     <SOS> ~ ( lm( John Nicholas Brown Gate )lm ) U ( lm( Robinson Hall )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( John Nicholas Brown Gate )lm & F ( lm( John Hall )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> always avoid going to Idee di pietra through the Rockefeller Library <EOS>
+CORRECT LABEL:     <SOS> ~ ( lm( Rockefeller Library )lm ) U ( lm( Idee di pietra )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Rockefeller Library )lm ) U ( lm( Idee di )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> avoid Idee di pietra and go to the Faunce House . <EOS>
+CORRECT LABEL:     <SOS> ~ ( lm( Idee di pietra )lm ) U ( lm( Faunce House )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Faunce House )lm ) & ~ ( lm( Idee di )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to the Shirley Miller House through John Nicholas Brown Gate <EOS>
+CORRECT LABEL:     <SOS> F ( lm( John Nicholas Brown Gate )lm & F ( lm( Shirley Miller House )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( John Nicholas Brown Gate )lm & ( lm( Shirley Miller House )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> move to Rockefeller Library after moving to the Littlefield Hall . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Littlefield Hall )lm & F ( lm( Rockefeller Library )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Littlefield Hall )lm & F ( lm( Littlefield Library )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go from Urban Environmental Lab to John Nicholas Brown Gate . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Urban Environmental Lab )lm & F ( lm( John Nicholas Brown Gate )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Urban Environmental Lab )lm & F ( lm( John Environmental Lab )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to the Carrie Tower while staying on the Wayland . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Carrie Tower )lm ) & G ( lm( Wayland )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Carrie Tower )lm ) & ( lm( Wayland Wayland )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to the Marcus Aurelius through the Phi Kappa Psi Fraternity <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Phi Kappa Psi Fraternity )lm & F ( lm( Marcus Aurelius )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Phi Kappa Psi Fraternity )lm & F ( lm( Marcus Aurelius )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> navigate to the Maxcy Green and avoid Brown University . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Maxcy Green )lm ) & ~ ( lm( Brown University )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Maxcy Green )lm ) & ( lm( Maxcy University )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to the Starbucks avoiding the Lincoln Field Building . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Starbucks )lm ) & ~ ( lm( Lincoln Field Building )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Starbucks )lm ) & ( lm( Lincoln Field Building )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to Metcalf Research Building before going to Brown Bear <EOS>
+CORRECT LABEL:     <SOS> ~ ( lm( Brown Bear )lm ) U ( lm( Metcalf Research Building )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Metcalf Research Building )lm & F ( lm( Brown Bear )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to Rhode Island Hall before going to Citizen's Bank <EOS>
+CORRECT LABEL:     <SOS> ~ ( lm( Citizen's Bank )lm ) U ( lm( Rhode Island Hall )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Rhode Bank )lm & F ( lm( Citizen's Bank )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to Manning before going in the Soldiers Memorial Gate <EOS>
+CORRECT LABEL:     <SOS> ~ ( lm( Soldiers Memorial Gate )lm ) U ( lm( Manning )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Soldiers Memorial Gate )lm & F ( lm( Soldiers Memorial )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> got to Metcalf Research Building through the Lippit House . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Metcalf Research Building )lm ) & G ( second_floor ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Lippit House )lm & F ( lm( Metcalf Research Building )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go from the Brown Bear to John Carter Brown Library <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Brown Bear )lm & F ( lm( John Carter Brown Library )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( John Carter Library )lm ) F ( lm( John Brown )lm Library )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> robot , go to the Sharpe Refectory . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Sharpe Refectory )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Sharpe Refectory )lm ) & ( lm( lm( Refectory )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> avoid the Campus Market and reach Lyman Hall <EOS>
+CORRECT LABEL:     <SOS> ~ ( red_room ) U ( lm( Campus Market )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Lyman Hall )lm ) & ~ ( lm( Campus Market )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to Minden Hall through Wayland . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Wayland )lm & F ( lm( Minden Hall )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Wayland )lm & F ( lm( Wayland Hall )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to the Brown Bear . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Brown Bear )lm ) & ~ ( blue_room ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Brown Bear )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> move to the Wayland . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Wayland )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Wayland )lm ) F ( lm( Wayland )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> move to the Manning . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Manning )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Manning )lm ) & ( lm( lm( ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to the Maxcy Green without going to the Saint Stephens Church . if you reached the Maxcy Green , now you can go to the Saint Stephens Church . <EOS>
+CORRECT LABEL:     <SOS> ~ ( lm( Saint Stephens Church )lm ) U ( lm( Maxcy Green )lm ) <EOS>
+PREDICTED LABEL:   <SOS> ~ ( lm( Saint Stephens Church )lm & F ( lm( Maxcy Green )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> move to John Nicholas Brown Gate without entering the Caswell Hall . then you may stay at John Nicholas Brown Gate or go to the Caswell Hall . <EOS>
+CORRECT LABEL:     <SOS> ~ ( lm( Caswell Hall )lm ) U ( lm( John Nicholas Brown Gate )lm ) <EOS>
+PREDICTED LABEL:   <SOS> ~ ( lm( Caswell Hall )lm ) U ( lm( John Hall )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to or through the Rhode Island Hall , but avoid going to the Rhode Island Hall through the Phi Kappa Psi Fraternity <EOS>
+CORRECT LABEL:     <SOS> ~ ( lm( Phi Kappa Psi Fraternity )lm ) U ( lm( Rhode Island Hall )lm ) <EOS>
+PREDICTED LABEL:   <SOS> ~ ( lm( Phi Kappa Psi Fraternity )lm & F ( lm( Rhode Island Hall )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> got to Department of Cognitive, Linguistic, and Psychological Sciences through the The Center for the Study of Slavery and Justice CSSJ . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Department of Cognitive, Linguistic, and Psychological Sciences )lm ) & G ( second_floor ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Department Cognitive, Cognitive, Linguistic, Psychological Sciences )lm & of ( lm( Justice CSSJ )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to the Friedman Hall by avoiding Wayland if you reached the Friedman Hall , then you can proceed to Wayland . <EOS>
+CORRECT LABEL:     <SOS> ~ ( lm( Wayland )lm ) U ( lm( Friedman Hall )lm ) <EOS>
+PREDICTED LABEL:   <SOS> ~ ( lm( Wayland )lm & F ( lm( Friedman Hall )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> avoid Haffenreffer Museum of Anthropology until you go to the The Center for the Study of Slavery and Justice CSSJ . <EOS>
+CORRECT LABEL:     <SOS> ~ ( lm( Haffenreffer Museum of Anthropology )lm ) U ( lm( The Center for the Study of Slavery and Justice CSSJ )lm ) <EOS>
+PREDICTED LABEL:   <SOS> ~ ( lm( Haffenreffer Museum Museum Anthropology )lm ) U ( lm( The Center for the Study <EOS>
+
+
+INPUT PHRASE:      <SOS> go to the The Center for the Study of Slavery and Justice CSSJ while avoiding Manning and the Manning <EOS>
+CORRECT LABEL:     <SOS> F ( lm( The Center for the Study of Slavery and Justice CSSJ )lm ) & ~ ( lm( Manning )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( The Center for the Study of Slavery lm( Justice for )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to or through the Sears . always avoid going to the Sears through Norwood House <EOS>
+CORRECT LABEL:     <SOS> ~ ( lm( Norwood House )lm ) U ( lm( Sears )lm ) <EOS>
+PREDICTED LABEL:   <SOS> ~ ( lm( Norwood House )lm & U ( lm( Sears )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to Brown University Sciences Library by first going to the Alpha Chi Omega Sorority . <EOS>
+CORRECT LABEL:     <SOS> ~ ( lm( Brown University Sciences Library )lm ) U ( lm( Alpha Chi Omega Sorority )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Brown University Sciences Library )lm & F ( lm( Alpha Chi Omega Sorority )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to the Brown Bear through the Reclining Figure No. 2 — Bridge Prop . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Reclining Figure No. 2 — Bridge Prop )lm & F ( lm( Brown Bear )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Reclining Figure No. 2 — Bridge Prop )lm & F ( lm( Brown Bear )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to the Idee di pietra but avoid the Watson Center for Information Technology . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Idee di pietra )lm ) & ~ ( lm( Watson Center for Information Technology )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Idee di pietra )lm ) & ~ ( lm( Watson Center for Technology )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> navigate to the Brown University Sciences Library before you go to Walter Hall . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Brown University Sciences Library )lm & F ( lm( Walter Hall )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Brown University Sciences Library )lm & F ( lm( Walter Hall )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to Metcalf Research Building through the Brown Center for Students of Color <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Brown Center for Students of Color )lm & F ( lm( Metcalf Research Building )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Brown Center for Students of )lm & F ( lm( Metcalf Research Building )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to the Robinson Gate before going to Morgan Witter Rogers Gate . <EOS>
+CORRECT LABEL:     <SOS> ~ ( lm( Morgan Witter Rogers Gate )lm ) U ( lm( Robinson Gate )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Robinson Gate )lm & F ( lm( Morgan Witter Gate )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to Lippit House after navigating to the William Goddard Memorial Gate . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( William Goddard Memorial Gate )lm & F ( lm( Lippit House )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( William Goddard Memorial Gate )lm & F ( lm( Lippit Memorial )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to the Brown Bear without going to the Wriston Quad . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Brown Bear )lm ) & ~ ( lm( Wriston Quad )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Brown Bear )lm ) & ( ( lm( Wriston Quad )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go through the John Hay Library to John Nicholas Brown Gate . <EOS>
+CORRECT LABEL:     <SOS> ~ ( lm( John Nicholas Brown Gate )lm ) U ( lm( John Hay Library )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( John Hay Library )lm & F ( lm( John Nicholas Brown Gate )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> stay on the Soldiers Memorial Gate and go to the Hegeman . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Hegeman )lm ) & G ( lm( Soldiers Memorial Gate )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Hegeman )lm & & ( ( lm( Soldiers Memorial Gate )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go through Saint Stephens Church to Watson Center for Information Technology . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Saint Stephens Church )lm & F ( lm( Watson Center for Information Technology )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Saint Stephens Church )lm & F ( lm( Watson Center for Technology )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> advance to Mencoff Hall but always avoid the Van Wickle Gates . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Mencoff Hall )lm ) & ~ ( lm( Van Wickle Gates )lm ) <EOS>
+PREDICTED LABEL:   <SOS> ~ ( lm( Mencoff Hall )lm ) & ~ ( lm( Van Wickle Gates )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> always avoid Slavery Memorial and go through the Casey Shearer Memorial . <EOS>
+CORRECT LABEL:     <SOS> ~ ( lm( Slavery Memorial )lm ) U ( lm( Casey Shearer Memorial )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Casey Shearer Memorial )lm ) U ( lm( lm( Memorial Memorial )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> move to the Saint Stephens Church without entering the Sears . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Saint Stephens Church )lm ) & ~ ( lm( Sears )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Saint Stephens Church )lm ) & ( lm( lm( Sears )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go from the Van Wickle Gates to Morgan Witter Rogers Gate <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Van Wickle Gates )lm & F ( lm( Morgan Witter Rogers Gate )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Van Wickle Gates )lm & F ( lm( Morgan Witter Rogers Gate )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to William Goddard Memorial Gate via the Caswell Hall . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Caswell Hall )lm & F ( lm( William Goddard Memorial Gate )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Caswell Hall )lm & F ( lm( Caswell Hall )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to the Idee di pietra before going to Norwood House <EOS>
+CORRECT LABEL:     <SOS> ~ ( lm( Norwood House )lm ) U ( lm( Idee di pietra )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Norwood House )lm & F ( lm( Idee House )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> stay on the Blue Room and go to Maxcy Green . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Maxcy Green )lm ) & G ( lm( Blue Room )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Maxcy Green )lm ) & ( lm( Blue Room )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> navigate to the Metcalf Research Building via the Lot 76 . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Lot 76 )lm & F ( lm( Metcalf Research Building )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Lot 76 )lm & F ( lm( Metcalf Research Building )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to War Memorial then go to Van Wickle Gates . <EOS>
+CORRECT LABEL:     <SOS> F ( yellow_room ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( War Memorial )lm & F ( lm( Van Wickle Gates )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> avoid List Art Building and go to Sharpe Refectory . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Sharpe Refectory )lm ) & ~ ( lm( List Art Building )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Sharpe Refectory )lm ) & ~ ( lm( List Art )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to the Carrie Tower before going to Hughes Court <EOS>
+CORRECT LABEL:     <SOS> ~ ( lm( Hughes Court )lm ) U ( lm( Carrie Tower )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Carrie Court )lm & F ( lm( Hughes Tower )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to the Lot 76 then go to Robinson Hall <EOS>
+CORRECT LABEL:     <SOS> F ( second_floor ) & ~ ( blue_room ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Lot Hall )lm & F ( lm( Robinson Hall )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> avoid Lyman Hall and go to the Barus Building . <EOS>
+CORRECT LABEL:     <SOS> F ( third_floor ) & ~ ( lm( Lyman Hall )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Barus Building )lm ) & ~ ( lm( Lyman Hall )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to the BERT through the List Art Building . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( List Art Building )lm & F ( lm( BERT )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( List Art Building )lm & F ( lm( BERT )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> avoid Sears while going to the Arnold Laboratory . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Arnold Laboratory )lm ) & ~ ( lm( Sears )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Arnold Laboratory )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to the Citizen's Bank through the Untitled Lamp/Bear <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Untitled Lamp/Bear )lm & F ( lm( Citizen's Bank )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Untitled Lamp/Bear )lm & F ( lm( Citizen's Bank )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to the Salomon Center for Teaching . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Salomon Center for Teaching )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Salomon Center for Teaching )lm ) & ( lm( lm( ) )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> get to Hughes Court , while avoiding P-131317 <EOS>
+CORRECT LABEL:     <SOS> ~ ( lm( P-131317 )lm ) U ( lm( Hughes Court )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Hughes Court )lm ) & ~ ( lm( P-131317 )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to the Circle Dance Sculpture first <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Circle Dance Sculpture )lm & F ( first_floor ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Circle Dance Sculpture )lm & F ( lm( ) ) ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> head to the Lot 17 . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Lot 17 )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Lot 17 )lm ) F ( lm( Lot 17 )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to the Lyman Hall . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Lyman Hall )lm ) & ~ ( blue_room ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Lyman Hall )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to the Soldiers Memorial Gate by avoiding Swearer Center for Public Service if you reached the Soldiers Memorial Gate , then you can proceed to Swearer Center for Public Service . <EOS>
+CORRECT LABEL:     <SOS> ~ ( lm( Swearer Center for Public Service )lm ) U ( lm( Soldiers Memorial Gate )lm ) <EOS>
+PREDICTED LABEL:   <SOS> ~ ( lm( Swearer Center for Public Service )lm & F ( lm( Soldiers Memorial Gate )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to the Blue Room avoiding the Maxcy Green . go through the Blue Room to get to the Maxcy Green . <EOS>
+CORRECT LABEL:     <SOS> ~ ( lm( Maxcy Green )lm ) U ( lm( Blue Room )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Blue Room )lm & F ( lm( Maxcy Green )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to or through the Walter Hall , but avoid going to the Walter Hall through the Littlefield Hall <EOS>
+CORRECT LABEL:     <SOS> ~ ( lm( Littlefield Hall )lm ) U ( lm( Walter Hall )lm ) <EOS>
+PREDICTED LABEL:   <SOS> ~ ( lm( Littlefield Hall )lm & F ( lm( Walter Hall )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to the University Hall before going to The Center for the Study of Slavery and Justice CSSJ <EOS>
+CORRECT LABEL:     <SOS> F ( lm( University Hall )lm & F ( lm( The Center for the Study of Slavery and Justice CSSJ )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( The Center for the Study of ( lm( Justice Hall )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to or through the Slavery Memorial always avoid going to the Slavery Memorial through the Friedman Hall <EOS>
+CORRECT LABEL:     <SOS> ~ ( lm( Friedman Hall )lm ) U ( lm( Slavery Memorial )lm ) <EOS>
+PREDICTED LABEL:   <SOS> ~ ( lm( Friedman Hall )lm & U ( lm( Slavery Memorial )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to the Campus Market but do not go through the William Goddard Memorial Gate first . <EOS>
+CORRECT LABEL:     <SOS> ~ ( lm( William Goddard Memorial Gate )lm ) U ( lm( Campus Market )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( William Goddard Memorial Gate )lm & ~ ( lm( Campus Market )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go through the Department of Cognitive, Linguistic, and Psychological Sciences to the Lincoln Field Building . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Department of Cognitive, Linguistic, and Psychological Sciences )lm & F ( lm( Lincoln Field Building )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Department of Cognitive, Linguistic, and Psychological Sciences ( F ( lm( Lincoln Field Field Building )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> start on the Rhode Island Hall , go directly to the Lincoln Field Building . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Rhode Island Hall )lm & F ( lm( Lincoln Field Building )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Rhode Field )lm ) & ~ ( lm( Field Field Building )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go through the Swearer Center for Public Service and navigate to the Lot 18 . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Swearer Center for Public Service )lm & F ( lm( Lot 18 )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Swearer Center for Public )lm & F ( lm( Swearer Center for Public )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> avoid the Simmons Quadrangle and go to the Watson Center for Information Technology . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Watson Center for Information Technology )lm ) & ~ ( lm( Simmons Quadrangle )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Watson Center for Information )lm ) & ~ ( lm( Simmons Quadrangle )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to the The Center for the Study of Slavery and Justice CSSJ . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( The Center for the Study of Slavery and Justice CSSJ )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( The Center for the Study of Slavery and Justice for )lm ) of ( lm( Justice CSSJ )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to the Van Wickle Gates without going to the Salomon Center for Teaching <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Van Wickle Gates )lm ) & ~ ( lm( Salomon Center for Teaching )lm ) <EOS>
+PREDICTED LABEL:   <SOS> ~ ( lm( Van Wickle Gates )lm ) & ~ ( lm( Salomon Center for Teaching )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to the John Nicholas Brown Gate without going to the Slater Hall . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( John Nicholas Brown Gate )lm ) & ~ ( lm( Slater Hall )lm ) <EOS>
+PREDICTED LABEL:   <SOS> ~ ( lm( John Nicholas Brown Gate )lm ) & ( lm( Slater Hall )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to P-131317 then go to the Swearer Center for Public Service . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( P-131317 )lm & F ( lm( Swearer Center for Public Service )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( P-131317 )lm & F ( lm( Swearer Center for Public )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go through the Morgan Witter Rogers Gate to the Casey Shearer Memorial . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Morgan Witter Rogers Gate )lm & F ( lm( Casey Shearer Memorial )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Morgan Witter Rogers Gate )lm & F ( lm( Casey Shearer Memorial )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> stay away from the J.W. Wilson and go to Shirley Miller House . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Shirley Miller House )lm ) & ~ ( lm( J.W. Wilson )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Shirley Miller House )lm & F ( lm( J.W. Wilson )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> avoid the first and Casey Shearer Memorial and go to Marcus Aurelius . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Marcus Aurelius )lm ) & G ( second_floor ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Marcus Aurelius )lm ) & ~ ( lm( Shearer )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> start on the Lincoln Field Building and move directly to 67 George . <EOS>
+CORRECT LABEL:     <SOS> ~ ( lm( 67 George )lm ) U ( lm( Lincoln Field Building )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( 67 George )lm & F ( lm( Lincoln Field Building )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to the Hughes Court but never go to the Finlandia . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Hughes Court )lm ) & ~ ( lm( Finlandia )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Hughes Court )lm & F ( lm( Finlandia )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to the Slater Hall without ever leaving the Mencoff Hall . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Slater Hall )lm ) & G ( lm( Mencoff Hall )lm ) <EOS>
+PREDICTED LABEL:   <SOS> ~ ( lm( Slater Hall )lm ) & ~ ( lm( Mencoff Hall )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> stay away from the Lot 18 and go to Friedman Hall . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Friedman Hall )lm ) & ~ ( lm( Lot 18 )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Friedman Hall )lm ) & ( lm( lm( Lot 18 )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> avoid Manning until going to the Swearer Center for Public Service . <EOS>
+CORRECT LABEL:     <SOS> ~ ( lm( Manning )lm ) U ( lm( Swearer Center for Public Service )lm ) <EOS>
+PREDICTED LABEL:   <SOS> ~ ( lm( Manning )lm ) U ( lm( Swearer Center for Public )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to the Quiet Green via Watson Center for Information Technology . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Watson Center for Information Technology )lm & F ( lm( Quiet Green )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Watson Center for Information )lm & F ( lm( Quiet Green )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to or through Maxcy Green avoiding going through Barus Building <EOS>
+CORRECT LABEL:     <SOS> ~ ( lm( Barus Building )lm ) U ( lm( Maxcy Green )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Barus Building )lm & F ( lm( Maxcy Green )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to 86 Waterman  via the Shirley Miller House . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Shirley Miller House )lm & F ( lm( 86 Waterman  )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Shirley Miller House )lm & F ( lm( Shirley Waterman  )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to the Maxcy Green but avoid Idee di pietra . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Maxcy Green )lm ) & ~ ( lm( Idee di pietra )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Maxcy Green )lm ) & ( ( lm( Idee pietra )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to Lyman Hall via the Class of 1887 Gate . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Class of 1887 Gate )lm & F ( lm( Lyman Hall )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Class of 1887 Gate )lm & F ( lm( Lyman Hall )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to the Morgan Witter Rogers Gate through the Untitled Lamp/Bear <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Untitled Lamp/Bear )lm & F ( lm( Morgan Witter Rogers Gate )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Untitled Lamp/Bear )lm & F ( lm( Morgan Witter Rogers Gate )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to the Citizen's Bank while avoiding the Barus Building . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Citizen's Bank )lm ) & ~ ( lm( Barus Building )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Citizen's Bank )lm ) & ( ( lm( Barus Building )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to Kassar House through the Watson Center for Information Technology <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Watson Center for Information Technology )lm & F ( lm( Kassar House )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Watson Center for Information )lm & F ( lm( Kassar House )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to the Brown University Sciences Library through Soldiers Memorial Gate <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Soldiers Memorial Gate )lm & F ( lm( Brown University Sciences Library )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Soldiers Memorial Gate )lm & F ( lm( Brown University Sciences Library )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to William Goddard Memorial Gate through the Marston Hall . <EOS>
+CORRECT LABEL:     <SOS> ~ ( lm( William Goddard Memorial Gate )lm ) U ( lm( Marston Hall )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Marston Hall )lm & F ( lm( William Goddard Memorial Gate )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to Mencoff Hall after going to List Art Building . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( List Art Building )lm & F ( lm( Mencoff Hall )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( List Art Building )lm & F ( lm( Mencoff Hall )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to the Walter Hall then the Untitled Lamp/Bear . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Walter Hall )lm & F ( lm( Untitled Lamp/Bear )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Walter Hall )lm & F ( lm( Untitled Lamp/Bear )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to the Caswell Hall through the Brown University . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Brown University )lm & F ( lm( Caswell Hall )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Brown University )lm & F ( lm( Caswell Hall )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> avoid Sears until you pass through Idee di pietra . <EOS>
+CORRECT LABEL:     <SOS> ~ ( lm( Sears )lm ) U ( lm( Idee di pietra )lm ) <EOS>
+PREDICTED LABEL:   <SOS> ~ ( lm( Sears )lm ) U ( lm( Idee di )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to John Nicholas Brown Gate through the Lot 17 <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Lot 17 )lm & F ( lm( John Nicholas Brown Gate )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Lot 17 )lm & F ( lm( John Nicholas Brown Gate )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to Brown University through the John Hay Library . <EOS>
+CORRECT LABEL:     <SOS> ~ ( lm( Brown University )lm ) U ( lm( John Hay Library )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( John Hay Library )lm & F ( lm( Brown University )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go through the Lot 18 to Maxcy Green . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Lot 18 )lm & F ( lm( Maxcy Green )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Lot Green )lm & F ( lm( Maxcy Green )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to Lot 76 from the Manning only . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Lot 76 )lm ) & G ( lm( Manning )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Lot 76 )lm & F ( lm( Manning )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go from the Lincoln Field Building to Hope College <EOS>
+CORRECT LABEL:     <SOS> ~ ( lm( Hope College )lm ) U ( lm( Lincoln Field Building )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Hope Field )lm & F ( lm( Lincoln College )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> avoid P-131317 and go to the Marston Hall . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Marston Hall )lm ) & ~ ( lm( P-131317 )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Marston Hall )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to BERT while avoiding the Manning . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( BERT )lm ) & ~ ( lm( Manning )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( BERT )lm ) & ( lm( lm( Manning )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to the Class of 1887 Gate . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Class of 1887 Gate )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Class of 1887 Gate )lm ) F ( lm( Class of 1887 Gate )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> always avoid going through Littlefield Hall <EOS>
+CORRECT LABEL:     <SOS> ~ ( lm( Littlefield Hall )lm ) U ( first_floor ) <EOS>
+PREDICTED LABEL:   <SOS> ~ ( lm( Littlefield Hall )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go directly to Finlandia . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Finlandia )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Finlandia )lm ) F ( lm( Finlandia )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to the Slavery Memorial avoiding the Slavery Memorial . if you reached the Reclining Figure No. 2 — Bridge Prop you can stay there , or head to the Slavery Memorial . <EOS>
+CORRECT LABEL:     <SOS> ~ ( lm( Slavery Memorial )lm ) U ( lm( Reclining Figure No. 2 — Bridge Prop )lm ) <EOS>
+PREDICTED LABEL:   <SOS> ~ ( lm( Slavery Memorial )lm ) & ( lm( lm( Memorial )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to or through the Class of 1887 Gate . always avoid going to the Class of 1887 Gate through Reclining Figure No. 2 — Bridge Prop <EOS>
+CORRECT LABEL:     <SOS> ~ ( lm( Reclining Figure No. 2 — Bridge Prop )lm ) U ( lm( Class of 1887 Gate )lm ) <EOS>
+PREDICTED LABEL:   <SOS> ~ ( lm( Reclining Figure No. 2 — Bridge )lm & & ( lm( Class of 1887 Gate )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to Norwood House , avoid the Class of 1872 Gate until you have been to the Norwood House <EOS>
+CORRECT LABEL:     <SOS> ~ ( lm( Class of 1872 Gate )lm ) U ( lm( Norwood House )lm ) <EOS>
+PREDICTED LABEL:   <SOS> ~ ( lm( Class of 1872 Gate )lm & U ( lm( Norwood House )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to a spot in the Phi Kappa Psi Fraternity , but do n't touch Lincoln Field Building . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Phi Kappa Psi Fraternity )lm ) & ~ ( lm( Lincoln Field Building )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Phi Kappa Psi Fraternity )lm ) & ( lm( lm( Field Field Building )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> visit the Reclining Figure No. 2 — Bridge Prop and then proceed to the John Nicholas Brown Gate . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Reclining Figure No. 2 — Bridge Prop )lm & F ( lm( John Nicholas Brown Gate )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Reclining Figure No. 2 — Bridge Prop )lm & F ( lm( John Nicholas Brown Gate )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> head to the Swearer Center for Public Service but first go to the Class of 1872 Gate . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Class of 1872 Gate )lm & F ( lm( Swearer Center for Public Service )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Class of 1872 )lm & & F ( lm( Swearer Center for Public )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> navigate to the John Carter Brown Library but do not pass through the List Art Building . <EOS>
+CORRECT LABEL:     <SOS> ~ ( lm( List Art Building )lm ) U ( lm( John Carter Brown Library )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( John Art Building )lm & F ( lm( John Art )lm Library )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to The Center for the Study of Slavery and Justice CSSJ , avoiding the Campus Market <EOS>
+CORRECT LABEL:     <SOS> ~ ( lm( Campus Market )lm ) U ( lm( The Center for the Study of Slavery and Justice CSSJ )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( The Center for the Study of Slavery and Justice for )lm ) of ( lm( Justice CSSJ )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to the Department of Cognitive, Linguistic, and Psychological Sciences , then proceed to Robinson Hall . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Department of Cognitive, Linguistic, and Psychological Sciences )lm & F ( lm( Robinson Hall )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Department of Cognitive, Linguistic, and Psychological Sciences )lm & F ( lm( Robinson Hall )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> do not navigate away from the Maddock Alumni  and go to the Van Wickle Gates . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Van Wickle Gates )lm ) & G ( lm( Maddock Alumni  )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Van Wickle Gates )lm ) & ( lm( lm( Alumni  )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> always go through the J.W. Wilson to get to the John Nicholas Brown Gate . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( J.W. Wilson )lm & F ( lm( John Nicholas Brown Gate )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( J.W. Wilson )lm & F ( lm( John Nicholas Brown Gate )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> navigate to the Brown Center for Students of Color then continue to Arnold Laboratory . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Brown Center for Students of Color )lm & F ( lm( Arnold Laboratory )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Brown Center for Students of )lm & F ( lm( Arnold Laboratory )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to the Watson Center for Information Technology while avoiding the Metcalf Research Building . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Watson Center for Information Technology )lm ) & ~ ( lm( Metcalf Research Building )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Watson Center for Information )lm ) & ~ ( lm( Metcalf Research Building )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to the Phi Kappa Psi Fraternity by first going to the Gardner House . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Gardner House )lm & F ( lm( Phi Kappa Psi Fraternity )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Gardner House )lm & F ( lm( Gardner House )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> stay on the Haffenreffer Museum of Anthropology while going to the Marston Hall . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Marston Hall )lm ) & G ( lm( Haffenreffer Museum of Anthropology )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Marston Hall )lm ) & ~ ( lm( Haffenreffer Museum of Anthropology )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to the Quiet Green , then go to Haffenreffer Museum of Anthropology . <EOS>
+CORRECT LABEL:     <SOS> ~ ( lm( Haffenreffer Museum of Anthropology )lm ) U ( lm( Quiet Green )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Quiet Green )lm & F ( lm( Haffenreffer Museum of Anthropology )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go through Van Wickle Gates before going to the Lincoln Field Building . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Van Wickle Gates )lm & F ( lm( Lincoln Field Building )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Van Wickle Gates )lm & F ( lm( Lincoln Field Building )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> avoid the Caswell Hall until you go to Swearer Center for Public Service <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Swearer Center for Public Service )lm ) & ~ ( lm( Caswell Hall )lm ) <EOS>
+PREDICTED LABEL:   <SOS> ~ ( lm( Caswell Hall )lm ) U ( lm( Swearer Center for Public )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to the Morgan Witter Rogers Gate before going to Littlefield Hall . <EOS>
+CORRECT LABEL:     <SOS> ~ ( lm( Littlefield Hall )lm ) U ( lm( Morgan Witter Rogers Gate )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Littlefield Hall )lm & F ( lm( Morgan Witter Rogers Gate )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to the Phi Kappa Psi Fraternity and avoid the Hope College . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Phi Kappa Psi Fraternity )lm ) & ~ ( lm( Hope College )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Phi Kappa Psi Fraternity )lm ) & ~ ( lm( College College )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> start on the Walter Hall and move directly to Idee di pietra . <EOS>
+CORRECT LABEL:     <SOS> ~ ( lm( Idee di pietra )lm ) U ( lm( Walter Hall )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Idee di pietra )lm & F ( lm( Walter Hall )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to the Morgan Witter Rogers Gate through the Rhode Island Hall <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Rhode Island Hall )lm & F ( lm( Morgan Witter Rogers Gate )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Rhode Island Hall )lm & F ( lm( Morgan Witter Rogers Gate )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> avoid the Marcus Aurelius as you go to the Slavery Memorial . <EOS>
+CORRECT LABEL:     <SOS> F ( second_floor ) & ~ ( blue_room ) <EOS>
+PREDICTED LABEL:   <SOS> ~ ( lm( Slavery Aurelius )lm ) U ~ ( lm( ) Aurelius )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to the Lot 17 after going to the Robinson Hall . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Robinson Hall )lm & F ( lm( Lot 17 )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Robinson Hall )lm & F ( lm( Robinson Hall )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> start on the Brown Bear and move directly to Citizen's Bank . <EOS>
+CORRECT LABEL:     <SOS> ~ ( lm( Citizen's Bank )lm ) U ( lm( Brown Bear )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Citizen's Bank )lm & F ( lm( Brown Bear )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> move to the Urban Environmental Lab without entering the J.W. Wilson . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Urban Environmental Lab )lm ) & ~ ( lm( J.W. Wilson )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Urban Environmental Lab )lm ) & ( lm( J.W. Wilson )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to the 67 George without going to the Simmons Quadrangle . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( 67 George )lm ) & ~ ( lm( Simmons Quadrangle )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( 67 George )lm ) F ( lm( Simmons Quadrangle )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> navigate to the Campus Market while avoiding Brown University Sciences Library . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Campus Market )lm ) & ~ ( lm( Brown University Sciences Library )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Campus Market )lm ) & ~ ( lm( Brown Sciences Sciences Library )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to the Maxcy Hall while staying on the Sayles Hall . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Maxcy Hall )lm ) & G ( lm( Sayles Hall )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Maxcy Hall )lm ) & ( lm( lm( Hall Hall )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to John Hay Library after going to Blue Room . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Blue Room )lm & F ( lm( John Hay Library )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Blue Room )lm & F ( lm( Blue Room )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to Brown University Sciences Library , but never through it <EOS>
+CORRECT LABEL:     <SOS> ~ ( lm( Brown University Sciences Library )lm ) U ( first_floor ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Brown University Sciences Library )lm & F ( lm( ) ) ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> from the Circle Dance Sculpture , navigate to the Hegeman . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Circle Dance Sculpture )lm & F ( lm( Hegeman )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Hegeman )lm & F ( lm( Hegeman )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> move to the Mencoff Hall without entering the Quiet Green . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Mencoff Hall )lm ) & ~ ( lm( Quiet Green )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Mencoff Hall )lm ) & ( ( lm( Quiet Green )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to Van Wickle Gates through the Brown University Sciences Library <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Brown University Sciences Library )lm & F ( lm( Van Wickle Gates )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Brown University Sciences Library )lm & F ( lm( Brown University Gates )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to the College Green through the Barus Building . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Barus Building )lm & F ( lm( College Green )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Barus Building )lm & F ( lm( College Green )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to Maddock Alumni  only through the College Green <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Maddock Alumni  )lm ) & G ( lm( College Green )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Maddock Alumni  )lm & F ( lm( College Green )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go through the Maxcy Hall to John Hay Library . <EOS>
+CORRECT LABEL:     <SOS> ~ ( lm( John Hay Library )lm ) U ( lm( Maxcy Hall )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( John Hall )lm & F ( lm( John Hall )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to John Hay Library through the College Green . <EOS>
+CORRECT LABEL:     <SOS> ~ ( lm( John Hay Library )lm ) U ( lm( College Green )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( College Green )lm & F ( lm( College Green )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to Lincoln Field Building through the P-131317 . <EOS>
+CORRECT LABEL:     <SOS> ~ ( lm( Lincoln Field Building )lm ) U ( lm( P-131317 )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( P-131317 )lm & F ( lm( P-131317 Building )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> always pass Brown University before Carrie Tower . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Brown University )lm & F ( lm( Carrie Tower )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Brown Tower )lm & F ( lm( Carrie Tower )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go from the Manning to Untitled Lamp/Bear <EOS>
+CORRECT LABEL:     <SOS> ~ ( lm( Untitled Lamp/Bear )lm ) U ( lm( Manning )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Manning )lm & F ( lm( Untitled Lamp/Bear )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go directly to Class of 1887 Gate <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Class of 1887 Gate )lm ) & G ( first_floor ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Class of 1887 Gate )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to the Salomon Center for Teaching <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Salomon Center for Teaching )lm ) & G ( first_floor ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Salomon Center for Teaching )lm ) & ( ( lm( ) <EOS>
+
+
+INPUT PHRASE:      <SOS> navigate to the J.W. Wilson . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( J.W. Wilson )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( J.W. Wilson )lm ) F ( lm( J.W. )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to the Wilbour Hall . <EOS>
+CORRECT LABEL:     <SOS> ~ ( red_room ) U ( lm( Wilbour Hall )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Wilbour Hall )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> navigate to the Wayland . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Wayland )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Wayland )lm ) F ( lm( Wayland )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> avoid the Wayland <EOS>
+CORRECT LABEL:     <SOS> F ( second_floor ) & ~ ( lm( Wayland )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Wayland )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to the Lot 18 without going to the Marston Hall . if you reached the Lot 18 , now you can go to the Marston Hall . <EOS>
+CORRECT LABEL:     <SOS> ~ ( lm( Marston Hall )lm ) U ( lm( Lot 18 )lm ) <EOS>
+PREDICTED LABEL:   <SOS> ~ ( lm( Marston Hall )lm ) U ( lm( Lot Hall )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to or through the Lincoln Field Building . always avoid going to the Lincoln Field Building through Phi Kappa Psi Fraternity <EOS>
+CORRECT LABEL:     <SOS> ~ ( lm( Phi Kappa Psi Fraternity )lm ) U ( lm( Lincoln Field Building )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Phi Kappa Psi Fraternity )lm & F ( lm( Lincoln Field Building )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to or through the Wilbour Hall . always avoid going to the Wilbour Hall through Swearer Center for Public Service <EOS>
+CORRECT LABEL:     <SOS> ~ ( lm( Swearer Center for Public Service )lm ) U ( lm( Wilbour Hall )lm ) <EOS>
+PREDICTED LABEL:   <SOS> ~ ( lm( Swearer Center for Public Service )lm & U ( lm( Wilbour Hall )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> avoid the John Hay Library until going to The Center for the Study of Slavery and Justice CSSJ . <EOS>
+CORRECT LABEL:     <SOS> ~ ( lm( John Hay Library )lm ) U ( lm( The Center for the Study of Slavery and Justice CSSJ )lm ) <EOS>
+PREDICTED LABEL:   <SOS> ~ ( lm( John Hay Library )lm ) U ( lm( The Center for the Study of Slavery and Justice )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to the Shirley Miller House while avoiding The Center for the Study of Slavery and Justice CSSJ <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Shirley Miller House )lm ) & ~ ( lm( The Center for the Study of Slavery and Justice CSSJ )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Shirley Miller House )lm ) & ~ ( lm( The Center for Study of Slavery and Justice CSSJ )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to The Center for the Study of Slavery and Justice CSSJ before going to Wriston Quad <EOS>
+CORRECT LABEL:     <SOS> ~ ( lm( Wriston Quad )lm ) U ( lm( The Center for the Study of Slavery and Justice CSSJ )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( The Quad )lm & Study ( lm( The Center for the Study of Slavery and Justice CSSJ )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> navigate to the Swearer Center for Public Service by passing through the Metcalf Research Building . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Metcalf Research Building )lm & F ( lm( Swearer Center for Public Service )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Metcalf Research Building )lm & F ( lm( Swearer Center for Public )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> do not go to Reclining Figure No. 2 — Bridge Prop until going to Robinson Gate <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Robinson Gate )lm ) & ~ ( lm( Reclining Figure No. 2 — Bridge Prop )lm ) <EOS>
+PREDICTED LABEL:   <SOS> ~ ( lm( Reclining Figure )lm ) ) & ~ ( lm( Robinson Gate )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> navigate to Morgan Witter Rogers Gate then continue to the John Carter Brown Library . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Morgan Witter Rogers Gate )lm & F ( lm( John Carter Brown Library )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Morgan Witter Rogers Gate )lm & F ( lm( John Carter Brown Library )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> always avoid going to Reclining Figure No. 2 — Bridge Prop through the J.W. Wilson <EOS>
+CORRECT LABEL:     <SOS> ~ ( lm( J.W. Wilson )lm ) U ( lm( Reclining Figure No. 2 — Bridge Prop )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( J.W. Wilson )lm & & ( lm( Reclining Figure No. 2 — Bridge Prop )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to the Circle Dance Sculpture and then navigate to the Wriston Quad . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Circle Dance Sculpture )lm & F ( lm( Wriston Quad )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Circle Dance Sculpture )lm & F ( lm( Wriston Quad )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> avoid the Brown University and the Arnold Laboratory and go to Brown University . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Brown University )lm ) & G ( second_floor ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Brown University )lm ) & ~ ( lm( Brown )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to Walter Hall without first passing through Swearer Center for Public Service . <EOS>
+CORRECT LABEL:     <SOS> ~ ( lm( Swearer Center for Public Service )lm ) U ( lm( Walter Hall )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Swearer Center for Public )lm & & ( lm( Walter Hall )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to or through Phi Kappa Psi Fraternity avoiding going through Soldiers Memorial Gate <EOS>
+CORRECT LABEL:     <SOS> ~ ( lm( Soldiers Memorial Gate )lm ) U ( lm( Phi Kappa Psi Fraternity )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Soldiers Memorial Gate )lm & F ( lm( Phi Kappa Psi Fraternity )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> avoid the Sharpe Refectory until you navigate to the John Carter Brown Library . <EOS>
+CORRECT LABEL:     <SOS> ~ ( lm( Sharpe Refectory )lm ) U ( lm( John Carter Brown Library )lm ) <EOS>
+PREDICTED LABEL:   <SOS> ~ ( lm( Sharpe Refectory )lm ) U ( lm( John Carter Brown )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> stay on the John Hay Library while navigating to The Ivy Room . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( The Ivy Room )lm ) & G ( lm( John Hay Library )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( The Ivy Room )lm ) & ( lm( John Hay Library )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go through the Alpha Chi Omega Sorority to John Carter Brown Library . <EOS>
+CORRECT LABEL:     <SOS> ~ ( lm( John Carter Brown Library )lm ) U ( lm( Alpha Chi Omega Sorority )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( John Chi Brown )lm & F ( lm( John Chi Omega Library )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> avoid the Medical Research Lab before you navigate to the Mencoff Hall . <EOS>
+CORRECT LABEL:     <SOS> ~ ( lm( Medical Research Lab )lm ) U ( lm( Mencoff Hall )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Medical Research )lm ) & ~ ( lm( Mencoff Lab )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> avoid the Quiet Green and go to the GeoChem and Macmillian Hall . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( GeoChem and Macmillian Hall )lm ) & ~ ( lm( Quiet Green )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( GeoChem Macmillian Macmillian )lm ) & ~ ( lm( Quiet )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to the List Art Building without ever leaving the University Hall . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( List Art Building )lm ) & G ( lm( University Hall )lm ) <EOS>
+PREDICTED LABEL:   <SOS> ~ ( lm( List Art Building )lm ) & ~ ( lm( University Hall )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to Slater Hall then go to Brown University Sciences Library . <EOS>
+CORRECT LABEL:     <SOS> F ( yellow_room ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Slater Hall )lm & F ( lm( Brown University Sciences Library )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> head to the Carrie Tower without going through the Circle Dance Sculpture <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Carrie Tower )lm ) & ~ ( lm( Circle Dance Sculpture )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Carrie Tower )lm & F ( lm( Carrie Tower Sculpture )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> always avoid the Circle Dance Sculpture while navigating to War Memorial . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( War Memorial )lm ) & ~ ( lm( Circle Dance Sculpture )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( War Memorial )lm ) & ~ ( lm( Circle Dance )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to Robinson Gate first , without passing through the Littlefield Hall <EOS>
+CORRECT LABEL:     <SOS> ~ ( lm( Littlefield Hall )lm ) U ( lm( Robinson Gate )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Littlefield Hall )lm & F ( lm( Robinson Hall )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> always avoid going to J.W. Wilson through the Brown University Sciences Library <EOS>
+CORRECT LABEL:     <SOS> ~ ( lm( Brown University Sciences Library )lm ) U ( lm( J.W. Wilson )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Brown University Sciences Library )lm & U ( lm( J.W. Wilson )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> stay on the 86 Waterman  while navigating to Lot 76 . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Lot 76 )lm ) & G ( lm( 86 Waterman  )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Lot 76 )lm ) & ~ ( lm( 86 Waterman  )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to The Center for the Study of Slavery and Justice CSSJ <EOS>
+CORRECT LABEL:     <SOS> F ( lm( The Center for the Study of Slavery and Justice CSSJ )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( The Center for the Study of Slavery and Justice for )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to Blue Room before going in the Brown Bear . <EOS>
+CORRECT LABEL:     <SOS> ~ ( lm( Brown Bear )lm ) U ( lm( Blue Room )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Brown Bear )lm & F ( lm( Brown Bear )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to the P-131317 , avoiding Haffenreffer Museum of Anthropology . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( P-131317 )lm ) & ~ ( lm( Haffenreffer Museum of Anthropology )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( P-131317 )lm ) & ( ( lm( Haffenreffer Museum of Anthropology )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to Salomon Center for Teaching through the Maxcy Hall . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Maxcy Hall )lm & F ( lm( Salomon Center for Teaching )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Maxcy Hall )lm & F ( lm( Maxcy Center for )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to the List Art Building before going to Quiet Green <EOS>
+CORRECT LABEL:     <SOS> F ( lm( List Art Building )lm & F ( lm( Quiet Green )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( List Art Building )lm & F ( lm( List Green )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> avoid Maxcy Hall and go to the Rhode Island Hall . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Rhode Island Hall )lm ) & ~ ( lm( Maxcy Hall )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Rhode Hall )lm ) & ~ ( lm( Maxcy Hall )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> always avoid going to Lot 76 through the Saint Stephens Church <EOS>
+CORRECT LABEL:     <SOS> ~ ( lm( Saint Stephens Church )lm ) U ( lm( Lot 76 )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Saint Stephens Church )lm ) U ( lm( lm( Lot )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go from the Maxcy Green to the William Goddard Memorial Gate <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Maxcy Green )lm & F ( lm( William Goddard Memorial Gate )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( William Green )lm Gate F ( lm( William Goddard Memorial Gate )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to the Hope College through the Quiet Green . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Quiet Green )lm & F ( lm( Hope College )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Quiet Green )lm & F ( lm( Hope College )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> avoid the Shirley Miller House and go to Prospect House <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Prospect House )lm ) & ~ ( lm( Shirley Miller House )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Prospect House )lm ) & ~ ( lm( Shirley Miller )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to Citizen's Bank before going in the BERT . <EOS>
+CORRECT LABEL:     <SOS> ~ ( lm( BERT )lm ) U ( lm( Citizen's Bank )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( BERT )lm & F ( lm( BERT )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to Lippit House through the Shirley Miller House . <EOS>
+CORRECT LABEL:     <SOS> ~ ( lm( Lippit House )lm ) U ( lm( Shirley Miller House )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Shirley House )lm & F ( lm( Shirley House )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to List Art Building then The Ivy Room . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( List Art Building )lm & F ( lm( The Ivy Room )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( List Art Building )lm & F ( lm( Ivy Room )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> from the P-131317 go to Saint Stephens Church . <EOS>
+CORRECT LABEL:     <SOS> ~ ( lm( Saint Stephens Church )lm ) U ( lm( P-131317 )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Saint Stephens )lm ) & ~ ( lm( Stephens Church )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> navigate to Barus Building through the College Green . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( College Green )lm & F ( lm( Barus Building )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( College Green )lm & F ( lm( College Building )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to the Brown Center for Students of Color <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Brown Center for Students of Color )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Brown Center for Students of Color )lm ) F ( lm( lm( ) )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> always avoid Wriston Quad and go to Hope College <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Hope College )lm ) & ~ ( lm( Wriston Quad )lm ) <EOS>
+PREDICTED LABEL:   <SOS> ~ ( lm( Hope College )lm ) & ~ ( lm( Wriston Quad )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go through the Faunce House to Simmons Quadrangle . <EOS>
+CORRECT LABEL:     <SOS> ~ ( lm( Simmons Quadrangle )lm ) U ( lm( Faunce House )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Simmons Quadrangle )lm & F ( lm( Simmons Quadrangle )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go through Robinson Hall to College Green . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Robinson Hall )lm & F ( lm( College Green )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Robinson Hall )lm & F ( lm( College Green )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to the Manning through the Finlandia . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Finlandia )lm & F ( lm( Manning )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Finlandia )lm & F ( lm( Finlandia )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to the Gardner House while avoiding Hegeman <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Gardner House )lm ) & ~ ( lm( Hegeman )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Gardner House )lm ) & ( lm( Gardner House )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> head to the Arnold Laboratory avoiding Hegeman . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Arnold Laboratory )lm ) & ~ ( lm( Hegeman )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Arnold Laboratory )lm ) & ( ( lm( Hegeman )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> always avoid going through Gardner House <EOS>
+CORRECT LABEL:     <SOS> ~ ( lm( Gardner House )lm ) U ( first_floor ) <EOS>
+PREDICTED LABEL:   <SOS> ~ ( lm( Gardner House )lm ) U ( lm( ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to the Idee di pietra and if you have reached the Idee di pietra you may proceed to the Maxcy Green or stay in the Idee di pietra . <EOS>
+CORRECT LABEL:     <SOS> ~ ( lm( Maxcy Green )lm ) U ( lm( Idee di pietra )lm ) <EOS>
+PREDICTED LABEL:   <SOS> ~ ( lm( Maxcy Green )lm & F ( lm( Idee di pietra )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> navigate to the The Center for the Study of Slavery and Justice CSSJ but never go to the Lot 76 . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( The Center for the Study of Slavery and Justice CSSJ )lm ) & ~ ( lm( Lot 76 )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( The Center for the Study of Slavery and Justice CSSJ )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> move to the The Center for the Study of Slavery and Justice CSSJ without entering the John Nicholas Brown Gate . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( The Center for the Study of Slavery and Justice CSSJ )lm ) & ~ ( lm( John Nicholas Brown Gate )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( The Center for the Study of ( and Justice CSSJ )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to Alpha Chi Omega Sorority but do not first go through the Haffenreffer Museum of Anthropology . <EOS>
+CORRECT LABEL:     <SOS> ~ ( lm( Haffenreffer Museum of Anthropology )lm ) U ( lm( Alpha Chi Omega Sorority )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Haffenreffer Museum of Anthropology )lm & F ( lm( Alpha Chi Omega Sorority )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to Department of Cognitive, Linguistic, and Psychological Sciences , then go to Phi Kappa Psi Fraternity . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Department of Cognitive, Linguistic, and Psychological Sciences )lm & F ( lm( Phi Kappa Psi Fraternity )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Department of Cognitive, Linguistic, and Psychological Sciences )lm & F ( lm( Phi Kappa Psi Fraternity )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> first navigate to the Shirley Miller House , then make your way to the Brown University . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Shirley Miller House )lm & F ( lm( Brown University )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Shirley Miller House )lm & F ( lm( Brown University )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to the Department of Cognitive, Linguistic, and Psychological Sciences by first going to the BERT . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( BERT )lm & F ( lm( Department of Cognitive, Linguistic, and Psychological Sciences )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( BERT )lm & F ( lm( Department of Cognitive, Linguistic, and Psychological Sciences )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go through Campus Market before going to the Reclining Figure No. 2 — Bridge Prop . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Campus Market )lm & F ( lm( Reclining Figure No. 2 — Bridge Prop )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Campus Market )lm & F ( lm( Reclining Figure No. 2 — Bridge )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> navigate to the William Goddard Memorial Gate but do n't ever go to Lyman Hall . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( William Goddard Memorial Gate )lm ) & ~ ( lm( Lyman Hall )lm ) <EOS>
+PREDICTED LABEL:   <SOS> ~ ( lm( William Goddard Memorial Gate )lm ) & ~ ( lm( Lyman Hall )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to the Maddock Alumni  before you navigate to Class of 1872 Gate . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Maddock Alumni  )lm & F ( lm( Class of 1872 Gate )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Maddock Alumni  )lm & F ( lm( Class of 1872 Gate )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to Alpha Chi Omega Sorority first , without passing through the Soldiers Memorial Gate <EOS>
+CORRECT LABEL:     <SOS> ~ ( lm( Soldiers Memorial Gate )lm ) U ( lm( Alpha Chi Omega Sorority )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Soldiers Memorial Gate )lm & F ( lm( Alpha Memorial Sorority )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> avoid going through The Ivy Room until you go through the Urban Environmental Lab . <EOS>
+CORRECT LABEL:     <SOS> ~ ( lm( The Ivy Room )lm ) U ( lm( Urban Environmental Lab )lm ) <EOS>
+PREDICTED LABEL:   <SOS> ~ ( lm( The Ivy Room )lm & U ( lm( Urban Environmental Lab )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> avoid the Quiet Green and the Carrie Tower and go to Quiet Green . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Quiet Green )lm ) & G ( second_floor ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Quiet Green )lm ) & ~ ( lm( ) ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> avoid the first and Urban Environmental Lab and go to Idee di pietra . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Idee di pietra )lm ) & G ( second_floor ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Idee di pietra )lm ) & ~ ( lm( ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to the Alpha Chi Omega Sorority while staying on the Littlefield Hall . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Alpha Chi Omega Sorority )lm ) & G ( lm( Littlefield Hall )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Alpha Chi Omega Sorority )lm ) & ( lm( lm( Littlefield Hall )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go through the 86 Waterman  before navigating to John Nicholas Brown Gate . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( 86 Waterman  )lm & F ( lm( John Nicholas Brown Gate )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( 86 Waterman  )lm & F ( lm( John Nicholas Brown Gate )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> avoid going through Wriston Quad until you go through the John Hay Library . <EOS>
+CORRECT LABEL:     <SOS> ~ ( lm( Wriston Quad )lm ) U ( lm( John Hay Library )lm ) <EOS>
+PREDICTED LABEL:   <SOS> ~ ( lm( Wriston Quad )lm ) U ( lm( John Hay )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to Watson Center for Information Technology while staying on the University Hall . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Watson Center for Information Technology )lm ) & G ( lm( University Hall )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Watson Center for Information Technology )lm ) & ( lm( lm( University Hall )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> start on the Wilbour Hall and move directly to William Goddard Memorial Gate . <EOS>
+CORRECT LABEL:     <SOS> ~ ( lm( William Goddard Memorial Gate )lm ) U ( lm( Wilbour Hall )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( William Goddard Memorial Gate )lm ) U ( lm( Wilbour Hall )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to The Ivy Room while staying on the Haffenreffer Museum of Anthropology . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( The Ivy Room )lm ) & G ( lm( Haffenreffer Museum of Anthropology )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( The Ivy Room )lm ) & ~ ( lm( Haffenreffer Museum of Anthropology )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> stay on the Morgan Witter Rogers Gate while navigating to Wriston Quad . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Wriston Quad )lm ) & G ( lm( Morgan Witter Rogers Gate )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Wriston Quad )lm ) & ( lm( lm( Morgan Witter Rogers Gate )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> stay on the Brown University to get to Salomon Center for Teaching . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Salomon Center for Teaching )lm ) & G ( lm( Brown University )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Salomon Center for Teaching )lm ) & ~ ( lm( Brown )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to the Lot 18 through the Watson Center for Information Technology . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Watson Center for Information Technology )lm & F ( lm( Lot 18 )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Watson Center for Information )lm & F ( lm( Watson Center for Technology )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to Department of Cognitive, Linguistic, and Psychological Sciences through Kassar House . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Kassar House )lm & F ( lm( Department of Cognitive, Linguistic, and Psychological Sciences )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Department of Cognitive, Linguistic, and Psychological Sciences )lm & Sciences ( lm( lm( ) Sciences )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> head to the The Ivy Room but first go to the Finlandia . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Finlandia )lm & F ( lm( The Ivy Room )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Finlandia )lm & F ( lm( The Ivy Room )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to the Brown University Sciences Library via List Art Building . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( List Art Building )lm & F ( lm( Brown University Sciences Library )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( List Art Building )lm & F ( lm( Brown University Sciences Library )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> avoid Haffenreffer Museum of Anthropology until going to the Walter Hall . <EOS>
+CORRECT LABEL:     <SOS> ~ ( lm( Haffenreffer Museum of Anthropology )lm ) U ( lm( Walter Hall )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Haffenreffer Museum of Anthropology )lm ) U ( lm( Walter Hall )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to the Shirley Miller House before going to Rockefeller Library . <EOS>
+CORRECT LABEL:     <SOS> ~ ( lm( Rockefeller Library )lm ) U ( lm( Shirley Miller House )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Shirley Miller House )lm & F ( lm( Shirley Library )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> avoid the Maddock Alumni  until going to the Faunce House . <EOS>
+CORRECT LABEL:     <SOS> ~ ( lm( Maddock Alumni  )lm ) U ( lm( Faunce House )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Maddock Alumni  )lm ) U ( lm( Faunce House )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to the University Hall without going to the Friedman Hall . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( University Hall )lm ) & ~ ( lm( Friedman Hall )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( University Hall )lm ) & ( ( lm( Hall Hall )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> avoid Littlefield Hall until reaching the Salomon Center for Teaching . <EOS>
+CORRECT LABEL:     <SOS> ~ ( lm( Littlefield Hall )lm ) U ( lm( Salomon Center for Teaching )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Littlefield Hall )lm ) U ( lm( Salomon Center for Teaching )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to Prince Engineering Lab before going to Slater Hall . <EOS>
+CORRECT LABEL:     <SOS> ~ ( lm( Slater Hall )lm ) U ( lm( Prince Engineering Lab )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Prince Engineering Lab )lm & F ( lm( Slater Lab )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> head to the Hope College without going through the Rockefeller Library <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Hope College )lm ) & ~ ( lm( Rockefeller Library )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Hope College )lm ) & ( lm( Hope College )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to J.W. Wilson then go to J.W. Wilson . <EOS>
+CORRECT LABEL:     <SOS> ~ ( lm( J.W. Wilson )lm ) U ( first_floor ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( J.W. Wilson )lm & F ( lm( J.W. Wilson )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> avoid the Robinson Gate until Brown University Sciences Library . <EOS>
+CORRECT LABEL:     <SOS> ~ ( lm( Robinson Gate )lm ) U ( lm( Brown University Sciences Library )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Robinson Gate )lm ) U ( lm( Brown University Sciences Library )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> avoid Wayland until navigating to Haffenreffer Museum of Anthropology . <EOS>
+CORRECT LABEL:     <SOS> ~ ( lm( Wayland )lm ) U ( lm( Haffenreffer Museum of Anthropology )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Wayland )lm ) U ( lm( Haffenreffer Museum of Anthropology )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to the Norwood House before going to Marcus Aurelius <EOS>
+CORRECT LABEL:     <SOS> ~ ( lm( Marcus Aurelius )lm ) U ( lm( Norwood House )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Marcus Aurelius )lm & F ( lm( Norwood House )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go through the Sharpe Refectory to Saint Stephens Church . <EOS>
+CORRECT LABEL:     <SOS> ~ ( lm( Saint Stephens Church )lm ) U ( lm( Sharpe Refectory )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Sharpe Refectory )lm & F ( lm( Saint Stephens Church )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> avoid Walter Hall until you have passed through Brown University <EOS>
+CORRECT LABEL:     <SOS> ~ ( lm( Walter Hall )lm ) U ( lm( Brown University )lm ) <EOS>
+PREDICTED LABEL:   <SOS> ~ ( lm( Walter Hall )lm ) U ( lm( Brown )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to the Sears <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Sears )lm ) & G ( first_floor ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Sears )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to the Horace Mann House avoiding the Morgan Witter Rogers Gate . only if you reached the Horace Mann House then you may proceed to the Morgan Witter Rogers Gate . <EOS>
+CORRECT LABEL:     <SOS> ~ ( lm( Morgan Witter Rogers Gate )lm ) U ( lm( Horace Mann House )lm ) <EOS>
+PREDICTED LABEL:   <SOS> ~ ( lm( Morgan Witter Rogers Gate )lm & U ( lm( Horace Mann )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to the Hughes Court without going to the Carrie Tower . if you reached the Hughes Court , now you can go to the Carrie Tower . <EOS>
+CORRECT LABEL:     <SOS> ~ ( lm( Carrie Tower )lm ) U ( lm( Hughes Court )lm ) <EOS>
+PREDICTED LABEL:   <SOS> ~ ( lm( Carrie Tower )lm & F ( lm( Hughes Court )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to Kassar House by avoiding the Quiet Green and then stay there or continue to the Quiet Green . <EOS>
+CORRECT LABEL:     <SOS> ~ ( lm( Quiet Green )lm ) U ( lm( Kassar House )lm ) <EOS>
+PREDICTED LABEL:   <SOS> ~ ( lm( Kassar House )lm & F ( lm( Kassar Green )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> first go to Brown Center for Students of Color , then go to the Watson Center for Information Technology . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Brown Center for Students of Color )lm & F ( lm( Watson Center for Information Technology )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Brown Center for Students of Color )lm & F ( lm( Watson Center for Technology )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to the The Center for the Study of Slavery and Justice CSSJ by first going through Norwood House . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Norwood House )lm & F ( lm( The Center for the Study of Slavery and Justice CSSJ )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Norwood House )lm & F ( lm( The Center for the Study of Slavery and Justice CSSJ )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go through The Center for the Study of Slavery and Justice CSSJ before going to the Lincoln Field Building . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( The Center for the Study of Slavery and Justice CSSJ )lm & F ( lm( Lincoln Field Building )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( The Center for the Study of ( and Justice for )lm & of ( lm( Justice CSSJ )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> visit the The Center for the Study of Slavery and Justice CSSJ and then proceed to the Blue Room . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( The Center for the Study of Slavery and Justice CSSJ )lm & F ( lm( Blue Room )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( The Center for the Study of Slavery and Justice for )lm & F ( lm( Blue Room )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> navigate to the Department of Cognitive, Linguistic, and Psychological Sciences before going to the Class of 1872 Gate . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Department of Cognitive, Linguistic, and Psychological Sciences )lm & F ( lm( Class of 1872 Gate )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Department of Cognitive, Linguistic, and Psychological Sciences )lm & F ( lm( Class of 1872 Gate )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> approach the Marston Hall while avoiding the The Center for the Study of Slavery and Justice CSSJ . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Marston Hall )lm ) & ~ ( lm( The Center for the Study of Slavery and Justice CSSJ )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Marston Hall )lm ) & ~ ( lm( The Center for the Study of Slavery and Justice )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to The Center for the Study of Slavery and Justice CSSJ via the Rockefeller Library . <EOS>
+CORRECT LABEL:     <SOS> ~ ( lm( The Center for the Study of Slavery and Justice CSSJ )lm ) U ( lm( Rockefeller Library )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Rockefeller Center for & & Slavery ( The Center for the Study of Slavery and Justice CSSJ )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to GeoChem and Macmillian Hall but do not first go through the Hughes Court . <EOS>
+CORRECT LABEL:     <SOS> ~ ( lm( Hughes Court )lm ) U ( lm( GeoChem and Macmillian Hall )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Hughes Court )lm & F ( lm( GeoChem and Macmillian Hall )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to the Minden Hall but do not go through the Van Wickle Gates first . <EOS>
+CORRECT LABEL:     <SOS> ~ ( lm( Van Wickle Gates )lm ) U ( lm( Minden Hall )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Van Wickle Gates )lm & U ( lm( Minden Hall )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to Reclining Figure No. 2 — Bridge Prop passing through the Brown Bear . <EOS>
+CORRECT LABEL:     <SOS> ~ ( lm( Reclining Figure No. 2 — Bridge Prop )lm ) U ( first_floor ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Brown Bear )lm & F ( lm( Reclining Figure No. 2 — Bridge )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> navigate to the Shirley Miller House but never go to the John Hay Library . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Shirley Miller House )lm ) & ~ ( lm( John Hay Library )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Shirley Miller House )lm ) & ( lm( Shirley John Library )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> always avoid going to Watson Center for Information Technology through the Van Wickle Gates <EOS>
+CORRECT LABEL:     <SOS> ~ ( lm( Van Wickle Gates )lm ) U ( lm( Watson Center for Information Technology )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Van Wickle Gates )lm & U ( lm( Watson Center for Information )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to Marcus Aurelius but do not first pass through Soldiers Memorial Gate . <EOS>
+CORRECT LABEL:     <SOS> ~ ( lm( Soldiers Memorial Gate )lm ) U ( lm( Marcus Aurelius )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Soldiers Memorial Gate )lm & F ( lm( Marcus Aurelius )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to the John Nicholas Brown Gate then move to the Brown Bear . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( John Nicholas Brown Gate )lm & F ( lm( Brown Bear )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( John Nicholas Gate )lm & F ( lm( Brown Bear )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to the Brown Bear without going to the Circle Dance Sculpture . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Brown Bear )lm ) & ~ ( lm( Circle Dance Sculpture )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Brown Bear )lm ) & ( lm( lm( Dance Sculpture )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> head to the John Nicholas Brown Gate avoiding Alpha Chi Omega Sorority . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( John Nicholas Brown Gate )lm ) & ~ ( lm( Alpha Chi Omega Sorority )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( John Nicholas Brown Gate )lm ) & ~ ( lm( Chi Omega Sorority )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go through the List Art Building and navigate to the Gardner House . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( List Art Building )lm & F ( lm( Gardner House )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( List Art Building )lm & F ( lm( Gardner House )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> avoid the first and Mencoff Hall and go to Circle Dance Sculpture . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Circle Dance Sculpture )lm ) & G ( second_floor ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Circle Dance Sculpture )lm & & ( lm( lm( Mencoff )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> avoid the Hughes Court and go to the Class of 1872 Gate . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Class of 1872 Gate )lm ) & ~ ( lm( Hughes Court )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Class of 1872 Gate )lm ) & ~ ( lm( Hughes )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to Sharpe Refectory through the Brown Center for Students of Color . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Brown Center for Students of Color )lm & F ( lm( Sharpe Refectory )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Brown Center for Students of )lm & F ( lm( Sharpe Refectory )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> avoid the John Hay Library and go to the Horace Mann House . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Horace Mann House )lm ) & ~ ( lm( John Hay Library )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Horace Mann House )lm ) & ~ ( lm( John Hay )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> avoid the Kassar House until you reach John Nicholas Brown Gate . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( John Nicholas Brown Gate )lm ) & ~ ( lm( Kassar House )lm ) <EOS>
+PREDICTED LABEL:   <SOS> ~ ( lm( Kassar House )lm ) U ( lm( John Nicholas Brown )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go from the Watson Center for Information Technology to John Hay Library <EOS>
+CORRECT LABEL:     <SOS> ~ ( lm( John Hay Library )lm ) U ( lm( Watson Center for Information Technology )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( John Hay Library )lm & F ( lm( Watson Center for Information Technology )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> avoid the first and Lot 18 and go to Marcus Aurelius . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Marcus Aurelius )lm ) & G ( second_floor ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Marcus Aurelius )lm ) & ( lm( lm( ) ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> move to the P-131317 and then the Casey Shearer Memorial . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( P-131317 )lm & F ( lm( Casey Shearer Memorial )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( P-131317 )lm & F ( lm( Casey Shearer Memorial )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go through the Rhode Island Hall to Soldiers Memorial Gate . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Rhode Island Hall )lm & F ( lm( Soldiers Memorial Gate )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Rhode Island )lm & F ( lm( Soldiers Memorial Gate )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to the Department of Cognitive, Linguistic, and Psychological Sciences . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Department of Cognitive, Linguistic, and Psychological Sciences )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Department of Cognitive, Linguistic, and Psychological Sciences )lm ) & ( lm( lm( ) )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to Lyman Hall without going into the Horace Mann House <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Lyman Hall )lm ) & ~ ( lm( Horace Mann House )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Lyman Hall )lm ) & ( lm( lm( Horace Mann House )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to Swearer Center for Public Service through the Hughes Court <EOS>
+CORRECT LABEL:     <SOS> ~ ( lm( Swearer Center for Public Service )lm ) U ( lm( Hughes Court )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Hughes Center for & & F ( lm( Swearer Center for Public )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to Soldiers Memorial Gate and avoid the J.W. Wilson . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Soldiers Memorial Gate )lm ) & ~ ( lm( J.W. Wilson )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Soldiers Memorial Gate )lm ) & ( lm( lm( J.W. Wilson )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to Maxcy Hall before going in the Barus Building <EOS>
+CORRECT LABEL:     <SOS> ~ ( lm( Barus Building )lm ) U ( lm( Maxcy Hall )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Maxcy Hall )lm & F ( lm( Maxcy Hall )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to Minden Hall and then the List Art Building <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Minden Hall )lm & F ( lm( List Art Building )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Minden Hall )lm & F ( lm( List Art Building )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> always pass Simmons Quadrangle to get to level 1 . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Simmons Quadrangle )lm & F ( first_floor ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Simmons Quadrangle )lm & F ( lm( ) ) ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> avoid the Norwood House until reaching John Hay Library . <EOS>
+CORRECT LABEL:     <SOS> ~ ( lm( Norwood House )lm ) U ( lm( John Hay Library )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Norwood House )lm ) U ( lm( John Hay Library )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to the Hughes Court then go to Brown Bear <EOS>
+CORRECT LABEL:     <SOS> F ( second_floor ) & ~ ( blue_room ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Hughes Court )lm & F ( lm( Brown Bear )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to Lot 17 and then to Wriston Quad <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Lot 17 )lm & F ( lm( Wriston Quad )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Wriston 17 )lm & F ( lm( Wriston Quad )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to the Caswell Hall through the Brown Bear <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Brown Bear )lm & F ( lm( Caswell Hall )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Brown Bear )lm & F ( lm( Caswell Hall )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to Faunce House and proceed to Manning . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Faunce House )lm & F ( lm( Manning )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Manning )lm & F ( lm( Manning )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go through the P-131317 to get to Norwood House <EOS>
+CORRECT LABEL:     <SOS> F ( green_room ) & ~ ( blue_room ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( P-131317 )lm & F ( lm( Norwood House )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to John Hay Library through the J.W. Wilson <EOS>
+CORRECT LABEL:     <SOS> F ( lm( J.W. Wilson )lm & F ( lm( John Hay Library )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( J.W. Wilson )lm & F ( lm( John Wilson )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> avoid College Green until navigating to Quiet Green . <EOS>
+CORRECT LABEL:     <SOS> ~ ( lm( College Green )lm ) U ( lm( Quiet Green )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( College Green )lm ) U ( lm( Quiet Green )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to Maxcy Hall through the Brown Bear <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Brown Bear )lm & F ( lm( Maxcy Hall )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Brown Bear )lm & F ( lm( Maxcy Hall )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go from the Sayles Hall to Wayland <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Sayles Hall )lm & F ( lm( Wayland )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Wayland Hall )lm & F ( lm( Wayland )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to the List Art Building first <EOS>
+CORRECT LABEL:     <SOS> F ( lm( List Art Building )lm & F ( first_floor ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( List Art Building )lm & F ( lm( ) ) ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to the Horace Mann House <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Horace Mann House )lm ) & G ( first_floor ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Horace Mann House )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to a spot in the Class of 1887 Gate , but do n't touch Minden Hall . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Class of 1887 Gate )lm ) & ~ ( lm( Minden Hall )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Class of 1887 Gate )lm & & ( lm( lm( Hall Hall )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to a spot in the Hughes Court , but do n't touch Circle Dance Sculpture . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Hughes Court )lm ) & ~ ( lm( Circle Dance Sculpture )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Hughes Court )lm & & ( lm( lm( Circle Dance Sculpture )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go through the Prince Engineering Lab first , then go to the Brown University Sciences Library . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Prince Engineering Lab )lm & F ( lm( Brown University Sciences Library )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Prince Engineering Lab )lm & F ( lm( Brown University Sciences Library )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> always go from the Alpha Chi Omega Sorority to the Swearer Center for Public Service . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Alpha Chi Omega Sorority )lm & F ( lm( Swearer Center for Public Service )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Swearer Chi Omega Sorority )lm & F ( lm( Swearer Center for Public )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> head to the Brown University Sciences Library but first go to the Lincoln Field Building . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Lincoln Field Building )lm & F ( lm( Brown University Sciences Library )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Brown Field Building )lm & F ( lm( Brown University Sciences Library )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to The Center for the Study of Slavery and Justice CSSJ before Marcus Aurelius . <EOS>
+CORRECT LABEL:     <SOS> ~ ( lm( Marcus Aurelius )lm ) U ( lm( The Center for the Study of Slavery and Justice CSSJ )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( The Center for the Study of Slavery and Justice for )lm Study of ( Justice Justice )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to Rockefeller Library , but do not go to William Goddard Memorial Gate . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Rockefeller Library )lm ) & ~ ( lm( William Goddard Memorial Gate )lm ) <EOS>
+PREDICTED LABEL:   <SOS> ~ ( lm( Rockefeller Library )lm ) & ~ ( lm( William Goddard Memorial Gate )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to Salomon Center for Teaching , but do not go to Carrie Tower . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Salomon Center for Teaching )lm ) & ~ ( lm( Carrie Tower )lm ) <EOS>
+PREDICTED LABEL:   <SOS> ~ ( lm( Salomon Center for the ) & ~ ( lm( Carrie Tower )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to the Phi Kappa Psi Fraternity while staying on the Van Wickle Gates . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Phi Kappa Psi Fraternity )lm ) & G ( lm( Van Wickle Gates )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Phi Kappa Psi Fraternity )lm ) & ~ ( lm( Van Wickle Gates )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> stay on the Salomon Center for Teaching while navigating to Van Wickle Gates . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Van Wickle Gates )lm ) & G ( lm( Salomon Center for Teaching )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Van Wickle Gates )lm ) & ( ( lm( Salomon Center for Teaching )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> head to Phi Kappa Psi Fraternity after going to the Saint Stephens Church . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Saint Stephens Church )lm & F ( lm( Phi Kappa Psi Fraternity )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Saint Stephens Church )lm & F ( lm( Saint Stephens Church )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> do not go into the Van Wickle Gates until going to Casey Shearer Memorial <EOS>
+CORRECT LABEL:     <SOS> ~ ( lm( Van Wickle Gates )lm ) U ( lm( Casey Shearer Memorial )lm ) <EOS>
+PREDICTED LABEL:   <SOS> ~ ( lm( Van Wickle Gates )lm & U ( lm( Casey Shearer Memorial )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> navigate through Reclining Figure No. 2 — Bridge Prop to the Faunce House . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Reclining Figure No. 2 — Bridge Prop )lm & F ( lm( Faunce House )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Reclining Figure No. 2 — Bridge )lm & F ( lm( Faunce House )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> always avoid John Carter Brown Library and go through the Walter Hall . <EOS>
+CORRECT LABEL:     <SOS> ~ ( lm( John Carter Brown Library )lm ) U ( lm( Walter Hall )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Walter Hall )lm ) & ~ ( lm( John Carter Brown )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go up to the Starbucks without going to Haffenreffer Museum of Anthropology . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Starbucks )lm ) & ~ ( lm( Haffenreffer Museum of Anthropology )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Starbucks )lm & F ( lm( Starbucks Museum of Anthropology )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to Manning , but do not go to Shirley Miller House . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Manning )lm ) & ~ ( lm( Shirley Miller House )lm ) <EOS>
+PREDICTED LABEL:   <SOS> ~ ( lm( Manning )lm ) & ~ ( lm( Shirley Miller House )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> avoid Casey Shearer Memorial until going to Watson Center for Information Technology . <EOS>
+CORRECT LABEL:     <SOS> ~ ( lm( Casey Shearer Memorial )lm ) U ( lm( Watson Center for Information Technology )lm ) <EOS>
+PREDICTED LABEL:   <SOS> ~ ( lm( Casey Shearer Memorial )lm ) U ( lm( Watson Center for Information )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to the John Hay Library after going to the Wriston Quad . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Wriston Quad )lm & F ( lm( John Hay Library )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Wriston Quad )lm & F ( lm( John Quad )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to Van Wickle Gates and avoid the Rhode Island Hall . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Van Wickle Gates )lm ) & ~ ( lm( Rhode Island Hall )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Van Wickle Gates )lm ) & ( ( lm( Rhode Island Hall )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to the Minden Hall through the William Goddard Memorial Gate . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( William Goddard Memorial Gate )lm & F ( lm( Minden Hall )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( William Goddard Memorial Gate )lm & F ( lm( Minden Hall )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go through the BERT to the Swearer Center for Public Service . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( BERT )lm & F ( lm( Swearer Center for Public Service )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( BERT )lm & F ( lm( Swearer Center for Public )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> advance to Medical Research Lab but always avoid the Carrie Tower . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Medical Research Lab )lm ) & ~ ( lm( Carrie Tower )lm ) <EOS>
+PREDICTED LABEL:   <SOS> ~ ( lm( Medical Research Lab )lm ) & ~ ( lm( Carrie Tower )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> navigate to the William Goddard Memorial Gate through the Walter Hall . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Walter Hall )lm & F ( lm( William Goddard Memorial Gate )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Walter Goddard Memorial Gate & F ( lm( Walter Goddard Memorial Gate )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to the Brown University Sciences Library before going to Wriston Quad <EOS>
+CORRECT LABEL:     <SOS> ~ ( lm( Wriston Quad )lm ) U ( lm( Brown University Sciences Library )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Wriston Quad )lm & F ( lm( Brown Quad Sciences )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to the Marcus Aurelius , avoiding Morgan Witter Rogers Gate . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Marcus Aurelius )lm ) & ~ ( lm( Morgan Witter Rogers Gate )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Marcus Aurelius )lm ) & ( ( lm( Morgan Witter Rogers Gate )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> stay on the Urban Environmental Lab to get to Robinson Gate . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Robinson Gate )lm ) & G ( lm( Urban Environmental Lab )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Robinson Gate )lm ) & ~ ( lm( Urban Environmental Lab )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to the Brown University without going to Brown University . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Brown University )lm ) & G ( first_floor ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Brown University )lm ) & ( lm( Brown University )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go through Sayles Hall before going to the Citizen's Bank . <EOS>
+CORRECT LABEL:     <SOS> ~ ( lm( Citizen's Bank )lm ) U ( lm( Sayles Hall )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Sayles Hall )lm & F ( lm( Citizen's Bank )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> avoid Saint Stephens Church until you pass through Faunce House . <EOS>
+CORRECT LABEL:     <SOS> ~ ( lm( Saint Stephens Church )lm ) U ( lm( Faunce House )lm ) <EOS>
+PREDICTED LABEL:   <SOS> ~ ( lm( Saint Stephens Church )lm & U ( lm( Faunce House )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to the Van Wickle Gates via the War Memorial . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( War Memorial )lm & F ( lm( Van Wickle Gates )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( War Memorial )lm & F ( lm( War Memorial )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to the Citizen's Bank while always avoiding the Wayland . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Citizen's Bank )lm ) & ~ ( lm( Wayland )lm ) <EOS>
+PREDICTED LABEL:   <SOS> ~ ( lm( Citizen's Bank )lm ) & ~ ( lm( Wayland )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> avoid Wriston Quad until going to the John Hay Library . <EOS>
+CORRECT LABEL:     <SOS> ~ ( lm( Wriston Quad )lm ) U ( lm( John Hay Library )lm ) <EOS>
+PREDICTED LABEL:   <SOS> ~ ( lm( Wriston Quad )lm ) U ( lm( John Hay )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to Wayland and avoid the Class of 1872 Gate . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Wayland )lm ) & ~ ( lm( Class of 1872 Gate )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Wayland )lm & & ( lm( lm( Class of 1872 Gate )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> move towards Shirley Miller House and then to Norwood House . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Shirley Miller House )lm & F ( lm( Norwood House )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Shirley Miller House )lm & F ( lm( Norwood House )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> avoid the Lippit House and go to the Maxcy Green . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Maxcy Green )lm ) & ~ ( lm( Lippit House )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Maxcy Green )lm ) & ( lm( lm( Lippit House )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> navigate to the Medical Research Lab via the Caswell Hall . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Caswell Hall )lm & F ( lm( Medical Research Lab )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Caswell Hall )lm & F ( lm( Caswell Hall )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to Mencoff Hall then go to the Gardner House . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Mencoff Hall )lm & F ( lm( Gardner House )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Mencoff Hall )lm & F ( lm( Gardner House )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to the The Ivy Room via Barus Building . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Barus Building )lm & F ( lm( The Ivy Room )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Barus Building )lm & F ( lm( The Ivy Room )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> avoid Saint Stephens Church until after the Maddock Alumni  <EOS>
+CORRECT LABEL:     <SOS> ~ ( lm( Saint Stephens Church )lm ) U ( lm( Maddock Alumni  )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Saint Stephens Church )lm & U ( lm( Maddock Alumni  )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to The Ivy Room before going to Walter Hall <EOS>
+CORRECT LABEL:     <SOS> ~ ( lm( Walter Hall )lm ) U ( lm( The Ivy Room )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( The Ivy Room )lm & F ( lm( Walter Hall )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to the Wayland without going to University Hall . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Wayland )lm ) & ~ ( lm( University Hall )lm ) <EOS>
+PREDICTED LABEL:   <SOS> ~ ( lm( Wayland )lm ) & ( lm( Wayland Hall )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go through the Finlandia to the William Goddard Memorial Gate <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Finlandia )lm & F ( lm( William Goddard Memorial Gate )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Finlandia )lm & F ( lm( William Goddard Memorial Gate )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go from the Mencoff Hall to the Hegeman . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Mencoff Hall )lm & F ( lm( Hegeman )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Hegeman )lm & F ( lm( Hegeman Hall )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go through the Untitled Lamp/Bear to J.W. Wilson . <EOS>
+CORRECT LABEL:     <SOS> ~ ( lm( J.W. Wilson )lm ) U ( lm( Untitled Lamp/Bear )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Untitled Lamp/Bear )lm & F ( lm( J.W. Wilson )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go through Wilbour Hall to Citizen's Bank . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Wilbour Hall )lm & F ( lm( Citizen's Bank )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Wilbour Hall )lm & F ( lm( Citizen's Bank )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> get to P-131317 , while avoiding Brown Bear <EOS>
+CORRECT LABEL:     <SOS> ~ ( lm( Brown Bear )lm ) U ( lm( P-131317 )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( P-131317 )lm ) & ~ ( lm( Brown Bear )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go from Minden Hall to Marston Hall . <EOS>
+CORRECT LABEL:     <SOS> ~ ( lm( Marston Hall )lm ) U ( lm( Minden Hall )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Minden Hall )lm & F ( lm( Marston Hall )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go directly to Wayland . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Wayland )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Wayland )lm ) F ( lm( Wayland )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go through The Center for the Study of Slavery and Justice CSSJ on your way to the Wayland . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( The Center for the Study of Slavery and Justice CSSJ )lm & F ( lm( Wayland )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( The Center for the Study of Slavery and Justice for )lm & F ( lm( Wayland )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> do not navigate away from the Swearer Center for Public Service and go to the Caswell Hall . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Caswell Hall )lm ) & G ( lm( Swearer Center for Public Service )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Caswell Hall )lm ) & ( lm( lm( Swearer Center for Public )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> move to John Nicholas Brown Gate , but travel to the Van Wickle Gates first . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Van Wickle Gates )lm & F ( lm( John Nicholas Brown Gate )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Van Wickle Gates )lm & F ( lm( John Nicholas Brown Gate )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to the Watson Center for Information Technology and then go to the Hegeman . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Watson Center for Information Technology )lm & F ( lm( Hegeman )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Watson Center for Information )lm & F ( lm( Hegeman )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to the Class of 1872 Gate but avoid Haffenreffer Museum of Anthropology . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Class of 1872 Gate )lm ) & ~ ( lm( Haffenreffer Museum of Anthropology )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Class of 1872 Gate )lm ) & ( lm( Haffenreffer Museum of Anthropology )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> pass through the Wayland before going to the Morgan Witter Rogers Gate . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Wayland )lm & F ( lm( Morgan Witter Rogers Gate )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Wayland )lm & F ( lm( Wayland )lm Gate F ( lm( Morgan Witter Rogers Gate )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> move to the Maxcy Hall and then move to Gardner House . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Maxcy Hall )lm & F ( lm( Gardner House )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Maxcy Hall )lm & F ( lm( Gardner House )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to the William Goddard Memorial Gate through Soldiers Memorial Gate . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Soldiers Memorial Gate )lm & F ( lm( William Goddard Memorial Gate )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Soldiers Memorial Gate )lm & F ( lm( William Memorial Gate )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> stay on the The Ivy Room and move to Brown Bear . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Brown Bear )lm ) & G ( lm( The Ivy Room )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Brown Bear )lm ) & ~ ( lm( The Ivy Room )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go through Untitled Lamp/Bear on your way to the Maxcy Hall . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Untitled Lamp/Bear )lm & F ( lm( Maxcy Hall )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> ~ ( lm( Untitled Lamp/Bear )lm & F ( lm( Maxcy Hall )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to the Campus Market while avoiding the John Carter Brown Library <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Campus Market )lm ) & ~ ( lm( John Carter Brown Library )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Campus Market )lm ) & ~ ( lm( John Carter Brown )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to the Brown Bear without going to the Slater Hall . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Brown Bear )lm ) & ~ ( lm( Slater Hall )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Brown Bear )lm ) & ( ( lm( Slater Hall )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> always avoid going to Robinson Gate through the Lincoln Field Building <EOS>
+CORRECT LABEL:     <SOS> ~ ( lm( Lincoln Field Building )lm ) U ( lm( Robinson Gate )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Lincoln Field Building )lm ) U ( lm( Robinson Gate )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to Brown University but remain on the 67 George . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Brown University )lm ) & G ( lm( 67 George )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Brown University )lm ) & ~ ( lm( 67 George )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go from Blue Room to Swearer Center for Public Service . <EOS>
+CORRECT LABEL:     <SOS> ~ ( lm( Swearer Center for Public Service )lm ) U ( lm( Blue Room )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Swearer Center for Public )lm & & ( ( lm( Center for Public )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to University Hall before going to Marston Hall . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( University Hall )lm & F ( lm( Marston Hall )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( University Hall )lm & F ( lm( Marston Hall )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to Metcalf Research Building without going to Faunce House <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Metcalf Research Building )lm ) & ~ ( lm( Faunce House )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Metcalf Research Building )lm ) & ( lm( Faunce House )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> navigate to Quiet Green through the Friedman Hall . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Friedman Hall )lm & F ( lm( Quiet Green )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Friedman Hall )lm & F ( lm( Friedman Hall )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to Kassar House before going to Robinson Gate <EOS>
+CORRECT LABEL:     <SOS> ~ ( lm( Robinson Gate )lm ) U ( lm( Kassar House )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Robinson Gate )lm & F ( lm( Kassar House )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to Lot 76 through the Maxcy Green . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Maxcy Green )lm & F ( lm( Lot 76 )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Maxcy Green )lm & F ( lm( Maxcy Green )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to Metcalf Research Building through the BERT . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( BERT )lm & F ( lm( Metcalf Research Building )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( BERT )lm & F ( lm( Metcalf Research Building )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> move to the Alpha Chi Omega Sorority . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Alpha Chi Omega Sorority )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Alpha Chi Omega Sorority )lm ) F ( lm( Alpha Omega Sorority )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go from the Carrie Tower to Sayles Hall <EOS>
+CORRECT LABEL:     <SOS> ~ ( lm( Sayles Hall )lm ) U ( lm( Carrie Tower )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Carrie Hall )lm & F ( lm( Sayles Hall )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go directly to Lincoln Field Building . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Lincoln Field Building )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Lincoln Field Building )lm & F ( lm( Field Building )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> navigate to Class of 1872 Gate . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Class of 1872 Gate )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Class of 1872 Gate )lm ) F ( lm( lm( ) <EOS>
+
+
+INPUT PHRASE:      <SOS> go to Hughes Court through Wayland <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Wayland )lm & F ( lm( Hughes Court )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Wayland )lm & F ( lm( Hughes Court )lm ) <EOS>
+
+
+INPUT PHRASE:      <SOS> avoid the Rhode Island Hall <EOS>
+CORRECT LABEL:     <SOS> F ( second_floor ) & ~ ( lm( Rhode Island Hall )lm ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Rhode Island )lm ) ) ~ ( lm( ) <EOS>
+
+

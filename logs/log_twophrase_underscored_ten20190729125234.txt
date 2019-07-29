@@ -1,0 +1,390 @@
+INPUT PHRASE:      <SOS> move to the Brown_University_Sciences_Library but ensure to go to the John_Nicholas_Brown_Gate first . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( John_Nicholas_Brown_Gate )lm & F ( lm( Brown_University_Sciences_Library )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( John_Nicholas_Brown_Gate )lm & F ( lm( John_Nicholas_Brown_Gate )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> move to the Idee_di_pietra but ensure to go to the Alpha_Chi_Omega_Sorority first . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Alpha_Chi_Omega_Sorority )lm & F ( lm( Idee_di_pietra )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Alpha_Chi_Omega_Sorority )lm & F ( lm( Alpha_Chi_Omega_Sorority )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> move to the Maxcy_Green but ensure to go to the Quiet_Green first . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Quiet_Green )lm & F ( lm( Maxcy_Green )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Quiet_Green )lm & F ( lm( Quiet_Green )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> move to the Wayland but ensure to go to the Idee_di_pietra first . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Idee_di_pietra )lm & F ( lm( Wayland )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Idee_di_pietra )lm & F ( lm( Idee_di_pietra )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> move to the Kassar_House but ensure to go to the Van_Wickle_Gates first . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Van_Wickle_Gates )lm & F ( lm( Kassar_House )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Van_Wickle_Gates )lm & F ( lm( The_Ivy_Room )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> move to the Rhode_Island_Hall but ensure to go to the Lot_18 first . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Lot_18 )lm & F ( lm( Rhode_Island_Hall )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Lot_18 )lm & F ( lm( Lot_18 )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> move to the Maddock_Alumni but ensure to go to the Prince_Engineering_Lab first . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Prince_Engineering_Lab )lm & F ( lm( Maddock_Alumni )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Prince_Engineering_Lab )lm & F ( lm( Marston_Hall )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> move to the Salomon_Center_for_Teaching but ensure to go to the Casey_Shearer_Memorial first . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Casey_Shearer_Memorial )lm & F ( lm( Salomon_Center_for_Teaching )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Casey_Shearer_Memorial )lm & F ( lm( John_Nicholas_Brown_Gate )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> move to the Gardner_House but ensure to go to the Brown_Center_for_Students_of_Color first . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Brown_Center_for_Students_of_Color )lm & F ( lm( Gardner_House )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Brown_Center_for_Students_of_Color )lm & F ( lm( P-131317 )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> move to the John_Nicholas_Brown_Gate but ensure to go to the Rockefeller_Library first . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Rockefeller_Library )lm & F ( lm( John_Nicholas_Brown_Gate )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Rockefeller_Library )lm & F ( lm( Rockefeller_Library )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> move to the Finlandia but ensure to go to the Caswell_Hall first . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Caswell_Hall )lm & F ( lm( Finlandia )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Caswell_Hall )lm & F ( lm( Brown_Bear )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> move to the Class_of_1872_Gate but ensure to go to the J.W._Wilson first . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( J.W._Wilson )lm & F ( lm( Class_of_1872_Gate )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( J.W._Wilson )lm & F ( lm( Manning )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> move to the Sears but ensure to go to the Class_of_1887_Gate first . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Class_of_1887_Gate )lm & F ( lm( Sears )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Class_of_1887_Gate )lm & F ( lm( Class_of_1887_Gate )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> move to the Horace_Mann_House but ensure to go to the Hughes_Court first . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Hughes_Court )lm & F ( lm( Horace_Mann_House )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Hughes_Court )lm & F ( lm( P-131317 )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> move to the Carrie_Tower but ensure to go to the Rockefeller_Library first . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Rockefeller_Library )lm & F ( lm( Carrie_Tower )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Rockefeller_Library )lm & F ( lm( Rockefeller_Library )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> move to the Carrie_Tower but ensure to go to the Horace_Mann_House first . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Horace_Mann_House )lm & F ( lm( Carrie_Tower )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Horace_Mann_House )lm & F ( lm( Horace_Mann_House )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> move to the Marston_Hall but ensure to go to the War_Memorial first . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( War_Memorial )lm & F ( lm( Marston_Hall )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( War_Memorial )lm & F ( lm( Carrie_Tower )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> move to the Starbucks but ensure to go to the Wriston_Quad first . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Wriston_Quad )lm & F ( lm( Starbucks )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Wriston_Quad )lm & F ( lm( Finlandia )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> move to the Phi_Kappa_Psi_Fraternity but ensure to go to the Sharpe_Refectory first . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Sharpe_Refectory )lm & F ( lm( Phi_Kappa_Psi_Fraternity )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Sharpe_Refectory )lm & F ( lm( Finlandia )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> move to the Campus_Market but ensure to go to the Wayland first . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Wayland )lm & F ( lm( Campus_Market )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Wayland )lm & F ( lm( P-131317 )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> move to the List_Art_Building but ensure to go to the Manning first . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Manning )lm & F ( lm( List_Art_Building )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Manning )lm & F ( lm( Manning )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> move to the Brown_University but ensure to go to the Friedman_Hall first . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Friedman_Hall )lm & F ( lm( Brown_University )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Friedman_Hall )lm & F ( lm( P-131317 )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> move to the Quiet_Green but ensure to go to the Salomon_Center_for_Teaching first . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Salomon_Center_for_Teaching )lm & F ( lm( Quiet_Green )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Salomon_Center_for_Teaching )lm & F ( lm( P-131317 )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> move to the Class_of_1887_Gate but ensure to go to the Watson_Center_for_Information_Technology first . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Watson_Center_for_Information_Technology )lm & F ( lm( Class_of_1887_Gate )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Watson_Center_for_Information_Technology )lm & F ( lm( Watson_Center_for_Information_Technology )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> move to the Reclining_Figure_No._2_—_Bridge_Prop but ensure to go to the List_Art_Building first . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( List_Art_Building )lm & F ( lm( Reclining_Figure_No._2_—_Bridge_Prop )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( List_Art_Building )lm & F ( lm( John_Nicholas_Brown_Gate )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> move to the Phi_Kappa_Psi_Fraternity but ensure to go to the Van_Wickle_Gates first . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Van_Wickle_Gates )lm & F ( lm( Phi_Kappa_Psi_Fraternity )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Van_Wickle_Gates )lm & F ( lm( The_Ivy_Room )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> move to the University_Hall but ensure to go to the John_Hay_Library first . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( John_Hay_Library )lm & F ( lm( University_Hall )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( John_Hay_Library )lm & F ( lm( Manning )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> move to the Brown_University but ensure to go to the Casey_Shearer_Memorial first . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Casey_Shearer_Memorial )lm & F ( lm( Brown_University )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Casey_Shearer_Memorial )lm & F ( lm( John_Nicholas_Brown_Gate )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> move to the Blue_Room but ensure to go to the Lyman_Hall first . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Lyman_Hall )lm & F ( lm( Blue_Room )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Lyman_Hall )lm & F ( lm( Finlandia )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> move to the War_Memorial but ensure to go to the Saint_Stephens_Church first . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Saint_Stephens_Church )lm & F ( lm( War_Memorial )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Saint_Stephens_Church )lm & F ( lm( Saint_Stephens_Church )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> move to the Sayles_Hall but ensure to go to the Maddock_Alumni first . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Maddock_Alumni )lm & F ( lm( Sayles_Hall )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Maddock_Alumni )lm & F ( lm( Maddock_Alumni )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> move to the Rhode_Island_Hall but ensure to go to the 86_Waterman first . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( 86_Waterman )lm & F ( lm( Rhode_Island_Hall )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( 86_Waterman )lm & F ( lm( 86_Waterman )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> move to the Friedman_Hall but ensure to go to the BERT first . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( BERT )lm & F ( lm( Friedman_Hall )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( BERT )lm & F ( lm( BERT )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> move to the Hope_College but ensure to go to the Citizen's_Bank first . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Citizen's_Bank )lm & F ( lm( Hope_College )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Citizen's_Bank )lm & F ( lm( Marston_Hall )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> move to the Saint_Stephens_Church but ensure to go to the Shirley_Miller_House first . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Shirley_Miller_House )lm & F ( lm( Saint_Stephens_Church )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Shirley_Miller_House )lm & F ( lm( Maddock_Alumni )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> move to the Alpha_Chi_Omega_Sorority but ensure to go to the Mencoff_Hall first . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Mencoff_Hall )lm & F ( lm( Alpha_Chi_Omega_Sorority )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Mencoff_Hall )lm & F ( lm( Mencoff_Hall )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> move to the 86_Waterman but ensure to go to the John_Hay_Library first . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( John_Hay_Library )lm & F ( lm( 86_Waterman )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( John_Hay_Library )lm & F ( lm( Manning )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> move to the BERT but ensure to go to the Brown_University_Sciences_Library first . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Brown_University_Sciences_Library )lm & F ( lm( BERT )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Brown_University_Sciences_Library )lm & F ( lm( Brown_University_Sciences_Library )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> move to the Minden_Hall but ensure to go to the Rhode_Island_Hall first . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Rhode_Island_Hall )lm & F ( lm( Minden_Hall )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Rhode_Island_Hall )lm & F ( lm( Finlandia )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> move to the Saint_Stephens_Church but ensure to go to the War_Memorial first . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( War_Memorial )lm & F ( lm( Saint_Stephens_Church )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( War_Memorial )lm & F ( lm( Carrie_Tower )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> move to the Littlefield_Hall but ensure to go to the Van_Wickle_Gates first . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Van_Wickle_Gates )lm & F ( lm( Littlefield_Hall )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Van_Wickle_Gates )lm & F ( lm( The_Ivy_Room )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> move to the Watson_Center_for_Information_Technology but ensure to go to the Medical_Research_Lab first . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Medical_Research_Lab )lm & F ( lm( Watson_Center_for_Information_Technology )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Medical_Research_Lab )lm & F ( lm( Medical_Research_Lab )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> head to the Brown_University but first go to the War_Memorial . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( War_Memorial )lm & F ( lm( Brown_University )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( War_Memorial )lm & F ( lm( Marston_Hall )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> head to the Mencoff_Hall but first go to the Class_of_1872_Gate . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Class_of_1872_Gate )lm & F ( lm( Mencoff_Hall )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Class_of_1872_Gate )lm & F ( lm( Medical_Research_Lab )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> head to the John_Nicholas_Brown_Gate but first go to the Shirley_Miller_House . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Shirley_Miller_House )lm & F ( lm( John_Nicholas_Brown_Gate )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Shirley_Miller_House )lm & F ( lm( Maddock_Alumni )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> head to the Littlefield_Hall but first go to the John_Carter_Brown_Library . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( John_Carter_Brown_Library )lm & F ( lm( Littlefield_Hall )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( John_Carter_Brown_Library )lm & F ( lm( John_Carter_Brown_Library )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> head to the Lot_76 but first go to the Manning . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Manning )lm & F ( lm( Lot_76 )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Manning )lm & F ( lm( Manning )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> head to the Saint_Stephens_Church but first go to the Reclining_Figure_No._2_—_Bridge_Prop . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Reclining_Figure_No._2_—_Bridge_Prop )lm & F ( lm( Saint_Stephens_Church )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Reclining_Figure_No._2_—_Bridge_Prop )lm & F ( lm( Carrie_Tower )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> head to the Brown_Bear but first go to the Brown_University . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Brown_University )lm & F ( lm( Brown_Bear )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Brown_University )lm & F ( lm( Finlandia )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> head to the John_Carter_Brown_Library but first go to the Horace_Mann_House . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Horace_Mann_House )lm & F ( lm( John_Carter_Brown_Library )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Horace_Mann_House )lm & F ( lm( Horace_Mann_House )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> head to the Medical_Research_Lab but first go to the Maddock_Alumni . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Maddock_Alumni )lm & F ( lm( Medical_Research_Lab )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Maddock_Alumni )lm & F ( lm( Maddock_Alumni )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> head to the Lot_18 but first go to the Brown_Bear . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Brown_Bear )lm & F ( lm( Lot_18 )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Brown_Bear )lm & F ( lm( Brown_Bear )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> head to the Salomon_Center_for_Teaching but first go to the Maxcy_Hall . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Maxcy_Hall )lm & F ( lm( Salomon_Center_for_Teaching )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Maxcy_Hall )lm & F ( lm( Hegeman )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> head to the Marcus_Aurelius but first go to the Wayland . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Wayland )lm & F ( lm( Marcus_Aurelius )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Wayland )lm & F ( lm( Wayland )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> head to the Soldiers_Memorial_Gate but first go to the Lippit_House . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Lippit_House )lm & F ( lm( Soldiers_Memorial_Gate )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Lippit_House )lm & F ( lm( Hegeman )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> head to the Gardner_House but first go to the Manning . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Manning )lm & F ( lm( Gardner_House )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Manning )lm & F ( lm( The_Ivy_Room )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> head to the Lyman_Hall but first go to the Urban_Environmental_Lab . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Urban_Environmental_Lab )lm & F ( lm( Lyman_Hall )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Urban_Environmental_Lab )lm & F ( lm( Brown_Bear )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> head to the Rockefeller_Library but first go to the Littlefield_Hall . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Littlefield_Hall )lm & F ( lm( Rockefeller_Library )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Littlefield_Hall )lm & F ( lm( Littlefield_Hall )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> head to the Manning but first go to the William_Goddard_Memorial_Gate . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( William_Goddard_Memorial_Gate )lm & F ( lm( Manning )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( William_Goddard_Memorial_Gate )lm & F ( lm( Medical_Research_Lab )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> head to the Lot_17 but first go to the P-131317 . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( P-131317 )lm & F ( lm( Lot_17 )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( P-131317 )lm & F ( lm( P-131317 )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> head to the Lot_18 but first go to the The_Center_for_the_Study_of_Slavery_and_Justice_CSSJ . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( The_Center_for_the_Study_of_Slavery_and_Justice_CSSJ )lm & F ( lm( Lot_18 )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( The_Center_for_the_Study_of_Slavery_and_Justice_CSSJ )lm & F ( lm( Maxcy_Hall )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> head to the Soldiers_Memorial_Gate but first go to the Brown_Bear . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Brown_Bear )lm & F ( lm( Soldiers_Memorial_Gate )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Brown_Bear )lm & F ( lm( Brown_Bear )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> head to the Marston_Hall but first go to the Brown_Bear . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Brown_Bear )lm & F ( lm( Marston_Hall )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Brown_Bear )lm & F ( lm( Brown_Bear )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> head to the Shirley_Miller_House but first go to the Mencoff_Hall . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Mencoff_Hall )lm & F ( lm( Shirley_Miller_House )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Mencoff_Hall )lm & F ( lm( Mencoff_Hall )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> head to the Citizen's_Bank but first go to the Slavery_Memorial . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Slavery_Memorial )lm & F ( lm( Citizen's_Bank )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Slavery_Memorial )lm & F ( lm( Rockefeller_Library )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> head to the Shirley_Miller_House but first go to the Morgan_Witter_Rogers_Gate . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Morgan_Witter_Rogers_Gate )lm & F ( lm( Shirley_Miller_House )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Morgan_Witter_Rogers_Gate )lm & F ( lm( Maxcy_Hall )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> head to the Medical_Research_Lab but first go to the Caswell_Hall . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Caswell_Hall )lm & F ( lm( Medical_Research_Lab )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Caswell_Hall )lm & F ( lm( Brown_Bear )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> head to the P-131317 but first go to the Salomon_Center_for_Teaching . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Salomon_Center_for_Teaching )lm & F ( lm( P-131317 )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Salomon_Center_for_Teaching )lm & F ( lm( Idee_di_pietra )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> head to the Hegeman but first go to the Citizen's_Bank . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Citizen's_Bank )lm & F ( lm( Hegeman )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Citizen's_Bank )lm & F ( lm( Faunce_House )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> head to the Prospect_House but first go to the Rockefeller_Library . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Rockefeller_Library )lm & F ( lm( Prospect_House )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Rockefeller_Library )lm & F ( lm( Rockefeller_Library )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> head to the Maxcy_Green but first go to the Circle_Dance_Sculpture . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Circle_Dance_Sculpture )lm & F ( lm( Maxcy_Green )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Circle_Dance_Sculpture )lm & F ( lm( Lot_17 )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> head to the Urban_Environmental_Lab but first go to the Walter_Hall . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Walter_Hall )lm & F ( lm( Urban_Environmental_Lab )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Walter_Hall )lm & F ( lm( Rockefeller_Library )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> head to the Manning but first go to the BERT . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( BERT )lm & F ( lm( Manning )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( BERT )lm & F ( lm( BERT )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> head to the Class_of_1872_Gate but first go to the Robinson_Gate . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Robinson_Gate )lm & F ( lm( Class_of_1872_Gate )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Robinson_Gate )lm & F ( lm( Idee_di_pietra )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> head to the Finlandia but first go to the Rhode_Island_Hall . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Rhode_Island_Hall )lm & F ( lm( Finlandia )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Rhode_Island_Hall )lm & F ( lm( Medical_Research_Lab )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> head to the Rhode_Island_Hall but first go to the Brown_Center_for_Students_of_Color . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Brown_Center_for_Students_of_Color )lm & F ( lm( Rhode_Island_Hall )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Brown_Center_for_Students_of_Color )lm & F ( lm( P-131317 )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> head to the GeoChem_and_Macmillian_Hall but first go to the Department_of_Cognitive,_Linguistic,_and_Psychological_Sciences . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Department_of_Cognitive,_Linguistic,_and_Psychological_Sciences )lm & F ( lm( GeoChem_and_Macmillian_Hall )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Department_of_Cognitive,_Linguistic,_and_Psychological_Sciences )lm & F ( lm( Faunce_House )lm ) ) <EOS>
+
+
+INPUT PHRASE:      <SOS> head to the The_Ivy_Room but first go to the Manning . <EOS>
+CORRECT LABEL:     <SOS> F ( lm( Manning )lm & F ( lm( The_Ivy_Room )lm ) ) <EOS>
+PREDICTED LABEL:   <SOS> F ( lm( Manning )lm & F ( lm( Manning )lm ) ) <EOS>
+
+

@@ -17,7 +17,6 @@ class OneFoldSequencePairDataset(Dataset):
         self.maxlen = maxlen
         self.parser = None
         self.use_extended_vocab = use_extended_vocab
-        self.k = k
 
         self.data = [] # Will hold all data
 
@@ -53,13 +52,18 @@ class OneFoldSequencePairDataset(Dataset):
         return input_seq, output_seq, ' '.join(input_token_list), ' '.join(output_token_list)
 
 
-def generateKFoldDatasets(maxlen=200,
+def generateKFoldDatasets(seed,
+             maxlen=200,
              lang=None,
              vocab_limit=None,
              use_extended_vocab=True,
              k=5,
-             src_data_path='./data/twophrase_south_shuffled_src.txt',
-             tgt_data_path='./data/twophrase_south_shuffled_tar.txt'):
+             src_data_path='./data/twophrase_south_clean_underscored_src.txt',
+             tgt_data_path='./data/twophrase_south_clean_underscored_tar.txt'):
+    
+    print(src_data_path)
+    print(tgt_data_path)
+    
 
     with open(src_data_path, "r") as sf:
         src_lines = sf.readlines()
@@ -70,15 +74,14 @@ def generateKFoldDatasets(maxlen=200,
     if not len(src_lines) == len(tgt_lines):
         sys.exit("ERROR: Data files have inconsistent lengths. Make sure your labels are aligned correctly.")
 
-    shuffle_correlated_lists(src_lines, tgt_lines)
-
-    data = [(src_lines[i], tgt_lines[i]) for i in len(src_lines)]
+    shuffle_correlated_lists(src_lines, tgt_lines, seed=seed)
+    data = [(src_lines[i], tgt_lines[i]) for i in range(len(src_lines))]
 
     # Divide the data into k chunks
     chunked = chunks(data, k)
     folds = []
     for _ in range(k):
-        folds.append(chunked.next())
+        folds.append(next(chunked))
 
     # Build the k training and testing datasets
     datasets = []
@@ -92,7 +95,7 @@ def generateKFoldDatasets(maxlen=200,
                 test_data += folds[j]
             else: # Add other folds to training data
                 train_data += folds[i]
-
+        
         # Make the testing and training dataset objects
         training_dataset = OneFoldSequencePairDataset(train_data, maxlen, vocab_limit, use_extended_vocab)
         test_dataset = OneFoldSequencePairDataset(test_data, maxlen, vocab_limit, use_extended_vocab)

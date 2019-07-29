@@ -20,12 +20,13 @@ def get_glove():
     glove = {w: vectors[word2idx[w]] for w in words}
     return glove
 
-def shuffle_correlated_lists(l1, l2):
+def shuffle_correlated_lists(l1, l2, seed):
     #Lists must have the same length, as the entries correspond
     if not len(l1) == len(l2):
         print("ERROR: Lists of unequal length! Returning without shuffling.")
         return (l1, l2)
 
+    random.seed(seed)
     idxes = list(range(len(l1)))
     random.shuffle(idxes)
 
@@ -42,7 +43,7 @@ def chunks(l, n):
     """ Yield n successive chunks from l.
     """
     newn = int(len(l) / n)
-    for i in xrange(0, n-1):
+    for i in range(0, n-1):
         yield l[i*newn:i*newn+newn]
     yield l[n*newn-newn:]
 

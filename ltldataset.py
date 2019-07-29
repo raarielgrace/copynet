@@ -36,8 +36,8 @@ class Language(object):
 class SequencePairDataset(Dataset):
     #src_data_path='./data/hard_pc_src_syn2.txt'
     #tgt_data_path='./data/hard_pc_tar_syn2.txt'
-    src_data_path='./data/twophrase_south_shuffled_src.txt'
-    tgt_data_path='./data/twophrase_south_shuffled_tar.txt'
+    src_data_path='./data/twophrase_south_clean_src.txt'
+    tgt_data_path='./data/twophrase_south_clean_tar.txt'
 
     with open(src_data_path, "r") as sf:
         src_lines = sf.readlines()
@@ -48,16 +48,10 @@ class SequencePairDataset(Dataset):
     if not len(src_lines) == len(tgt_lines):
         sys.exit("ERROR: Data files have inconsistent lengths. Make sure your labels are aligned correctly.")
 
-    shuffle_correlated_lists(src_lines, tgt_lines)
-
-    # Split our source and target files with a 20:80 split
-    split_idx = len(src_lines) // 5
-    test_src = src_lines[:split_idx]
-    train_src = src_lines[split_idx:]
-    test_tgt = tgt_lines[:split_idx]
-    train_tgt = tgt_lines[split_idx:]
+    shuffled = False
 
     def __init__(self,
+                 seed,
                  maxlen=200,
                  lang=None,
                  vocab_limit=None,
@@ -65,6 +59,18 @@ class SequencePairDataset(Dataset):
                  is_test=False,
                  use_extended_vocab=True,
                  data_substitute=None):
+
+        # Had to be moved to allow passing in a seed
+        if not SequencePairDataset.shuffled and data_substitute == None:
+            shuffle_correlated_lists(SequencePairDataset.src_lines, SequencePairDataset.tgt_lines, seed)
+            # Split our source and target files with a 20:80 split
+            split_idx = len(SequencePairDataset.src_lines) // 5
+            test_src = SequencePairDataset.src_lines[:split_idx]
+            train_src = SequencePairDataset.src_lines[split_idx:]
+            test_tgt = SequencePairDataset.tgt_lines[:split_idx]
+            train_tgt = SequencePairDataset.tgt_lines[split_idx:]
+
+            shuffled = True
 
         self.maxlen = maxlen
         self.parser = None
