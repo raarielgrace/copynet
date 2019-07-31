@@ -5,6 +5,9 @@ from torch.utils.data import Dataset
 from ltldataset import Language
 from utils import tokens_to_seq, contains_digit, shuffle_correlated_lists, chunks
 from operator import itemgetter
+import datetime
+
+currentDT = datetime.datetime.now()
 
 class OneFoldSequencePairDataset(Dataset):
 
@@ -58,8 +61,8 @@ def generateKFoldDatasets(seed,
              vocab_limit=None,
              use_extended_vocab=True,
              k=5,
-             src_data_path='./data/twophrase_south_clean_underscored_src.txt',
-             tgt_data_path='./data/twophrase_south_clean_underscored_tar.txt'):
+             src_data_path='./data/twophrase_south_clean_src.txt',
+             tgt_data_path='./data/twophrase_south_clean_tar.txt'):
     
     print(src_data_path)
     print(tgt_data_path)
@@ -74,8 +77,13 @@ def generateKFoldDatasets(seed,
     if not len(src_lines) == len(tgt_lines):
         sys.exit("ERROR: Data files have inconsistent lengths. Make sure your labels are aligned correctly.")
 
-    shuffle_correlated_lists(src_lines, tgt_lines, seed=seed)
+    src_lines, tgt_lines, order = shuffle_correlated_lists(src_lines, tgt_lines, seed=seed)
     data = [(src_lines[i], tgt_lines[i]) for i in range(len(src_lines))]
+
+    f = open("./logs/log_ordering" + currentDT.strftime("%Y%m%d%H%M%S") + ".txt", "w")
+    for i in order:
+        f.write("{}\n".format(i))
+    f.close()
 
     # Divide the data into k chunks
     chunked = chunks(data, k)

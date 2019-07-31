@@ -36,7 +36,7 @@ def shuffle_correlated_lists(l1, l2, seed):
         new_l1.append(l1[idx])
         new_l2.append(l2[idx])
 
-    return (new_l1, new_l2)
+    return (new_l1, new_l2, idxes)
 
 # Source: https://stackoverflow.com/questions/2130016/splitting-a-list-into-n-parts-of-approximately-equal-length
 def chunks(l, n):

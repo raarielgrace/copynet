@@ -148,7 +148,7 @@ def train(encoder_decoder: EncoderDecoder,
     #plt.savefig('plot.png')
     return trained_model
 
-def test(encoder_decoder: EncoderDecoder, test_data_loader: DataLoader, max_length, device, log_file=None):
+def test(encoder_decoder: EncoderDecoder, test_data_loader: DataLoader, max_length, device, log_files=None):
 
     correct_predictions = 0.0
     struct_correct_only = 0.0
@@ -185,29 +185,35 @@ def test(encoder_decoder: EncoderDecoder, test_data_loader: DataLoader, max_leng
         for i in range(len(batch_outputs)):
             y_i = batch_outputs[i]
             tgt_i = batch_targets[i][0]
+            src_i = batch_inputs[i][0]
+            src_token_list = input_tokens[i].split()
+            tar_token_list = target_tokens[i].split()
+            src_unk_to_tok = {src_i[j]:src_token_list[j] for j in range(len(src_i)) if not src_i[j] in encoder_decoder.lang.idx_to_tok}
+            tar_unk_to_tok = {tgt_i[j]:tar_token_list[j] for j in range(len(tgt_i)) if not tgt_i[j] in encoder_decoder.lang.idx_to_tok}
+            correct_seq = [encoder_decoder.lang.idx_to_tok[n] if n in encoder_decoder.lang.idx_to_tok else tar_unk_to_tok[n] for n in tgt_i]
+            incorrect_seq = [encoder_decoder.lang.idx_to_tok[n] if n in encoder_decoder.lang.idx_to_tok else src_unk_to_tok[n] for n in y_i]
+            input_seq = [encoder_decoder.lang.idx_to_tok[n] if n in encoder_decoder.lang.idx_to_tok else src_unk_to_tok[n] for n in src_i]
 
             if y_i == tgt_i:
                 correct_predictions += 1.0
+
+                if not log_files == None:
+                    log_files[1].write("INPUT PHRASE:      {}\n".format(' '.join(input_seq)))
+                    log_files[1].write("CORRECT LABEL:     {}\n".format(' '.join(correct_seq)))
+                    log_files[1].write("PREDICTED LABEL:   {}\n".format(' '.join(incorrect_seq)))
+                    log_files[1].write("\n\n")
             else:
-                src_i = batch_inputs[i][0]
-                src_token_list = input_tokens[i].split()
-                tar_token_list = target_tokens[i].split()
-                src_unk_to_tok = {src_i[j]:src_token_list[j] for j in range(len(src_i)) if not src_i[j] in encoder_decoder.lang.idx_to_tok}
-                tar_unk_to_tok = {tgt_i[j]:tar_token_list[j] for j in range(len(tgt_i)) if not tgt_i[j] in encoder_decoder.lang.idx_to_tok}
-                correct_seq = [encoder_decoder.lang.idx_to_tok[n] if n in encoder_decoder.lang.idx_to_tok else tar_unk_to_tok[n] for n in tgt_i]
-                incorrect_seq = [encoder_decoder.lang.idx_to_tok[n] if n in encoder_decoder.lang.idx_to_tok else src_unk_to_tok[n] for n in y_i]
                 #c_minus_ldmks = re.sub('lm(.+?)lm', '',  ' '.join(correct_seq))
                 #i_minus_ldmks = re.sub('lm(.+?)lm', '',  ' '.join(incorrect_seq))
 
                 #if c_minus_ldmks == i_minus_ldmks:
                     #struct_correct_only += 1.0
 
-                if not log_file == None:
-                    input_seq = [encoder_decoder.lang.idx_to_tok[n] if n in encoder_decoder.lang.idx_to_tok else src_unk_to_tok[n] for n in src_i]
-                    log_file.write("INPUT PHRASE:      {}\n".format(' '.join(input_seq)))
-                    log_file.write("CORRECT LABEL:     {}\n".format(' '.join(correct_seq)))
-                    log_file.write("PREDICTED LABEL:   {}\n".format(' '.join(incorrect_seq)))
-                    log_file.write("\n\n")
+                if not log_files == None:
+                    log_files[0].write("INPUT PHRASE:      {}\n".format(' '.join(input_seq)))
+                    log_files[0].write("CORRECT LABEL:     {}\n".format(' '.join(correct_seq)))
+                    log_files[0].write("PREDICTED LABEL:   {}\n".format(' '.join(incorrect_seq)))
+                    log_files[0].write("\n\n")
 
 
             all_predictions += 1.0
@@ -293,117 +299,135 @@ def main(model_name, use_cuda, batch_size, teacher_forcing_schedule, keep_prob, 
     ''' # Will put this aside for now, adding k-fold things
 
     currentDT = datetime.datetime.now()
+    seeds = [42, 27, 15]
 
-    print("creating training, and validation datasets", flush=True)
-    all_datasets = generateKFoldDatasets(vocab_limit=vocab_limit, use_extended_vocab=(decoder_type=='copy'), seed=seed)
-    all_accuracies_seen = []
-    all_accuracies_unseen = []
-    all_accuracies_mixed = []
+    all_means_seen = []
+    all_means_unseen = []
+    all_means_mixed = []
 
     print('Testing using ' + test_data_substitute)
+    for it in range(3):
+        print("creating training, and validation datasets", flush=True)
+        all_datasets = generateKFoldDatasets(vocab_limit=vocab_limit, use_extended_vocab=(decoder_type=='copy'), seed=seeds[it])
+        all_accuracies_seen = []
+        all_accuracies_unseen = []
+        all_accuracies_mixed = []
 
-    for k in range(len(all_datasets)):
-        train_dataset = all_datasets[k][0]
-        val_dataset = all_datasets[k][1]
+        for k in range(len(all_datasets)):
+            train_dataset = all_datasets[k][0]
+            val_dataset = all_datasets[k][1]
 
-        print("creating {}th encoder-decoder model".format(k), flush=True)
-        encoder_decoder = EncoderDecoder(train_dataset.lang,
-                                         max_length,
-                                         hidden_size,
-                                         embedding_size,
-                                         decoder_type,
-                                         device,
-                                         glove)
+            print("creating {}th encoder-decoder model".format(k), flush=True)
+            encoder_decoder = EncoderDecoder(train_dataset.lang,
+                                            max_length,
+                                            hidden_size,
+                                            embedding_size,
+                                            decoder_type,
+                                            device,
+                                            glove)
 
-        test_dataset = SequencePairDataset(seed=seed,
-                                        lang=train_dataset.lang,
-                                        is_val=False,
-                                        is_test=True,
-                                        use_extended_vocab=(encoder_decoder.decoder_type=='copy'),
-                                        data_substitute=test_data_substitute)
+            test_dataset = SequencePairDataset(seed=seeds[it],
+                                            lang=train_dataset.lang,
+                                            is_val=False,
+                                            is_test=True,
+                                            use_extended_vocab=(encoder_decoder.decoder_type=='copy'),
+                                            data_substitute=test_data_substitute)
 
-        mixed_dataset = SequencePairDataset(seed=seed,
-                                        lang=train_dataset.lang,
-                                        is_val=False,
-                                        is_test=True,
-                                        use_extended_vocab=(encoder_decoder.decoder_type=='copy'),
-                                        data_substitute='twophrase_1seen1unseen_clean_underscored')
+            mixed_dataset = SequencePairDataset(seed=seeds[it],
+                                            lang=train_dataset.lang,
+                                            is_val=False,
+                                            is_test=True,
+                                            use_extended_vocab=(encoder_decoder.decoder_type=='copy'),
+                                            data_substitute='twophrase_1seen1unseen_clean')
 
-        # CHANGE 2
-        # #########################
-        # if use_cuda and torch.cuda.device_count() > 1:
-        #     print("Using ", torch.cuda.device_count(), " GPUs.")
-        #     encoder_decoder = nn.DataParallel(encoder_decoder)
-        encoder_decoder = encoder_decoder.to(device)
-        #########################
+            # CHANGE 2
+            # #########################
+            # if use_cuda and torch.cuda.device_count() > 1:
+            #     print("Using ", torch.cuda.device_count(), " GPUs.")
+            #     encoder_decoder = nn.DataParallel(encoder_decoder)
+            encoder_decoder = encoder_decoder.to(device)
+            #########################
 
-        train_data_loader = DataLoader(train_dataset, batch_size=batch_size, shuffle=True, num_workers=12)
-        val_data_loader = DataLoader(val_dataset, batch_size=batch_size)
-        mixed_data_loader = DataLoader(mixed_dataset, batch_size=batch_size)
-        test_data_loader = DataLoader(test_dataset, batch_size=batch_size)
+            train_data_loader = DataLoader(train_dataset, batch_size=batch_size, shuffle=True, num_workers=12)
+            val_data_loader = DataLoader(val_dataset, batch_size=batch_size)
+            mixed_data_loader = DataLoader(mixed_dataset, batch_size=batch_size)
+            test_data_loader = DataLoader(test_dataset, batch_size=batch_size)
 
-        os.mkdir(model_path + str(k) + '/')
-        train(encoder_decoder,
-              train_data_loader,
-              model_name + str(k),
-              val_data_loader,
-              keep_prob,
-              teacher_forcing_schedule,
-              lr,
-              encoder_decoder.decoder.max_length,
-              device,
-              test_data_loader)
+            os.mkdir(model_path + str(k) + str(it) + '/')
+            train(encoder_decoder,
+                train_data_loader,
+                model_name + str(k) + str(it),
+                val_data_loader,
+                keep_prob,
+                teacher_forcing_schedule,
+                lr,
+                encoder_decoder.decoder.max_length,
+                device,
+                test_data_loader)
 
-        model_path = './model/' + model_name + str(k) + '/'
+            model_path = './model/' + model_name + str(k) + str(it) +  '/'
 
-        trained_model = torch.load(model_path + model_name + '{}_final.pt'.format(k)) # Reload model just in case
+            trained_model = torch.load(model_path + model_name + '{}{}_final.pt'.format(k, it)) # Reload model just in case
 
-        s_f = open("./logs/log_" + model_name + "seen" + currentDT.strftime("%Y%m%d%H%M%S") + ".txt", "w")
-        s_f.write("TRAINING MODEL {}\nUSING SEED VALUE {}\n\n".format(model_name, seed))
-        seen_accuracy = test(trained_model, val_data_loader, encoder_decoder.decoder.max_length, device, log_file=s_f)
-        s_f.close()
+            s_f = open("./logs/log_" + model_name + "seen" + currentDT.strftime("%Y%m%d%H%M%S") + ".txt", "w")
+            s_f.write("TRAINING MODEL {}\nUSING SEED VALUE {}\n\n".format(model_name, seeds[it]))
+            sc_f = open("./logs/log_" + model_name + "seencorrect" + currentDT.strftime("%Y%m%d%H%M%S") + ".txt", "w")
+            seen_accuracy = test(trained_model, val_data_loader, encoder_decoder.decoder.max_length, device, log_files=(s_f, sc_f))
+            s_f.close()
+            sc_f.close()
         
-        m_f = open("./logs/log_" + model_name + "1seen1unseen" + currentDT.strftime("%Y%m%d%H%M%S") + ".txt", "w")
-        m_f.write("TRAINING MODEL {}\nUSING SEED VALUE {}\n\n".format(model_name, seed))
-        mixed_accuracy = test(trained_model, mixed_data_loader, encoder_decoder.decoder.max_length, device, log_file=m_f)
-        m_f.close()
+            m_f = open("./logs/log_" + model_name + "1seen1unseen" + currentDT.strftime("%Y%m%d%H%M%S") + ".txt", "w")
+            m_f.write("TRAINING MODEL {}\nUSING SEED VALUE {}\n\n".format(model_name, seeds[it]))
+            mc_f = open("./logs/log_" + model_name + "1seen1unseencorrect" + currentDT.strftime("%Y%m%d%H%M%S") + ".txt", "w")
+            mixed_accuracy = test(trained_model, mixed_data_loader, encoder_decoder.decoder.max_length, device, log_files=(m_f, mc_f))
+            m_f.close()
+            mc_f.close()
 
-        u_f = open("./logs/log_" + model_name + "unseen" + currentDT.strftime("%Y%m%d%H%M%S") + ".txt", "w")
-        u_f.write("TRAINING MODEL {}\nUSING SEED VALUE {}\n\n".format(model_name, seed))
-        unseen_accuracy = test(trained_model, test_data_loader, encoder_decoder.decoder.max_length, device, log_file=u_f)
-        u_f.close()
+            u_f = open("./logs/log_" + model_name + "unseen" + currentDT.strftime("%Y%m%d%H%M%S") + ".txt", "w")
+            u_f.write("TRAINING MODEL {}\nUSING SEED VALUE {}\n\n".format(model_name, seeds[it]))
+            uc_f = open("./logs/log_" + model_name + "unseencorrect" + currentDT.strftime("%Y%m%d%H%M%S") + ".txt", "w")
+            unseen_accuracy = test(trained_model, test_data_loader, encoder_decoder.decoder.max_length, device, log_files=(u_f, uc_f))
+            u_f.close()
+            uc_f.close()
         
-        all_accuracies_seen.append(seen_accuracy)
-        all_accuracies_unseen.append(unseen_accuracy)
-        all_accuracies_mixed.append(mixed_accuracy)
+            all_accuracies_seen.append(seen_accuracy)
+            all_accuracies_unseen.append(unseen_accuracy)
+            all_accuracies_mixed.append(mixed_accuracy)
 
-        model_path = './model/' + model_name
+            model_path = './model/' + model_name
+
+        s_mean = sum(all_accuracies_seen) / len(all_accuracies_seen)
+        m_mean = sum(all_accuracies_mixed) / len(all_accuracies_mixed)
+        u_mean = sum(all_accuracies_unseen) / len(all_accuracies_unseen)
+        all_means_seen.append(s_mean)
+        all_means_mixed.append(m_mean)
+        all_means_unseen.append(u_mean)
 
     currentDT = datetime.datetime.now()
     acc_f = open("./results/results_" + model_name + currentDT.strftime("%Y%m%d%H%M%S") + ".txt", "w")
     acc_f.write("SEEN ACCURACIES:\n")
-    for acc in all_accuracies_seen:
+    for acc in all_means_seen:
         acc_f.write("{}\n".format(acc))
 
-    s_mean = sum(all_accuracies_seen) / len(all_accuracies_seen)
-    s_std_dev = math.sqrt(sum([math.pow(x - s_mean, 2) for x in all_accuracies_seen]) / len(all_accuracies_seen))
+    s_mean = sum(all_means_seen) / len(all_means_seen)
+    s_std_dev = math.sqrt(sum([math.pow(x - s_mean, 2) for x in all_means_seen]) / len(all_means_seen))
     acc_f.write("\nMean: {}\nStandard Deviation: {}\n".format(s_mean, s_std_dev))
 
     acc_f.write("ONE SEEN ONE UNSEEN ACCURACIES:\n")
-    for acc in all_accuracies_mixed:
+    for acc in all_means_mixed:
         acc_f.write("{}\n".format(acc))
 
-    m_mean = sum(all_accuracies_mixed) / len(all_accuracies_mixed)
-    m_std_dev = math.sqrt(sum([math.pow(x - m_mean, 2) for x in all_accuracies_mixed]) / len(all_accuracies_mixed))
+    m_mean = sum(all_means_mixed) / len(all_means_mixed)
+    m_std_dev = math.sqrt(sum([math.pow(x - m_mean, 2) for x in all_means_mixed]) / len(all_means_mixed))
     acc_f.write("\nMean: {}\nStandard Deviation: {}\n".format(m_mean, m_std_dev))
 
 
     acc_f.write("\nUNSEEN ACCURACIES:\n")
-    for acc in all_accuracies_unseen:
+    for acc in all_means_unseen:
         acc_f.write("{}\n".format(acc))
 
-    u_mean = sum(all_accuracies_unseen) / len(all_accuracies_unseen)
-    u_std_dev = math.sqrt(sum([math.pow(x - u_mean, 2) for x in all_accuracies_unseen]) / len(all_accuracies_unseen))
+    u_mean = sum(all_means_unseen) / len(all_means_unseen)
+    u_std_dev = math.sqrt(sum([math.pow(x - u_mean, 2) for x in all_means_unseen]) / len(all_means_unseen))
     acc_f.write("\nMean: {}\nStandard Deviation: {}\n".format(u_mean, u_std_dev))
     acc_f.close()
 

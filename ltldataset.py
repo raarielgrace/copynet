@@ -62,13 +62,13 @@ class SequencePairDataset(Dataset):
 
         # Had to be moved to allow passing in a seed
         if not SequencePairDataset.shuffled and data_substitute == None:
-            shuffle_correlated_lists(SequencePairDataset.src_lines, SequencePairDataset.tgt_lines, seed)
+            src_lines, tgt_lines, _ = shuffle_correlated_lists(SequencePairDataset.src_lines, SequencePairDataset.tgt_lines, seed)
             # Split our source and target files with a 20:80 split
-            split_idx = len(SequencePairDataset.src_lines) // 5
-            test_src = SequencePairDataset.src_lines[:split_idx]
-            train_src = SequencePairDataset.src_lines[split_idx:]
-            test_tgt = SequencePairDataset.tgt_lines[:split_idx]
-            train_tgt = SequencePairDataset.tgt_lines[split_idx:]
+            split_idx = len(src_lines) // 5
+            test_src = src_lines[:split_idx]
+            train_src = src_lines[split_idx:]
+            test_tgt = tgt_lines[:split_idx]
+            train_tgt = tgt_lines[split_idx:]
 
             shuffled = True
 
