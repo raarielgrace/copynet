@@ -34,8 +34,6 @@ class Language(object):
 
 
 class SequencePairDataset(Dataset):
-    #src_data_path='./data/hard_pc_src_syn2.txt'
-    #tgt_data_path='./data/hard_pc_tar_syn2.txt'
     src_data_path='./data/twophrase_south_clean_src.txt'
     tgt_data_path='./data/twophrase_south_clean_tar.txt'
 
@@ -61,23 +59,6 @@ class SequencePairDataset(Dataset):
                  data_substitute=None):
 
         # Had to be moved to allow passing in a seed
-        if not SequencePairDataset.shuffled and data_substitute == None:
-            src_lines, tgt_lines, _ = shuffle_correlated_lists(SequencePairDataset.src_lines, SequencePairDataset.tgt_lines, seed)
-            # Split our source and target files with a 20:80 split
-            split_idx = len(src_lines) // 5
-            test_src = src_lines[:split_idx]
-            train_src = src_lines[split_idx:]
-            test_tgt = tgt_lines[:split_idx]
-            train_tgt = tgt_lines[split_idx:]
-
-            shuffled = True
-
-        self.maxlen = maxlen
-        self.parser = None
-        self.is_val = is_val
-        self.is_test = is_test
-        self.use_extended_vocab = use_extended_vocab
-
         if not data_substitute == None:
             with open('./data/' + data_substitute + '_src.txt', "r") as sf:
                 src_lines = sf.readlines()
@@ -87,6 +68,24 @@ class SequencePairDataset(Dataset):
 
             if not len(src_lines) == len(tgt_lines):
                 sys.exit("ERROR: Data files have inconsistent lengths. Make sure your labels are aligned correctly.")
+
+        elif not SequencePairDataset.shuffled:
+            src_lines, tgt_lines, _ = shuffle_correlated_lists(SequencePairDataset.src_lines, SequencePairDataset.tgt_lines, seed)
+            # Split our source and target files with a 20:80 split
+            split_idx = len(src_lines) // 5
+            SequencePairDataset.test_src = src_lines[:split_idx]
+            SequencePairDataset.train_src = src_lines[split_idx:]
+            SequencePairDataset.test_tgt = tgt_lines[:split_idx]
+            SequencePairDataset.train_tgt = tgt_lines[split_idx:]
+
+            shuffled = True
+
+            if self.is_val or self.is_test:
+                src_lines = SequencePairDataset.test_src
+                tgt_lines = SequencePairDataset.test_tgt
+            else:
+                src_lines = SequencePairDataset.train_src
+                tgt_lines = SequencePairDataset.train_tgt
         else:
             if self.is_val or self.is_test:
                 src_lines = SequencePairDataset.test_src
@@ -94,6 +93,12 @@ class SequencePairDataset(Dataset):
             else:
                 src_lines = SequencePairDataset.train_src
                 tgt_lines = SequencePairDataset.train_tgt
+
+        self.maxlen = maxlen
+        self.parser = None
+        self.is_val = is_val
+        self.is_test = is_test
+        self.use_extended_vocab = use_extended_vocab
 
         self.data = [] # Will hold all data
 
