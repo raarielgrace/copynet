@@ -20,6 +20,34 @@ def get_glove():
     glove = {w: vectors[word2idx[w]] for w in words}
     return glove
 
+def load_complete_data(data_name):
+    with open('./data/' + data_name + '_src.txt', "r") as sf:
+        src_lines = sf.readlines()
+
+    with open('./data/' + data_name + '_tar.txt', "r") as tf:
+        tgt_lines = tf.readlines()
+
+    if not len(src_lines) == len(tgt_lines):
+        sys.exit("ERROR: Data files have inconsistent lengths. Make sure your labels are aligned correctly.")
+
+    return ((src_lines, tgt_lines))
+
+
+def load_split_eighty_twenty(data_name, seed):
+    src_lines, tgt_lines = load_complete_data(data_name)
+
+    src_lines, tgt_lines, _ = shuffle_correlated_lists(src_lines, tgt_lines, seed)
+
+    # Split our source and target files with a 20:80 split
+    split_idx = len(src_lines) // 5
+    test_src = src_lines[:split_idx]
+    train_src = src_lines[split_idx:]
+    test_tgt = tgt_lines[:split_idx]
+    train_tgt = tgt_lines[split_idx:]
+
+    return (train_src, train_tgt, test_src, test_tgt)
+
+
 def shuffle_correlated_lists(l1, l2, seed):
     #Lists must have the same length, as the entries correspond
     if not len(l1) == len(l2):
@@ -104,7 +132,7 @@ def tokens_to_seq(tokens, tok_to_idx, max_length, use_extended_vocab, input_toke
             tok_to_idx_extension[token] = tok_to_idx_extension.get(token,
                                  next((pos + len(tok_to_idx)
                                        for pos, input_token in enumerate(input_tokens)
-                                       if input_token == token), 3))
+                                       if input_token == token), max_length + pos + len(tok_to_idx)))
             idx = tok_to_idx_extension[token]
 
         elif use_extended_vocab:

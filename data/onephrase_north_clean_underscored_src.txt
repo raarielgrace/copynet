@@ -9,14 +9,14 @@ go to College_Hill_Bookstore
 go to Blue_State_Coffee
 go to Salon_Persia
 go to Pleasant_Surprises
-go to Facing_Thayer
+go to Facing Thayer
 go to Supercuts
 go to Soban
 go to Berk's;Shanghai
 go to West_House
-go to Thayer_and_Meeting
-go to Thayer_and_Cushing
-go to 111_Brown_Street_(North_House)
+go to Thayer and Meeting
+go to Thayer and Cushing
+go to 111_Brown_Street (North_House)
 go to Emery_Hall
 go to Morriss_Hall
 go to Andrews_Hall
@@ -28,22 +28,22 @@ go to Pembroke_Hall
 go to Sidney_Frank_Hall
 go to Sharpe_House
 go to 219_Bowen
-go to New_Pembroke_3
-go to New_Pembroke_2
+go to New_Pembroke 3
+go to New_Pembroke 2
 go to 164_Angel
 go to Hillel_House
-go to New_Pembroke_4
+go to New_Pembroke 4
 go to Granoff_Center
 go to Peter_Green_House
 go to Grimshaw-Gudewicz_Biomedical_Building
 go to Biomedical_Center
-go to Second_Time_Around
+go to Second_Time Around
 go to Metcalf_Hall
 go to Miller_Hall
-go to New_Pembroke_1
+go to New_Pembroke 1
 go to Andrews_Terrace
 go to Champlin_Hall
-go to Emery_&_Wooley
+go to Emery & Wooley
 go to Pembroke_Park
 go to Verney-Woolley_Hall
 go to J._R._Workman_Garden
@@ -63,9 +63,9 @@ go to the Supercuts
 go to the Soban
 go to the Berk's;Shanghai
 go to the West_House
-go to the Thayer_and_Meeting
-go to the Thayer_and_Cushing
-go to the 111_Brown_Street_(North_House)
+go to the Thayer and Meeting
+go to the Thayer and Cushing
+go to the 111_Brown_Street (North_House)
 go to the Emery_Hall
 go to the Morriss_Hall
 go to the Andrews_Hall
@@ -77,22 +77,22 @@ go to the Pembroke_Hall
 go to the Sidney_Frank_Hall
 go to the Sharpe_House
 go to the 219_Bowen
-go to the New_Pembroke_3
-go to the New_Pembroke_2
+go to the New_Pembroke 3
+go to the New_Pembroke 2
 go to the 164_Angel
 go to the Hillel_House
-go to the New_Pembroke_4
+go to the New_Pembroke 4
 go to the Granoff_Center
 go to the Peter_Green_House
 go to the Grimshaw-Gudewicz_Biomedical_Building
 go to the Biomedical_Center
-go to the Second_Time_Around
+go to the Second_Time Around
 go to the Metcalf_Hall
 go to the Miller_Hall
-go to the New_Pembroke_1
+go to the New_Pembroke 1
 go to the Andrews_Terrace
 go to the Champlin_Hall
-go to the Emery_&_Wooley
+go to the Emery & Wooley
 go to the Pembroke_Park
 go to the Verney-Woolley_Hall
 go to the J._R._Workman_Garden
@@ -112,9 +112,9 @@ go to the Supercuts .
 go to the Soban .
 go to the Berk's;Shanghai .
 go to the West_House .
-go to the Thayer_and_Meeting .
-go to the Thayer_and_Cushing .
-go to the 111_Brown_Street_(North_House) .
+go to the Thayer and Meeting .
+go to the Thayer and Cushing .
+go to the 111_Brown_Street (North_House) .
 go to the Emery_Hall .
 go to the Morriss_Hall .
 go to the Andrews_Hall .
@@ -126,74 +126,74 @@ go to the Pembroke_Hall .
 go to the Sidney_Frank_Hall .
 go to the Sharpe_House .
 go to the 219_Bowen .
-go to the New_Pembroke_3 .
-go to the New_Pembroke_2 .
+go to the New_Pembroke 3 .
+go to the New_Pembroke 2 .
 go to the 164_Angel .
 go to the Hillel_House .
-go to the New_Pembroke_4 .
+go to the New_Pembroke 4 .
 go to the Granoff_Center .
 go to the Peter_Green_House .
 go to the Grimshaw-Gudewicz_Biomedical_Building .
 go to the Biomedical_Center .
-go to the Second_Time_Around .
+go to the Second_Time Around .
 go to the Metcalf_Hall .
 go to the Miller_Hall .
-go to the New_Pembroke_1 .
+go to the New_Pembroke 1 .
 go to the Andrews_Terrace .
 go to the Champlin_Hall .
-go to the Emery_&_Wooley .
+go to the Emery & Wooley .
 go to the Pembroke_Park .
 go to the Verney-Woolley_Hall .
 go to the J._R._Workman_Garden .
-move to the_East_Side_Station_Post_Office .
-move to the_Andreas .
-move to the_Spiritus_Fermenti .
-move to the_Avon_Cinema .
-move to the_Brown_University_Bookstore .
-move to the_Meeting_Street_Cafe .
-move to the_CVS .
-move to the_College_Hill_Bookstore .
-move to the_Blue_State_Coffee .
-move to the_Salon_Persia .
-move to the_Pleasant_Surprises .
-move to the_Facing_Thayer .
-move to the_Supercuts .
-move to the_Soban .
-move to the_Berk's;Shanghai .
-move to the_West_House .
-move to the_Thayer_and_Meeting .
-move to the_Thayer_and_Cushing .
-move to the_111_Brown_Street_(North_House) .
-move to the_Emery_Hall .
-move to the_Morriss_Hall .
-move to the_Andrews_Hall .
-move to the_Smith_Buonanno_Hall .
-move to the_Sidney_Frank_Hall .
-move to the_Alumnae_Hall .
-move to the_West_House .
-move to the_Pembroke_Hall .
-move to the_Sidney_Frank_Hall .
-move to the_Sharpe_House .
-move to the_219_Bowen .
-move to the_New_Pembroke_3 .
-move to the_New_Pembroke_2 .
-move to the_164_Angel .
-move to the_Hillel_House .
-move to the_New_Pembroke_4 .
-move to the_Granoff_Center .
-move to the_Peter_Green_House .
-move to the_Grimshaw-Gudewicz_Biomedical_Building .
-move to the_Biomedical_Center .
-move to the_Second_Time_Around .
-move to the_Metcalf_Hall .
-move to the_Miller_Hall .
-move to the_New_Pembroke_1 .
-move to the_Andrews_Terrace .
-move to the_Champlin_Hall .
-move to the_Emery_&_Wooley .
-move to the_Pembroke_Park .
-move to the_Verney-Woolley_Hall .
-move to the_J._R._Workman_Garden .
+move to the East_Side_Station_Post_Office .
+move to the Andreas .
+move to the Spiritus_Fermenti .
+move to the Avon_Cinema .
+move to the Brown_University_Bookstore .
+move to the Meeting_Street_Cafe .
+move to the CVS .
+move to the College_Hill_Bookstore .
+move to the Blue_State_Coffee .
+move to the Salon_Persia .
+move to the Pleasant_Surprises .
+move to the Facing_Thayer .
+move to the Supercuts .
+move to the Soban .
+move to the Berk's;Shanghai .
+move to the West_House .
+move to the Thayer and Meeting .
+move to the Thayer and Cushing .
+move to the 111_Brown_Street (North_House) .
+move to the Emery_Hall .
+move to the Morriss_Hall .
+move to the Andrews_Hall .
+move to the Smith_Buonanno_Hall .
+move to the Sidney_Frank_Hall .
+move to the Alumnae_Hall .
+move to the West_House .
+move to the Pembroke_Hall .
+move to the Sidney_Frank_Hall .
+move to the Sharpe_House .
+move to the 219_Bowen .
+move to the New_Pembroke 3 .
+move to the New_Pembroke 2 .
+move to the 164_Angel .
+move to the Hillel_House .
+move to the New_Pembroke 4 .
+move to the Granoff_Center .
+move to the Peter_Green_House .
+move to the Grimshaw-Gudewicz_Biomedical_Building .
+move to the Biomedical_Center .
+move to the Second_Time Around .
+move to the Metcalf_Hall .
+move to the Miller_Hall .
+move to the New_Pembroke 1 .
+move to the Andrews_Terrace .
+move to the Champlin_Hall .
+move to the Emery & Wooley .
+move to the Pembroke_Park .
+move to the Verney-Woolley_Hall .
+move to the J._R._Workman_Garden .
 go to the East_Side_Station_Post_Office .
 go to the Andreas .
 go to the Spiritus_Fermenti .
@@ -210,9 +210,9 @@ go to the Supercuts .
 go to the Soban .
 go to the Berk's;Shanghai .
 go to the West_House .
-go to the Thayer_and_Meeting .
-go to the Thayer_and_Cushing .
-go to the 111_Brown_Street_(North_House) .
+go to the Thayer and Meeting .
+go to the Thayer and Cushing .
+go to the 111_Brown_Street (North_House) .
 go to the Emery_Hall .
 go to the Morriss_Hall .
 go to the Andrews_Hall .
@@ -224,123 +224,123 @@ go to the Pembroke_Hall .
 go to the Sidney_Frank_Hall .
 go to the Sharpe_House .
 go to the 219_Bowen .
-go to the New_Pembroke_3 .
-go to the New_Pembroke_2 .
+go to the New_Pembroke 3 .
+go to the New_Pembroke 2 .
 go to the 164_Angel .
 go to the Hillel_House .
-go to the New_Pembroke_4 .
+go to the New_Pembroke 4 .
 go to the Granoff_Center .
 go to the Peter_Green_House .
 go to the Grimshaw-Gudewicz_Biomedical_Building .
 go to the Biomedical_Center .
-go to the Second_Time_Around .
+go to the Second_Time Around .
 go to the Metcalf_Hall .
 go to the Miller_Hall .
-go to the New_Pembroke_1 .
+go to the New_Pembroke 1 .
 go to the Andrews_Terrace .
 go to the Champlin_Hall .
-go to the Emery_&_Wooley .
+go to the Emery & Wooley .
 go to the Pembroke_Park .
 go to the Verney-Woolley_Hall .
 go to the J._R._Workman_Garden .
-navigate to the_East_Side_Station_Post_Office .
-navigate to the_Andreas .
-navigate to the_Spiritus_Fermenti .
-navigate to the_Avon_Cinema .
-navigate to the_Brown_University_Bookstore .
-navigate to the_Meeting_Street_Cafe .
-navigate to the_CVS .
-navigate to the_College_Hill_Bookstore .
-navigate to the_Blue_State_Coffee .
-navigate to the_Salon_Persia .
-navigate to the_Pleasant_Surprises .
-navigate to the_Facing_Thayer .
-navigate to the_Supercuts .
-navigate to the_Soban .
-navigate to the_Berk's;Shanghai .
-navigate to the_West_House .
-navigate to the_Thayer_and_Meeting .
-navigate to the_Thayer_and_Cushing .
-navigate to the_111_Brown_Street_(North_House) .
-navigate to the_Emery_Hall .
-navigate to the_Morriss_Hall .
-navigate to the_Andrews_Hall .
-navigate to the_Smith_Buonanno_Hall .
-navigate to the_Sidney_Frank_Hall .
-navigate to the_Alumnae_Hall .
-navigate to the_West_House .
-navigate to the_Pembroke_Hall .
-navigate to the_Sidney_Frank_Hall .
-navigate to the_Sharpe_House .
-navigate to the_219_Bowen .
-navigate to the_New_Pembroke_3 .
-navigate to the_New_Pembroke_2 .
-navigate to the_164_Angel .
-navigate to the_Hillel_House .
-navigate to the_New_Pembroke_4 .
-navigate to the_Granoff_Center .
-navigate to the_Peter_Green_House .
-navigate to the_Grimshaw-Gudewicz_Biomedical_Building .
-navigate to the_Biomedical_Center .
-navigate to the_Second_Time_Around .
-navigate to the_Metcalf_Hall .
-navigate to the_Miller_Hall .
-navigate to the_New_Pembroke_1 .
-navigate to the_Andrews_Terrace .
-navigate to the_Champlin_Hall .
-navigate to the_Emery_&_Wooley .
-navigate to the_Pembroke_Park .
-navigate to the_Verney-Woolley_Hall .
-navigate to the_J._R._Workman_Garden .
-navigate to the_East_Side_Station_Post_Office .
-navigate to the_Andreas .
-navigate to the_Spiritus_Fermenti .
-navigate to the_Avon_Cinema .
-navigate to the_Brown_University_Bookstore .
-navigate to the_Meeting_Street_Cafe .
-navigate to the_CVS .
-navigate to the_College_Hill_Bookstore .
-navigate to the_Blue_State_Coffee .
-navigate to the_Salon_Persia .
-navigate to the_Pleasant_Surprises .
-navigate to the_Facing_Thayer .
-navigate to the_Supercuts .
-navigate to the_Soban .
-navigate to the_Berk's;Shanghai .
-navigate to the_West_House .
-navigate to the_Thayer_and_Meeting .
-navigate to the_Thayer_and_Cushing .
-navigate to the_111_Brown_Street_(North_House) .
-navigate to the_Emery_Hall .
-navigate to the_Morriss_Hall .
-navigate to the_Andrews_Hall .
-navigate to the_Smith_Buonanno_Hall .
-navigate to the_Sidney_Frank_Hall .
-navigate to the_Alumnae_Hall .
-navigate to the_West_House .
-navigate to the_Pembroke_Hall .
-navigate to the_Sidney_Frank_Hall .
-navigate to the_Sharpe_House .
-navigate to the_219_Bowen .
-navigate to the_New_Pembroke_3 .
-navigate to the_New_Pembroke_2 .
-navigate to the_164_Angel .
-navigate to the_Hillel_House .
-navigate to the_New_Pembroke_4 .
-navigate to the_Granoff_Center .
-navigate to the_Peter_Green_House .
-navigate to the_Grimshaw-Gudewicz_Biomedical_Building .
-navigate to the_Biomedical_Center .
-navigate to the_Second_Time_Around .
-navigate to the_Metcalf_Hall .
-navigate to the_Miller_Hall .
-navigate to the_New_Pembroke_1 .
-navigate to the_Andrews_Terrace .
-navigate to the_Champlin_Hall .
-navigate to the_Emery_&_Wooley .
-navigate to the_Pembroke_Park .
-navigate to the_Verney-Woolley_Hall .
-navigate to the_J._R._Workman_Garden .
+navigate to the East_Side_Station_Post_Office .
+navigate to the Andreas .
+navigate to the Spiritus_Fermenti .
+navigate to the Avon_Cinema .
+navigate to the Brown_University_Bookstore .
+navigate to the Meeting_Street_Cafe .
+navigate to the CVS .
+navigate to the College_Hill_Bookstore .
+navigate to the Blue_State_Coffee .
+navigate to the Salon_Persia .
+navigate to the Pleasant_Surprises .
+navigate to the Facing_Thayer .
+navigate to the Supercuts .
+navigate to the Soban .
+navigate to the Berk's;Shanghai .
+navigate to the West_House .
+navigate to the Thayer and Meeting .
+navigate to the Thayer and Cushing .
+navigate to the 111_Brown_Street (North_House) .
+navigate to the Emery_Hall .
+navigate to the Morriss_Hall .
+navigate to the Andrews_Hall .
+navigate to the Smith_Buonanno_Hall .
+navigate to the Sidney_Frank_Hall .
+navigate to the Alumnae_Hall .
+navigate to the West_House .
+navigate to the Pembroke_Hall .
+navigate to the Sidney_Frank_Hall .
+navigate to the Sharpe_House .
+navigate to the 219_Bowen .
+navigate to the New_Pembroke 3 .
+navigate to the New_Pembroke 2 .
+navigate to the 164_Angel .
+navigate to the Hillel_House .
+navigate to the New_Pembroke 4 .
+navigate to the Granoff_Center .
+navigate to the Peter_Green_House .
+navigate to the Grimshaw-Gudewicz_Biomedical_Building .
+navigate to the Biomedical_Center .
+navigate to the Second_Time Around .
+navigate to the Metcalf_Hall .
+navigate to the Miller_Hall .
+navigate to the New_Pembroke 1 .
+navigate to the Andrews_Terrace .
+navigate to the Champlin_Hall .
+navigate to the Emery & Wooley .
+navigate to the Pembroke_Park .
+navigate to the Verney-Woolley_Hall .
+navigate to the J._R._Workman_Garden .
+navigate to the East_Side_Station_Post_Office .
+navigate to the Andreas .
+navigate to the Spiritus_Fermenti .
+navigate to the Avon_Cinema .
+navigate to the Brown_University_Bookstore .
+navigate to the Meeting_Street_Cafe .
+navigate to the CVS .
+navigate to the College_Hill_Bookstore .
+navigate to the Blue_State_Coffee .
+navigate to the Salon_Persia .
+navigate to the Pleasant_Surprises .
+navigate to the Facing_Thayer .
+navigate to the Supercuts .
+navigate to the Soban .
+navigate to the Berk's;Shanghai .
+navigate to the West_House .
+navigate to the Thayer and Meeting .
+navigate to the Thayer and Cushing .
+navigate to the 111_Brown_Street (North_House) .
+navigate to the Emery_Hall .
+navigate to the Morriss_Hall .
+navigate to the Andrews_Hall .
+navigate to the Smith_Buonanno_Hall .
+navigate to the Sidney_Frank_Hall .
+navigate to the Alumnae_Hall .
+navigate to the West_House .
+navigate to the Pembroke_Hall .
+navigate to the Sidney_Frank_Hall .
+navigate to the Sharpe_House .
+navigate to the 219_Bowen .
+navigate to the New_Pembroke 3 .
+navigate to the New_Pembroke 2 .
+navigate to the 164_Angel .
+navigate to the Hillel_House .
+navigate to the New_Pembroke 4 .
+navigate to the Granoff_Center .
+navigate to the Peter_Green_House .
+navigate to the Grimshaw-Gudewicz_Biomedical_Building .
+navigate to the Biomedical_Center .
+navigate to the Second_Time Around .
+navigate to the Metcalf_Hall .
+navigate to the Miller_Hall .
+navigate to the New_Pembroke 1 .
+navigate to the Andrews_Terrace .
+navigate to the Champlin_Hall .
+navigate to the Emery & Wooley .
+navigate to the Pembroke_Park .
+navigate to the Verney-Woolley_Hall .
+navigate to the J._R._Workman_Garden .
 go to East_Side_Station_Post_Office
 go to Andreas
 go to Spiritus_Fermenti
@@ -352,14 +352,14 @@ go to College_Hill_Bookstore
 go to Blue_State_Coffee
 go to Salon_Persia
 go to Pleasant_Surprises
-go to Facing_Thayer
+go to Facing Thayer
 go to Supercuts
 go to Soban
 go to Berk's;Shanghai
 go to West_House
-go to Thayer_and_Meeting
-go to Thayer_and_Cushing
-go to 111_Brown_Street_(North_House)
+go to Thayer and Meeting
+go to Thayer and Cushing
+go to 111_Brown_Street (North_House)
 go to Emery_Hall
 go to Morriss_Hall
 go to Andrews_Hall
@@ -371,22 +371,22 @@ go to Pembroke_Hall
 go to Sidney_Frank_Hall
 go to Sharpe_House
 go to 219_Bowen
-go to New_Pembroke_3
-go to New_Pembroke_2
+go to New_Pembroke 3
+go to New_Pembroke 2
 go to 164_Angel
 go to Hillel_House
-go to New_Pembroke_4
+go to New_Pembroke 4
 go to Granoff_Center
 go to Peter_Green_House
 go to Grimshaw-Gudewicz_Biomedical_Building
 go to Biomedical_Center
-go to Second_Time_Around
+go to Second_Time Around
 go to Metcalf_Hall
 go to Miller_Hall
-go to New_Pembroke_1
+go to New_Pembroke 1
 go to Andrews_Terrace
 go to Champlin_Hall
-go to Emery_&_Wooley
+go to Emery & Wooley
 go to Pembroke_Park
 go to Verney-Woolley_Hall
 go to J._R._Workman_Garden
@@ -406,9 +406,9 @@ go to the Supercuts .
 go to the Soban .
 go to the Berk's;Shanghai .
 go to the West_House .
-go to the Thayer_and_Meeting .
-go to the Thayer_and_Cushing .
-go to the 111_Brown_Street_(North_House) .
+go to the Thayer and Meeting .
+go to the Thayer and Cushing .
+go to the 111_Brown_Street (North_House) .
 go to the Emery_Hall .
 go to the Morriss_Hall .
 go to the Andrews_Hall .
@@ -420,123 +420,123 @@ go to the Pembroke_Hall .
 go to the Sidney_Frank_Hall .
 go to the Sharpe_House .
 go to the 219_Bowen .
-go to the New_Pembroke_3 .
-go to the New_Pembroke_2 .
+go to the New_Pembroke 3 .
+go to the New_Pembroke 2 .
 go to the 164_Angel .
 go to the Hillel_House .
-go to the New_Pembroke_4 .
+go to the New_Pembroke 4 .
 go to the Granoff_Center .
 go to the Peter_Green_House .
 go to the Grimshaw-Gudewicz_Biomedical_Building .
 go to the Biomedical_Center .
-go to the Second_Time_Around .
+go to the Second_Time Around .
 go to the Metcalf_Hall .
 go to the Miller_Hall .
-go to the New_Pembroke_1 .
+go to the New_Pembroke 1 .
 go to the Andrews_Terrace .
 go to the Champlin_Hall .
-go to the Emery_&_Wooley .
+go to the Emery & Wooley .
 go to the Pembroke_Park .
 go to the Verney-Woolley_Hall .
 go to the J._R._Workman_Garden .
-go to anywhere_on_the_East_Side_Station_Post_Office .
-go to anywhere_on_the_Andreas .
-go to anywhere_on_the_Spiritus_Fermenti .
-go to anywhere_on_the_Avon_Cinema .
-go to anywhere_on_the_Brown_University_Bookstore .
-go to anywhere_on_the_Meeting_Street_Cafe .
-go to anywhere_on_the_CVS .
-go to anywhere_on_the_College_Hill_Bookstore .
-go to anywhere_on_the_Blue_State_Coffee .
-go to anywhere_on_the_Salon_Persia .
-go to anywhere_on_the_Pleasant_Surprises .
-go to anywhere_on_the_Facing_Thayer .
-go to anywhere_on_the_Supercuts .
-go to anywhere_on_the_Soban .
-go to anywhere_on_the_Berk's;Shanghai .
-go to anywhere_on_the_West_House .
-go to anywhere_on_the_Thayer_and_Meeting .
-go to anywhere_on_the_Thayer_and_Cushing .
-go to anywhere_on_the_111_Brown_Street_(North_House) .
-go to anywhere_on_the_Emery_Hall .
-go to anywhere_on_the_Morriss_Hall .
-go to anywhere_on_the_Andrews_Hall .
-go to anywhere_on_the_Smith_Buonanno_Hall .
-go to anywhere_on_the_Sidney_Frank_Hall .
-go to anywhere_on_the_Alumnae_Hall .
-go to anywhere_on_the_West_House .
-go to anywhere_on_the_Pembroke_Hall .
-go to anywhere_on_the_Sidney_Frank_Hall .
-go to anywhere_on_the_Sharpe_House .
-go to anywhere_on_the_219_Bowen .
-go to anywhere_on_the_New_Pembroke_3 .
-go to anywhere_on_the_New_Pembroke_2 .
-go to anywhere_on_the_164_Angel .
-go to anywhere_on_the_Hillel_House .
-go to anywhere_on_the_New_Pembroke_4 .
-go to anywhere_on_the_Granoff_Center .
-go to anywhere_on_the_Peter_Green_House .
-go to anywhere_on_the_Grimshaw-Gudewicz_Biomedical_Building .
-go to anywhere_on_the_Biomedical_Center .
-go to anywhere_on_the_Second_Time_Around .
-go to anywhere_on_the_Metcalf_Hall .
-go to anywhere_on_the_Miller_Hall .
-go to anywhere_on_the_New_Pembroke_1 .
-go to anywhere_on_the_Andrews_Terrace .
-go to anywhere_on_the_Champlin_Hall .
-go to anywhere_on_the_Emery_&_Wooley .
-go to anywhere_on_the_Pembroke_Park .
-go to anywhere_on_the_Verney-Woolley_Hall .
-go to anywhere_on_the_J._R._Workman_Garden .
-navigate to the_East_Side_Station_Post_Office .
-navigate to the_Andreas .
-navigate to the_Spiritus_Fermenti .
-navigate to the_Avon_Cinema .
-navigate to the_Brown_University_Bookstore .
-navigate to the_Meeting_Street_Cafe .
-navigate to the_CVS .
-navigate to the_College_Hill_Bookstore .
-navigate to the_Blue_State_Coffee .
-navigate to the_Salon_Persia .
-navigate to the_Pleasant_Surprises .
-navigate to the_Facing_Thayer .
-navigate to the_Supercuts .
-navigate to the_Soban .
-navigate to the_Berk's;Shanghai .
-navigate to the_West_House .
-navigate to the_Thayer_and_Meeting .
-navigate to the_Thayer_and_Cushing .
-navigate to the_111_Brown_Street_(North_House) .
-navigate to the_Emery_Hall .
-navigate to the_Morriss_Hall .
-navigate to the_Andrews_Hall .
-navigate to the_Smith_Buonanno_Hall .
-navigate to the_Sidney_Frank_Hall .
-navigate to the_Alumnae_Hall .
-navigate to the_West_House .
-navigate to the_Pembroke_Hall .
-navigate to the_Sidney_Frank_Hall .
-navigate to the_Sharpe_House .
-navigate to the_219_Bowen .
-navigate to the_New_Pembroke_3 .
-navigate to the_New_Pembroke_2 .
-navigate to the_164_Angel .
-navigate to the_Hillel_House .
-navigate to the_New_Pembroke_4 .
-navigate to the_Granoff_Center .
-navigate to the_Peter_Green_House .
-navigate to the_Grimshaw-Gudewicz_Biomedical_Building .
-navigate to the_Biomedical_Center .
-navigate to the_Second_Time_Around .
-navigate to the_Metcalf_Hall .
-navigate to the_Miller_Hall .
-navigate to the_New_Pembroke_1 .
-navigate to the_Andrews_Terrace .
-navigate to the_Champlin_Hall .
-navigate to the_Emery_&_Wooley .
-navigate to the_Pembroke_Park .
-navigate to the_Verney-Woolley_Hall .
-navigate to the_J._R._Workman_Garden .
+go to anywhere on the East_Side_Station_Post_Office .
+go to anywhere on the Andreas .
+go to anywhere on the Spiritus_Fermenti .
+go to anywhere on the Avon_Cinema .
+go to anywhere on the Brown_University_Bookstore .
+go to anywhere on the Meeting_Street_Cafe .
+go to anywhere on the CVS .
+go to anywhere on the College_Hill_Bookstore .
+go to anywhere on the Blue_State_Coffee .
+go to anywhere on the Salon_Persia .
+go to anywhere on the Pleasant_Surprises .
+go to anywhere on the Facing_Thayer .
+go to anywhere on the Supercuts .
+go to anywhere on the Soban .
+go to anywhere on the Berk's;Shanghai .
+go to anywhere on the West_House .
+go to anywhere on the Thayer and Meeting .
+go to anywhere on the Thayer and Cushing .
+go to anywhere on the 111_Brown_Street (North_House) .
+go to anywhere on the Emery_Hall .
+go to anywhere on the Morriss_Hall .
+go to anywhere on the Andrews_Hall .
+go to anywhere on the Smith_Buonanno_Hall .
+go to anywhere on the Sidney_Frank_Hall .
+go to anywhere on the Alumnae_Hall .
+go to anywhere on the West_House .
+go to anywhere on the Pembroke_Hall .
+go to anywhere on the Sidney_Frank_Hall .
+go to anywhere on the Sharpe_House .
+go to anywhere on the 219_Bowen .
+go to anywhere on the New_Pembroke 3 .
+go to anywhere on the New_Pembroke 2 .
+go to anywhere on the 164_Angel .
+go to anywhere on the Hillel_House .
+go to anywhere on the New_Pembroke 4 .
+go to anywhere on the Granoff_Center .
+go to anywhere on the Peter_Green_House .
+go to anywhere on the Grimshaw-Gudewicz_Biomedical_Building .
+go to anywhere on the Biomedical_Center .
+go to anywhere on the Second_Time Around .
+go to anywhere on the Metcalf_Hall .
+go to anywhere on the Miller_Hall .
+go to anywhere on the New_Pembroke 1 .
+go to anywhere on the Andrews_Terrace .
+go to anywhere on the Champlin_Hall .
+go to anywhere on the Emery & Wooley .
+go to anywhere on the Pembroke_Park .
+go to anywhere on the Verney-Woolley_Hall .
+go to anywhere on the J._R._Workman_Garden .
+navigate to the East_Side_Station_Post_Office .
+navigate to the Andreas .
+navigate to the Spiritus_Fermenti .
+navigate to the Avon_Cinema .
+navigate to the Brown_University_Bookstore .
+navigate to the Meeting_Street_Cafe .
+navigate to the CVS .
+navigate to the College_Hill_Bookstore .
+navigate to the Blue_State_Coffee .
+navigate to the Salon_Persia .
+navigate to the Pleasant_Surprises .
+navigate to the Facing_Thayer .
+navigate to the Supercuts .
+navigate to the Soban .
+navigate to the Berk's;Shanghai .
+navigate to the West_House .
+navigate to the Thayer and Meeting .
+navigate to the Thayer and Cushing .
+navigate to the 111_Brown_Street (North_House) .
+navigate to the Emery_Hall .
+navigate to the Morriss_Hall .
+navigate to the Andrews_Hall .
+navigate to the Smith_Buonanno_Hall .
+navigate to the Sidney_Frank_Hall .
+navigate to the Alumnae_Hall .
+navigate to the West_House .
+navigate to the Pembroke_Hall .
+navigate to the Sidney_Frank_Hall .
+navigate to the Sharpe_House .
+navigate to the 219_Bowen .
+navigate to the New_Pembroke 3 .
+navigate to the New_Pembroke 2 .
+navigate to the 164_Angel .
+navigate to the Hillel_House .
+navigate to the New_Pembroke 4 .
+navigate to the Granoff_Center .
+navigate to the Peter_Green_House .
+navigate to the Grimshaw-Gudewicz_Biomedical_Building .
+navigate to the Biomedical_Center .
+navigate to the Second_Time Around .
+navigate to the Metcalf_Hall .
+navigate to the Miller_Hall .
+navigate to the New_Pembroke 1 .
+navigate to the Andrews_Terrace .
+navigate to the Champlin_Hall .
+navigate to the Emery & Wooley .
+navigate to the Pembroke_Park .
+navigate to the Verney-Woolley_Hall .
+navigate to the J._R._Workman_Garden .
 go to the East_Side_Station_Post_Office .
 go to the Andreas .
 go to the Spiritus_Fermenti .
@@ -553,9 +553,9 @@ go to the Supercuts .
 go to the Soban .
 go to the Berk's;Shanghai .
 go to the West_House .
-go to the Thayer_and_Meeting .
-go to the Thayer_and_Cushing .
-go to the 111_Brown_Street_(North_House) .
+go to the Thayer and Meeting .
+go to the Thayer and Cushing .
+go to the 111_Brown_Street (North_House) .
 go to the Emery_Hall .
 go to the Morriss_Hall .
 go to the Andrews_Hall .
@@ -567,22 +567,22 @@ go to the Pembroke_Hall .
 go to the Sidney_Frank_Hall .
 go to the Sharpe_House .
 go to the 219_Bowen .
-go to the New_Pembroke_3 .
-go to the New_Pembroke_2 .
+go to the New_Pembroke 3 .
+go to the New_Pembroke 2 .
 go to the 164_Angel .
 go to the Hillel_House .
-go to the New_Pembroke_4 .
+go to the New_Pembroke 4 .
 go to the Granoff_Center .
 go to the Peter_Green_House .
 go to the Grimshaw-Gudewicz_Biomedical_Building .
 go to the Biomedical_Center .
-go to the Second_Time_Around .
+go to the Second_Time Around .
 go to the Metcalf_Hall .
 go to the Miller_Hall .
-go to the New_Pembroke_1 .
+go to the New_Pembroke 1 .
 go to the Andrews_Terrace .
 go to the Champlin_Hall .
-go to the Emery_&_Wooley .
+go to the Emery & Wooley .
 go to the Pembroke_Park .
 go to the Verney-Woolley_Hall .
 go to the J._R._Workman_Garden .
@@ -602,9 +602,9 @@ head to the Supercuts .
 head to the Soban .
 head to the Berk's;Shanghai .
 head to the West_House .
-head to the Thayer_and_Meeting .
-head to the Thayer_and_Cushing .
-head to the 111_Brown_Street_(North_House) .
+head to the Thayer and Meeting .
+head to the Thayer and Cushing .
+head to the 111_Brown_Street (North_House) .
 head to the Emery_Hall .
 head to the Morriss_Hall .
 head to the Andrews_Hall .
@@ -616,22 +616,22 @@ head to the Pembroke_Hall .
 head to the Sidney_Frank_Hall .
 head to the Sharpe_House .
 head to the 219_Bowen .
-head to the New_Pembroke_3 .
-head to the New_Pembroke_2 .
+head to the New_Pembroke 3 .
+head to the New_Pembroke 2 .
 head to the 164_Angel .
 head to the Hillel_House .
-head to the New_Pembroke_4 .
+head to the New_Pembroke 4 .
 head to the Granoff_Center .
 head to the Peter_Green_House .
 head to the Grimshaw-Gudewicz_Biomedical_Building .
 head to the Biomedical_Center .
-head to the Second_Time_Around .
+head to the Second_Time Around .
 head to the Metcalf_Hall .
 head to the Miller_Hall .
-head to the New_Pembroke_1 .
+head to the New_Pembroke 1 .
 head to the Andrews_Terrace .
 head to the Champlin_Hall .
-head to the Emery_&_Wooley .
+head to the Emery & Wooley .
 head to the Pembroke_Park .
 head to the Verney-Woolley_Hall .
 head to the J._R._Workman_Garden .
@@ -651,9 +651,9 @@ go to the Supercuts
 go to the Soban
 go to the Berk's;Shanghai
 go to the West_House
-go to the Thayer_and_Meeting
-go to the Thayer_and_Cushing
-go to the 111_Brown_Street_(North_House)
+go to the Thayer and Meeting
+go to the Thayer and Cushing
+go to the 111_Brown_Street (North_House)
 go to the Emery_Hall
 go to the Morriss_Hall
 go to the Andrews_Hall
@@ -665,74 +665,74 @@ go to the Pembroke_Hall
 go to the Sidney_Frank_Hall
 go to the Sharpe_House
 go to the 219_Bowen
-go to the New_Pembroke_3
-go to the New_Pembroke_2
+go to the New_Pembroke 3
+go to the New_Pembroke 2
 go to the 164_Angel
 go to the Hillel_House
-go to the New_Pembroke_4
+go to the New_Pembroke 4
 go to the Granoff_Center
 go to the Peter_Green_House
 go to the Grimshaw-Gudewicz_Biomedical_Building
 go to the Biomedical_Center
-go to the Second_Time_Around
+go to the Second_Time Around
 go to the Metcalf_Hall
 go to the Miller_Hall
-go to the New_Pembroke_1
+go to the New_Pembroke 1
 go to the Andrews_Terrace
 go to the Champlin_Hall
-go to the Emery_&_Wooley
+go to the Emery & Wooley
 go to the Pembroke_Park
 go to the Verney-Woolley_Hall
 go to the J._R._Workman_Garden
-navigate to the_East_Side_Station_Post_Office .
-navigate to the_Andreas .
-navigate to the_Spiritus_Fermenti .
-navigate to the_Avon_Cinema .
-navigate to the_Brown_University_Bookstore .
-navigate to the_Meeting_Street_Cafe .
-navigate to the_CVS .
-navigate to the_College_Hill_Bookstore .
-navigate to the_Blue_State_Coffee .
-navigate to the_Salon_Persia .
-navigate to the_Pleasant_Surprises .
-navigate to the_Facing_Thayer .
-navigate to the_Supercuts .
-navigate to the_Soban .
-navigate to the_Berk's;Shanghai .
-navigate to the_West_House .
-navigate to the_Thayer_and_Meeting .
-navigate to the_Thayer_and_Cushing .
-navigate to the_111_Brown_Street_(North_House) .
-navigate to the_Emery_Hall .
-navigate to the_Morriss_Hall .
-navigate to the_Andrews_Hall .
-navigate to the_Smith_Buonanno_Hall .
-navigate to the_Sidney_Frank_Hall .
-navigate to the_Alumnae_Hall .
-navigate to the_West_House .
-navigate to the_Pembroke_Hall .
-navigate to the_Sidney_Frank_Hall .
-navigate to the_Sharpe_House .
-navigate to the_219_Bowen .
-navigate to the_New_Pembroke_3 .
-navigate to the_New_Pembroke_2 .
-navigate to the_164_Angel .
-navigate to the_Hillel_House .
-navigate to the_New_Pembroke_4 .
-navigate to the_Granoff_Center .
-navigate to the_Peter_Green_House .
-navigate to the_Grimshaw-Gudewicz_Biomedical_Building .
-navigate to the_Biomedical_Center .
-navigate to the_Second_Time_Around .
-navigate to the_Metcalf_Hall .
-navigate to the_Miller_Hall .
-navigate to the_New_Pembroke_1 .
-navigate to the_Andrews_Terrace .
-navigate to the_Champlin_Hall .
-navigate to the_Emery_&_Wooley .
-navigate to the_Pembroke_Park .
-navigate to the_Verney-Woolley_Hall .
-navigate to the_J._R._Workman_Garden .
+navigate to the East_Side_Station_Post_Office .
+navigate to the Andreas .
+navigate to the Spiritus_Fermenti .
+navigate to the Avon_Cinema .
+navigate to the Brown_University_Bookstore .
+navigate to the Meeting_Street_Cafe .
+navigate to the CVS .
+navigate to the College_Hill_Bookstore .
+navigate to the Blue_State_Coffee .
+navigate to the Salon_Persia .
+navigate to the Pleasant_Surprises .
+navigate to the Facing_Thayer .
+navigate to the Supercuts .
+navigate to the Soban .
+navigate to the Berk's;Shanghai .
+navigate to the West_House .
+navigate to the Thayer and Meeting .
+navigate to the Thayer and Cushing .
+navigate to the 111_Brown_Street (North_House) .
+navigate to the Emery_Hall .
+navigate to the Morriss_Hall .
+navigate to the Andrews_Hall .
+navigate to the Smith_Buonanno_Hall .
+navigate to the Sidney_Frank_Hall .
+navigate to the Alumnae_Hall .
+navigate to the West_House .
+navigate to the Pembroke_Hall .
+navigate to the Sidney_Frank_Hall .
+navigate to the Sharpe_House .
+navigate to the 219_Bowen .
+navigate to the New_Pembroke 3 .
+navigate to the New_Pembroke 2 .
+navigate to the 164_Angel .
+navigate to the Hillel_House .
+navigate to the New_Pembroke 4 .
+navigate to the Granoff_Center .
+navigate to the Peter_Green_House .
+navigate to the Grimshaw-Gudewicz_Biomedical_Building .
+navigate to the Biomedical_Center .
+navigate to the Second_Time Around .
+navigate to the Metcalf_Hall .
+navigate to the Miller_Hall .
+navigate to the New_Pembroke 1 .
+navigate to the Andrews_Terrace .
+navigate to the Champlin_Hall .
+navigate to the Emery & Wooley .
+navigate to the Pembroke_Park .
+navigate to the Verney-Woolley_Hall .
+navigate to the J._R._Workman_Garden .
 go to the East_Side_Station_Post_Office .
 go to the Andreas .
 go to the Spiritus_Fermenti .
@@ -749,9 +749,9 @@ go to the Supercuts .
 go to the Soban .
 go to the Berk's;Shanghai .
 go to the West_House .
-go to the Thayer_and_Meeting .
-go to the Thayer_and_Cushing .
-go to the 111_Brown_Street_(North_House) .
+go to the Thayer and Meeting .
+go to the Thayer and Cushing .
+go to the 111_Brown_Street (North_House) .
 go to the Emery_Hall .
 go to the Morriss_Hall .
 go to the Andrews_Hall .
@@ -763,22 +763,22 @@ go to the Pembroke_Hall .
 go to the Sidney_Frank_Hall .
 go to the Sharpe_House .
 go to the 219_Bowen .
-go to the New_Pembroke_3 .
-go to the New_Pembroke_2 .
+go to the New_Pembroke 3 .
+go to the New_Pembroke 2 .
 go to the 164_Angel .
 go to the Hillel_House .
-go to the New_Pembroke_4 .
+go to the New_Pembroke 4 .
 go to the Granoff_Center .
 go to the Peter_Green_House .
 go to the Grimshaw-Gudewicz_Biomedical_Building .
 go to the Biomedical_Center .
-go to the Second_Time_Around .
+go to the Second_Time Around .
 go to the Metcalf_Hall .
 go to the Miller_Hall .
-go to the New_Pembroke_1 .
+go to the New_Pembroke 1 .
 go to the Andrews_Terrace .
 go to the Champlin_Hall .
-go to the Emery_&_Wooley .
+go to the Emery & Wooley .
 go to the Pembroke_Park .
 go to the Verney-Woolley_Hall .
 go to the J._R._Workman_Garden .
@@ -798,9 +798,9 @@ go to the Supercuts .
 go to the Soban .
 go to the Berk's;Shanghai .
 go to the West_House .
-go to the Thayer_and_Meeting .
-go to the Thayer_and_Cushing .
-go to the 111_Brown_Street_(North_House) .
+go to the Thayer and Meeting .
+go to the Thayer and Cushing .
+go to the 111_Brown_Street (North_House) .
 go to the Emery_Hall .
 go to the Morriss_Hall .
 go to the Andrews_Hall .
@@ -812,22 +812,22 @@ go to the Pembroke_Hall .
 go to the Sidney_Frank_Hall .
 go to the Sharpe_House .
 go to the 219_Bowen .
-go to the New_Pembroke_3 .
-go to the New_Pembroke_2 .
+go to the New_Pembroke 3 .
+go to the New_Pembroke 2 .
 go to the 164_Angel .
 go to the Hillel_House .
-go to the New_Pembroke_4 .
+go to the New_Pembroke 4 .
 go to the Granoff_Center .
 go to the Peter_Green_House .
 go to the Grimshaw-Gudewicz_Biomedical_Building .
 go to the Biomedical_Center .
-go to the Second_Time_Around .
+go to the Second_Time Around .
 go to the Metcalf_Hall .
 go to the Miller_Hall .
-go to the New_Pembroke_1 .
+go to the New_Pembroke 1 .
 go to the Andrews_Terrace .
 go to the Champlin_Hall .
-go to the Emery_&_Wooley .
+go to the Emery & Wooley .
 go to the Pembroke_Park .
 go to the Verney-Woolley_Hall .
 go to the J._R._Workman_Garden .
@@ -847,9 +847,9 @@ navigate directly to the Supercuts .
 navigate directly to the Soban .
 navigate directly to the Berk's;Shanghai .
 navigate directly to the West_House .
-navigate directly to the Thayer_and_Meeting .
-navigate directly to the Thayer_and_Cushing .
-navigate directly to the 111_Brown_Street_(North_House) .
+navigate directly to the Thayer and Meeting .
+navigate directly to the Thayer and Cushing .
+navigate directly to the 111_Brown_Street (North_House) .
 navigate directly to the Emery_Hall .
 navigate directly to the Morriss_Hall .
 navigate directly to the Andrews_Hall .
@@ -861,22 +861,22 @@ navigate directly to the Pembroke_Hall .
 navigate directly to the Sidney_Frank_Hall .
 navigate directly to the Sharpe_House .
 navigate directly to the 219_Bowen .
-navigate directly to the New_Pembroke_3 .
-navigate directly to the New_Pembroke_2 .
+navigate directly to the New_Pembroke 3 .
+navigate directly to the New_Pembroke 2 .
 navigate directly to the 164_Angel .
 navigate directly to the Hillel_House .
-navigate directly to the New_Pembroke_4 .
+navigate directly to the New_Pembroke 4 .
 navigate directly to the Granoff_Center .
 navigate directly to the Peter_Green_House .
 navigate directly to the Grimshaw-Gudewicz_Biomedical_Building .
 navigate directly to the Biomedical_Center .
-navigate directly to the Second_Time_Around .
+navigate directly to the Second_Time Around .
 navigate directly to the Metcalf_Hall .
 navigate directly to the Miller_Hall .
-navigate directly to the New_Pembroke_1 .
+navigate directly to the New_Pembroke 1 .
 navigate directly to the Andrews_Terrace .
 navigate directly to the Champlin_Hall .
-navigate directly to the Emery_&_Wooley .
+navigate directly to the Emery & Wooley .
 navigate directly to the Pembroke_Park .
 navigate directly to the Verney-Woolley_Hall .
 navigate directly to the J._R._Workman_Garden .
@@ -896,9 +896,9 @@ go to the Supercuts .
 go to the Soban .
 go to the Berk's;Shanghai .
 go to the West_House .
-go to the Thayer_and_Meeting .
-go to the Thayer_and_Cushing .
-go to the 111_Brown_Street_(North_House) .
+go to the Thayer and Meeting .
+go to the Thayer and Cushing .
+go to the 111_Brown_Street (North_House) .
 go to the Emery_Hall .
 go to the Morriss_Hall .
 go to the Andrews_Hall .
@@ -910,22 +910,22 @@ go to the Pembroke_Hall .
 go to the Sidney_Frank_Hall .
 go to the Sharpe_House .
 go to the 219_Bowen .
-go to the New_Pembroke_3 .
-go to the New_Pembroke_2 .
+go to the New_Pembroke 3 .
+go to the New_Pembroke 2 .
 go to the 164_Angel .
 go to the Hillel_House .
-go to the New_Pembroke_4 .
+go to the New_Pembroke 4 .
 go to the Granoff_Center .
 go to the Peter_Green_House .
 go to the Grimshaw-Gudewicz_Biomedical_Building .
 go to the Biomedical_Center .
-go to the Second_Time_Around .
+go to the Second_Time Around .
 go to the Metcalf_Hall .
 go to the Miller_Hall .
-go to the New_Pembroke_1 .
+go to the New_Pembroke 1 .
 go to the Andrews_Terrace .
 go to the Champlin_Hall .
-go to the Emery_&_Wooley .
+go to the Emery & Wooley .
 go to the Pembroke_Park .
 go to the Verney-Woolley_Hall .
 go to the J._R._Workman_Garden .
@@ -945,9 +945,9 @@ go to the Supercuts
 go to the Soban
 go to the Berk's;Shanghai
 go to the West_House
-go to the Thayer_and_Meeting
-go to the Thayer_and_Cushing
-go to the 111_Brown_Street_(North_House)
+go to the Thayer and Meeting
+go to the Thayer and Cushing
+go to the 111_Brown_Street (North_House)
 go to the Emery_Hall
 go to the Morriss_Hall
 go to the Andrews_Hall
@@ -959,22 +959,22 @@ go to the Pembroke_Hall
 go to the Sidney_Frank_Hall
 go to the Sharpe_House
 go to the 219_Bowen
-go to the New_Pembroke_3
-go to the New_Pembroke_2
+go to the New_Pembroke 3
+go to the New_Pembroke 2
 go to the 164_Angel
 go to the Hillel_House
-go to the New_Pembroke_4
+go to the New_Pembroke 4
 go to the Granoff_Center
 go to the Peter_Green_House
 go to the Grimshaw-Gudewicz_Biomedical_Building
 go to the Biomedical_Center
-go to the Second_Time_Around
+go to the Second_Time Around
 go to the Metcalf_Hall
 go to the Miller_Hall
-go to the New_Pembroke_1
+go to the New_Pembroke 1
 go to the Andrews_Terrace
 go to the Champlin_Hall
-go to the Emery_&_Wooley
+go to the Emery & Wooley
 go to the Pembroke_Park
 go to the Verney-Woolley_Hall
 go to the J._R._Workman_Garden
@@ -994,9 +994,9 @@ go to the Supercuts .
 go to the Soban .
 go to the Berk's;Shanghai .
 go to the West_House .
-go to the Thayer_and_Meeting .
-go to the Thayer_and_Cushing .
-go to the 111_Brown_Street_(North_House) .
+go to the Thayer and Meeting .
+go to the Thayer and Cushing .
+go to the 111_Brown_Street (North_House) .
 go to the Emery_Hall .
 go to the Morriss_Hall .
 go to the Andrews_Hall .
@@ -1008,22 +1008,22 @@ go to the Pembroke_Hall .
 go to the Sidney_Frank_Hall .
 go to the Sharpe_House .
 go to the 219_Bowen .
-go to the New_Pembroke_3 .
-go to the New_Pembroke_2 .
+go to the New_Pembroke 3 .
+go to the New_Pembroke 2 .
 go to the 164_Angel .
 go to the Hillel_House .
-go to the New_Pembroke_4 .
+go to the New_Pembroke 4 .
 go to the Granoff_Center .
 go to the Peter_Green_House .
 go to the Grimshaw-Gudewicz_Biomedical_Building .
 go to the Biomedical_Center .
-go to the Second_Time_Around .
+go to the Second_Time Around .
 go to the Metcalf_Hall .
 go to the Miller_Hall .
-go to the New_Pembroke_1 .
+go to the New_Pembroke 1 .
 go to the Andrews_Terrace .
 go to the Champlin_Hall .
-go to the Emery_&_Wooley .
+go to the Emery & Wooley .
 go to the Pembroke_Park .
 go to the Verney-Woolley_Hall .
 go to the J._R._Workman_Garden .
@@ -1043,9 +1043,9 @@ go to the Supercuts
 go to the Soban
 go to the Berk's;Shanghai
 go to the West_House
-go to the Thayer_and_Meeting
-go to the Thayer_and_Cushing
-go to the 111_Brown_Street_(North_House)
+go to the Thayer and Meeting
+go to the Thayer and Cushing
+go to the 111_Brown_Street (North_House)
 go to the Emery_Hall
 go to the Morriss_Hall
 go to the Andrews_Hall
@@ -1057,22 +1057,22 @@ go to the Pembroke_Hall
 go to the Sidney_Frank_Hall
 go to the Sharpe_House
 go to the 219_Bowen
-go to the New_Pembroke_3
-go to the New_Pembroke_2
+go to the New_Pembroke 3
+go to the New_Pembroke 2
 go to the 164_Angel
 go to the Hillel_House
-go to the New_Pembroke_4
+go to the New_Pembroke 4
 go to the Granoff_Center
 go to the Peter_Green_House
 go to the Grimshaw-Gudewicz_Biomedical_Building
 go to the Biomedical_Center
-go to the Second_Time_Around
+go to the Second_Time Around
 go to the Metcalf_Hall
 go to the Miller_Hall
-go to the New_Pembroke_1
+go to the New_Pembroke 1
 go to the Andrews_Terrace
 go to the Champlin_Hall
-go to the Emery_&_Wooley
+go to the Emery & Wooley
 go to the Pembroke_Park
 go to the Verney-Woolley_Hall
 go to the J._R._Workman_Garden
@@ -1092,9 +1092,9 @@ go to the Supercuts .
 go to the Soban .
 go to the Berk's;Shanghai .
 go to the West_House .
-go to the Thayer_and_Meeting .
-go to the Thayer_and_Cushing .
-go to the 111_Brown_Street_(North_House) .
+go to the Thayer and Meeting .
+go to the Thayer and Cushing .
+go to the 111_Brown_Street (North_House) .
 go to the Emery_Hall .
 go to the Morriss_Hall .
 go to the Andrews_Hall .
@@ -1106,22 +1106,22 @@ go to the Pembroke_Hall .
 go to the Sidney_Frank_Hall .
 go to the Sharpe_House .
 go to the 219_Bowen .
-go to the New_Pembroke_3 .
-go to the New_Pembroke_2 .
+go to the New_Pembroke 3 .
+go to the New_Pembroke 2 .
 go to the 164_Angel .
 go to the Hillel_House .
-go to the New_Pembroke_4 .
+go to the New_Pembroke 4 .
 go to the Granoff_Center .
 go to the Peter_Green_House .
 go to the Grimshaw-Gudewicz_Biomedical_Building .
 go to the Biomedical_Center .
-go to the Second_Time_Around .
+go to the Second_Time Around .
 go to the Metcalf_Hall .
 go to the Miller_Hall .
-go to the New_Pembroke_1 .
+go to the New_Pembroke 1 .
 go to the Andrews_Terrace .
 go to the Champlin_Hall .
-go to the Emery_&_Wooley .
+go to the Emery & Wooley .
 go to the Pembroke_Park .
 go to the Verney-Woolley_Hall .
 go to the J._R._Workman_Garden .
@@ -1141,9 +1141,9 @@ go to the Supercuts
 go to the Soban
 go to the Berk's;Shanghai
 go to the West_House
-go to the Thayer_and_Meeting
-go to the Thayer_and_Cushing
-go to the 111_Brown_Street_(North_House)
+go to the Thayer and Meeting
+go to the Thayer and Cushing
+go to the 111_Brown_Street (North_House)
 go to the Emery_Hall
 go to the Morriss_Hall
 go to the Andrews_Hall
@@ -1155,22 +1155,22 @@ go to the Pembroke_Hall
 go to the Sidney_Frank_Hall
 go to the Sharpe_House
 go to the 219_Bowen
-go to the New_Pembroke_3
-go to the New_Pembroke_2
+go to the New_Pembroke 3
+go to the New_Pembroke 2
 go to the 164_Angel
 go to the Hillel_House
-go to the New_Pembroke_4
+go to the New_Pembroke 4
 go to the Granoff_Center
 go to the Peter_Green_House
 go to the Grimshaw-Gudewicz_Biomedical_Building
 go to the Biomedical_Center
-go to the Second_Time_Around
+go to the Second_Time Around
 go to the Metcalf_Hall
 go to the Miller_Hall
-go to the New_Pembroke_1
+go to the New_Pembroke 1
 go to the Andrews_Terrace
 go to the Champlin_Hall
-go to the Emery_&_Wooley
+go to the Emery & Wooley
 go to the Pembroke_Park
 go to the Verney-Woolley_Hall
 go to the J._R._Workman_Garden
@@ -1190,9 +1190,9 @@ go to the Supercuts .
 go to the Soban .
 go to the Berk's;Shanghai .
 go to the West_House .
-go to the Thayer_and_Meeting .
-go to the Thayer_and_Cushing .
-go to the 111_Brown_Street_(North_House) .
+go to the Thayer and Meeting .
+go to the Thayer and Cushing .
+go to the 111_Brown_Street (North_House) .
 go to the Emery_Hall .
 go to the Morriss_Hall .
 go to the Andrews_Hall .
@@ -1204,74 +1204,74 @@ go to the Pembroke_Hall .
 go to the Sidney_Frank_Hall .
 go to the Sharpe_House .
 go to the 219_Bowen .
-go to the New_Pembroke_3 .
-go to the New_Pembroke_2 .
+go to the New_Pembroke 3 .
+go to the New_Pembroke 2 .
 go to the 164_Angel .
 go to the Hillel_House .
-go to the New_Pembroke_4 .
+go to the New_Pembroke 4 .
 go to the Granoff_Center .
 go to the Peter_Green_House .
 go to the Grimshaw-Gudewicz_Biomedical_Building .
 go to the Biomedical_Center .
-go to the Second_Time_Around .
+go to the Second_Time Around .
 go to the Metcalf_Hall .
 go to the Miller_Hall .
-go to the New_Pembroke_1 .
+go to the New_Pembroke 1 .
 go to the Andrews_Terrace .
 go to the Champlin_Hall .
-go to the Emery_&_Wooley .
+go to the Emery & Wooley .
 go to the Pembroke_Park .
 go to the Verney-Woolley_Hall .
 go to the J._R._Workman_Garden .
-move to the_East_Side_Station_Post_Office .
-move to the_Andreas .
-move to the_Spiritus_Fermenti .
-move to the_Avon_Cinema .
-move to the_Brown_University_Bookstore .
-move to the_Meeting_Street_Cafe .
-move to the_CVS .
-move to the_College_Hill_Bookstore .
-move to the_Blue_State_Coffee .
-move to the_Salon_Persia .
-move to the_Pleasant_Surprises .
-move to the_Facing_Thayer .
-move to the_Supercuts .
-move to the_Soban .
-move to the_Berk's;Shanghai .
-move to the_West_House .
-move to the_Thayer_and_Meeting .
-move to the_Thayer_and_Cushing .
-move to the_111_Brown_Street_(North_House) .
-move to the_Emery_Hall .
-move to the_Morriss_Hall .
-move to the_Andrews_Hall .
-move to the_Smith_Buonanno_Hall .
-move to the_Sidney_Frank_Hall .
-move to the_Alumnae_Hall .
-move to the_West_House .
-move to the_Pembroke_Hall .
-move to the_Sidney_Frank_Hall .
-move to the_Sharpe_House .
-move to the_219_Bowen .
-move to the_New_Pembroke_3 .
-move to the_New_Pembroke_2 .
-move to the_164_Angel .
-move to the_Hillel_House .
-move to the_New_Pembroke_4 .
-move to the_Granoff_Center .
-move to the_Peter_Green_House .
-move to the_Grimshaw-Gudewicz_Biomedical_Building .
-move to the_Biomedical_Center .
-move to the_Second_Time_Around .
-move to the_Metcalf_Hall .
-move to the_Miller_Hall .
-move to the_New_Pembroke_1 .
-move to the_Andrews_Terrace .
-move to the_Champlin_Hall .
-move to the_Emery_&_Wooley .
-move to the_Pembroke_Park .
-move to the_Verney-Woolley_Hall .
-move to the_J._R._Workman_Garden .
+move to the East_Side_Station_Post_Office .
+move to the Andreas .
+move to the Spiritus_Fermenti .
+move to the Avon_Cinema .
+move to the Brown_University_Bookstore .
+move to the Meeting_Street_Cafe .
+move to the CVS .
+move to the College_Hill_Bookstore .
+move to the Blue_State_Coffee .
+move to the Salon_Persia .
+move to the Pleasant_Surprises .
+move to the Facing_Thayer .
+move to the Supercuts .
+move to the Soban .
+move to the Berk's;Shanghai .
+move to the West_House .
+move to the Thayer and Meeting .
+move to the Thayer and Cushing .
+move to the 111_Brown_Street (North_House) .
+move to the Emery_Hall .
+move to the Morriss_Hall .
+move to the Andrews_Hall .
+move to the Smith_Buonanno_Hall .
+move to the Sidney_Frank_Hall .
+move to the Alumnae_Hall .
+move to the West_House .
+move to the Pembroke_Hall .
+move to the Sidney_Frank_Hall .
+move to the Sharpe_House .
+move to the 219_Bowen .
+move to the New_Pembroke 3 .
+move to the New_Pembroke 2 .
+move to the 164_Angel .
+move to the Hillel_House .
+move to the New_Pembroke 4 .
+move to the Granoff_Center .
+move to the Peter_Green_House .
+move to the Grimshaw-Gudewicz_Biomedical_Building .
+move to the Biomedical_Center .
+move to the Second_Time Around .
+move to the Metcalf_Hall .
+move to the Miller_Hall .
+move to the New_Pembroke 1 .
+move to the Andrews_Terrace .
+move to the Champlin_Hall .
+move to the Emery & Wooley .
+move to the Pembroke_Park .
+move to the Verney-Woolley_Hall .
+move to the J._R._Workman_Garden .
 go to the East_Side_Station_Post_Office
 go to the Andreas
 go to the Spiritus_Fermenti
@@ -1288,9 +1288,9 @@ go to the Supercuts
 go to the Soban
 go to the Berk's;Shanghai
 go to the West_House
-go to the Thayer_and_Meeting
-go to the Thayer_and_Cushing
-go to the 111_Brown_Street_(North_House)
+go to the Thayer and Meeting
+go to the Thayer and Cushing
+go to the 111_Brown_Street (North_House)
 go to the Emery_Hall
 go to the Morriss_Hall
 go to the Andrews_Hall
@@ -1302,74 +1302,74 @@ go to the Pembroke_Hall
 go to the Sidney_Frank_Hall
 go to the Sharpe_House
 go to the 219_Bowen
-go to the New_Pembroke_3
-go to the New_Pembroke_2
+go to the New_Pembroke 3
+go to the New_Pembroke 2
 go to the 164_Angel
 go to the Hillel_House
-go to the New_Pembroke_4
+go to the New_Pembroke 4
 go to the Granoff_Center
 go to the Peter_Green_House
 go to the Grimshaw-Gudewicz_Biomedical_Building
 go to the Biomedical_Center
-go to the Second_Time_Around
+go to the Second_Time Around
 go to the Metcalf_Hall
 go to the Miller_Hall
-go to the New_Pembroke_1
+go to the New_Pembroke 1
 go to the Andrews_Terrace
 go to the Champlin_Hall
-go to the Emery_&_Wooley
+go to the Emery & Wooley
 go to the Pembroke_Park
 go to the Verney-Woolley_Hall
 go to the J._R._Workman_Garden
-navigate to the_East_Side_Station_Post_Office .
-navigate to the_Andreas .
-navigate to the_Spiritus_Fermenti .
-navigate to the_Avon_Cinema .
-navigate to the_Brown_University_Bookstore .
-navigate to the_Meeting_Street_Cafe .
-navigate to the_CVS .
-navigate to the_College_Hill_Bookstore .
-navigate to the_Blue_State_Coffee .
-navigate to the_Salon_Persia .
-navigate to the_Pleasant_Surprises .
-navigate to the_Facing_Thayer .
-navigate to the_Supercuts .
-navigate to the_Soban .
-navigate to the_Berk's;Shanghai .
-navigate to the_West_House .
-navigate to the_Thayer_and_Meeting .
-navigate to the_Thayer_and_Cushing .
-navigate to the_111_Brown_Street_(North_House) .
-navigate to the_Emery_Hall .
-navigate to the_Morriss_Hall .
-navigate to the_Andrews_Hall .
-navigate to the_Smith_Buonanno_Hall .
-navigate to the_Sidney_Frank_Hall .
-navigate to the_Alumnae_Hall .
-navigate to the_West_House .
-navigate to the_Pembroke_Hall .
-navigate to the_Sidney_Frank_Hall .
-navigate to the_Sharpe_House .
-navigate to the_219_Bowen .
-navigate to the_New_Pembroke_3 .
-navigate to the_New_Pembroke_2 .
-navigate to the_164_Angel .
-navigate to the_Hillel_House .
-navigate to the_New_Pembroke_4 .
-navigate to the_Granoff_Center .
-navigate to the_Peter_Green_House .
-navigate to the_Grimshaw-Gudewicz_Biomedical_Building .
-navigate to the_Biomedical_Center .
-navigate to the_Second_Time_Around .
-navigate to the_Metcalf_Hall .
-navigate to the_Miller_Hall .
-navigate to the_New_Pembroke_1 .
-navigate to the_Andrews_Terrace .
-navigate to the_Champlin_Hall .
-navigate to the_Emery_&_Wooley .
-navigate to the_Pembroke_Park .
-navigate to the_Verney-Woolley_Hall .
-navigate to the_J._R._Workman_Garden .
+navigate to the East_Side_Station_Post_Office .
+navigate to the Andreas .
+navigate to the Spiritus_Fermenti .
+navigate to the Avon_Cinema .
+navigate to the Brown_University_Bookstore .
+navigate to the Meeting_Street_Cafe .
+navigate to the CVS .
+navigate to the College_Hill_Bookstore .
+navigate to the Blue_State_Coffee .
+navigate to the Salon_Persia .
+navigate to the Pleasant_Surprises .
+navigate to the Facing_Thayer .
+navigate to the Supercuts .
+navigate to the Soban .
+navigate to the Berk's;Shanghai .
+navigate to the West_House .
+navigate to the Thayer and Meeting .
+navigate to the Thayer and Cushing .
+navigate to the 111_Brown_Street (North_House) .
+navigate to the Emery_Hall .
+navigate to the Morriss_Hall .
+navigate to the Andrews_Hall .
+navigate to the Smith_Buonanno_Hall .
+navigate to the Sidney_Frank_Hall .
+navigate to the Alumnae_Hall .
+navigate to the West_House .
+navigate to the Pembroke_Hall .
+navigate to the Sidney_Frank_Hall .
+navigate to the Sharpe_House .
+navigate to the 219_Bowen .
+navigate to the New_Pembroke 3 .
+navigate to the New_Pembroke 2 .
+navigate to the 164_Angel .
+navigate to the Hillel_House .
+navigate to the New_Pembroke 4 .
+navigate to the Granoff_Center .
+navigate to the Peter_Green_House .
+navigate to the Grimshaw-Gudewicz_Biomedical_Building .
+navigate to the Biomedical_Center .
+navigate to the Second_Time Around .
+navigate to the Metcalf_Hall .
+navigate to the Miller_Hall .
+navigate to the New_Pembroke 1 .
+navigate to the Andrews_Terrace .
+navigate to the Champlin_Hall .
+navigate to the Emery & Wooley .
+navigate to the Pembroke_Park .
+navigate to the Verney-Woolley_Hall .
+navigate to the J._R._Workman_Garden .
 go to the East_Side_Station_Post_Office
 go to the Andreas
 go to the Spiritus_Fermenti
@@ -1386,9 +1386,9 @@ go to the Supercuts
 go to the Soban
 go to the Berk's;Shanghai
 go to the West_House
-go to the Thayer_and_Meeting
-go to the Thayer_and_Cushing
-go to the 111_Brown_Street_(North_House)
+go to the Thayer and Meeting
+go to the Thayer and Cushing
+go to the 111_Brown_Street (North_House)
 go to the Emery_Hall
 go to the Morriss_Hall
 go to the Andrews_Hall
@@ -1400,22 +1400,22 @@ go to the Pembroke_Hall
 go to the Sidney_Frank_Hall
 go to the Sharpe_House
 go to the 219_Bowen
-go to the New_Pembroke_3
-go to the New_Pembroke_2
+go to the New_Pembroke 3
+go to the New_Pembroke 2
 go to the 164_Angel
 go to the Hillel_House
-go to the New_Pembroke_4
+go to the New_Pembroke 4
 go to the Granoff_Center
 go to the Peter_Green_House
 go to the Grimshaw-Gudewicz_Biomedical_Building
 go to the Biomedical_Center
-go to the Second_Time_Around
+go to the Second_Time Around
 go to the Metcalf_Hall
 go to the Miller_Hall
-go to the New_Pembroke_1
+go to the New_Pembroke 1
 go to the Andrews_Terrace
 go to the Champlin_Hall
-go to the Emery_&_Wooley
+go to the Emery & Wooley
 go to the Pembroke_Park
 go to the Verney-Woolley_Hall
 go to the J._R._Workman_Garden
@@ -1435,9 +1435,9 @@ go to the Supercuts .
 go to the Soban .
 go to the Berk's;Shanghai .
 go to the West_House .
-go to the Thayer_and_Meeting .
-go to the Thayer_and_Cushing .
-go to the 111_Brown_Street_(North_House) .
+go to the Thayer and Meeting .
+go to the Thayer and Cushing .
+go to the 111_Brown_Street (North_House) .
 go to the Emery_Hall .
 go to the Morriss_Hall .
 go to the Andrews_Hall .
@@ -1449,22 +1449,22 @@ go to the Pembroke_Hall .
 go to the Sidney_Frank_Hall .
 go to the Sharpe_House .
 go to the 219_Bowen .
-go to the New_Pembroke_3 .
-go to the New_Pembroke_2 .
+go to the New_Pembroke 3 .
+go to the New_Pembroke 2 .
 go to the 164_Angel .
 go to the Hillel_House .
-go to the New_Pembroke_4 .
+go to the New_Pembroke 4 .
 go to the Granoff_Center .
 go to the Peter_Green_House .
 go to the Grimshaw-Gudewicz_Biomedical_Building .
 go to the Biomedical_Center .
-go to the Second_Time_Around .
+go to the Second_Time Around .
 go to the Metcalf_Hall .
 go to the Miller_Hall .
-go to the New_Pembroke_1 .
+go to the New_Pembroke 1 .
 go to the Andrews_Terrace .
 go to the Champlin_Hall .
-go to the Emery_&_Wooley .
+go to the Emery & Wooley .
 go to the Pembroke_Park .
 go to the Verney-Woolley_Hall .
 go to the J._R._Workman_Garden .
@@ -1479,14 +1479,14 @@ travel to College_Hill_Bookstore .
 travel to Blue_State_Coffee .
 travel to Salon_Persia .
 travel to Pleasant_Surprises .
-travel to Facing_Thayer .
+travel to Facing Thayer .
 travel to Supercuts .
 travel to Soban .
 travel to Berk's;Shanghai .
 travel to West_House .
-travel to Thayer_and_Meeting .
-travel to Thayer_and_Cushing .
-travel to 111_Brown_Street_(North_House) .
+travel to Thayer and Meeting .
+travel to Thayer and Cushing .
+travel to 111_Brown_Street (North_House) .
 travel to Emery_Hall .
 travel to Morriss_Hall .
 travel to Andrews_Hall .
@@ -1498,22 +1498,22 @@ travel to Pembroke_Hall .
 travel to Sidney_Frank_Hall .
 travel to Sharpe_House .
 travel to 219_Bowen .
-travel to New_Pembroke_3 .
-travel to New_Pembroke_2 .
+travel to New_Pembroke 3 .
+travel to New_Pembroke 2 .
 travel to 164_Angel .
 travel to Hillel_House .
-travel to New_Pembroke_4 .
+travel to New_Pembroke 4 .
 travel to Granoff_Center .
 travel to Peter_Green_House .
 travel to Grimshaw-Gudewicz_Biomedical_Building .
 travel to Biomedical_Center .
-travel to Second_Time_Around .
+travel to Second_Time Around .
 travel to Metcalf_Hall .
 travel to Miller_Hall .
-travel to New_Pembroke_1 .
+travel to New_Pembroke 1 .
 travel to Andrews_Terrace .
 travel to Champlin_Hall .
-travel to Emery_&_Wooley .
+travel to Emery & Wooley .
 travel to Pembroke_Park .
 travel to Verney-Woolley_Hall .
 travel to J._R._Workman_Garden .
@@ -1528,14 +1528,14 @@ go to College_Hill_Bookstore .
 go to Blue_State_Coffee .
 go to Salon_Persia .
 go to Pleasant_Surprises .
-go to Facing_Thayer .
+go to Facing Thayer .
 go to Supercuts .
 go to Soban .
 go to Berk's;Shanghai .
 go to West_House .
-go to Thayer_and_Meeting .
-go to Thayer_and_Cushing .
-go to 111_Brown_Street_(North_House) .
+go to Thayer and Meeting .
+go to Thayer and Cushing .
+go to 111_Brown_Street (North_House) .
 go to Emery_Hall .
 go to Morriss_Hall .
 go to Andrews_Hall .
@@ -1547,22 +1547,22 @@ go to Pembroke_Hall .
 go to Sidney_Frank_Hall .
 go to Sharpe_House .
 go to 219_Bowen .
-go to New_Pembroke_3 .
-go to New_Pembroke_2 .
+go to New_Pembroke 3 .
+go to New_Pembroke 2 .
 go to 164_Angel .
 go to Hillel_House .
-go to New_Pembroke_4 .
+go to New_Pembroke 4 .
 go to Granoff_Center .
 go to Peter_Green_House .
 go to Grimshaw-Gudewicz_Biomedical_Building .
 go to Biomedical_Center .
-go to Second_Time_Around .
+go to Second_Time Around .
 go to Metcalf_Hall .
 go to Miller_Hall .
-go to New_Pembroke_1 .
+go to New_Pembroke 1 .
 go to Andrews_Terrace .
 go to Champlin_Hall .
-go to Emery_&_Wooley .
+go to Emery & Wooley .
 go to Pembroke_Park .
 go to Verney-Woolley_Hall .
 go to J._R._Workman_Garden .
@@ -1577,14 +1577,14 @@ navigate directly to College_Hill_Bookstore .
 navigate directly to Blue_State_Coffee .
 navigate directly to Salon_Persia .
 navigate directly to Pleasant_Surprises .
-navigate directly to Facing_Thayer .
+navigate directly to Facing Thayer .
 navigate directly to Supercuts .
 navigate directly to Soban .
 navigate directly to Berk's;Shanghai .
 navigate directly to West_House .
-navigate directly to Thayer_and_Meeting .
-navigate directly to Thayer_and_Cushing .
-navigate directly to 111_Brown_Street_(North_House) .
+navigate directly to Thayer and Meeting .
+navigate directly to Thayer and Cushing .
+navigate directly to 111_Brown_Street (North_House) .
 navigate directly to Emery_Hall .
 navigate directly to Morriss_Hall .
 navigate directly to Andrews_Hall .
@@ -1596,22 +1596,22 @@ navigate directly to Pembroke_Hall .
 navigate directly to Sidney_Frank_Hall .
 navigate directly to Sharpe_House .
 navigate directly to 219_Bowen .
-navigate directly to New_Pembroke_3 .
-navigate directly to New_Pembroke_2 .
+navigate directly to New_Pembroke 3 .
+navigate directly to New_Pembroke 2 .
 navigate directly to 164_Angel .
 navigate directly to Hillel_House .
-navigate directly to New_Pembroke_4 .
+navigate directly to New_Pembroke 4 .
 navigate directly to Granoff_Center .
 navigate directly to Peter_Green_House .
 navigate directly to Grimshaw-Gudewicz_Biomedical_Building .
 navigate directly to Biomedical_Center .
-navigate directly to Second_Time_Around .
+navigate directly to Second_Time Around .
 navigate directly to Metcalf_Hall .
 navigate directly to Miller_Hall .
-navigate directly to New_Pembroke_1 .
+navigate directly to New_Pembroke 1 .
 navigate directly to Andrews_Terrace .
 navigate directly to Champlin_Hall .
-navigate directly to Emery_&_Wooley .
+navigate directly to Emery & Wooley .
 navigate directly to Pembroke_Park .
 navigate directly to Verney-Woolley_Hall .
 navigate directly to J._R._Workman_Garden .
@@ -1631,9 +1631,9 @@ go to the Supercuts
 go to the Soban
 go to the Berk's;Shanghai
 go to the West_House
-go to the Thayer_and_Meeting
-go to the Thayer_and_Cushing
-go to the 111_Brown_Street_(North_House)
+go to the Thayer and Meeting
+go to the Thayer and Cushing
+go to the 111_Brown_Street (North_House)
 go to the Emery_Hall
 go to the Morriss_Hall
 go to the Andrews_Hall
@@ -1645,22 +1645,22 @@ go to the Pembroke_Hall
 go to the Sidney_Frank_Hall
 go to the Sharpe_House
 go to the 219_Bowen
-go to the New_Pembroke_3
-go to the New_Pembroke_2
+go to the New_Pembroke 3
+go to the New_Pembroke 2
 go to the 164_Angel
 go to the Hillel_House
-go to the New_Pembroke_4
+go to the New_Pembroke 4
 go to the Granoff_Center
 go to the Peter_Green_House
 go to the Grimshaw-Gudewicz_Biomedical_Building
 go to the Biomedical_Center
-go to the Second_Time_Around
+go to the Second_Time Around
 go to the Metcalf_Hall
 go to the Miller_Hall
-go to the New_Pembroke_1
+go to the New_Pembroke 1
 go to the Andrews_Terrace
 go to the Champlin_Hall
-go to the Emery_&_Wooley
+go to the Emery & Wooley
 go to the Pembroke_Park
 go to the Verney-Woolley_Hall
 go to the J._R._Workman_Garden
@@ -1675,14 +1675,14 @@ go to College_Hill_Bookstore .
 go to Blue_State_Coffee .
 go to Salon_Persia .
 go to Pleasant_Surprises .
-go to Facing_Thayer .
+go to Facing Thayer .
 go to Supercuts .
 go to Soban .
 go to Berk's;Shanghai .
 go to West_House .
-go to Thayer_and_Meeting .
-go to Thayer_and_Cushing .
-go to 111_Brown_Street_(North_House) .
+go to Thayer and Meeting .
+go to Thayer and Cushing .
+go to 111_Brown_Street (North_House) .
 go to Emery_Hall .
 go to Morriss_Hall .
 go to Andrews_Hall .
@@ -1694,22 +1694,22 @@ go to Pembroke_Hall .
 go to Sidney_Frank_Hall .
 go to Sharpe_House .
 go to 219_Bowen .
-go to New_Pembroke_3 .
-go to New_Pembroke_2 .
+go to New_Pembroke 3 .
+go to New_Pembroke 2 .
 go to 164_Angel .
 go to Hillel_House .
-go to New_Pembroke_4 .
+go to New_Pembroke 4 .
 go to Granoff_Center .
 go to Peter_Green_House .
 go to Grimshaw-Gudewicz_Biomedical_Building .
 go to Biomedical_Center .
-go to Second_Time_Around .
+go to Second_Time Around .
 go to Metcalf_Hall .
 go to Miller_Hall .
-go to New_Pembroke_1 .
+go to New_Pembroke 1 .
 go to Andrews_Terrace .
 go to Champlin_Hall .
-go to Emery_&_Wooley .
+go to Emery & Wooley .
 go to Pembroke_Park .
 go to Verney-Woolley_Hall .
 go to J._R._Workman_Garden .
@@ -1724,14 +1724,14 @@ go to College_Hill_Bookstore
 go to Blue_State_Coffee
 go to Salon_Persia
 go to Pleasant_Surprises
-go to Facing_Thayer
+go to Facing Thayer
 go to Supercuts
 go to Soban
 go to Berk's;Shanghai
 go to West_House
-go to Thayer_and_Meeting
-go to Thayer_and_Cushing
-go to 111_Brown_Street_(North_House)
+go to Thayer and Meeting
+go to Thayer and Cushing
+go to 111_Brown_Street (North_House)
 go to Emery_Hall
 go to Morriss_Hall
 go to Andrews_Hall
@@ -1743,22 +1743,22 @@ go to Pembroke_Hall
 go to Sidney_Frank_Hall
 go to Sharpe_House
 go to 219_Bowen
-go to New_Pembroke_3
-go to New_Pembroke_2
+go to New_Pembroke 3
+go to New_Pembroke 2
 go to 164_Angel
 go to Hillel_House
-go to New_Pembroke_4
+go to New_Pembroke 4
 go to Granoff_Center
 go to Peter_Green_House
 go to Grimshaw-Gudewicz_Biomedical_Building
 go to Biomedical_Center
-go to Second_Time_Around
+go to Second_Time Around
 go to Metcalf_Hall
 go to Miller_Hall
-go to New_Pembroke_1
+go to New_Pembroke 1
 go to Andrews_Terrace
 go to Champlin_Hall
-go to Emery_&_Wooley
+go to Emery & Wooley
 go to Pembroke_Park
 go to Verney-Woolley_Hall
 go to J._R._Workman_Garden
@@ -1773,14 +1773,14 @@ go to College_Hill_Bookstore .
 go to Blue_State_Coffee .
 go to Salon_Persia .
 go to Pleasant_Surprises .
-go to Facing_Thayer .
+go to Facing Thayer .
 go to Supercuts .
 go to Soban .
 go to Berk's;Shanghai .
 go to West_House .
-go to Thayer_and_Meeting .
-go to Thayer_and_Cushing .
-go to 111_Brown_Street_(North_House) .
+go to Thayer and Meeting .
+go to Thayer and Cushing .
+go to 111_Brown_Street (North_House) .
 go to Emery_Hall .
 go to Morriss_Hall .
 go to Andrews_Hall .
@@ -1792,22 +1792,22 @@ go to Pembroke_Hall .
 go to Sidney_Frank_Hall .
 go to Sharpe_House .
 go to 219_Bowen .
-go to New_Pembroke_3 .
-go to New_Pembroke_2 .
+go to New_Pembroke 3 .
+go to New_Pembroke 2 .
 go to 164_Angel .
 go to Hillel_House .
-go to New_Pembroke_4 .
+go to New_Pembroke 4 .
 go to Granoff_Center .
 go to Peter_Green_House .
 go to Grimshaw-Gudewicz_Biomedical_Building .
 go to Biomedical_Center .
-go to Second_Time_Around .
+go to Second_Time Around .
 go to Metcalf_Hall .
 go to Miller_Hall .
-go to New_Pembroke_1 .
+go to New_Pembroke 1 .
 go to Andrews_Terrace .
 go to Champlin_Hall .
-go to Emery_&_Wooley .
+go to Emery & Wooley .
 go to Pembroke_Park .
 go to Verney-Woolley_Hall .
 go to J._R._Workman_Garden .
@@ -1822,14 +1822,14 @@ navigate to College_Hill_Bookstore .
 navigate to Blue_State_Coffee .
 navigate to Salon_Persia .
 navigate to Pleasant_Surprises .
-navigate to Facing_Thayer .
+navigate to Facing Thayer .
 navigate to Supercuts .
 navigate to Soban .
 navigate to Berk's;Shanghai .
 navigate to West_House .
-navigate to Thayer_and_Meeting .
-navigate to Thayer_and_Cushing .
-navigate to 111_Brown_Street_(North_House) .
+navigate to Thayer and Meeting .
+navigate to Thayer and Cushing .
+navigate to 111_Brown_Street (North_House) .
 navigate to Emery_Hall .
 navigate to Morriss_Hall .
 navigate to Andrews_Hall .
@@ -1841,22 +1841,22 @@ navigate to Pembroke_Hall .
 navigate to Sidney_Frank_Hall .
 navigate to Sharpe_House .
 navigate to 219_Bowen .
-navigate to New_Pembroke_3 .
-navigate to New_Pembroke_2 .
+navigate to New_Pembroke 3 .
+navigate to New_Pembroke 2 .
 navigate to 164_Angel .
 navigate to Hillel_House .
-navigate to New_Pembroke_4 .
+navigate to New_Pembroke 4 .
 navigate to Granoff_Center .
 navigate to Peter_Green_House .
 navigate to Grimshaw-Gudewicz_Biomedical_Building .
 navigate to Biomedical_Center .
-navigate to Second_Time_Around .
+navigate to Second_Time Around .
 navigate to Metcalf_Hall .
 navigate to Miller_Hall .
-navigate to New_Pembroke_1 .
+navigate to New_Pembroke 1 .
 navigate to Andrews_Terrace .
 navigate to Champlin_Hall .
-navigate to Emery_&_Wooley .
+navigate to Emery & Wooley .
 navigate to Pembroke_Park .
 navigate to Verney-Woolley_Hall .
 navigate to J._R._Workman_Garden .
@@ -1871,14 +1871,14 @@ navigate to College_Hill_Bookstore .
 navigate to Blue_State_Coffee .
 navigate to Salon_Persia .
 navigate to Pleasant_Surprises .
-navigate to Facing_Thayer .
+navigate to Facing Thayer .
 navigate to Supercuts .
 navigate to Soban .
 navigate to Berk's;Shanghai .
 navigate to West_House .
-navigate to Thayer_and_Meeting .
-navigate to Thayer_and_Cushing .
-navigate to 111_Brown_Street_(North_House) .
+navigate to Thayer and Meeting .
+navigate to Thayer and Cushing .
+navigate to 111_Brown_Street (North_House) .
 navigate to Emery_Hall .
 navigate to Morriss_Hall .
 navigate to Andrews_Hall .
@@ -1890,22 +1890,22 @@ navigate to Pembroke_Hall .
 navigate to Sidney_Frank_Hall .
 navigate to Sharpe_House .
 navigate to 219_Bowen .
-navigate to New_Pembroke_3 .
-navigate to New_Pembroke_2 .
+navigate to New_Pembroke 3 .
+navigate to New_Pembroke 2 .
 navigate to 164_Angel .
 navigate to Hillel_House .
-navigate to New_Pembroke_4 .
+navigate to New_Pembroke 4 .
 navigate to Granoff_Center .
 navigate to Peter_Green_House .
 navigate to Grimshaw-Gudewicz_Biomedical_Building .
 navigate to Biomedical_Center .
-navigate to Second_Time_Around .
+navigate to Second_Time Around .
 navigate to Metcalf_Hall .
 navigate to Miller_Hall .
-navigate to New_Pembroke_1 .
+navigate to New_Pembroke 1 .
 navigate to Andrews_Terrace .
 navigate to Champlin_Hall .
-navigate to Emery_&_Wooley .
+navigate to Emery & Wooley .
 navigate to Pembroke_Park .
 navigate to Verney-Woolley_Hall .
 navigate to J._R._Workman_Garden .
@@ -1920,14 +1920,14 @@ go to College_Hill_Bookstore .
 go to Blue_State_Coffee .
 go to Salon_Persia .
 go to Pleasant_Surprises .
-go to Facing_Thayer .
+go to Facing Thayer .
 go to Supercuts .
 go to Soban .
 go to Berk's;Shanghai .
 go to West_House .
-go to Thayer_and_Meeting .
-go to Thayer_and_Cushing .
-go to 111_Brown_Street_(North_House) .
+go to Thayer and Meeting .
+go to Thayer and Cushing .
+go to 111_Brown_Street (North_House) .
 go to Emery_Hall .
 go to Morriss_Hall .
 go to Andrews_Hall .
@@ -1939,22 +1939,22 @@ go to Pembroke_Hall .
 go to Sidney_Frank_Hall .
 go to Sharpe_House .
 go to 219_Bowen .
-go to New_Pembroke_3 .
-go to New_Pembroke_2 .
+go to New_Pembroke 3 .
+go to New_Pembroke 2 .
 go to 164_Angel .
 go to Hillel_House .
-go to New_Pembroke_4 .
+go to New_Pembroke 4 .
 go to Granoff_Center .
 go to Peter_Green_House .
 go to Grimshaw-Gudewicz_Biomedical_Building .
 go to Biomedical_Center .
-go to Second_Time_Around .
+go to Second_Time Around .
 go to Metcalf_Hall .
 go to Miller_Hall .
-go to New_Pembroke_1 .
+go to New_Pembroke 1 .
 go to Andrews_Terrace .
 go to Champlin_Hall .
-go to Emery_&_Wooley .
+go to Emery & Wooley .
 go to Pembroke_Park .
 go to Verney-Woolley_Hall .
 go to J._R._Workman_Garden .
@@ -1969,14 +1969,14 @@ go to College_Hill_Bookstore .
 go to Blue_State_Coffee .
 go to Salon_Persia .
 go to Pleasant_Surprises .
-go to Facing_Thayer .
+go to Facing Thayer .
 go to Supercuts .
 go to Soban .
 go to Berk's;Shanghai .
 go to West_House .
-go to Thayer_and_Meeting .
-go to Thayer_and_Cushing .
-go to 111_Brown_Street_(North_House) .
+go to Thayer and Meeting .
+go to Thayer and Cushing .
+go to 111_Brown_Street (North_House) .
 go to Emery_Hall .
 go to Morriss_Hall .
 go to Andrews_Hall .
@@ -1988,22 +1988,22 @@ go to Pembroke_Hall .
 go to Sidney_Frank_Hall .
 go to Sharpe_House .
 go to 219_Bowen .
-go to New_Pembroke_3 .
-go to New_Pembroke_2 .
+go to New_Pembroke 3 .
+go to New_Pembroke 2 .
 go to 164_Angel .
 go to Hillel_House .
-go to New_Pembroke_4 .
+go to New_Pembroke 4 .
 go to Granoff_Center .
 go to Peter_Green_House .
 go to Grimshaw-Gudewicz_Biomedical_Building .
 go to Biomedical_Center .
-go to Second_Time_Around .
+go to Second_Time Around .
 go to Metcalf_Hall .
 go to Miller_Hall .
-go to New_Pembroke_1 .
+go to New_Pembroke 1 .
 go to Andrews_Terrace .
 go to Champlin_Hall .
-go to Emery_&_Wooley .
+go to Emery & Wooley .
 go to Pembroke_Park .
 go to Verney-Woolley_Hall .
 go to J._R._Workman_Garden .
@@ -2018,14 +2018,14 @@ go to College_Hill_Bookstore .
 go to Blue_State_Coffee .
 go to Salon_Persia .
 go to Pleasant_Surprises .
-go to Facing_Thayer .
+go to Facing Thayer .
 go to Supercuts .
 go to Soban .
 go to Berk's;Shanghai .
 go to West_House .
-go to Thayer_and_Meeting .
-go to Thayer_and_Cushing .
-go to 111_Brown_Street_(North_House) .
+go to Thayer and Meeting .
+go to Thayer and Cushing .
+go to 111_Brown_Street (North_House) .
 go to Emery_Hall .
 go to Morriss_Hall .
 go to Andrews_Hall .
@@ -2037,22 +2037,22 @@ go to Pembroke_Hall .
 go to Sidney_Frank_Hall .
 go to Sharpe_House .
 go to 219_Bowen .
-go to New_Pembroke_3 .
-go to New_Pembroke_2 .
+go to New_Pembroke 3 .
+go to New_Pembroke 2 .
 go to 164_Angel .
 go to Hillel_House .
-go to New_Pembroke_4 .
+go to New_Pembroke 4 .
 go to Granoff_Center .
 go to Peter_Green_House .
 go to Grimshaw-Gudewicz_Biomedical_Building .
 go to Biomedical_Center .
-go to Second_Time_Around .
+go to Second_Time Around .
 go to Metcalf_Hall .
 go to Miller_Hall .
-go to New_Pembroke_1 .
+go to New_Pembroke 1 .
 go to Andrews_Terrace .
 go to Champlin_Hall .
-go to Emery_&_Wooley .
+go to Emery & Wooley .
 go to Pembroke_Park .
 go to Verney-Woolley_Hall .
 go to J._R._Workman_Garden .
@@ -2067,14 +2067,14 @@ go to College_Hill_Bookstore
 go to Blue_State_Coffee
 go to Salon_Persia
 go to Pleasant_Surprises
-go to Facing_Thayer
+go to Facing Thayer
 go to Supercuts
 go to Soban
 go to Berk's;Shanghai
 go to West_House
-go to Thayer_and_Meeting
-go to Thayer_and_Cushing
-go to 111_Brown_Street_(North_House)
+go to Thayer and Meeting
+go to Thayer and Cushing
+go to 111_Brown_Street (North_House)
 go to Emery_Hall
 go to Morriss_Hall
 go to Andrews_Hall
@@ -2086,22 +2086,22 @@ go to Pembroke_Hall
 go to Sidney_Frank_Hall
 go to Sharpe_House
 go to 219_Bowen
-go to New_Pembroke_3
-go to New_Pembroke_2
+go to New_Pembroke 3
+go to New_Pembroke 2
 go to 164_Angel
 go to Hillel_House
-go to New_Pembroke_4
+go to New_Pembroke 4
 go to Granoff_Center
 go to Peter_Green_House
 go to Grimshaw-Gudewicz_Biomedical_Building
 go to Biomedical_Center
-go to Second_Time_Around
+go to Second_Time Around
 go to Metcalf_Hall
 go to Miller_Hall
-go to New_Pembroke_1
+go to New_Pembroke 1
 go to Andrews_Terrace
 go to Champlin_Hall
-go to Emery_&_Wooley
+go to Emery & Wooley
 go to Pembroke_Park
 go to Verney-Woolley_Hall
 go to J._R._Workman_Garden
@@ -2116,14 +2116,14 @@ go to College_Hill_Bookstore .
 go to Blue_State_Coffee .
 go to Salon_Persia .
 go to Pleasant_Surprises .
-go to Facing_Thayer .
+go to Facing Thayer .
 go to Supercuts .
 go to Soban .
 go to Berk's;Shanghai .
 go to West_House .
-go to Thayer_and_Meeting .
-go to Thayer_and_Cushing .
-go to 111_Brown_Street_(North_House) .
+go to Thayer and Meeting .
+go to Thayer and Cushing .
+go to 111_Brown_Street (North_House) .
 go to Emery_Hall .
 go to Morriss_Hall .
 go to Andrews_Hall .
@@ -2135,22 +2135,22 @@ go to Pembroke_Hall .
 go to Sidney_Frank_Hall .
 go to Sharpe_House .
 go to 219_Bowen .
-go to New_Pembroke_3 .
-go to New_Pembroke_2 .
+go to New_Pembroke 3 .
+go to New_Pembroke 2 .
 go to 164_Angel .
 go to Hillel_House .
-go to New_Pembroke_4 .
+go to New_Pembroke 4 .
 go to Granoff_Center .
 go to Peter_Green_House .
 go to Grimshaw-Gudewicz_Biomedical_Building .
 go to Biomedical_Center .
-go to Second_Time_Around .
+go to Second_Time Around .
 go to Metcalf_Hall .
 go to Miller_Hall .
-go to New_Pembroke_1 .
+go to New_Pembroke 1 .
 go to Andrews_Terrace .
 go to Champlin_Hall .
-go to Emery_&_Wooley .
+go to Emery & Wooley .
 go to Pembroke_Park .
 go to Verney-Woolley_Hall .
 go to J._R._Workman_Garden .
@@ -2165,14 +2165,14 @@ move to College_Hill_Bookstore .
 move to Blue_State_Coffee .
 move to Salon_Persia .
 move to Pleasant_Surprises .
-move to Facing_Thayer .
+move to Facing Thayer .
 move to Supercuts .
 move to Soban .
 move to Berk's;Shanghai .
 move to West_House .
-move to Thayer_and_Meeting .
-move to Thayer_and_Cushing .
-move to 111_Brown_Street_(North_House) .
+move to Thayer and Meeting .
+move to Thayer and Cushing .
+move to 111_Brown_Street (North_House) .
 move to Emery_Hall .
 move to Morriss_Hall .
 move to Andrews_Hall .
@@ -2184,22 +2184,22 @@ move to Pembroke_Hall .
 move to Sidney_Frank_Hall .
 move to Sharpe_House .
 move to 219_Bowen .
-move to New_Pembroke_3 .
-move to New_Pembroke_2 .
+move to New_Pembroke 3 .
+move to New_Pembroke 2 .
 move to 164_Angel .
 move to Hillel_House .
-move to New_Pembroke_4 .
+move to New_Pembroke 4 .
 move to Granoff_Center .
 move to Peter_Green_House .
 move to Grimshaw-Gudewicz_Biomedical_Building .
 move to Biomedical_Center .
-move to Second_Time_Around .
+move to Second_Time Around .
 move to Metcalf_Hall .
 move to Miller_Hall .
-move to New_Pembroke_1 .
+move to New_Pembroke 1 .
 move to Andrews_Terrace .
 move to Champlin_Hall .
-move to Emery_&_Wooley .
+move to Emery & Wooley .
 move to Pembroke_Park .
 move to Verney-Woolley_Hall .
 move to J._R._Workman_Garden .
@@ -2214,14 +2214,14 @@ go to College_Hill_Bookstore .
 go to Blue_State_Coffee .
 go to Salon_Persia .
 go to Pleasant_Surprises .
-go to Facing_Thayer .
+go to Facing Thayer .
 go to Supercuts .
 go to Soban .
 go to Berk's;Shanghai .
 go to West_House .
-go to Thayer_and_Meeting .
-go to Thayer_and_Cushing .
-go to 111_Brown_Street_(North_House) .
+go to Thayer and Meeting .
+go to Thayer and Cushing .
+go to 111_Brown_Street (North_House) .
 go to Emery_Hall .
 go to Morriss_Hall .
 go to Andrews_Hall .
@@ -2233,22 +2233,22 @@ go to Pembroke_Hall .
 go to Sidney_Frank_Hall .
 go to Sharpe_House .
 go to 219_Bowen .
-go to New_Pembroke_3 .
-go to New_Pembroke_2 .
+go to New_Pembroke 3 .
+go to New_Pembroke 2 .
 go to 164_Angel .
 go to Hillel_House .
-go to New_Pembroke_4 .
+go to New_Pembroke 4 .
 go to Granoff_Center .
 go to Peter_Green_House .
 go to Grimshaw-Gudewicz_Biomedical_Building .
 go to Biomedical_Center .
-go to Second_Time_Around .
+go to Second_Time Around .
 go to Metcalf_Hall .
 go to Miller_Hall .
-go to New_Pembroke_1 .
+go to New_Pembroke 1 .
 go to Andrews_Terrace .
 go to Champlin_Hall .
-go to Emery_&_Wooley .
+go to Emery & Wooley .
 go to Pembroke_Park .
 go to Verney-Woolley_Hall .
 go to J._R._Workman_Garden .
@@ -2263,14 +2263,14 @@ go to College_Hill_Bookstore
 go to Blue_State_Coffee
 go to Salon_Persia
 go to Pleasant_Surprises
-go to Facing_Thayer
+go to Facing Thayer
 go to Supercuts
 go to Soban
 go to Berk's;Shanghai
 go to West_House
-go to Thayer_and_Meeting
-go to Thayer_and_Cushing
-go to 111_Brown_Street_(North_House)
+go to Thayer and Meeting
+go to Thayer and Cushing
+go to 111_Brown_Street (North_House)
 go to Emery_Hall
 go to Morriss_Hall
 go to Andrews_Hall
@@ -2282,22 +2282,22 @@ go to Pembroke_Hall
 go to Sidney_Frank_Hall
 go to Sharpe_House
 go to 219_Bowen
-go to New_Pembroke_3
-go to New_Pembroke_2
+go to New_Pembroke 3
+go to New_Pembroke 2
 go to 164_Angel
 go to Hillel_House
-go to New_Pembroke_4
+go to New_Pembroke 4
 go to Granoff_Center
 go to Peter_Green_House
 go to Grimshaw-Gudewicz_Biomedical_Building
 go to Biomedical_Center
-go to Second_Time_Around
+go to Second_Time Around
 go to Metcalf_Hall
 go to Miller_Hall
-go to New_Pembroke_1
+go to New_Pembroke 1
 go to Andrews_Terrace
 go to Champlin_Hall
-go to Emery_&_Wooley
+go to Emery & Wooley
 go to Pembroke_Park
 go to Verney-Woolley_Hall
 go to J._R._Workman_Garden
@@ -2312,14 +2312,14 @@ go to College_Hill_Bookstore
 go to Blue_State_Coffee
 go to Salon_Persia
 go to Pleasant_Surprises
-go to Facing_Thayer
+go to Facing Thayer
 go to Supercuts
 go to Soban
 go to Berk's;Shanghai
 go to West_House
-go to Thayer_and_Meeting
-go to Thayer_and_Cushing
-go to 111_Brown_Street_(North_House)
+go to Thayer and Meeting
+go to Thayer and Cushing
+go to 111_Brown_Street (North_House)
 go to Emery_Hall
 go to Morriss_Hall
 go to Andrews_Hall
@@ -2331,22 +2331,22 @@ go to Pembroke_Hall
 go to Sidney_Frank_Hall
 go to Sharpe_House
 go to 219_Bowen
-go to New_Pembroke_3
-go to New_Pembroke_2
+go to New_Pembroke 3
+go to New_Pembroke 2
 go to 164_Angel
 go to Hillel_House
-go to New_Pembroke_4
+go to New_Pembroke 4
 go to Granoff_Center
 go to Peter_Green_House
 go to Grimshaw-Gudewicz_Biomedical_Building
 go to Biomedical_Center
-go to Second_Time_Around
+go to Second_Time Around
 go to Metcalf_Hall
 go to Miller_Hall
-go to New_Pembroke_1
+go to New_Pembroke 1
 go to Andrews_Terrace
 go to Champlin_Hall
-go to Emery_&_Wooley
+go to Emery & Wooley
 go to Pembroke_Park
 go to Verney-Woolley_Hall
 go to J._R._Workman_Garden
@@ -2361,14 +2361,14 @@ go directly to College_Hill_Bookstore .
 go directly to Blue_State_Coffee .
 go directly to Salon_Persia .
 go directly to Pleasant_Surprises .
-go directly to Facing_Thayer .
+go directly to Facing Thayer .
 go directly to Supercuts .
 go directly to Soban .
 go directly to Berk's;Shanghai .
 go directly to West_House .
-go directly to Thayer_and_Meeting .
-go directly to Thayer_and_Cushing .
-go directly to 111_Brown_Street_(North_House) .
+go directly to Thayer and Meeting .
+go directly to Thayer and Cushing .
+go directly to 111_Brown_Street (North_House) .
 go directly to Emery_Hall .
 go directly to Morriss_Hall .
 go directly to Andrews_Hall .
@@ -2380,22 +2380,22 @@ go directly to Pembroke_Hall .
 go directly to Sidney_Frank_Hall .
 go directly to Sharpe_House .
 go directly to 219_Bowen .
-go directly to New_Pembroke_3 .
-go directly to New_Pembroke_2 .
+go directly to New_Pembroke 3 .
+go directly to New_Pembroke 2 .
 go directly to 164_Angel .
 go directly to Hillel_House .
-go directly to New_Pembroke_4 .
+go directly to New_Pembroke 4 .
 go directly to Granoff_Center .
 go directly to Peter_Green_House .
 go directly to Grimshaw-Gudewicz_Biomedical_Building .
 go directly to Biomedical_Center .
-go directly to Second_Time_Around .
+go directly to Second_Time Around .
 go directly to Metcalf_Hall .
 go directly to Miller_Hall .
-go directly to New_Pembroke_1 .
+go directly to New_Pembroke 1 .
 go directly to Andrews_Terrace .
 go directly to Champlin_Hall .
-go directly to Emery_&_Wooley .
+go directly to Emery & Wooley .
 go directly to Pembroke_Park .
 go directly to Verney-Woolley_Hall .
 go directly to J._R._Workman_Garden .
@@ -2410,14 +2410,14 @@ go to College_Hill_Bookstore .
 go to Blue_State_Coffee .
 go to Salon_Persia .
 go to Pleasant_Surprises .
-go to Facing_Thayer .
+go to Facing Thayer .
 go to Supercuts .
 go to Soban .
 go to Berk's;Shanghai .
 go to West_House .
-go to Thayer_and_Meeting .
-go to Thayer_and_Cushing .
-go to 111_Brown_Street_(North_House) .
+go to Thayer and Meeting .
+go to Thayer and Cushing .
+go to 111_Brown_Street (North_House) .
 go to Emery_Hall .
 go to Morriss_Hall .
 go to Andrews_Hall .
@@ -2429,22 +2429,22 @@ go to Pembroke_Hall .
 go to Sidney_Frank_Hall .
 go to Sharpe_House .
 go to 219_Bowen .
-go to New_Pembroke_3 .
-go to New_Pembroke_2 .
+go to New_Pembroke 3 .
+go to New_Pembroke 2 .
 go to 164_Angel .
 go to Hillel_House .
-go to New_Pembroke_4 .
+go to New_Pembroke 4 .
 go to Granoff_Center .
 go to Peter_Green_House .
 go to Grimshaw-Gudewicz_Biomedical_Building .
 go to Biomedical_Center .
-go to Second_Time_Around .
+go to Second_Time Around .
 go to Metcalf_Hall .
 go to Miller_Hall .
-go to New_Pembroke_1 .
+go to New_Pembroke 1 .
 go to Andrews_Terrace .
 go to Champlin_Hall .
-go to Emery_&_Wooley .
+go to Emery & Wooley .
 go to Pembroke_Park .
 go to Verney-Woolley_Hall .
 go to J._R._Workman_Garden .
@@ -2459,14 +2459,14 @@ go to College_Hill_Bookstore
 go to Blue_State_Coffee
 go to Salon_Persia
 go to Pleasant_Surprises
-go to Facing_Thayer
+go to Facing Thayer
 go to Supercuts
 go to Soban
 go to Berk's;Shanghai
 go to West_House
-go to Thayer_and_Meeting
-go to Thayer_and_Cushing
-go to 111_Brown_Street_(North_House)
+go to Thayer and Meeting
+go to Thayer and Cushing
+go to 111_Brown_Street (North_House)
 go to Emery_Hall
 go to Morriss_Hall
 go to Andrews_Hall
@@ -2478,22 +2478,22 @@ go to Pembroke_Hall
 go to Sidney_Frank_Hall
 go to Sharpe_House
 go to 219_Bowen
-go to New_Pembroke_3
-go to New_Pembroke_2
+go to New_Pembroke 3
+go to New_Pembroke 2
 go to 164_Angel
 go to Hillel_House
-go to New_Pembroke_4
+go to New_Pembroke 4
 go to Granoff_Center
 go to Peter_Green_House
 go to Grimshaw-Gudewicz_Biomedical_Building
 go to Biomedical_Center
-go to Second_Time_Around
+go to Second_Time Around
 go to Metcalf_Hall
 go to Miller_Hall
-go to New_Pembroke_1
+go to New_Pembroke 1
 go to Andrews_Terrace
 go to Champlin_Hall
-go to Emery_&_Wooley
+go to Emery & Wooley
 go to Pembroke_Park
 go to Verney-Woolley_Hall
 go to J._R._Workman_Garden
@@ -2508,14 +2508,14 @@ go to College_Hill_Bookstore .
 go to Blue_State_Coffee .
 go to Salon_Persia .
 go to Pleasant_Surprises .
-go to Facing_Thayer .
+go to Facing Thayer .
 go to Supercuts .
 go to Soban .
 go to Berk's;Shanghai .
 go to West_House .
-go to Thayer_and_Meeting .
-go to Thayer_and_Cushing .
-go to 111_Brown_Street_(North_House) .
+go to Thayer and Meeting .
+go to Thayer and Cushing .
+go to 111_Brown_Street (North_House) .
 go to Emery_Hall .
 go to Morriss_Hall .
 go to Andrews_Hall .
@@ -2527,22 +2527,22 @@ go to Pembroke_Hall .
 go to Sidney_Frank_Hall .
 go to Sharpe_House .
 go to 219_Bowen .
-go to New_Pembroke_3 .
-go to New_Pembroke_2 .
+go to New_Pembroke 3 .
+go to New_Pembroke 2 .
 go to 164_Angel .
 go to Hillel_House .
-go to New_Pembroke_4 .
+go to New_Pembroke 4 .
 go to Granoff_Center .
 go to Peter_Green_House .
 go to Grimshaw-Gudewicz_Biomedical_Building .
 go to Biomedical_Center .
-go to Second_Time_Around .
+go to Second_Time Around .
 go to Metcalf_Hall .
 go to Miller_Hall .
-go to New_Pembroke_1 .
+go to New_Pembroke 1 .
 go to Andrews_Terrace .
 go to Champlin_Hall .
-go to Emery_&_Wooley .
+go to Emery & Wooley .
 go to Pembroke_Park .
 go to Verney-Woolley_Hall .
 go to J._R._Workman_Garden .
@@ -2557,14 +2557,14 @@ navigate to College_Hill_Bookstore .
 navigate to Blue_State_Coffee .
 navigate to Salon_Persia .
 navigate to Pleasant_Surprises .
-navigate to Facing_Thayer .
+navigate to Facing Thayer .
 navigate to Supercuts .
 navigate to Soban .
 navigate to Berk's;Shanghai .
 navigate to West_House .
-navigate to Thayer_and_Meeting .
-navigate to Thayer_and_Cushing .
-navigate to 111_Brown_Street_(North_House) .
+navigate to Thayer and Meeting .
+navigate to Thayer and Cushing .
+navigate to 111_Brown_Street (North_House) .
 navigate to Emery_Hall .
 navigate to Morriss_Hall .
 navigate to Andrews_Hall .
@@ -2576,22 +2576,22 @@ navigate to Pembroke_Hall .
 navigate to Sidney_Frank_Hall .
 navigate to Sharpe_House .
 navigate to 219_Bowen .
-navigate to New_Pembroke_3 .
-navigate to New_Pembroke_2 .
+navigate to New_Pembroke 3 .
+navigate to New_Pembroke 2 .
 navigate to 164_Angel .
 navigate to Hillel_House .
-navigate to New_Pembroke_4 .
+navigate to New_Pembroke 4 .
 navigate to Granoff_Center .
 navigate to Peter_Green_House .
 navigate to Grimshaw-Gudewicz_Biomedical_Building .
 navigate to Biomedical_Center .
-navigate to Second_Time_Around .
+navigate to Second_Time Around .
 navigate to Metcalf_Hall .
 navigate to Miller_Hall .
-navigate to New_Pembroke_1 .
+navigate to New_Pembroke 1 .
 navigate to Andrews_Terrace .
 navigate to Champlin_Hall .
-navigate to Emery_&_Wooley .
+navigate to Emery & Wooley .
 navigate to Pembroke_Park .
 navigate to Verney-Woolley_Hall .
 navigate to J._R._Workman_Garden .
@@ -2606,14 +2606,14 @@ go to College_Hill_Bookstore .
 go to Blue_State_Coffee .
 go to Salon_Persia .
 go to Pleasant_Surprises .
-go to Facing_Thayer .
+go to Facing Thayer .
 go to Supercuts .
 go to Soban .
 go to Berk's;Shanghai .
 go to West_House .
-go to Thayer_and_Meeting .
-go to Thayer_and_Cushing .
-go to 111_Brown_Street_(North_House) .
+go to Thayer and Meeting .
+go to Thayer and Cushing .
+go to 111_Brown_Street (North_House) .
 go to Emery_Hall .
 go to Morriss_Hall .
 go to Andrews_Hall .
@@ -2625,22 +2625,22 @@ go to Pembroke_Hall .
 go to Sidney_Frank_Hall .
 go to Sharpe_House .
 go to 219_Bowen .
-go to New_Pembroke_3 .
-go to New_Pembroke_2 .
+go to New_Pembroke 3 .
+go to New_Pembroke 2 .
 go to 164_Angel .
 go to Hillel_House .
-go to New_Pembroke_4 .
+go to New_Pembroke 4 .
 go to Granoff_Center .
 go to Peter_Green_House .
 go to Grimshaw-Gudewicz_Biomedical_Building .
 go to Biomedical_Center .
-go to Second_Time_Around .
+go to Second_Time Around .
 go to Metcalf_Hall .
 go to Miller_Hall .
-go to New_Pembroke_1 .
+go to New_Pembroke 1 .
 go to Andrews_Terrace .
 go to Champlin_Hall .
-go to Emery_&_Wooley .
+go to Emery & Wooley .
 go to Pembroke_Park .
 go to Verney-Woolley_Hall .
 go to J._R._Workman_Garden .
@@ -2655,14 +2655,14 @@ navigate to College_Hill_Bookstore .
 navigate to Blue_State_Coffee .
 navigate to Salon_Persia .
 navigate to Pleasant_Surprises .
-navigate to Facing_Thayer .
+navigate to Facing Thayer .
 navigate to Supercuts .
 navigate to Soban .
 navigate to Berk's;Shanghai .
 navigate to West_House .
-navigate to Thayer_and_Meeting .
-navigate to Thayer_and_Cushing .
-navigate to 111_Brown_Street_(North_House) .
+navigate to Thayer and Meeting .
+navigate to Thayer and Cushing .
+navigate to 111_Brown_Street (North_House) .
 navigate to Emery_Hall .
 navigate to Morriss_Hall .
 navigate to Andrews_Hall .
@@ -2674,22 +2674,22 @@ navigate to Pembroke_Hall .
 navigate to Sidney_Frank_Hall .
 navigate to Sharpe_House .
 navigate to 219_Bowen .
-navigate to New_Pembroke_3 .
-navigate to New_Pembroke_2 .
+navigate to New_Pembroke 3 .
+navigate to New_Pembroke 2 .
 navigate to 164_Angel .
 navigate to Hillel_House .
-navigate to New_Pembroke_4 .
+navigate to New_Pembroke 4 .
 navigate to Granoff_Center .
 navigate to Peter_Green_House .
 navigate to Grimshaw-Gudewicz_Biomedical_Building .
 navigate to Biomedical_Center .
-navigate to Second_Time_Around .
+navigate to Second_Time Around .
 navigate to Metcalf_Hall .
 navigate to Miller_Hall .
-navigate to New_Pembroke_1 .
+navigate to New_Pembroke 1 .
 navigate to Andrews_Terrace .
 navigate to Champlin_Hall .
-navigate to Emery_&_Wooley .
+navigate to Emery & Wooley .
 navigate to Pembroke_Park .
 navigate to Verney-Woolley_Hall .
 navigate to J._R._Workman_Garden .
@@ -2704,14 +2704,14 @@ navigate to College_Hill_Bookstore .
 navigate to Blue_State_Coffee .
 navigate to Salon_Persia .
 navigate to Pleasant_Surprises .
-navigate to Facing_Thayer .
+navigate to Facing Thayer .
 navigate to Supercuts .
 navigate to Soban .
 navigate to Berk's;Shanghai .
 navigate to West_House .
-navigate to Thayer_and_Meeting .
-navigate to Thayer_and_Cushing .
-navigate to 111_Brown_Street_(North_House) .
+navigate to Thayer and Meeting .
+navigate to Thayer and Cushing .
+navigate to 111_Brown_Street (North_House) .
 navigate to Emery_Hall .
 navigate to Morriss_Hall .
 navigate to Andrews_Hall .
@@ -2723,22 +2723,22 @@ navigate to Pembroke_Hall .
 navigate to Sidney_Frank_Hall .
 navigate to Sharpe_House .
 navigate to 219_Bowen .
-navigate to New_Pembroke_3 .
-navigate to New_Pembroke_2 .
+navigate to New_Pembroke 3 .
+navigate to New_Pembroke 2 .
 navigate to 164_Angel .
 navigate to Hillel_House .
-navigate to New_Pembroke_4 .
+navigate to New_Pembroke 4 .
 navigate to Granoff_Center .
 navigate to Peter_Green_House .
 navigate to Grimshaw-Gudewicz_Biomedical_Building .
 navigate to Biomedical_Center .
-navigate to Second_Time_Around .
+navigate to Second_Time Around .
 navigate to Metcalf_Hall .
 navigate to Miller_Hall .
-navigate to New_Pembroke_1 .
+navigate to New_Pembroke 1 .
 navigate to Andrews_Terrace .
 navigate to Champlin_Hall .
-navigate to Emery_&_Wooley .
+navigate to Emery & Wooley .
 navigate to Pembroke_Park .
 navigate to Verney-Woolley_Hall .
 navigate to J._R._Workman_Garden .
@@ -2753,14 +2753,14 @@ go to College_Hill_Bookstore
 go to Blue_State_Coffee
 go to Salon_Persia
 go to Pleasant_Surprises
-go to Facing_Thayer
+go to Facing Thayer
 go to Supercuts
 go to Soban
 go to Berk's;Shanghai
 go to West_House
-go to Thayer_and_Meeting
-go to Thayer_and_Cushing
-go to 111_Brown_Street_(North_House)
+go to Thayer and Meeting
+go to Thayer and Cushing
+go to 111_Brown_Street (North_House)
 go to Emery_Hall
 go to Morriss_Hall
 go to Andrews_Hall
@@ -2772,22 +2772,22 @@ go to Pembroke_Hall
 go to Sidney_Frank_Hall
 go to Sharpe_House
 go to 219_Bowen
-go to New_Pembroke_3
-go to New_Pembroke_2
+go to New_Pembroke 3
+go to New_Pembroke 2
 go to 164_Angel
 go to Hillel_House
-go to New_Pembroke_4
+go to New_Pembroke 4
 go to Granoff_Center
 go to Peter_Green_House
 go to Grimshaw-Gudewicz_Biomedical_Building
 go to Biomedical_Center
-go to Second_Time_Around
+go to Second_Time Around
 go to Metcalf_Hall
 go to Miller_Hall
-go to New_Pembroke_1
+go to New_Pembroke 1
 go to Andrews_Terrace
 go to Champlin_Hall
-go to Emery_&_Wooley
+go to Emery & Wooley
 go to Pembroke_Park
 go to Verney-Woolley_Hall
 go to J._R._Workman_Garden
@@ -2802,14 +2802,14 @@ travel to College_Hill_Bookstore .
 travel to Blue_State_Coffee .
 travel to Salon_Persia .
 travel to Pleasant_Surprises .
-travel to Facing_Thayer .
+travel to Facing Thayer .
 travel to Supercuts .
 travel to Soban .
 travel to Berk's;Shanghai .
 travel to West_House .
-travel to Thayer_and_Meeting .
-travel to Thayer_and_Cushing .
-travel to 111_Brown_Street_(North_House) .
+travel to Thayer and Meeting .
+travel to Thayer and Cushing .
+travel to 111_Brown_Street (North_House) .
 travel to Emery_Hall .
 travel to Morriss_Hall .
 travel to Andrews_Hall .
@@ -2821,22 +2821,22 @@ travel to Pembroke_Hall .
 travel to Sidney_Frank_Hall .
 travel to Sharpe_House .
 travel to 219_Bowen .
-travel to New_Pembroke_3 .
-travel to New_Pembroke_2 .
+travel to New_Pembroke 3 .
+travel to New_Pembroke 2 .
 travel to 164_Angel .
 travel to Hillel_House .
-travel to New_Pembroke_4 .
+travel to New_Pembroke 4 .
 travel to Granoff_Center .
 travel to Peter_Green_House .
 travel to Grimshaw-Gudewicz_Biomedical_Building .
 travel to Biomedical_Center .
-travel to Second_Time_Around .
+travel to Second_Time Around .
 travel to Metcalf_Hall .
 travel to Miller_Hall .
-travel to New_Pembroke_1 .
+travel to New_Pembroke 1 .
 travel to Andrews_Terrace .
 travel to Champlin_Hall .
-travel to Emery_&_Wooley .
+travel to Emery & Wooley .
 travel to Pembroke_Park .
 travel to Verney-Woolley_Hall .
 travel to J._R._Workman_Garden .
@@ -2851,14 +2851,14 @@ go to College_Hill_Bookstore .
 go to Blue_State_Coffee .
 go to Salon_Persia .
 go to Pleasant_Surprises .
-go to Facing_Thayer .
+go to Facing Thayer .
 go to Supercuts .
 go to Soban .
 go to Berk's;Shanghai .
 go to West_House .
-go to Thayer_and_Meeting .
-go to Thayer_and_Cushing .
-go to 111_Brown_Street_(North_House) .
+go to Thayer and Meeting .
+go to Thayer and Cushing .
+go to 111_Brown_Street (North_House) .
 go to Emery_Hall .
 go to Morriss_Hall .
 go to Andrews_Hall .
@@ -2870,22 +2870,22 @@ go to Pembroke_Hall .
 go to Sidney_Frank_Hall .
 go to Sharpe_House .
 go to 219_Bowen .
-go to New_Pembroke_3 .
-go to New_Pembroke_2 .
+go to New_Pembroke 3 .
+go to New_Pembroke 2 .
 go to 164_Angel .
 go to Hillel_House .
-go to New_Pembroke_4 .
+go to New_Pembroke 4 .
 go to Granoff_Center .
 go to Peter_Green_House .
 go to Grimshaw-Gudewicz_Biomedical_Building .
 go to Biomedical_Center .
-go to Second_Time_Around .
+go to Second_Time Around .
 go to Metcalf_Hall .
 go to Miller_Hall .
-go to New_Pembroke_1 .
+go to New_Pembroke 1 .
 go to Andrews_Terrace .
 go to Champlin_Hall .
-go to Emery_&_Wooley .
+go to Emery & Wooley .
 go to Pembroke_Park .
 go to Verney-Woolley_Hall .
 go to J._R._Workman_Garden .
@@ -2900,14 +2900,14 @@ go to College_Hill_Bookstore
 go to Blue_State_Coffee
 go to Salon_Persia
 go to Pleasant_Surprises
-go to Facing_Thayer
+go to Facing Thayer
 go to Supercuts
 go to Soban
 go to Berk's;Shanghai
 go to West_House
-go to Thayer_and_Meeting
-go to Thayer_and_Cushing
-go to 111_Brown_Street_(North_House)
+go to Thayer and Meeting
+go to Thayer and Cushing
+go to 111_Brown_Street (North_House)
 go to Emery_Hall
 go to Morriss_Hall
 go to Andrews_Hall
@@ -2919,22 +2919,22 @@ go to Pembroke_Hall
 go to Sidney_Frank_Hall
 go to Sharpe_House
 go to 219_Bowen
-go to New_Pembroke_3
-go to New_Pembroke_2
+go to New_Pembroke 3
+go to New_Pembroke 2
 go to 164_Angel
 go to Hillel_House
-go to New_Pembroke_4
+go to New_Pembroke 4
 go to Granoff_Center
 go to Peter_Green_House
 go to Grimshaw-Gudewicz_Biomedical_Building
 go to Biomedical_Center
-go to Second_Time_Around
+go to Second_Time Around
 go to Metcalf_Hall
 go to Miller_Hall
-go to New_Pembroke_1
+go to New_Pembroke 1
 go to Andrews_Terrace
 go to Champlin_Hall
-go to Emery_&_Wooley
+go to Emery & Wooley
 go to Pembroke_Park
 go to Verney-Woolley_Hall
 go to J._R._Workman_Garden
@@ -2954,9 +2954,9 @@ go to the Supercuts .
 go to the Soban .
 go to the Berk's;Shanghai .
 go to the West_House .
-go to the Thayer_and_Meeting .
-go to the Thayer_and_Cushing .
-go to the 111_Brown_Street_(North_House) .
+go to the Thayer and Meeting .
+go to the Thayer and Cushing .
+go to the 111_Brown_Street (North_House) .
 go to the Emery_Hall .
 go to the Morriss_Hall .
 go to the Andrews_Hall .
@@ -2968,22 +2968,22 @@ go to the Pembroke_Hall .
 go to the Sidney_Frank_Hall .
 go to the Sharpe_House .
 go to the 219_Bowen .
-go to the New_Pembroke_3 .
-go to the New_Pembroke_2 .
+go to the New_Pembroke 3 .
+go to the New_Pembroke 2 .
 go to the 164_Angel .
 go to the Hillel_House .
-go to the New_Pembroke_4 .
+go to the New_Pembroke 4 .
 go to the Granoff_Center .
 go to the Peter_Green_House .
 go to the Grimshaw-Gudewicz_Biomedical_Building .
 go to the Biomedical_Center .
-go to the Second_Time_Around .
+go to the Second_Time Around .
 go to the Metcalf_Hall .
 go to the Miller_Hall .
-go to the New_Pembroke_1 .
+go to the New_Pembroke 1 .
 go to the Andrews_Terrace .
 go to the Champlin_Hall .
-go to the Emery_&_Wooley .
+go to the Emery & Wooley .
 go to the Pembroke_Park .
 go to the Verney-Woolley_Hall .
 go to the J._R._Workman_Garden .
@@ -3003,9 +3003,9 @@ go to the Supercuts .
 go to the Soban .
 go to the Berk's;Shanghai .
 go to the West_House .
-go to the Thayer_and_Meeting .
-go to the Thayer_and_Cushing .
-go to the 111_Brown_Street_(North_House) .
+go to the Thayer and Meeting .
+go to the Thayer and Cushing .
+go to the 111_Brown_Street (North_House) .
 go to the Emery_Hall .
 go to the Morriss_Hall .
 go to the Andrews_Hall .
@@ -3017,22 +3017,22 @@ go to the Pembroke_Hall .
 go to the Sidney_Frank_Hall .
 go to the Sharpe_House .
 go to the 219_Bowen .
-go to the New_Pembroke_3 .
-go to the New_Pembroke_2 .
+go to the New_Pembroke 3 .
+go to the New_Pembroke 2 .
 go to the 164_Angel .
 go to the Hillel_House .
-go to the New_Pembroke_4 .
+go to the New_Pembroke 4 .
 go to the Granoff_Center .
 go to the Peter_Green_House .
 go to the Grimshaw-Gudewicz_Biomedical_Building .
 go to the Biomedical_Center .
-go to the Second_Time_Around .
+go to the Second_Time Around .
 go to the Metcalf_Hall .
 go to the Miller_Hall .
-go to the New_Pembroke_1 .
+go to the New_Pembroke 1 .
 go to the Andrews_Terrace .
 go to the Champlin_Hall .
-go to the Emery_&_Wooley .
+go to the Emery & Wooley .
 go to the Pembroke_Park .
 go to the Verney-Woolley_Hall .
 go to the J._R._Workman_Garden .
@@ -3052,9 +3052,9 @@ head to the Supercuts .
 head to the Soban .
 head to the Berk's;Shanghai .
 head to the West_House .
-head to the Thayer_and_Meeting .
-head to the Thayer_and_Cushing .
-head to the 111_Brown_Street_(North_House) .
+head to the Thayer and Meeting .
+head to the Thayer and Cushing .
+head to the 111_Brown_Street (North_House) .
 head to the Emery_Hall .
 head to the Morriss_Hall .
 head to the Andrews_Hall .
@@ -3066,221 +3066,221 @@ head to the Pembroke_Hall .
 head to the Sidney_Frank_Hall .
 head to the Sharpe_House .
 head to the 219_Bowen .
-head to the New_Pembroke_3 .
-head to the New_Pembroke_2 .
+head to the New_Pembroke 3 .
+head to the New_Pembroke 2 .
 head to the 164_Angel .
 head to the Hillel_House .
-head to the New_Pembroke_4 .
+head to the New_Pembroke 4 .
 head to the Granoff_Center .
 head to the Peter_Green_House .
 head to the Grimshaw-Gudewicz_Biomedical_Building .
 head to the Biomedical_Center .
-head to the Second_Time_Around .
+head to the Second_Time Around .
 head to the Metcalf_Hall .
 head to the Miller_Hall .
-head to the New_Pembroke_1 .
+head to the New_Pembroke 1 .
 head to the Andrews_Terrace .
 head to the Champlin_Hall .
-head to the Emery_&_Wooley .
+head to the Emery & Wooley .
 head to the Pembroke_Park .
 head to the Verney-Woolley_Hall .
 head to the J._R._Workman_Garden .
-navigate to the_East_Side_Station_Post_Office .
-navigate to the_Andreas .
-navigate to the_Spiritus_Fermenti .
-navigate to the_Avon_Cinema .
-navigate to the_Brown_University_Bookstore .
-navigate to the_Meeting_Street_Cafe .
-navigate to the_CVS .
-navigate to the_College_Hill_Bookstore .
-navigate to the_Blue_State_Coffee .
-navigate to the_Salon_Persia .
-navigate to the_Pleasant_Surprises .
-navigate to the_Facing_Thayer .
-navigate to the_Supercuts .
-navigate to the_Soban .
-navigate to the_Berk's;Shanghai .
-navigate to the_West_House .
-navigate to the_Thayer_and_Meeting .
-navigate to the_Thayer_and_Cushing .
-navigate to the_111_Brown_Street_(North_House) .
-navigate to the_Emery_Hall .
-navigate to the_Morriss_Hall .
-navigate to the_Andrews_Hall .
-navigate to the_Smith_Buonanno_Hall .
-navigate to the_Sidney_Frank_Hall .
-navigate to the_Alumnae_Hall .
-navigate to the_West_House .
-navigate to the_Pembroke_Hall .
-navigate to the_Sidney_Frank_Hall .
-navigate to the_Sharpe_House .
-navigate to the_219_Bowen .
-navigate to the_New_Pembroke_3 .
-navigate to the_New_Pembroke_2 .
-navigate to the_164_Angel .
-navigate to the_Hillel_House .
-navigate to the_New_Pembroke_4 .
-navigate to the_Granoff_Center .
-navigate to the_Peter_Green_House .
-navigate to the_Grimshaw-Gudewicz_Biomedical_Building .
-navigate to the_Biomedical_Center .
-navigate to the_Second_Time_Around .
-navigate to the_Metcalf_Hall .
-navigate to the_Miller_Hall .
-navigate to the_New_Pembroke_1 .
-navigate to the_Andrews_Terrace .
-navigate to the_Champlin_Hall .
-navigate to the_Emery_&_Wooley .
-navigate to the_Pembroke_Park .
-navigate to the_Verney-Woolley_Hall .
-navigate to the_J._R._Workman_Garden .
-move to the_East_Side_Station_Post_Office .
-move to the_Andreas .
-move to the_Spiritus_Fermenti .
-move to the_Avon_Cinema .
-move to the_Brown_University_Bookstore .
-move to the_Meeting_Street_Cafe .
-move to the_CVS .
-move to the_College_Hill_Bookstore .
-move to the_Blue_State_Coffee .
-move to the_Salon_Persia .
-move to the_Pleasant_Surprises .
-move to the_Facing_Thayer .
-move to the_Supercuts .
-move to the_Soban .
-move to the_Berk's;Shanghai .
-move to the_West_House .
-move to the_Thayer_and_Meeting .
-move to the_Thayer_and_Cushing .
-move to the_111_Brown_Street_(North_House) .
-move to the_Emery_Hall .
-move to the_Morriss_Hall .
-move to the_Andrews_Hall .
-move to the_Smith_Buonanno_Hall .
-move to the_Sidney_Frank_Hall .
-move to the_Alumnae_Hall .
-move to the_West_House .
-move to the_Pembroke_Hall .
-move to the_Sidney_Frank_Hall .
-move to the_Sharpe_House .
-move to the_219_Bowen .
-move to the_New_Pembroke_3 .
-move to the_New_Pembroke_2 .
-move to the_164_Angel .
-move to the_Hillel_House .
-move to the_New_Pembroke_4 .
-move to the_Granoff_Center .
-move to the_Peter_Green_House .
-move to the_Grimshaw-Gudewicz_Biomedical_Building .
-move to the_Biomedical_Center .
-move to the_Second_Time_Around .
-move to the_Metcalf_Hall .
-move to the_Miller_Hall .
-move to the_New_Pembroke_1 .
-move to the_Andrews_Terrace .
-move to the_Champlin_Hall .
-move to the_Emery_&_Wooley .
-move to the_Pembroke_Park .
-move to the_Verney-Woolley_Hall .
-move to the_J._R._Workman_Garden .
-navigate to the_East_Side_Station_Post_Office .
-navigate to the_Andreas .
-navigate to the_Spiritus_Fermenti .
-navigate to the_Avon_Cinema .
-navigate to the_Brown_University_Bookstore .
-navigate to the_Meeting_Street_Cafe .
-navigate to the_CVS .
-navigate to the_College_Hill_Bookstore .
-navigate to the_Blue_State_Coffee .
-navigate to the_Salon_Persia .
-navigate to the_Pleasant_Surprises .
-navigate to the_Facing_Thayer .
-navigate to the_Supercuts .
-navigate to the_Soban .
-navigate to the_Berk's;Shanghai .
-navigate to the_West_House .
-navigate to the_Thayer_and_Meeting .
-navigate to the_Thayer_and_Cushing .
-navigate to the_111_Brown_Street_(North_House) .
-navigate to the_Emery_Hall .
-navigate to the_Morriss_Hall .
-navigate to the_Andrews_Hall .
-navigate to the_Smith_Buonanno_Hall .
-navigate to the_Sidney_Frank_Hall .
-navigate to the_Alumnae_Hall .
-navigate to the_West_House .
-navigate to the_Pembroke_Hall .
-navigate to the_Sidney_Frank_Hall .
-navigate to the_Sharpe_House .
-navigate to the_219_Bowen .
-navigate to the_New_Pembroke_3 .
-navigate to the_New_Pembroke_2 .
-navigate to the_164_Angel .
-navigate to the_Hillel_House .
-navigate to the_New_Pembroke_4 .
-navigate to the_Granoff_Center .
-navigate to the_Peter_Green_House .
-navigate to the_Grimshaw-Gudewicz_Biomedical_Building .
-navigate to the_Biomedical_Center .
-navigate to the_Second_Time_Around .
-navigate to the_Metcalf_Hall .
-navigate to the_Miller_Hall .
-navigate to the_New_Pembroke_1 .
-navigate to the_Andrews_Terrace .
-navigate to the_Champlin_Hall .
-navigate to the_Emery_&_Wooley .
-navigate to the_Pembroke_Park .
-navigate to the_Verney-Woolley_Hall .
-navigate to the_J._R._Workman_Garden .
-navigate to the_East_Side_Station_Post_Office .
-navigate to the_Andreas .
-navigate to the_Spiritus_Fermenti .
-navigate to the_Avon_Cinema .
-navigate to the_Brown_University_Bookstore .
-navigate to the_Meeting_Street_Cafe .
-navigate to the_CVS .
-navigate to the_College_Hill_Bookstore .
-navigate to the_Blue_State_Coffee .
-navigate to the_Salon_Persia .
-navigate to the_Pleasant_Surprises .
-navigate to the_Facing_Thayer .
-navigate to the_Supercuts .
-navigate to the_Soban .
-navigate to the_Berk's;Shanghai .
-navigate to the_West_House .
-navigate to the_Thayer_and_Meeting .
-navigate to the_Thayer_and_Cushing .
-navigate to the_111_Brown_Street_(North_House) .
-navigate to the_Emery_Hall .
-navigate to the_Morriss_Hall .
-navigate to the_Andrews_Hall .
-navigate to the_Smith_Buonanno_Hall .
-navigate to the_Sidney_Frank_Hall .
-navigate to the_Alumnae_Hall .
-navigate to the_West_House .
-navigate to the_Pembroke_Hall .
-navigate to the_Sidney_Frank_Hall .
-navigate to the_Sharpe_House .
-navigate to the_219_Bowen .
-navigate to the_New_Pembroke_3 .
-navigate to the_New_Pembroke_2 .
-navigate to the_164_Angel .
-navigate to the_Hillel_House .
-navigate to the_New_Pembroke_4 .
-navigate to the_Granoff_Center .
-navigate to the_Peter_Green_House .
-navigate to the_Grimshaw-Gudewicz_Biomedical_Building .
-navigate to the_Biomedical_Center .
-navigate to the_Second_Time_Around .
-navigate to the_Metcalf_Hall .
-navigate to the_Miller_Hall .
-navigate to the_New_Pembroke_1 .
-navigate to the_Andrews_Terrace .
-navigate to the_Champlin_Hall .
-navigate to the_Emery_&_Wooley .
-navigate to the_Pembroke_Park .
-navigate to the_Verney-Woolley_Hall .
-navigate to the_J._R._Workman_Garden .
+navigate to the East_Side_Station_Post_Office .
+navigate to the Andreas .
+navigate to the Spiritus_Fermenti .
+navigate to the Avon_Cinema .
+navigate to the Brown_University_Bookstore .
+navigate to the Meeting_Street_Cafe .
+navigate to the CVS .
+navigate to the College_Hill_Bookstore .
+navigate to the Blue_State_Coffee .
+navigate to the Salon_Persia .
+navigate to the Pleasant_Surprises .
+navigate to the Facing_Thayer .
+navigate to the Supercuts .
+navigate to the Soban .
+navigate to the Berk's;Shanghai .
+navigate to the West_House .
+navigate to the Thayer and Meeting .
+navigate to the Thayer and Cushing .
+navigate to the 111_Brown_Street (North_House) .
+navigate to the Emery_Hall .
+navigate to the Morriss_Hall .
+navigate to the Andrews_Hall .
+navigate to the Smith_Buonanno_Hall .
+navigate to the Sidney_Frank_Hall .
+navigate to the Alumnae_Hall .
+navigate to the West_House .
+navigate to the Pembroke_Hall .
+navigate to the Sidney_Frank_Hall .
+navigate to the Sharpe_House .
+navigate to the 219_Bowen .
+navigate to the New_Pembroke 3 .
+navigate to the New_Pembroke 2 .
+navigate to the 164_Angel .
+navigate to the Hillel_House .
+navigate to the New_Pembroke 4 .
+navigate to the Granoff_Center .
+navigate to the Peter_Green_House .
+navigate to the Grimshaw-Gudewicz_Biomedical_Building .
+navigate to the Biomedical_Center .
+navigate to the Second_Time Around .
+navigate to the Metcalf_Hall .
+navigate to the Miller_Hall .
+navigate to the New_Pembroke 1 .
+navigate to the Andrews_Terrace .
+navigate to the Champlin_Hall .
+navigate to the Emery & Wooley .
+navigate to the Pembroke_Park .
+navigate to the Verney-Woolley_Hall .
+navigate to the J._R._Workman_Garden .
+move to the East_Side_Station_Post_Office .
+move to the Andreas .
+move to the Spiritus_Fermenti .
+move to the Avon_Cinema .
+move to the Brown_University_Bookstore .
+move to the Meeting_Street_Cafe .
+move to the CVS .
+move to the College_Hill_Bookstore .
+move to the Blue_State_Coffee .
+move to the Salon_Persia .
+move to the Pleasant_Surprises .
+move to the Facing_Thayer .
+move to the Supercuts .
+move to the Soban .
+move to the Berk's;Shanghai .
+move to the West_House .
+move to the Thayer and Meeting .
+move to the Thayer and Cushing .
+move to the 111_Brown_Street (North_House) .
+move to the Emery_Hall .
+move to the Morriss_Hall .
+move to the Andrews_Hall .
+move to the Smith_Buonanno_Hall .
+move to the Sidney_Frank_Hall .
+move to the Alumnae_Hall .
+move to the West_House .
+move to the Pembroke_Hall .
+move to the Sidney_Frank_Hall .
+move to the Sharpe_House .
+move to the 219_Bowen .
+move to the New_Pembroke 3 .
+move to the New_Pembroke 2 .
+move to the 164_Angel .
+move to the Hillel_House .
+move to the New_Pembroke 4 .
+move to the Granoff_Center .
+move to the Peter_Green_House .
+move to the Grimshaw-Gudewicz_Biomedical_Building .
+move to the Biomedical_Center .
+move to the Second_Time Around .
+move to the Metcalf_Hall .
+move to the Miller_Hall .
+move to the New_Pembroke 1 .
+move to the Andrews_Terrace .
+move to the Champlin_Hall .
+move to the Emery & Wooley .
+move to the Pembroke_Park .
+move to the Verney-Woolley_Hall .
+move to the J._R._Workman_Garden .
+navigate to the East_Side_Station_Post_Office .
+navigate to the Andreas .
+navigate to the Spiritus_Fermenti .
+navigate to the Avon_Cinema .
+navigate to the Brown_University_Bookstore .
+navigate to the Meeting_Street_Cafe .
+navigate to the CVS .
+navigate to the College_Hill_Bookstore .
+navigate to the Blue_State_Coffee .
+navigate to the Salon_Persia .
+navigate to the Pleasant_Surprises .
+navigate to the Facing_Thayer .
+navigate to the Supercuts .
+navigate to the Soban .
+navigate to the Berk's;Shanghai .
+navigate to the West_House .
+navigate to the Thayer and Meeting .
+navigate to the Thayer and Cushing .
+navigate to the 111_Brown_Street (North_House) .
+navigate to the Emery_Hall .
+navigate to the Morriss_Hall .
+navigate to the Andrews_Hall .
+navigate to the Smith_Buonanno_Hall .
+navigate to the Sidney_Frank_Hall .
+navigate to the Alumnae_Hall .
+navigate to the West_House .
+navigate to the Pembroke_Hall .
+navigate to the Sidney_Frank_Hall .
+navigate to the Sharpe_House .
+navigate to the 219_Bowen .
+navigate to the New_Pembroke 3 .
+navigate to the New_Pembroke 2 .
+navigate to the 164_Angel .
+navigate to the Hillel_House .
+navigate to the New_Pembroke 4 .
+navigate to the Granoff_Center .
+navigate to the Peter_Green_House .
+navigate to the Grimshaw-Gudewicz_Biomedical_Building .
+navigate to the Biomedical_Center .
+navigate to the Second_Time Around .
+navigate to the Metcalf_Hall .
+navigate to the Miller_Hall .
+navigate to the New_Pembroke 1 .
+navigate to the Andrews_Terrace .
+navigate to the Champlin_Hall .
+navigate to the Emery & Wooley .
+navigate to the Pembroke_Park .
+navigate to the Verney-Woolley_Hall .
+navigate to the J._R._Workman_Garden .
+navigate to the East_Side_Station_Post_Office .
+navigate to the Andreas .
+navigate to the Spiritus_Fermenti .
+navigate to the Avon_Cinema .
+navigate to the Brown_University_Bookstore .
+navigate to the Meeting_Street_Cafe .
+navigate to the CVS .
+navigate to the College_Hill_Bookstore .
+navigate to the Blue_State_Coffee .
+navigate to the Salon_Persia .
+navigate to the Pleasant_Surprises .
+navigate to the Facing_Thayer .
+navigate to the Supercuts .
+navigate to the Soban .
+navigate to the Berk's;Shanghai .
+navigate to the West_House .
+navigate to the Thayer and Meeting .
+navigate to the Thayer and Cushing .
+navigate to the 111_Brown_Street (North_House) .
+navigate to the Emery_Hall .
+navigate to the Morriss_Hall .
+navigate to the Andrews_Hall .
+navigate to the Smith_Buonanno_Hall .
+navigate to the Sidney_Frank_Hall .
+navigate to the Alumnae_Hall .
+navigate to the West_House .
+navigate to the Pembroke_Hall .
+navigate to the Sidney_Frank_Hall .
+navigate to the Sharpe_House .
+navigate to the 219_Bowen .
+navigate to the New_Pembroke 3 .
+navigate to the New_Pembroke 2 .
+navigate to the 164_Angel .
+navigate to the Hillel_House .
+navigate to the New_Pembroke 4 .
+navigate to the Granoff_Center .
+navigate to the Peter_Green_House .
+navigate to the Grimshaw-Gudewicz_Biomedical_Building .
+navigate to the Biomedical_Center .
+navigate to the Second_Time Around .
+navigate to the Metcalf_Hall .
+navigate to the Miller_Hall .
+navigate to the New_Pembroke 1 .
+navigate to the Andrews_Terrace .
+navigate to the Champlin_Hall .
+navigate to the Emery & Wooley .
+navigate to the Pembroke_Park .
+navigate to the Verney-Woolley_Hall .
+navigate to the J._R._Workman_Garden .
 go to the East_Side_Station_Post_Office .
 go to the Andreas .
 go to the Spiritus_Fermenti .
@@ -3297,9 +3297,9 @@ go to the Supercuts .
 go to the Soban .
 go to the Berk's;Shanghai .
 go to the West_House .
-go to the Thayer_and_Meeting .
-go to the Thayer_and_Cushing .
-go to the 111_Brown_Street_(North_House) .
+go to the Thayer and Meeting .
+go to the Thayer and Cushing .
+go to the 111_Brown_Street (North_House) .
 go to the Emery_Hall .
 go to the Morriss_Hall .
 go to the Andrews_Hall .
@@ -3311,123 +3311,123 @@ go to the Pembroke_Hall .
 go to the Sidney_Frank_Hall .
 go to the Sharpe_House .
 go to the 219_Bowen .
-go to the New_Pembroke_3 .
-go to the New_Pembroke_2 .
+go to the New_Pembroke 3 .
+go to the New_Pembroke 2 .
 go to the 164_Angel .
 go to the Hillel_House .
-go to the New_Pembroke_4 .
+go to the New_Pembroke 4 .
 go to the Granoff_Center .
 go to the Peter_Green_House .
 go to the Grimshaw-Gudewicz_Biomedical_Building .
 go to the Biomedical_Center .
-go to the Second_Time_Around .
+go to the Second_Time Around .
 go to the Metcalf_Hall .
 go to the Miller_Hall .
-go to the New_Pembroke_1 .
+go to the New_Pembroke 1 .
 go to the Andrews_Terrace .
 go to the Champlin_Hall .
-go to the Emery_&_Wooley .
+go to the Emery & Wooley .
 go to the Pembroke_Park .
 go to the Verney-Woolley_Hall .
 go to the J._R._Workman_Garden .
-move to the_East_Side_Station_Post_Office .
-move to the_Andreas .
-move to the_Spiritus_Fermenti .
-move to the_Avon_Cinema .
-move to the_Brown_University_Bookstore .
-move to the_Meeting_Street_Cafe .
-move to the_CVS .
-move to the_College_Hill_Bookstore .
-move to the_Blue_State_Coffee .
-move to the_Salon_Persia .
-move to the_Pleasant_Surprises .
-move to the_Facing_Thayer .
-move to the_Supercuts .
-move to the_Soban .
-move to the_Berk's;Shanghai .
-move to the_West_House .
-move to the_Thayer_and_Meeting .
-move to the_Thayer_and_Cushing .
-move to the_111_Brown_Street_(North_House) .
-move to the_Emery_Hall .
-move to the_Morriss_Hall .
-move to the_Andrews_Hall .
-move to the_Smith_Buonanno_Hall .
-move to the_Sidney_Frank_Hall .
-move to the_Alumnae_Hall .
-move to the_West_House .
-move to the_Pembroke_Hall .
-move to the_Sidney_Frank_Hall .
-move to the_Sharpe_House .
-move to the_219_Bowen .
-move to the_New_Pembroke_3 .
-move to the_New_Pembroke_2 .
-move to the_164_Angel .
-move to the_Hillel_House .
-move to the_New_Pembroke_4 .
-move to the_Granoff_Center .
-move to the_Peter_Green_House .
-move to the_Grimshaw-Gudewicz_Biomedical_Building .
-move to the_Biomedical_Center .
-move to the_Second_Time_Around .
-move to the_Metcalf_Hall .
-move to the_Miller_Hall .
-move to the_New_Pembroke_1 .
-move to the_Andrews_Terrace .
-move to the_Champlin_Hall .
-move to the_Emery_&_Wooley .
-move to the_Pembroke_Park .
-move to the_Verney-Woolley_Hall .
-move to the_J._R._Workman_Garden .
-navigate to the_East_Side_Station_Post_Office .
-navigate to the_Andreas .
-navigate to the_Spiritus_Fermenti .
-navigate to the_Avon_Cinema .
-navigate to the_Brown_University_Bookstore .
-navigate to the_Meeting_Street_Cafe .
-navigate to the_CVS .
-navigate to the_College_Hill_Bookstore .
-navigate to the_Blue_State_Coffee .
-navigate to the_Salon_Persia .
-navigate to the_Pleasant_Surprises .
-navigate to the_Facing_Thayer .
-navigate to the_Supercuts .
-navigate to the_Soban .
-navigate to the_Berk's;Shanghai .
-navigate to the_West_House .
-navigate to the_Thayer_and_Meeting .
-navigate to the_Thayer_and_Cushing .
-navigate to the_111_Brown_Street_(North_House) .
-navigate to the_Emery_Hall .
-navigate to the_Morriss_Hall .
-navigate to the_Andrews_Hall .
-navigate to the_Smith_Buonanno_Hall .
-navigate to the_Sidney_Frank_Hall .
-navigate to the_Alumnae_Hall .
-navigate to the_West_House .
-navigate to the_Pembroke_Hall .
-navigate to the_Sidney_Frank_Hall .
-navigate to the_Sharpe_House .
-navigate to the_219_Bowen .
-navigate to the_New_Pembroke_3 .
-navigate to the_New_Pembroke_2 .
-navigate to the_164_Angel .
-navigate to the_Hillel_House .
-navigate to the_New_Pembroke_4 .
-navigate to the_Granoff_Center .
-navigate to the_Peter_Green_House .
-navigate to the_Grimshaw-Gudewicz_Biomedical_Building .
-navigate to the_Biomedical_Center .
-navigate to the_Second_Time_Around .
-navigate to the_Metcalf_Hall .
-navigate to the_Miller_Hall .
-navigate to the_New_Pembroke_1 .
-navigate to the_Andrews_Terrace .
-navigate to the_Champlin_Hall .
-navigate to the_Emery_&_Wooley .
-navigate to the_Pembroke_Park .
-navigate to the_Verney-Woolley_Hall .
-navigate to the_J._R._Workman_Garden .
+move to the East_Side_Station_Post_Office .
+move to the Andreas .
+move to the Spiritus_Fermenti .
+move to the Avon_Cinema .
+move to the Brown_University_Bookstore .
+move to the Meeting_Street_Cafe .
+move to the CVS .
+move to the College_Hill_Bookstore .
+move to the Blue_State_Coffee .
+move to the Salon_Persia .
+move to the Pleasant_Surprises .
+move to the Facing_Thayer .
+move to the Supercuts .
+move to the Soban .
+move to the Berk's;Shanghai .
+move to the West_House .
+move to the Thayer and Meeting .
+move to the Thayer and Cushing .
+move to the 111_Brown_Street (North_House) .
+move to the Emery_Hall .
+move to the Morriss_Hall .
+move to the Andrews_Hall .
+move to the Smith_Buonanno_Hall .
+move to the Sidney_Frank_Hall .
+move to the Alumnae_Hall .
+move to the West_House .
+move to the Pembroke_Hall .
+move to the Sidney_Frank_Hall .
+move to the Sharpe_House .
+move to the 219_Bowen .
+move to the New_Pembroke 3 .
+move to the New_Pembroke 2 .
+move to the 164_Angel .
+move to the Hillel_House .
+move to the New_Pembroke 4 .
+move to the Granoff_Center .
+move to the Peter_Green_House .
+move to the Grimshaw-Gudewicz_Biomedical_Building .
+move to the Biomedical_Center .
+move to the Second_Time Around .
+move to the Metcalf_Hall .
+move to the Miller_Hall .
+move to the New_Pembroke 1 .
+move to the Andrews_Terrace .
+move to the Champlin_Hall .
+move to the Emery & Wooley .
+move to the Pembroke_Park .
+move to the Verney-Woolley_Hall .
+move to the J._R._Workman_Garden .
+navigate to the East_Side_Station_Post_Office .
+navigate to the Andreas .
+navigate to the Spiritus_Fermenti .
+navigate to the Avon_Cinema .
+navigate to the Brown_University_Bookstore .
+navigate to the Meeting_Street_Cafe .
+navigate to the CVS .
+navigate to the College_Hill_Bookstore .
+navigate to the Blue_State_Coffee .
+navigate to the Salon_Persia .
+navigate to the Pleasant_Surprises .
+navigate to the Facing_Thayer .
+navigate to the Supercuts .
+navigate to the Soban .
+navigate to the Berk's;Shanghai .
+navigate to the West_House .
+navigate to the Thayer and Meeting .
+navigate to the Thayer and Cushing .
+navigate to the 111_Brown_Street (North_House) .
+navigate to the Emery_Hall .
+navigate to the Morriss_Hall .
+navigate to the Andrews_Hall .
+navigate to the Smith_Buonanno_Hall .
+navigate to the Sidney_Frank_Hall .
+navigate to the Alumnae_Hall .
+navigate to the West_House .
+navigate to the Pembroke_Hall .
+navigate to the Sidney_Frank_Hall .
+navigate to the Sharpe_House .
+navigate to the 219_Bowen .
+navigate to the New_Pembroke 3 .
+navigate to the New_Pembroke 2 .
+navigate to the 164_Angel .
+navigate to the Hillel_House .
+navigate to the New_Pembroke 4 .
+navigate to the Granoff_Center .
+navigate to the Peter_Green_House .
+navigate to the Grimshaw-Gudewicz_Biomedical_Building .
+navigate to the Biomedical_Center .
+navigate to the Second_Time Around .
+navigate to the Metcalf_Hall .
+navigate to the Miller_Hall .
+navigate to the New_Pembroke 1 .
+navigate to the Andrews_Terrace .
+navigate to the Champlin_Hall .
+navigate to the Emery & Wooley .
+navigate to the Pembroke_Park .
+navigate to the Verney-Woolley_Hall .
+navigate to the J._R._Workman_Garden .
 proceed to the East_Side_Station_Post_Office .
 proceed to the Andreas .
 proceed to the Spiritus_Fermenti .
@@ -3444,9 +3444,9 @@ proceed to the Supercuts .
 proceed to the Soban .
 proceed to the Berk's;Shanghai .
 proceed to the West_House .
-proceed to the Thayer_and_Meeting .
-proceed to the Thayer_and_Cushing .
-proceed to the 111_Brown_Street_(North_House) .
+proceed to the Thayer and Meeting .
+proceed to the Thayer and Cushing .
+proceed to the 111_Brown_Street (North_House) .
 proceed to the Emery_Hall .
 proceed to the Morriss_Hall .
 proceed to the Andrews_Hall .
@@ -3458,22 +3458,22 @@ proceed to the Pembroke_Hall .
 proceed to the Sidney_Frank_Hall .
 proceed to the Sharpe_House .
 proceed to the 219_Bowen .
-proceed to the New_Pembroke_3 .
-proceed to the New_Pembroke_2 .
+proceed to the New_Pembroke 3 .
+proceed to the New_Pembroke 2 .
 proceed to the 164_Angel .
 proceed to the Hillel_House .
-proceed to the New_Pembroke_4 .
+proceed to the New_Pembroke 4 .
 proceed to the Granoff_Center .
 proceed to the Peter_Green_House .
 proceed to the Grimshaw-Gudewicz_Biomedical_Building .
 proceed to the Biomedical_Center .
-proceed to the Second_Time_Around .
+proceed to the Second_Time Around .
 proceed to the Metcalf_Hall .
 proceed to the Miller_Hall .
-proceed to the New_Pembroke_1 .
+proceed to the New_Pembroke 1 .
 proceed to the Andrews_Terrace .
 proceed to the Champlin_Hall .
-proceed to the Emery_&_Wooley .
+proceed to the Emery & Wooley .
 proceed to the Pembroke_Park .
 proceed to the Verney-Woolley_Hall .
 proceed to the J._R._Workman_Garden .
@@ -3493,9 +3493,9 @@ go to the Supercuts .
 go to the Soban .
 go to the Berk's;Shanghai .
 go to the West_House .
-go to the Thayer_and_Meeting .
-go to the Thayer_and_Cushing .
-go to the 111_Brown_Street_(North_House) .
+go to the Thayer and Meeting .
+go to the Thayer and Cushing .
+go to the 111_Brown_Street (North_House) .
 go to the Emery_Hall .
 go to the Morriss_Hall .
 go to the Andrews_Hall .
@@ -3507,22 +3507,22 @@ go to the Pembroke_Hall .
 go to the Sidney_Frank_Hall .
 go to the Sharpe_House .
 go to the 219_Bowen .
-go to the New_Pembroke_3 .
-go to the New_Pembroke_2 .
+go to the New_Pembroke 3 .
+go to the New_Pembroke 2 .
 go to the 164_Angel .
 go to the Hillel_House .
-go to the New_Pembroke_4 .
+go to the New_Pembroke 4 .
 go to the Granoff_Center .
 go to the Peter_Green_House .
 go to the Grimshaw-Gudewicz_Biomedical_Building .
 go to the Biomedical_Center .
-go to the Second_Time_Around .
+go to the Second_Time Around .
 go to the Metcalf_Hall .
 go to the Miller_Hall .
-go to the New_Pembroke_1 .
+go to the New_Pembroke 1 .
 go to the Andrews_Terrace .
 go to the Champlin_Hall .
-go to the Emery_&_Wooley .
+go to the Emery & Wooley .
 go to the Pembroke_Park .
 go to the Verney-Woolley_Hall .
 go to the J._R._Workman_Garden .
@@ -3542,9 +3542,9 @@ go to the Supercuts
 go to the Soban
 go to the Berk's;Shanghai
 go to the West_House
-go to the Thayer_and_Meeting
-go to the Thayer_and_Cushing
-go to the 111_Brown_Street_(North_House)
+go to the Thayer and Meeting
+go to the Thayer and Cushing
+go to the 111_Brown_Street (North_House)
 go to the Emery_Hall
 go to the Morriss_Hall
 go to the Andrews_Hall
@@ -3556,22 +3556,22 @@ go to the Pembroke_Hall
 go to the Sidney_Frank_Hall
 go to the Sharpe_House
 go to the 219_Bowen
-go to the New_Pembroke_3
-go to the New_Pembroke_2
+go to the New_Pembroke 3
+go to the New_Pembroke 2
 go to the 164_Angel
 go to the Hillel_House
-go to the New_Pembroke_4
+go to the New_Pembroke 4
 go to the Granoff_Center
 go to the Peter_Green_House
 go to the Grimshaw-Gudewicz_Biomedical_Building
 go to the Biomedical_Center
-go to the Second_Time_Around
+go to the Second_Time Around
 go to the Metcalf_Hall
 go to the Miller_Hall
-go to the New_Pembroke_1
+go to the New_Pembroke 1
 go to the Andrews_Terrace
 go to the Champlin_Hall
-go to the Emery_&_Wooley
+go to the Emery & Wooley
 go to the Pembroke_Park
 go to the Verney-Woolley_Hall
 go to the J._R._Workman_Garden
@@ -3591,9 +3591,9 @@ go to the Supercuts .
 go to the Soban .
 go to the Berk's;Shanghai .
 go to the West_House .
-go to the Thayer_and_Meeting .
-go to the Thayer_and_Cushing .
-go to the 111_Brown_Street_(North_House) .
+go to the Thayer and Meeting .
+go to the Thayer and Cushing .
+go to the 111_Brown_Street (North_House) .
 go to the Emery_Hall .
 go to the Morriss_Hall .
 go to the Andrews_Hall .
@@ -3605,74 +3605,74 @@ go to the Pembroke_Hall .
 go to the Sidney_Frank_Hall .
 go to the Sharpe_House .
 go to the 219_Bowen .
-go to the New_Pembroke_3 .
-go to the New_Pembroke_2 .
+go to the New_Pembroke 3 .
+go to the New_Pembroke 2 .
 go to the 164_Angel .
 go to the Hillel_House .
-go to the New_Pembroke_4 .
+go to the New_Pembroke 4 .
 go to the Granoff_Center .
 go to the Peter_Green_House .
 go to the Grimshaw-Gudewicz_Biomedical_Building .
 go to the Biomedical_Center .
-go to the Second_Time_Around .
+go to the Second_Time Around .
 go to the Metcalf_Hall .
 go to the Miller_Hall .
-go to the New_Pembroke_1 .
+go to the New_Pembroke 1 .
 go to the Andrews_Terrace .
 go to the Champlin_Hall .
-go to the Emery_&_Wooley .
+go to the Emery & Wooley .
 go to the Pembroke_Park .
 go to the Verney-Woolley_Hall .
 go to the J._R._Workman_Garden .
-navigate to the_East_Side_Station_Post_Office .
-navigate to the_Andreas .
-navigate to the_Spiritus_Fermenti .
-navigate to the_Avon_Cinema .
-navigate to the_Brown_University_Bookstore .
-navigate to the_Meeting_Street_Cafe .
-navigate to the_CVS .
-navigate to the_College_Hill_Bookstore .
-navigate to the_Blue_State_Coffee .
-navigate to the_Salon_Persia .
-navigate to the_Pleasant_Surprises .
-navigate to the_Facing_Thayer .
-navigate to the_Supercuts .
-navigate to the_Soban .
-navigate to the_Berk's;Shanghai .
-navigate to the_West_House .
-navigate to the_Thayer_and_Meeting .
-navigate to the_Thayer_and_Cushing .
-navigate to the_111_Brown_Street_(North_House) .
-navigate to the_Emery_Hall .
-navigate to the_Morriss_Hall .
-navigate to the_Andrews_Hall .
-navigate to the_Smith_Buonanno_Hall .
-navigate to the_Sidney_Frank_Hall .
-navigate to the_Alumnae_Hall .
-navigate to the_West_House .
-navigate to the_Pembroke_Hall .
-navigate to the_Sidney_Frank_Hall .
-navigate to the_Sharpe_House .
-navigate to the_219_Bowen .
-navigate to the_New_Pembroke_3 .
-navigate to the_New_Pembroke_2 .
-navigate to the_164_Angel .
-navigate to the_Hillel_House .
-navigate to the_New_Pembroke_4 .
-navigate to the_Granoff_Center .
-navigate to the_Peter_Green_House .
-navigate to the_Grimshaw-Gudewicz_Biomedical_Building .
-navigate to the_Biomedical_Center .
-navigate to the_Second_Time_Around .
-navigate to the_Metcalf_Hall .
-navigate to the_Miller_Hall .
-navigate to the_New_Pembroke_1 .
-navigate to the_Andrews_Terrace .
-navigate to the_Champlin_Hall .
-navigate to the_Emery_&_Wooley .
-navigate to the_Pembroke_Park .
-navigate to the_Verney-Woolley_Hall .
-navigate to the_J._R._Workman_Garden .
+navigate to the East_Side_Station_Post_Office .
+navigate to the Andreas .
+navigate to the Spiritus_Fermenti .
+navigate to the Avon_Cinema .
+navigate to the Brown_University_Bookstore .
+navigate to the Meeting_Street_Cafe .
+navigate to the CVS .
+navigate to the College_Hill_Bookstore .
+navigate to the Blue_State_Coffee .
+navigate to the Salon_Persia .
+navigate to the Pleasant_Surprises .
+navigate to the Facing_Thayer .
+navigate to the Supercuts .
+navigate to the Soban .
+navigate to the Berk's;Shanghai .
+navigate to the West_House .
+navigate to the Thayer and Meeting .
+navigate to the Thayer and Cushing .
+navigate to the 111_Brown_Street (North_House) .
+navigate to the Emery_Hall .
+navigate to the Morriss_Hall .
+navigate to the Andrews_Hall .
+navigate to the Smith_Buonanno_Hall .
+navigate to the Sidney_Frank_Hall .
+navigate to the Alumnae_Hall .
+navigate to the West_House .
+navigate to the Pembroke_Hall .
+navigate to the Sidney_Frank_Hall .
+navigate to the Sharpe_House .
+navigate to the 219_Bowen .
+navigate to the New_Pembroke 3 .
+navigate to the New_Pembroke 2 .
+navigate to the 164_Angel .
+navigate to the Hillel_House .
+navigate to the New_Pembroke 4 .
+navigate to the Granoff_Center .
+navigate to the Peter_Green_House .
+navigate to the Grimshaw-Gudewicz_Biomedical_Building .
+navigate to the Biomedical_Center .
+navigate to the Second_Time Around .
+navigate to the Metcalf_Hall .
+navigate to the Miller_Hall .
+navigate to the New_Pembroke 1 .
+navigate to the Andrews_Terrace .
+navigate to the Champlin_Hall .
+navigate to the Emery & Wooley .
+navigate to the Pembroke_Park .
+navigate to the Verney-Woolley_Hall .
+navigate to the J._R._Workman_Garden .
 go to the East_Side_Station_Post_Office .
 go to the Andreas .
 go to the Spiritus_Fermenti .
@@ -3689,9 +3689,9 @@ go to the Supercuts .
 go to the Soban .
 go to the Berk's;Shanghai .
 go to the West_House .
-go to the Thayer_and_Meeting .
-go to the Thayer_and_Cushing .
-go to the 111_Brown_Street_(North_House) .
+go to the Thayer and Meeting .
+go to the Thayer and Cushing .
+go to the 111_Brown_Street (North_House) .
 go to the Emery_Hall .
 go to the Morriss_Hall .
 go to the Andrews_Hall .
@@ -3703,22 +3703,22 @@ go to the Pembroke_Hall .
 go to the Sidney_Frank_Hall .
 go to the Sharpe_House .
 go to the 219_Bowen .
-go to the New_Pembroke_3 .
-go to the New_Pembroke_2 .
+go to the New_Pembroke 3 .
+go to the New_Pembroke 2 .
 go to the 164_Angel .
 go to the Hillel_House .
-go to the New_Pembroke_4 .
+go to the New_Pembroke 4 .
 go to the Granoff_Center .
 go to the Peter_Green_House .
 go to the Grimshaw-Gudewicz_Biomedical_Building .
 go to the Biomedical_Center .
-go to the Second_Time_Around .
+go to the Second_Time Around .
 go to the Metcalf_Hall .
 go to the Miller_Hall .
-go to the New_Pembroke_1 .
+go to the New_Pembroke 1 .
 go to the Andrews_Terrace .
 go to the Champlin_Hall .
-go to the Emery_&_Wooley .
+go to the Emery & Wooley .
 go to the Pembroke_Park .
 go to the Verney-Woolley_Hall .
 go to the J._R._Workman_Garden .
@@ -3738,9 +3738,9 @@ go to the Supercuts .
 go to the Soban .
 go to the Berk's;Shanghai .
 go to the West_House .
-go to the Thayer_and_Meeting .
-go to the Thayer_and_Cushing .
-go to the 111_Brown_Street_(North_House) .
+go to the Thayer and Meeting .
+go to the Thayer and Cushing .
+go to the 111_Brown_Street (North_House) .
 go to the Emery_Hall .
 go to the Morriss_Hall .
 go to the Andrews_Hall .
@@ -3752,22 +3752,22 @@ go to the Pembroke_Hall .
 go to the Sidney_Frank_Hall .
 go to the Sharpe_House .
 go to the 219_Bowen .
-go to the New_Pembroke_3 .
-go to the New_Pembroke_2 .
+go to the New_Pembroke 3 .
+go to the New_Pembroke 2 .
 go to the 164_Angel .
 go to the Hillel_House .
-go to the New_Pembroke_4 .
+go to the New_Pembroke 4 .
 go to the Granoff_Center .
 go to the Peter_Green_House .
 go to the Grimshaw-Gudewicz_Biomedical_Building .
 go to the Biomedical_Center .
-go to the Second_Time_Around .
+go to the Second_Time Around .
 go to the Metcalf_Hall .
 go to the Miller_Hall .
-go to the New_Pembroke_1 .
+go to the New_Pembroke 1 .
 go to the Andrews_Terrace .
 go to the Champlin_Hall .
-go to the Emery_&_Wooley .
+go to the Emery & Wooley .
 go to the Pembroke_Park .
 go to the Verney-Woolley_Hall .
 go to the J._R._Workman_Garden .
@@ -3787,9 +3787,9 @@ go to the Supercuts
 go to the Soban
 go to the Berk's;Shanghai
 go to the West_House
-go to the Thayer_and_Meeting
-go to the Thayer_and_Cushing
-go to the 111_Brown_Street_(North_House)
+go to the Thayer and Meeting
+go to the Thayer and Cushing
+go to the 111_Brown_Street (North_House)
 go to the Emery_Hall
 go to the Morriss_Hall
 go to the Andrews_Hall
@@ -3801,22 +3801,22 @@ go to the Pembroke_Hall
 go to the Sidney_Frank_Hall
 go to the Sharpe_House
 go to the 219_Bowen
-go to the New_Pembroke_3
-go to the New_Pembroke_2
+go to the New_Pembroke 3
+go to the New_Pembroke 2
 go to the 164_Angel
 go to the Hillel_House
-go to the New_Pembroke_4
+go to the New_Pembroke 4
 go to the Granoff_Center
 go to the Peter_Green_House
 go to the Grimshaw-Gudewicz_Biomedical_Building
 go to the Biomedical_Center
-go to the Second_Time_Around
+go to the Second_Time Around
 go to the Metcalf_Hall
 go to the Miller_Hall
-go to the New_Pembroke_1
+go to the New_Pembroke 1
 go to the Andrews_Terrace
 go to the Champlin_Hall
-go to the Emery_&_Wooley
+go to the Emery & Wooley
 go to the Pembroke_Park
 go to the Verney-Woolley_Hall
 go to the J._R._Workman_Garden
@@ -3836,9 +3836,9 @@ go to the Supercuts .
 go to the Soban .
 go to the Berk's;Shanghai .
 go to the West_House .
-go to the Thayer_and_Meeting .
-go to the Thayer_and_Cushing .
-go to the 111_Brown_Street_(North_House) .
+go to the Thayer and Meeting .
+go to the Thayer and Cushing .
+go to the 111_Brown_Street (North_House) .
 go to the Emery_Hall .
 go to the Morriss_Hall .
 go to the Andrews_Hall .
@@ -3850,22 +3850,22 @@ go to the Pembroke_Hall .
 go to the Sidney_Frank_Hall .
 go to the Sharpe_House .
 go to the 219_Bowen .
-go to the New_Pembroke_3 .
-go to the New_Pembroke_2 .
+go to the New_Pembroke 3 .
+go to the New_Pembroke 2 .
 go to the 164_Angel .
 go to the Hillel_House .
-go to the New_Pembroke_4 .
+go to the New_Pembroke 4 .
 go to the Granoff_Center .
 go to the Peter_Green_House .
 go to the Grimshaw-Gudewicz_Biomedical_Building .
 go to the Biomedical_Center .
-go to the Second_Time_Around .
+go to the Second_Time Around .
 go to the Metcalf_Hall .
 go to the Miller_Hall .
-go to the New_Pembroke_1 .
+go to the New_Pembroke 1 .
 go to the Andrews_Terrace .
 go to the Champlin_Hall .
-go to the Emery_&_Wooley .
+go to the Emery & Wooley .
 go to the Pembroke_Park .
 go to the Verney-Woolley_Hall .
 go to the J._R._Workman_Garden .
@@ -3885,9 +3885,9 @@ go to the Supercuts
 go to the Soban
 go to the Berk's;Shanghai
 go to the West_House
-go to the Thayer_and_Meeting
-go to the Thayer_and_Cushing
-go to the 111_Brown_Street_(North_House)
+go to the Thayer and Meeting
+go to the Thayer and Cushing
+go to the 111_Brown_Street (North_House)
 go to the Emery_Hall
 go to the Morriss_Hall
 go to the Andrews_Hall
@@ -3899,22 +3899,22 @@ go to the Pembroke_Hall
 go to the Sidney_Frank_Hall
 go to the Sharpe_House
 go to the 219_Bowen
-go to the New_Pembroke_3
-go to the New_Pembroke_2
+go to the New_Pembroke 3
+go to the New_Pembroke 2
 go to the 164_Angel
 go to the Hillel_House
-go to the New_Pembroke_4
+go to the New_Pembroke 4
 go to the Granoff_Center
 go to the Peter_Green_House
 go to the Grimshaw-Gudewicz_Biomedical_Building
 go to the Biomedical_Center
-go to the Second_Time_Around
+go to the Second_Time Around
 go to the Metcalf_Hall
 go to the Miller_Hall
-go to the New_Pembroke_1
+go to the New_Pembroke 1
 go to the Andrews_Terrace
 go to the Champlin_Hall
-go to the Emery_&_Wooley
+go to the Emery & Wooley
 go to the Pembroke_Park
 go to the Verney-Woolley_Hall
 go to the J._R._Workman_Garden
@@ -3934,9 +3934,9 @@ go to the Supercuts .
 go to the Soban .
 go to the Berk's;Shanghai .
 go to the West_House .
-go to the Thayer_and_Meeting .
-go to the Thayer_and_Cushing .
-go to the 111_Brown_Street_(North_House) .
+go to the Thayer and Meeting .
+go to the Thayer and Cushing .
+go to the 111_Brown_Street (North_House) .
 go to the Emery_Hall .
 go to the Morriss_Hall .
 go to the Andrews_Hall .
@@ -3948,22 +3948,22 @@ go to the Pembroke_Hall .
 go to the Sidney_Frank_Hall .
 go to the Sharpe_House .
 go to the 219_Bowen .
-go to the New_Pembroke_3 .
-go to the New_Pembroke_2 .
+go to the New_Pembroke 3 .
+go to the New_Pembroke 2 .
 go to the 164_Angel .
 go to the Hillel_House .
-go to the New_Pembroke_4 .
+go to the New_Pembroke 4 .
 go to the Granoff_Center .
 go to the Peter_Green_House .
 go to the Grimshaw-Gudewicz_Biomedical_Building .
 go to the Biomedical_Center .
-go to the Second_Time_Around .
+go to the Second_Time Around .
 go to the Metcalf_Hall .
 go to the Miller_Hall .
-go to the New_Pembroke_1 .
+go to the New_Pembroke 1 .
 go to the Andrews_Terrace .
 go to the Champlin_Hall .
-go to the Emery_&_Wooley .
+go to the Emery & Wooley .
 go to the Pembroke_Park .
 go to the Verney-Woolley_Hall .
 go to the J._R._Workman_Garden .
@@ -3983,9 +3983,9 @@ go to the Supercuts .
 go to the Soban .
 go to the Berk's;Shanghai .
 go to the West_House .
-go to the Thayer_and_Meeting .
-go to the Thayer_and_Cushing .
-go to the 111_Brown_Street_(North_House) .
+go to the Thayer and Meeting .
+go to the Thayer and Cushing .
+go to the 111_Brown_Street (North_House) .
 go to the Emery_Hall .
 go to the Morriss_Hall .
 go to the Andrews_Hall .
@@ -3997,74 +3997,74 @@ go to the Pembroke_Hall .
 go to the Sidney_Frank_Hall .
 go to the Sharpe_House .
 go to the 219_Bowen .
-go to the New_Pembroke_3 .
-go to the New_Pembroke_2 .
+go to the New_Pembroke 3 .
+go to the New_Pembroke 2 .
 go to the 164_Angel .
 go to the Hillel_House .
-go to the New_Pembroke_4 .
+go to the New_Pembroke 4 .
 go to the Granoff_Center .
 go to the Peter_Green_House .
 go to the Grimshaw-Gudewicz_Biomedical_Building .
 go to the Biomedical_Center .
-go to the Second_Time_Around .
+go to the Second_Time Around .
 go to the Metcalf_Hall .
 go to the Miller_Hall .
-go to the New_Pembroke_1 .
+go to the New_Pembroke 1 .
 go to the Andrews_Terrace .
 go to the Champlin_Hall .
-go to the Emery_&_Wooley .
+go to the Emery & Wooley .
 go to the Pembroke_Park .
 go to the Verney-Woolley_Hall .
 go to the J._R._Workman_Garden .
-move to the_East_Side_Station_Post_Office .
-move to the_Andreas .
-move to the_Spiritus_Fermenti .
-move to the_Avon_Cinema .
-move to the_Brown_University_Bookstore .
-move to the_Meeting_Street_Cafe .
-move to the_CVS .
-move to the_College_Hill_Bookstore .
-move to the_Blue_State_Coffee .
-move to the_Salon_Persia .
-move to the_Pleasant_Surprises .
-move to the_Facing_Thayer .
-move to the_Supercuts .
-move to the_Soban .
-move to the_Berk's;Shanghai .
-move to the_West_House .
-move to the_Thayer_and_Meeting .
-move to the_Thayer_and_Cushing .
-move to the_111_Brown_Street_(North_House) .
-move to the_Emery_Hall .
-move to the_Morriss_Hall .
-move to the_Andrews_Hall .
-move to the_Smith_Buonanno_Hall .
-move to the_Sidney_Frank_Hall .
-move to the_Alumnae_Hall .
-move to the_West_House .
-move to the_Pembroke_Hall .
-move to the_Sidney_Frank_Hall .
-move to the_Sharpe_House .
-move to the_219_Bowen .
-move to the_New_Pembroke_3 .
-move to the_New_Pembroke_2 .
-move to the_164_Angel .
-move to the_Hillel_House .
-move to the_New_Pembroke_4 .
-move to the_Granoff_Center .
-move to the_Peter_Green_House .
-move to the_Grimshaw-Gudewicz_Biomedical_Building .
-move to the_Biomedical_Center .
-move to the_Second_Time_Around .
-move to the_Metcalf_Hall .
-move to the_Miller_Hall .
-move to the_New_Pembroke_1 .
-move to the_Andrews_Terrace .
-move to the_Champlin_Hall .
-move to the_Emery_&_Wooley .
-move to the_Pembroke_Park .
-move to the_Verney-Woolley_Hall .
-move to the_J._R._Workman_Garden .
+move to the East_Side_Station_Post_Office .
+move to the Andreas .
+move to the Spiritus_Fermenti .
+move to the Avon_Cinema .
+move to the Brown_University_Bookstore .
+move to the Meeting_Street_Cafe .
+move to the CVS .
+move to the College_Hill_Bookstore .
+move to the Blue_State_Coffee .
+move to the Salon_Persia .
+move to the Pleasant_Surprises .
+move to the Facing_Thayer .
+move to the Supercuts .
+move to the Soban .
+move to the Berk's;Shanghai .
+move to the West_House .
+move to the Thayer and Meeting .
+move to the Thayer and Cushing .
+move to the 111_Brown_Street (North_House) .
+move to the Emery_Hall .
+move to the Morriss_Hall .
+move to the Andrews_Hall .
+move to the Smith_Buonanno_Hall .
+move to the Sidney_Frank_Hall .
+move to the Alumnae_Hall .
+move to the West_House .
+move to the Pembroke_Hall .
+move to the Sidney_Frank_Hall .
+move to the Sharpe_House .
+move to the 219_Bowen .
+move to the New_Pembroke 3 .
+move to the New_Pembroke 2 .
+move to the 164_Angel .
+move to the Hillel_House .
+move to the New_Pembroke 4 .
+move to the Granoff_Center .
+move to the Peter_Green_House .
+move to the Grimshaw-Gudewicz_Biomedical_Building .
+move to the Biomedical_Center .
+move to the Second_Time Around .
+move to the Metcalf_Hall .
+move to the Miller_Hall .
+move to the New_Pembroke 1 .
+move to the Andrews_Terrace .
+move to the Champlin_Hall .
+move to the Emery & Wooley .
+move to the Pembroke_Park .
+move to the Verney-Woolley_Hall .
+move to the J._R._Workman_Garden .
 go to the East_Side_Station_Post_Office .
 go to the Andreas .
 go to the Spiritus_Fermenti .
@@ -4081,9 +4081,9 @@ go to the Supercuts .
 go to the Soban .
 go to the Berk's;Shanghai .
 go to the West_House .
-go to the Thayer_and_Meeting .
-go to the Thayer_and_Cushing .
-go to the 111_Brown_Street_(North_House) .
+go to the Thayer and Meeting .
+go to the Thayer and Cushing .
+go to the 111_Brown_Street (North_House) .
 go to the Emery_Hall .
 go to the Morriss_Hall .
 go to the Andrews_Hall .
@@ -4095,74 +4095,74 @@ go to the Pembroke_Hall .
 go to the Sidney_Frank_Hall .
 go to the Sharpe_House .
 go to the 219_Bowen .
-go to the New_Pembroke_3 .
-go to the New_Pembroke_2 .
+go to the New_Pembroke 3 .
+go to the New_Pembroke 2 .
 go to the 164_Angel .
 go to the Hillel_House .
-go to the New_Pembroke_4 .
+go to the New_Pembroke 4 .
 go to the Granoff_Center .
 go to the Peter_Green_House .
 go to the Grimshaw-Gudewicz_Biomedical_Building .
 go to the Biomedical_Center .
-go to the Second_Time_Around .
+go to the Second_Time Around .
 go to the Metcalf_Hall .
 go to the Miller_Hall .
-go to the New_Pembroke_1 .
+go to the New_Pembroke 1 .
 go to the Andrews_Terrace .
 go to the Champlin_Hall .
-go to the Emery_&_Wooley .
+go to the Emery & Wooley .
 go to the Pembroke_Park .
 go to the Verney-Woolley_Hall .
 go to the J._R._Workman_Garden .
-navigate to the_East_Side_Station_Post_Office .
-navigate to the_Andreas .
-navigate to the_Spiritus_Fermenti .
-navigate to the_Avon_Cinema .
-navigate to the_Brown_University_Bookstore .
-navigate to the_Meeting_Street_Cafe .
-navigate to the_CVS .
-navigate to the_College_Hill_Bookstore .
-navigate to the_Blue_State_Coffee .
-navigate to the_Salon_Persia .
-navigate to the_Pleasant_Surprises .
-navigate to the_Facing_Thayer .
-navigate to the_Supercuts .
-navigate to the_Soban .
-navigate to the_Berk's;Shanghai .
-navigate to the_West_House .
-navigate to the_Thayer_and_Meeting .
-navigate to the_Thayer_and_Cushing .
-navigate to the_111_Brown_Street_(North_House) .
-navigate to the_Emery_Hall .
-navigate to the_Morriss_Hall .
-navigate to the_Andrews_Hall .
-navigate to the_Smith_Buonanno_Hall .
-navigate to the_Sidney_Frank_Hall .
-navigate to the_Alumnae_Hall .
-navigate to the_West_House .
-navigate to the_Pembroke_Hall .
-navigate to the_Sidney_Frank_Hall .
-navigate to the_Sharpe_House .
-navigate to the_219_Bowen .
-navigate to the_New_Pembroke_3 .
-navigate to the_New_Pembroke_2 .
-navigate to the_164_Angel .
-navigate to the_Hillel_House .
-navigate to the_New_Pembroke_4 .
-navigate to the_Granoff_Center .
-navigate to the_Peter_Green_House .
-navigate to the_Grimshaw-Gudewicz_Biomedical_Building .
-navigate to the_Biomedical_Center .
-navigate to the_Second_Time_Around .
-navigate to the_Metcalf_Hall .
-navigate to the_Miller_Hall .
-navigate to the_New_Pembroke_1 .
-navigate to the_Andrews_Terrace .
-navigate to the_Champlin_Hall .
-navigate to the_Emery_&_Wooley .
-navigate to the_Pembroke_Park .
-navigate to the_Verney-Woolley_Hall .
-navigate to the_J._R._Workman_Garden .
+navigate to the East_Side_Station_Post_Office .
+navigate to the Andreas .
+navigate to the Spiritus_Fermenti .
+navigate to the Avon_Cinema .
+navigate to the Brown_University_Bookstore .
+navigate to the Meeting_Street_Cafe .
+navigate to the CVS .
+navigate to the College_Hill_Bookstore .
+navigate to the Blue_State_Coffee .
+navigate to the Salon_Persia .
+navigate to the Pleasant_Surprises .
+navigate to the Facing_Thayer .
+navigate to the Supercuts .
+navigate to the Soban .
+navigate to the Berk's;Shanghai .
+navigate to the West_House .
+navigate to the Thayer and Meeting .
+navigate to the Thayer and Cushing .
+navigate to the 111_Brown_Street (North_House) .
+navigate to the Emery_Hall .
+navigate to the Morriss_Hall .
+navigate to the Andrews_Hall .
+navigate to the Smith_Buonanno_Hall .
+navigate to the Sidney_Frank_Hall .
+navigate to the Alumnae_Hall .
+navigate to the West_House .
+navigate to the Pembroke_Hall .
+navigate to the Sidney_Frank_Hall .
+navigate to the Sharpe_House .
+navigate to the 219_Bowen .
+navigate to the New_Pembroke 3 .
+navigate to the New_Pembroke 2 .
+navigate to the 164_Angel .
+navigate to the Hillel_House .
+navigate to the New_Pembroke 4 .
+navigate to the Granoff_Center .
+navigate to the Peter_Green_House .
+navigate to the Grimshaw-Gudewicz_Biomedical_Building .
+navigate to the Biomedical_Center .
+navigate to the Second_Time Around .
+navigate to the Metcalf_Hall .
+navigate to the Miller_Hall .
+navigate to the New_Pembroke 1 .
+navigate to the Andrews_Terrace .
+navigate to the Champlin_Hall .
+navigate to the Emery & Wooley .
+navigate to the Pembroke_Park .
+navigate to the Verney-Woolley_Hall .
+navigate to the J._R._Workman_Garden .
 go to the East_Side_Station_Post_Office .
 go to the Andreas .
 go to the Spiritus_Fermenti .
@@ -4179,9 +4179,9 @@ go to the Supercuts .
 go to the Soban .
 go to the Berk's;Shanghai .
 go to the West_House .
-go to the Thayer_and_Meeting .
-go to the Thayer_and_Cushing .
-go to the 111_Brown_Street_(North_House) .
+go to the Thayer and Meeting .
+go to the Thayer and Cushing .
+go to the 111_Brown_Street (North_House) .
 go to the Emery_Hall .
 go to the Morriss_Hall .
 go to the Andrews_Hall .
@@ -4193,74 +4193,74 @@ go to the Pembroke_Hall .
 go to the Sidney_Frank_Hall .
 go to the Sharpe_House .
 go to the 219_Bowen .
-go to the New_Pembroke_3 .
-go to the New_Pembroke_2 .
+go to the New_Pembroke 3 .
+go to the New_Pembroke 2 .
 go to the 164_Angel .
 go to the Hillel_House .
-go to the New_Pembroke_4 .
+go to the New_Pembroke 4 .
 go to the Granoff_Center .
 go to the Peter_Green_House .
 go to the Grimshaw-Gudewicz_Biomedical_Building .
 go to the Biomedical_Center .
-go to the Second_Time_Around .
+go to the Second_Time Around .
 go to the Metcalf_Hall .
 go to the Miller_Hall .
-go to the New_Pembroke_1 .
+go to the New_Pembroke 1 .
 go to the Andrews_Terrace .
 go to the Champlin_Hall .
-go to the Emery_&_Wooley .
+go to the Emery & Wooley .
 go to the Pembroke_Park .
 go to the Verney-Woolley_Hall .
 go to the J._R._Workman_Garden .
-navigate to the_East_Side_Station_Post_Office .
-navigate to the_Andreas .
-navigate to the_Spiritus_Fermenti .
-navigate to the_Avon_Cinema .
-navigate to the_Brown_University_Bookstore .
-navigate to the_Meeting_Street_Cafe .
-navigate to the_CVS .
-navigate to the_College_Hill_Bookstore .
-navigate to the_Blue_State_Coffee .
-navigate to the_Salon_Persia .
-navigate to the_Pleasant_Surprises .
-navigate to the_Facing_Thayer .
-navigate to the_Supercuts .
-navigate to the_Soban .
-navigate to the_Berk's;Shanghai .
-navigate to the_West_House .
-navigate to the_Thayer_and_Meeting .
-navigate to the_Thayer_and_Cushing .
-navigate to the_111_Brown_Street_(North_House) .
-navigate to the_Emery_Hall .
-navigate to the_Morriss_Hall .
-navigate to the_Andrews_Hall .
-navigate to the_Smith_Buonanno_Hall .
-navigate to the_Sidney_Frank_Hall .
-navigate to the_Alumnae_Hall .
-navigate to the_West_House .
-navigate to the_Pembroke_Hall .
-navigate to the_Sidney_Frank_Hall .
-navigate to the_Sharpe_House .
-navigate to the_219_Bowen .
-navigate to the_New_Pembroke_3 .
-navigate to the_New_Pembroke_2 .
-navigate to the_164_Angel .
-navigate to the_Hillel_House .
-navigate to the_New_Pembroke_4 .
-navigate to the_Granoff_Center .
-navigate to the_Peter_Green_House .
-navigate to the_Grimshaw-Gudewicz_Biomedical_Building .
-navigate to the_Biomedical_Center .
-navigate to the_Second_Time_Around .
-navigate to the_Metcalf_Hall .
-navigate to the_Miller_Hall .
-navigate to the_New_Pembroke_1 .
-navigate to the_Andrews_Terrace .
-navigate to the_Champlin_Hall .
-navigate to the_Emery_&_Wooley .
-navigate to the_Pembroke_Park .
-navigate to the_Verney-Woolley_Hall .
-navigate to the_J._R._Workman_Garden .
+navigate to the East_Side_Station_Post_Office .
+navigate to the Andreas .
+navigate to the Spiritus_Fermenti .
+navigate to the Avon_Cinema .
+navigate to the Brown_University_Bookstore .
+navigate to the Meeting_Street_Cafe .
+navigate to the CVS .
+navigate to the College_Hill_Bookstore .
+navigate to the Blue_State_Coffee .
+navigate to the Salon_Persia .
+navigate to the Pleasant_Surprises .
+navigate to the Facing_Thayer .
+navigate to the Supercuts .
+navigate to the Soban .
+navigate to the Berk's;Shanghai .
+navigate to the West_House .
+navigate to the Thayer and Meeting .
+navigate to the Thayer and Cushing .
+navigate to the 111_Brown_Street (North_House) .
+navigate to the Emery_Hall .
+navigate to the Morriss_Hall .
+navigate to the Andrews_Hall .
+navigate to the Smith_Buonanno_Hall .
+navigate to the Sidney_Frank_Hall .
+navigate to the Alumnae_Hall .
+navigate to the West_House .
+navigate to the Pembroke_Hall .
+navigate to the Sidney_Frank_Hall .
+navigate to the Sharpe_House .
+navigate to the 219_Bowen .
+navigate to the New_Pembroke 3 .
+navigate to the New_Pembroke 2 .
+navigate to the 164_Angel .
+navigate to the Hillel_House .
+navigate to the New_Pembroke 4 .
+navigate to the Granoff_Center .
+navigate to the Peter_Green_House .
+navigate to the Grimshaw-Gudewicz_Biomedical_Building .
+navigate to the Biomedical_Center .
+navigate to the Second_Time Around .
+navigate to the Metcalf_Hall .
+navigate to the Miller_Hall .
+navigate to the New_Pembroke 1 .
+navigate to the Andrews_Terrace .
+navigate to the Champlin_Hall .
+navigate to the Emery & Wooley .
+navigate to the Pembroke_Park .
+navigate to the Verney-Woolley_Hall .
+navigate to the J._R._Workman_Garden .
 robot , go to the East_Side_Station_Post_Office .
 robot , go to the Andreas .
 robot , go to the Spiritus_Fermenti .
@@ -4277,9 +4277,9 @@ robot , go to the Supercuts .
 robot , go to the Soban .
 robot , go to the Berk's;Shanghai .
 robot , go to the West_House .
-robot , go to the Thayer_and_Meeting .
-robot , go to the Thayer_and_Cushing .
-robot , go to the 111_Brown_Street_(North_House) .
+robot , go to the Thayer and Meeting .
+robot , go to the Thayer and Cushing .
+robot , go to the 111_Brown_Street (North_House) .
 robot , go to the Emery_Hall .
 robot , go to the Morriss_Hall .
 robot , go to the Andrews_Hall .
@@ -4291,22 +4291,22 @@ robot , go to the Pembroke_Hall .
 robot , go to the Sidney_Frank_Hall .
 robot , go to the Sharpe_House .
 robot , go to the 219_Bowen .
-robot , go to the New_Pembroke_3 .
-robot , go to the New_Pembroke_2 .
+robot , go to the New_Pembroke 3 .
+robot , go to the New_Pembroke 2 .
 robot , go to the 164_Angel .
 robot , go to the Hillel_House .
-robot , go to the New_Pembroke_4 .
+robot , go to the New_Pembroke 4 .
 robot , go to the Granoff_Center .
 robot , go to the Peter_Green_House .
 robot , go to the Grimshaw-Gudewicz_Biomedical_Building .
 robot , go to the Biomedical_Center .
-robot , go to the Second_Time_Around .
+robot , go to the Second_Time Around .
 robot , go to the Metcalf_Hall .
 robot , go to the Miller_Hall .
-robot , go to the New_Pembroke_1 .
+robot , go to the New_Pembroke 1 .
 robot , go to the Andrews_Terrace .
 robot , go to the Champlin_Hall .
-robot , go to the Emery_&_Wooley .
+robot , go to the Emery & Wooley .
 robot , go to the Pembroke_Park .
 robot , go to the Verney-Woolley_Hall .
 robot , go to the J._R._Workman_Garden .

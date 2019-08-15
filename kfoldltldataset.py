@@ -54,24 +54,18 @@ class OneFoldSequencePairDataset(Dataset):
 
         return input_seq, output_seq, ' '.join(input_token_list), ' '.join(output_token_list)
 
-
-def generateKFoldDatasets(seed,
+def generateKFoldDatasets(data_name,
+             seed,
              maxlen=200,
              lang=None,
              vocab_limit=None,
              use_extended_vocab=True,
-             k=5,
-             src_data_path='./data/twophrase_south_clean_src.txt',
-             tgt_data_path='./data/twophrase_south_clean_tar.txt'):
+             k=5):
     
-    print(src_data_path)
-    print(tgt_data_path)
-    
-
-    with open(src_data_path, "r") as sf:
+    with open('./data/' + data_name + '_src.txt', "r") as sf:
         src_lines = sf.readlines()
 
-    with open(tgt_data_path, "r") as tf:
+    with open('./data/' + data_name + '_tar.txt', "r") as tf:
         tgt_lines = tf.readlines()
 
     if not len(src_lines) == len(tgt_lines):

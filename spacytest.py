@@ -4,10 +4,10 @@ import spacy
 if __name__ == '__main__':
     nlp = spacy.load("en_core_web_sm")
     
-    with open('./data/onephrase_north_clean_src.txt', "r") as f:
+    with open('./data/twophrase_1seen1unseen_src.txt', "r") as f:
         lines = f.readlines()
     
-    out = open("./data/onephrase_north_clean_underscored_src.txt", "w") 
+    out = open("./data/twophrase_1seen1unseen_underscored_src.txt", "w") 
 
     for line in lines:
         line = line.replace('\n', '')

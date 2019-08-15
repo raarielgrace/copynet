@@ -32,72 +32,18 @@ class Language(object):
                 vocab[token] = vocab.get(token, 0) + 1
         return vocab
 
-
 class SequencePairDataset(Dataset):
-    src_data_path='./data/twophrase_south_clean_src.txt'
-    tgt_data_path='./data/twophrase_south_clean_tar.txt'
-
-    with open(src_data_path, "r") as sf:
-        src_lines = sf.readlines()
-
-    with open(tgt_data_path, "r") as tf:
-        tgt_lines = tf.readlines()
-
-    if not len(src_lines) == len(tgt_lines):
-        sys.exit("ERROR: Data files have inconsistent lengths. Make sure your labels are aligned correctly.")
-
-    shuffled = False
 
     def __init__(self,
-                 seed,
+                 src_lines,
+                 tgt_lines,
                  maxlen=200,
                  lang=None,
                  vocab_limit=None,
-                 is_val=False,
-                 is_test=False,
-                 use_extended_vocab=True,
-                 data_substitute=None):
-
-        # Had to be moved to allow passing in a seed
-        if not data_substitute == None:
-            with open('./data/' + data_substitute + '_src.txt', "r") as sf:
-                src_lines = sf.readlines()
-
-            with open('./data/' + data_substitute + '_tar.txt', "r") as tf:
-                tgt_lines = tf.readlines()
-
-            if not len(src_lines) == len(tgt_lines):
-                sys.exit("ERROR: Data files have inconsistent lengths. Make sure your labels are aligned correctly.")
-
-        elif not SequencePairDataset.shuffled:
-            src_lines, tgt_lines, _ = shuffle_correlated_lists(SequencePairDataset.src_lines, SequencePairDataset.tgt_lines, seed)
-            # Split our source and target files with a 20:80 split
-            split_idx = len(src_lines) // 5
-            SequencePairDataset.test_src = src_lines[:split_idx]
-            SequencePairDataset.train_src = src_lines[split_idx:]
-            SequencePairDataset.test_tgt = tgt_lines[:split_idx]
-            SequencePairDataset.train_tgt = tgt_lines[split_idx:]
-
-            shuffled = True
-
-            if self.is_val or self.is_test:
-                src_lines = SequencePairDataset.test_src
-                tgt_lines = SequencePairDataset.test_tgt
-            else:
-                src_lines = SequencePairDataset.train_src
-                tgt_lines = SequencePairDataset.train_tgt
-        else:
-            if self.is_val or self.is_test:
-                src_lines = SequencePairDataset.test_src
-                tgt_lines = SequencePairDataset.test_tgt
-            else:
-                src_lines = SequencePairDataset.train_src
-                tgt_lines = SequencePairDataset.train_tgt
+                 use_extended_vocab=True):
 
         self.maxlen = maxlen
         self.parser = None
-        self.is_val = is_val
-        self.is_test = is_test
         self.use_extended_vocab = use_extended_vocab
 
         self.data = [] # Will hold all data
