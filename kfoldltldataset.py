@@ -2,7 +2,7 @@ import os
 import sys
 import random
 from torch.utils.data import Dataset
-from ltldataset import Language
+from language import Language
 from utils import tokens_to_seq, contains_digit, shuffle_correlated_lists, chunks
 from operator import itemgetter
 import datetime
@@ -23,6 +23,7 @@ class OneFoldSequencePairDataset(Dataset):
 
         self.data = [] # Will hold all data
 
+        # Process the data by removing new lines and splitting the words
         for i in range(len(unprocessed_data)):
             inputs = unprocessed_data[i][0]
             outputs = unprocessed_data[i][1]
@@ -46,9 +47,11 @@ class OneFoldSequencePairDataset(Dataset):
         token_mapping: binary array"""
 
         data_pair = self.data[idx]
-
+        
+        # Add in the start and end of sentence and chop at the max length
         input_token_list = (['<SOS>'] + data_pair[0] + ['<EOS>'])[:self.maxlen]
         output_token_list = (['<SOS>'] + data_pair[1] + ['<EOS>'])[:self.maxlen]
+        # Turn the words to tokens
         input_seq = tokens_to_seq(input_token_list, self.lang.tok_to_idx, self.maxlen, self.use_extended_vocab)
         output_seq = tokens_to_seq(output_token_list, self.lang.tok_to_idx, self.maxlen, self.use_extended_vocab, input_tokens=input_token_list)
 
@@ -71,13 +74,15 @@ def generateKFoldDatasets(data_name,
     if not len(src_lines) == len(tgt_lines):
         sys.exit("ERROR: Data files have inconsistent lengths. Make sure your labels are aligned correctly.")
 
+    # Shuffle the dataset before partitioning
     src_lines, tgt_lines, order = shuffle_correlated_lists(src_lines, tgt_lines, seed=seed)
     data = [(src_lines[i], tgt_lines[i]) for i in range(len(src_lines))]
 
-    f = open("./logs/log_ordering" + currentDT.strftime("%Y%m%d%H%M%S") + ".txt", "w")
-    for i in order:
-        f.write("{}\n".format(i))
-    f.close()
+    # Uncomment to get logs on the order of the data points
+    #f = open("./logs/log_ordering" + currentDT.strftime("%Y%m%d%H%M%S") + ".txt", "w")
+    #for i in order:
+    #    f.write("{}\n".format(i))
+    #f.close()
 
     # Divide the data into k chunks
     chunked = chunks(data, k)

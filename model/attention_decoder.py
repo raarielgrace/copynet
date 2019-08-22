@@ -26,7 +26,7 @@ class AttentionDecoder(DecoderBase):
     def forward(self, encoder_outputs, inputs, final_encoder_hidden, targets=None, keep_prob=1.0, teacher_forcing=0.0):
         batch_size = encoder_outputs.data.shape[0]
 
-        hidden = Variable(torch.zeros(1, batch_size, self.hidden_size)).to(self.device)  # overwrite the encoder hidden state with zeros
+        hidden = torch.zeros(1, batch_size, self.hidden_size).to(self.device)  # overwrite the encoder hidden state with zeros
 
         # every decoder output seq starts with <SOS>
         sos_output = torch.zeros((batch_size, self.embedding.num_embeddings))

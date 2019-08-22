@@ -93,7 +93,8 @@ def train(encoder_decoder: EncoderDecoder,
 
             global_step += 1
 
-        val_loss, val_bleu_score = evaluate(encoder_decoder, val_data_loader, device)
+        with torch.no_grad():
+            val_loss, val_bleu_score = evaluate(encoder_decoder, val_data_loader, device)
 
         writer.add_scalar('val_loss', val_loss, global_step=global_step)
         writer.add_scalar('val_bleu_score', val_bleu_score, global_step=global_step)
@@ -107,7 +108,7 @@ def train(encoder_decoder: EncoderDecoder,
         writer.add_embedding(decoder_embeddings, metadata=decoder_vocab, global_step=0, tag='decoder_embeddings')
 
         print('training accuracy %.5f' % (100.0 * (correct_predictions / all_predictions)))
-        #print('val loss: %.5f, val BLEU score: %.5f' % (val_loss, val_bleu_score), flush=True)
+        print('val loss: %.5f, val BLEU score: %.5f' % (val_loss, val_bleu_score), flush=True)
         torch.save(encoder_decoder, "%s%s_%i.pt" % (model_path, model_name, epoch))
 
         print('-' * 100, flush=True)
@@ -150,15 +151,18 @@ def test(encoder_decoder: EncoderDecoder, test_data_loader: DataLoader, max_leng
         batch_targets = [[list(seq[seq > 0])] for seq in list(to_np(target_variable))]
 
         for i in range(len(batch_outputs)):
+            # Get the input and output tokens
             y_i = batch_outputs[i]
             tgt_i = batch_targets[i][0]
-
-            # Added for testing underscore stuff
             src_i = batch_inputs[i][0]
+
+            # Make dictionaries of the unknown tokens to their words
             src_token_list = input_tokens[i].split()
             tar_token_list = target_tokens[i].split()
             src_unk_to_tok = {src_i[j]:src_token_list[j] for j in range(len(src_i)) if not src_i[j] in encoder_decoder.lang.idx_to_tok}
             tar_unk_to_tok = {tgt_i[j]:tar_token_list[j] for j in range(len(tgt_i)) if not tgt_i[j] in encoder_decoder.lang.idx_to_tok}
+
+            # Translate the tokens back to language
             correct_seq = [encoder_decoder.lang.idx_to_tok[n] if n in encoder_decoder.lang.idx_to_tok else tar_unk_to_tok[n] for n in tgt_i]
             incorrect_seq = [encoder_decoder.lang.idx_to_tok[n] if n in encoder_decoder.lang.idx_to_tok else src_unk_to_tok[n] for n in y_i]
             input_seq = [encoder_decoder.lang.idx_to_tok[n] if n in encoder_decoder.lang.idx_to_tok else src_unk_to_tok[n] for n in src_i]
@@ -181,8 +185,6 @@ def test(encoder_decoder: EncoderDecoder, test_data_loader: DataLoader, max_leng
 
 def main(model_name, use_cuda, batch_size, teacher_forcing_schedule, keep_prob, val_size, lr, decoder_type, vocab_limit, hidden_size, embedding_size, max_length, main_data, test_data, device, seed=42):
     print("Max Length is: ", max_length)
-
-    using_single_landmark = False
     model_path = './model/' + model_name + '/'
 
     print("training %s with use_cuda=%s, batch_size=%i"% (model_name, use_cuda, batch_size), flush=True)
@@ -191,7 +193,8 @@ def main(model_name, use_cuda, batch_size, teacher_forcing_schedule, keep_prob, 
 
     train_src, train_tgt, val_src, val_tgt = load_split_eighty_twenty(main_data, seed)
 
-    test_src, test_tgt = load_complete_data(test_data)
+    if test_data:
+        test_src, test_tgt = load_complete_data(test_data)
     
     if os.path.isdir(model_path):
 
@@ -236,16 +239,6 @@ def main(model_name, use_cuda, batch_size, teacher_forcing_schedule, keep_prob, 
                                          device)
 
         torch.save(encoder_decoder, model_path + '/%s.pt' % model_name)
-    
-    ### One Seen One Unseen dataset for two phrase data ###
-
-    mixed_src, mixed_tgt = load_complete_data('twophrase_1seen1unseen')
-
-    mixed_dataset = SequencePairDataset(mixed_src, mixed_tgt,
-                                        lang=train_dataset.lang,
-                                        vocab_limit=vocab_limit,
-                                        use_extended_vocab=(encoder_decoder.decoder_type=='copy'))
-    ###
 
     encoder_decoder = encoder_decoder.to(device)
 
@@ -267,17 +260,14 @@ def main(model_name, use_cuda, batch_size, teacher_forcing_schedule, keep_prob, 
 
     trained_model = torch.load(model_path + model_name + '_final.pt')
 
-    f = open("./logs/log_" + model_name + ".txt", "w")
-    f.write("MODEL {}\n\n".format(model_name))
-    
-    #For testing a two phrase model ##
-    if not using_single_landmark:
-        f.write("ONE SEEN ONE UNSEEN ACCURACY\n")
-        accuracy = test(trained_model, mixed_data_loader, encoder_decoder.decoder.max_length, device, log_file=f)
-
-    #f.write("UNSEEN ACCURACY\n")
-    #accuracy = test(trained_model, test_data_loader, encoder_decoder.decoder.max_length, device, log_file=f)
-    f.close()
+    # Write final model errors to an output log
+    if test_data:
+        f = open("./logs/log_" + model_name + ".txt", "w")
+        f.write("MODEL {}\n\n".format(model_name))
+        f.write("UNSEEN ACCURACY\n")
+        with torch.no_grad():
+            accuracy = test(trained_model, test_data_loader, encoder_decoder.decoder.max_length, device, log_file=f)
+        f.close()
 
 
 if __name__ == '__main__':
@@ -287,7 +277,7 @@ if __name__ == '__main__':
                              'contains encoder and decoder model files')
     
     parser.add_argument('train_data', type=str,
-                        help='The data to use instead of the training data. Should be of the form /data/[name]_src/tar.txt')
+                        help='The training data. Should be saved in the form/data/[name]_src/tar.txt')
 
     parser.add_argument('--epochs', type=int, default=50,
                         help='the number of epochs to train')
@@ -333,7 +323,7 @@ if __name__ == '__main__':
                         help='Sequences will be padded or truncated to this size.')    
 
     parser.add_argument('--test_data', type=str, default=None,
-                        help='The data to use instead of the training data. Should be of the form /data/[name]_src/tar.txt')
+                        help='The data to test with. Should be saved in the form /data/[name]_src/tar.txt')
 
     args = parser.parse_args()
 

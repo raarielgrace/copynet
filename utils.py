@@ -13,19 +13,26 @@ class DecoderBase(ABC, nn.Module):
         raise NotImplementedError
 
 def get_glove():
+    ''' Loads the glove database and returns it as word vectors.
+    '''
     vectors = bcolz.open('data/glove.6B.50.dat')[:]
     words = pickle.load(open('data/glove.6B.50_words.pkl', 'rb'))
     word2idx = pickle.load(open('data/glove.6B.50_idx.pkl', 'rb'))
 
+    # Vectors are 50 long
     glove = {w: vectors[word2idx[w]] for w in words}
     return glove
 
 def load_complete_data(data_name):
+    ''' Loads source and target lines of data files.
+    '''
     with open('./data/' + data_name + '_src.txt', "r") as sf:
         src_lines = sf.readlines()
 
     with open('./data/' + data_name + '_tar.txt', "r") as tf:
         tgt_lines = tf.readlines()
+
+    # No processing is done on the data, just loads it
 
     if not len(src_lines) == len(tgt_lines):
         sys.exit("ERROR: Data files have inconsistent lengths. Make sure your labels are aligned correctly.")
@@ -34,8 +41,11 @@ def load_complete_data(data_name):
 
 
 def load_split_eighty_twenty(data_name, seed):
+    ''' Loads data and makes a training and testing dataset.
+    '''
     src_lines, tgt_lines = load_complete_data(data_name)
 
+    # Shuffles lines before splitting to get randomized split
     src_lines, tgt_lines, _ = shuffle_correlated_lists(src_lines, tgt_lines, seed)
 
     # Split our source and target files with a 20:80 split
@@ -49,21 +59,30 @@ def load_split_eighty_twenty(data_name, seed):
 
 
 def shuffle_correlated_lists(l1, l2, seed):
+    ''' Shuffles data split into two lists with corresponding entries.
+    '''
+
     #Lists must have the same length, as the entries correspond
     if not len(l1) == len(l2):
         print("ERROR: Lists of unequal length! Returning without shuffling.")
         return (l1, l2)
 
+    # Seeds the randomizer
     random.seed(seed)
+    # Make a list of all the indexes
     idxes = list(range(len(l1)))
+    # Shuffle this index list
     random.shuffle(idxes)
 
     new_l1 = []
     new_l2 = []
+    # Make new shuffled lists by reading in the data
+    # In the randomized index order
     for idx in idxes:
         new_l1.append(l1[idx])
         new_l2.append(l2[idx])
 
+    # Returns the list of indexes so the order can be tracked
     return (new_l1, new_l2, idxes)
 
 # Source: https://stackoverflow.com/questions/2130016/splitting-a-list-into-n-parts-of-approximately-equal-length
@@ -75,6 +94,7 @@ def chunks(l, n):
         yield l[i*newn:i*newn+newn]
     yield l[n*newn-newn:]
 
+### BELOW ARE THE ORIGINAL UTIL FILES ###
 
 def to_np(x):
     return x.data.cpu().numpy()

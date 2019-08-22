@@ -14,6 +14,8 @@ class EncoderDecoder(nn.Module):
 
         self.device = device
         self.lang = lang
+
+        # Use a dict with word vectors for encoder if one's given
         if not init_weight_dict == None:
             self.encoder = EncoderRNN(len(self.lang.tok_to_idx),
                                       hidden_size,
@@ -26,6 +28,8 @@ class EncoderDecoder(nn.Module):
                                       hidden_size,
                                       embedding_size,
                                       self.device).to(self.device)
+        
+        # Make a decoder of the given decoder type
         self.decoder_type = decoder_type
         decoder_hidden_size = 2 * self.encoder.hidden_size
         if self.decoder_type == 'attn':
@@ -34,7 +38,7 @@ class EncoderDecoder(nn.Module):
                                             lang,
                                             max_length,
                                             self.device).to(self.device)
-        elif self.decoder_type == 'copy':
+        elif self.decoder_type == 'copy': # default in the code
             self.decoder = CopyNetDecoder(decoder_hidden_size,
                                           embedding_size,
                                           lang,
@@ -44,7 +48,8 @@ class EncoderDecoder(nn.Module):
             raise ValueError("decoder_type must be 'attn' or 'copy'")
 
     def forward(self, inputs, lengths, targets=None, keep_prob=1.0, teacher_forcing=0.0):
-
+        # Simple forward pass that sends data to the encoder and then decoder
+        # The encoder and decoder classes do the heavy lifting
         batch_size = inputs.data.shape[0]
         hidden = self.encoder.init_hidden(batch_size)
         encoder_outputs, hidden = self.encoder(inputs, hidden, lengths)
@@ -55,6 +60,10 @@ class EncoderDecoder(nn.Module):
                                                      teacher_forcing=teacher_forcing)
         return decoder_outputs, sampled_idxs
 
+    # The below functions are from the initial code
+    # When tested with the currect copynet model they didn't work
+    # But feel free to uncomment these and try yourself
+    '''
     def get_response(self, input_string):
         use_extended_vocab = isinstance(self.decoder, CopyNetDecoder)
 
@@ -88,3 +97,4 @@ class EncoderDecoder(nn.Module):
                 output_string = output_string.replace('<EOS>', '')
 
             print('\nAmy:\n', output_string)
+    '''

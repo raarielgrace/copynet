@@ -15,7 +15,6 @@ from torch import nn
 
 from ltldataset import SequencePairDataset
 from kfoldltldataset import OneFoldSequencePairDataset, generateKFoldDatasets
-#from mjcdataset import SequencePairDataset
 from model.encoder_decoder import EncoderDecoder
 from evaluate import evaluate
 from utils import to_np, trim_seqs, get_glove, load_complete_data
@@ -23,9 +22,6 @@ from utils import to_np, trim_seqs, get_glove, load_complete_data
 from tensorboardX import SummaryWriter
 from tqdm import tqdm
 from nltk.translate.bleu_score import corpus_bleu, SmoothingFunction
-
-#torch.backends.cudnn.enabled = False
-#torch.set_printoptions(profile="full")
 
 def train(encoder_decoder: EncoderDecoder,
           train_data_loader: DataLoader,
@@ -49,6 +45,8 @@ def train(encoder_decoder: EncoderDecoder,
         correct_predictions = 0.0
         all_predictions = 0.0
         for batch_idx, (input_idxs, target_idxs, input_tokens, target_tokens) in enumerate(tqdm(train_data_loader)):
+            # Empty the cache at each batch
+            torch.cuda.empty_cache()
             # input_idxs and target_idxs have dim (batch_size x max_len)
             # they are NOT sorted by length
 
@@ -105,11 +103,6 @@ def train(encoder_decoder: EncoderDecoder,
 
             global_step += 1
 
-        #val_loss, val_bleu_score = evaluate(encoder_decoder, val_data_loader)
-
-        #writer.add_scalar('val_loss', val_loss, global_step=global_step)
-        #writer.add_scalar('val_bleu_score', val_bleu_score, global_step=global_step)
-
         encoder_embeddings = encoder_decoder.encoder.embedding.weight.data
         encoder_vocab = encoder_decoder.lang.tok_to_idx.keys()
         writer.add_embedding(encoder_embeddings, metadata=encoder_vocab, global_step=0, tag='encoder_embeddings')
@@ -119,18 +112,6 @@ def train(encoder_decoder: EncoderDecoder,
         writer.add_embedding(decoder_embeddings, metadata=decoder_vocab, global_step=0, tag='decoder_embeddings')
 
         print('training accuracy %.5f' % (100.0 * (correct_predictions / all_predictions)))
-        #print('val loss: %.5f, val BLEU score: %.5f' % (val_loss, val_bleu_score), flush=True)
-
-        '''
-        val_acc = test(encoder_decoder, val_data_loader, max_length, device)
-        print('validation accuracy {}'.format(val_acc))
-        val_accus.append(val_acc)
-
-        test_acc = test(encoder_decoder, test_data_loader, max_length, device)
-        print('test accuracy {}'.format(test_acc))
-        test_accus.append(test_acc)
-        #test_struct_accus.append(test_struct_acc)
-        '''
         torch.save(encoder_decoder, "%s%s_%i.pt" % (model_path, model_name, epoch))
         trained_model = encoder_decoder
 
@@ -145,6 +126,7 @@ def test(encoder_decoder: EncoderDecoder, test_data_loader: DataLoader, max_leng
     struct_correct_only = 0.0
     all_predictions = 0.0
     for batch_idx, (input_idxs, target_idxs, input_tokens, target_tokens) in enumerate(tqdm(test_data_loader)):
+        print('memory usage {}'.format(torch.cuda.memory_allocated()))
         # input_idxs and target_idxs have dim (batch_size x max_len)
         # they are NOT sorted by length
         lengths = (input_idxs != 0).long().sum(dim=1)
@@ -174,13 +156,18 @@ def test(encoder_decoder: EncoderDecoder, test_data_loader: DataLoader, max_leng
         batch_targets = [[list(seq[seq > 0])] for seq in list(to_np(target_variable))]
 
         for i in range(len(batch_outputs)):
+            # Get the input and output tokens
             y_i = batch_outputs[i]
             tgt_i = batch_targets[i][0]
             src_i = batch_inputs[i][0]
+
+            # Make dictionaries of unknown words and their tokens
             src_token_list = input_tokens[i].split()
             tar_token_list = target_tokens[i].split()
             src_unk_to_tok = {src_i[j]:src_token_list[j] for j in range(len(src_i)) if not src_i[j] in encoder_decoder.lang.idx_to_tok}
             tar_unk_to_tok = {tgt_i[j]:tar_token_list[j] for j in range(len(tgt_i)) if not tgt_i[j] in encoder_decoder.lang.idx_to_tok}
+            
+            # Translate tokens to words
             correct_seq = [encoder_decoder.lang.idx_to_tok[n] if n in encoder_decoder.lang.idx_to_tok else tar_unk_to_tok[n] for n in tgt_i]
             incorrect_seq = [encoder_decoder.lang.idx_to_tok[n] if n in encoder_decoder.lang.idx_to_tok else src_unk_to_tok[n] for n in y_i]
             input_seq = [encoder_decoder.lang.idx_to_tok[n] if n in encoder_decoder.lang.idx_to_tok else src_unk_to_tok[n] for n in src_i]
@@ -287,21 +274,24 @@ def main(model_name, use_cuda, batch_size, teacher_forcing_schedule, keep_prob, 
             s_f = open("./logs/log_" + model_name + "seen" + currentDT.strftime("%Y%m%d%H%M%S") + ".txt", "w")
             s_f.write("TRAINING MODEL {}\nUSING SEED VALUE {}\n\n".format(model_name, seeds[it]))
             sc_f = open("./logs/log_" + model_name + "seencorrect" + currentDT.strftime("%Y%m%d%H%M%S") + ".txt", "w")
-            seen_accuracy = test(trained_model, val_data_loader, encoder_decoder.decoder.max_length, device, log_files=(s_f, sc_f))
+            with torch.no_grad():
+                seen_accuracy = test(trained_model, val_data_loader, encoder_decoder.decoder.max_length, device, log_files=(s_f, sc_f))
             s_f.close()
             sc_f.close()
         
             m_f = open("./logs/log_" + model_name + "1seen1unseen" + currentDT.strftime("%Y%m%d%H%M%S") + ".txt", "w")
             m_f.write("TRAINING MODEL {}\nUSING SEED VALUE {}\n\n".format(model_name, seeds[it]))
             mc_f = open("./logs/log_" + model_name + "1seen1unseencorrect" + currentDT.strftime("%Y%m%d%H%M%S") + ".txt", "w")
-            mixed_accuracy = test(trained_model, mixed_data_loader, encoder_decoder.decoder.max_length, device, log_files=(m_f, mc_f))
+            with torch.no_grad():
+                mixed_accuracy = test(trained_model, mixed_data_loader, encoder_decoder.decoder.max_length, device, log_files=(m_f, mc_f))
             m_f.close()
             mc_f.close()
 
             u_f = open("./logs/log_" + model_name + "unseen" + currentDT.strftime("%Y%m%d%H%M%S") + ".txt", "w")
             u_f.write("TRAINING MODEL {}\nUSING SEED VALUE {}\n\n".format(model_name, seeds[it]))
             uc_f = open("./logs/log_" + model_name + "unseencorrect" + currentDT.strftime("%Y%m%d%H%M%S") + ".txt", "w")
-            unseen_accuracy = test(trained_model, test_data_loader, encoder_decoder.decoder.max_length, device, log_files=(u_f, uc_f))
+            with torch.no_grad():
+                unseen_accuracy = test(trained_model, test_data_loader, encoder_decoder.decoder.max_length, device, log_files=(u_f, uc_f))
             u_f.close()
             uc_f.close()
         
