@@ -4,6 +4,7 @@ import torch.nn.functional as F
 from language import Language
 from utils import to_one_hot, DecoderBase
 
+### Same as adamklec repo but updated for Pytorch 0.4 ###
 
 class CopyNetDecoder(DecoderBase):
     def __init__(self, hidden_size, embedding_size, lang: Language, max_length, device):

@@ -5,8 +5,8 @@ from .copynet_decoder import CopyNetDecoder
 from utils import seq_to_string, tokens_to_seq
 from spacy.lang.en import English
 from .encoder import EncoderRNN
-#from torch.autograd import Variable
 
+### Adds a initial word vectors option and updates to Pytorch 0.4 ###
 
 class EncoderDecoder(nn.Module):
     def __init__(self, lang, max_length, hidden_size, embedding_size, decoder_type, device, init_weight_dict=None):
@@ -28,7 +28,7 @@ class EncoderDecoder(nn.Module):
                                       hidden_size,
                                       embedding_size,
                                       self.device).to(self.device)
-        
+
         # Make a decoder of the given decoder type
         self.decoder_type = decoder_type
         decoder_hidden_size = 2 * self.encoder.hidden_size

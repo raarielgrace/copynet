@@ -4,6 +4,7 @@ from torch import nn
 import argparse
 import numpy as np
 
+### Adds a initial word vectors option and updates to Pytorch 0.4 ###
 
 class EncoderRNN(nn.Module):
     def __init__(self, input_size, hidden_size, embedding_size, device, init_weight_dict=None, vocab_to_idx=None):
@@ -25,7 +26,7 @@ class EncoderRNN(nn.Module):
                 except KeyError:
                     # Use a normalized vector if the word isn't in the dictionary
                     weights_matrix[vocab_to_idx[word]] = np.random.normal(scale=0.6, size=(embedding_size, ))
-            
+
             # Load this into our embedding layer
             self.embedding.load_state_dict({'weight': torch.from_numpy(weights_matrix)})
         else:

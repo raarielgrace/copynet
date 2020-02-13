@@ -1,3 +1,0 @@
-TRAINING MODEL twophrase_thirty-five
-USING SEED VALUE 6
-

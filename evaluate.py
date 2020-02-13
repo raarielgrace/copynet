@@ -11,7 +11,7 @@ from torch.utils.data import DataLoader
 from tqdm import tqdm
 from nltk.translate.bleu_score import corpus_bleu, SmoothingFunction
 
-### THIS FILE IS THE SAME AS THE FORKED ORIGINAL AND HASN'T BEEN EDITED TO BE COMPATIBLE WITH THE NEW PYTORCH VERSION ###
+### Same as adamklec, currently unused, HASN'T BEEN UPDATED FOR PYTORCH 0.4 ###
 
 def evaluate(encoder_decoder: EncoderDecoder, data_loader, device):
 

@@ -4,7 +4,7 @@ from torch.utils.data import Dataset
 from utils import tokens_to_seq, contains_digit
 from operator import itemgetter
 
-### UNUSED, ONLY INCLUDED AS A TEMPLATE FOR ###
+### Original code from adamklec, currently unused ###
 
 class Language(object):
     def __init__(self, vocab_limit, data_path, parser, files=None):
